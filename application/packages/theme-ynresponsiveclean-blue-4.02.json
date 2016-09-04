@@ -1,0 +1,378 @@
+{
+  "type": "theme",
+  "name": "ynresponsiveclean-blue",
+  "version": "4.02",
+  "revision": null,
+  "path": "application\/themes\/yn-responsivecleantemplate-blue",
+  "repository": null,
+  "date": "Fri, 06 Nov 2015 05:07:17 +0000",
+  "title": "YN - Responsive Clean Template - Blue",
+  "description": "Responsive Clean Template - Blue",
+  "thumb": "theme.jpg",
+  "developer": null,
+  "authors": [
+    "YouNet Company"
+  ],
+  "changeLog": null,
+  "meta": {
+    "date": "Fri, 06 Nov 2015 05:07:17 +0000",
+    "title": "YN - Responsive Clean Template - Blue",
+    "description": "Responsive Clean Template - Blue",
+    "developer": null,
+    "authors": [
+      "YouNet Company"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    "install",
+    "upgrade",
+    "refresh",
+    "remove"
+  ],
+  "callback": {
+    "path": null,
+    "class": "Engine_Package_Installer_Theme",
+    "priority": 100
+  },
+  "dependencies": {
+    "module-ynresponsiveclean": {
+      "type": "module",
+      "name": "ynresponsiveclean",
+      "guid": "module-ynresponsiveclean",
+      "minVersion": "4.02",
+      "maxVersion": null,
+      "excludeExcept": null
+    },
+    "module-ynresponsive1": {
+      "type": "module",
+      "name": "ynresponsive1",
+      "guid": "module-ynresponsive1",
+      "minVersion": "4.05",
+      "maxVersion": null,
+      "excludeExcept": null
+    }
+  },
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "application\/themes\/ynresponsiveclean-blue": {
+      "type": "directory",
+      "path": "application\/themes\/ynresponsiveclean-blue",
+      "structure": [
+        {
+          "path": "constants.css",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 8179,
+          "sha1": "380b9bf7b69c9f623da0a2a7d613a825485680d8"
+        },
+        {
+          "path": "theme.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 36195,
+          "sha1": "d931049120a41dfc8c853b035b8ba80dbdcba793"
+        },
+        {
+          "path": "manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1234,
+          "sha1": "729b3bfaf244cd1a65e61acf4c874e4cb94e26f2"
+        },
+        {
+          "path": "theme.css",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 67987,
+          "sha1": "62c9477ce1a01615e08885d35a370b15b99c34d6"
+        },
+        {
+          "path": "mobile.css",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 20061,
+          "sha1": "0bea8efa002993da797873e0c6b3a63cf381420f"
+        },
+        {
+          "path": "editor.css",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1313,
+          "sha1": "9699de10bce01e2866ad03854d29ae357b816568"
+        },
+        {
+          "path": "grid.css",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1385,
+          "sha1": "6c91646977447c7f0fd281d1fc1e00e3aade5ded"
+        },
+        {
+          "path": "logo.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3793,
+          "sha1": "6f79caacaa382b8b89edc6041a1ececbffe5b4b1"
+        },
+        {
+          "path": "default_theme.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 6119,
+          "sha1": "0564de905c7e3d9857af255480cc4ec295729b09"
+        },
+        {
+          "path": "yncustom.css",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 21910,
+          "sha1": "4a624f87c6d2c583b70093e993a2ab0cf29a39be"
+        },
+        {
+          "path": "yncustom-tablet.css",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3668,
+          "sha1": "9ccd9d62a851232f8f1416ed451a8cd027ab7d4b"
+        },
+        {
+          "path": "yncustom-mobile.css",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 10807,
+          "sha1": "322b106f21d2881add8a77509efa9404928f59b3"
+        },
+        {
+          "path": "constants_1.css",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 8179,
+          "sha1": "3feaa12e6d3be4b2ad123c2ee48000eee023b17c"
+        },
+        {
+          "path": "ynresponsive1.css",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 107,
+          "sha1": "fbfae2880e2c492a34916c5a738b5f8c517917c0"
+        },
+        {
+          "path": "style.css",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 40137,
+          "sha1": "21b242ad615dd078e8a654751060be20a70958b2"
+        },
+        {
+          "path": "images",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "images\/bg-heading.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 14924,
+          "sha1": "cf84d4177f742177fd605a35d2dd6dad62a02836"
+        },
+        {
+          "path": "images\/rss.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3358,
+          "sha1": "afd6e298514fccd109ee61e9ab5a3c0e754605d6"
+        },
+        {
+          "path": "images\/linkedin.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3004,
+          "sha1": "84362c2106a279eee6ee6171d5537d323a094115"
+        },
+        {
+          "path": "images\/logo2.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3793,
+          "sha1": "6f79caacaa382b8b89edc6041a1ececbffe5b4b1"
+        },
+        {
+          "path": "images\/facebook.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2973,
+          "sha1": "2f6279e40f80e5ef276123299a7f2a3670a27ca2"
+        },
+        {
+          "path": "images\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "images\/googleplus.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3261,
+          "sha1": "035294209e6d4e2498b5ee83fa6e010bb0014b6a"
+        },
+        {
+          "path": "images\/wysihtml5_toolbar_icons.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2119,
+          "sha1": "77ec603413696bfac1016acb824ee32b59f4e811"
+        },
+        {
+          "path": "images\/twitter.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3055,
+          "sha1": "5711936f57867efd6f9af39b886b44c7b8afca1f"
+        },
+        {
+          "path": "images\/bullet_active.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 234,
+          "sha1": "07c391fc4acffd04842d52ad8ab91a8446d727e7"
+        },
+        {
+          "path": "images\/logo.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 18704,
+          "sha1": "bcbb617e57a31fcca5577af85bc72a924f96a9ee"
+        },
+        {
+          "path": "images\/slideshow_bg.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 212325,
+          "sha1": "2e763dd26ca721f590ca9d0028b1bb85bee5d362"
+        },
+        {
+          "path": "images\/bullet_hover.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 232,
+          "sha1": "20edf2f73f92f3d0575645d8b2e2d80cc25ff5ad"
+        },
+        {
+          "path": "images\/pintrest.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3116,
+          "sha1": "d02a66fa69e3626c4ca8e77f7aae05a1a40b9b1c"
+        },
+        {
+          "path": "images\/vimeo.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3216,
+          "sha1": "78c676724eca044dd8914a609da25eb96ffe873a"
+        },
+        {
+          "path": "images\/breadcrumbs.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 23104,
+          "sha1": "2742831732ec4f76bcc77e43f8830e3cfe7bce37"
+        },
+        {
+          "path": "images\/bullet.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 229,
+          "sha1": "84d0fad8b57c0bb22f4a854e46782504ee3f898d"
+        },
+        {
+          "path": "images\/buttonbg.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 110,
+          "sha1": "3b9fdebc28732665c1837230250b8027e17b470d"
+        },
+        {
+          "path": "images\/bg-text.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 950,
+          "sha1": "d0daa102fb1bb0d8332bb20ac60fc6f9b78ea463"
+        }
+      ]
+    },
+    "application\/themes\/configure\/default": {
+      "type": "directory",
+      "path": "application\/themes\/configure\/default",
+      "structure": [
+        {
+          "path": "reset.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 7895,
+          "sha1": "4c03a1ad87c0f25ad34efb4562715eb43102ed71"
+        }
+      ]
+    },
+    "application\/themes\/configure\/ynresponsiveclean-blue": {
+      "type": "directory",
+      "path": "application\/themes\/configure\/ynresponsiveclean-blue",
+      "structure": [
+        {
+          "path": "reset.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 18288,
+          "sha1": "0f5207a8dfe4d3f0ded520a938e20d8c4a321016"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,31 @@
+table.admin_table {
+	margin-bottom:10px;
+}
+#global_page_question-admin-manage-index .form-wrapper {
+	float:left; 
+	margin-right: 15px;
+}
+#global_page_question-admin-manage-index .search {
+	float:none;
+}
+#global_page_question-admin-manage-index div.search div input{
+	width: 155px;
+}
+#global_page_question-admin-manage-index div.search div select{
+	width: 160px;
+	height: 31px;
+}
+ul.paginationControl > li.selected > span {
+	+rounded; 
+	display:block; 
+	font-size:1em; 
+	font-weight:700;
+	padding:0.3em 0.6em;
+	cursor:default;
+}
+#global_page_question-admin-level-index .settings .form-element {
+	float:inherit!important;
+}
+#global_page_question-admin-level-index .settings .form-options-wrapper label {
+	display:block;
+}

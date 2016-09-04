@@ -1,0 +1,97 @@
+/**
+ * SqueezeBox - Expandable Lightbox
+ *
+ * Allows to open various content as modal,
+ * centered and animated box.
+ *
+ * @version		1.1 rc4
+ *
+ * @license		MIT-style license
+ * @author		Harald Kirschner <mail [at] digitarald.de>
+ * @copyright	Author
+ */
+
+#sbox-overlay {
+	position: absolute;
+	background-color: #000;
+	left: 0px;
+	top: 0px;
+	zoom: 1;
+}
+
+#sbox-window {
+	position: absolute;
+	background-color: #fff;
+	text-align: left;
+	overflow: visible;
+	padding: 0px;
+	/* invalid values, but looks smoother! */
++rounded(8px);
+}
+
+#sbox-btn-close {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	right: -15px;
+	top: -15px;
+	background: url(../images/closebox.png) no-repeat center;
+	border: none;
+	z-index:2
+}
+
+.sbox-window-ie6 #sbox-btn-close {
+	background-image: url(../images/closebox.gif);
+}
+
+.sbox-loading #sbox-content {
+	background-image: url(../images/spinner.gif);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#sbox-content {
+	clear: both;
+	overflow: auto;
+	background-color: #fff;
+	height: 100%;
+	width: 100%;
+}
+
+.sbox-content-image#sbox-content {
+	overflow: visible;
+}
+
+#sbox-image {
+	display: block;
+}
+
+.sbox-content-image img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.sbox-content-iframe#sbox-content {
+	overflow: visible;
+}
+
+/* Hides scrollbars */
+.body-overlayed {
+	overflow: hidden;
+}
+/* Hides flash (Firefox problem) and selects (IE) */
+.body-overlayed embed, .body-overlayed object, .body-overlayed select {
+	visibility: hidden;
+}
+#sbox-window embed, #sbox-window object, #sbox-window select {
+	visibility: visible;
+}
+
+.attached-images
+{
+	list-style:				none;
+	margin:					0;
+	padding:0;
+	margin-top:5px
+}
