@@ -122,7 +122,7 @@ class Classified_IndexController extends Core_Controller_Action_Standard
         ->setEnabled()
         ;
   }
-
+	
   public function viewAction()
   {
     $viewer = Engine_Api::_()->user()->getViewer();
@@ -366,13 +366,15 @@ class Classified_IndexController extends Core_Controller_Action_Standard
       throw $e;
     }
     
+	return $this->_helper->redirector->gotoUrl($classified->getHref(), array('prependBase' => false));
+	
     // Redirect
-    $allowed_upload = Engine_Api::_()->authorization()->getPermission($viewer->level_id, 'classified', 'photo');
+    /*$allowed_upload = Engine_Api::_()->authorization()->getPermission($viewer->level_id, 'classified', 'photo');
     if( $allowed_upload ) {
       return $this->_helper->redirector->gotoRoute(array('action' => 'success', 'classified_id' => $classified->classified_id), 'classified_specific', true);
     } else {
       return $this->_helper->redirector->gotoUrl($classified->getHref(), array('prependBase' => false));
-    }
+    }*/
   }
 
   public function editAction()
@@ -698,5 +700,11 @@ class Classified_IndexController extends Core_Controller_Action_Standard
       return $this->_redirect("classifieds/photo/upload/subject/classified_".$this->_getParam('classified_id'));
     }
   }
+
+	public function browseAction()
+    {
+        // Setting to use landing page.
+        $this->_helper->content->setNoRender()->setEnabled();
+    }
 }
 

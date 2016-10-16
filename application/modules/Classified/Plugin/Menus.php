@@ -39,7 +39,7 @@ class Classified_Plugin_Menus
     $viewer = Engine_Api::_()->user()->getViewer();
     
     // Must be able to view classifieds
-    if( !Engine_Api::_()->authorization()->isAllowed('classified', $viewer, 'view') ) {
+    if( !Engine_Api::_()->authorization()->isAllowed('classified', $viewer, 'view') ) {die('aaa');
       return false;
     }
 

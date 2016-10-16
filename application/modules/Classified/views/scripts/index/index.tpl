@@ -55,7 +55,7 @@
           <div class='classifieds_browse_info_blurb'>
             <?php $fieldStructure = Engine_Api::_()->fields()->getFieldsStructurePartial($item)?>
             <?php echo $this->fieldValueLoop($item, $fieldStructure) ?>
-            <?php echo $this->string()->truncate($this->string()->stripTags($item->body), 300) ?>
+            <?php echo Engine_Api::_()->classified()->subPhrase($this->string()->stripTags($item->body), 300) ?>
           </div>
         </div>
       </li>

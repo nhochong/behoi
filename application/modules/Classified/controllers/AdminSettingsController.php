@@ -42,7 +42,14 @@ class Classified_AdminSettingsController extends Core_Controller_Action_Admin
     $this->view->navigation = $navigation = Engine_Api::_()->getApi('menus', 'core')
       ->getNavigation('classified_admin_main', array(), 'classified_admin_main_categories');
 
-    $this->view->categories = Engine_Api::_()->getDbtable('categories', 'classified')->fetchAll();
+	$table = Engine_Api::_()->getDbtable('categories', 'classified');
+	$select = $table->select();
+	
+	//parent
+	$this->view->parent_id = $parent_id = $this->_getParam('parent_id', 0);
+	$select = $select->where('parent_id = ?', $parent_id);
+	
+    $this->view->categories = $table->fetchAll($select);
   }
 
   public function addCategoryAction()
@@ -53,6 +60,9 @@ class Classified_AdminSettingsController extends Core_Controller_Action_Admin
     // Generate and assign form
     $form = $this->view->form = new Classified_Form_Admin_Category();
     $form->setAction($this->getFrontController()->getRouter()->assemble(array()));
+	
+	//parent
+	$parent_id = $this->_getParam('parent_id', 0);
     // Check post
     if( $this->getRequest()->isPost() && $form->isValid($this->getRequest()->getPost()) )
     {
@@ -73,7 +83,13 @@ class Classified_AdminSettingsController extends Core_Controller_Action_Admin
         $row = $table->createRow();
         $row->user_id   =  $user->getIdentity();
         $row->category_name = $values["label"];
+        $row->code = $values["code"];
+        $row->parent_id = $parent_id;
         $row->save();
+		
+		if(!empty($values['photo'])){
+			$row->setPhoto($form->photo);
+		}
 
         // change the category of all the classifieds using that category
 
@@ -174,8 +190,13 @@ class Classified_AdminSettingsController extends Core_Controller_Action_Admin
       try
       {
         $category->category_name = $values["label"];
+        $category->code = $values["code"];
         $category->save();
         
+		if(!empty($values['photo'])){
+			$category->setPhoto($form->photo);
+		}
+		
         $db->commit();
       } catch( Exception $e ) {
         $db->rollBack();
@@ -191,4 +212,23 @@ class Classified_AdminSettingsController extends Core_Controller_Action_Admin
     // Output
     $this->renderScript('admin-settings/form.tpl');
   }
+  
+	/*----- Set HOT category Function -----*/
+	public function hotAction()
+	{
+      //Get params
+      $category_id = $this->_getParam('category_id'); 
+      $hot = $this->_getParam('hot');
+
+      //Get blog need to set featured
+      $table = Engine_Api::_()->getItemTable('classified_category');
+      $select = $table->select()->where("category_id = ?",$category_id); 
+      $category = $table->fetchRow($select);
+
+      //Set featured/unfeatured
+      if($category){
+		$category->is_hot =  $hot;
+		$category->save();
+      }
+	}
 }

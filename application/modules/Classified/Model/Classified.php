@@ -287,4 +287,8 @@ class Classified_Model_Classified extends Core_Model_Item_Abstract
 
     parent::_insert();
   }
+	
+	public function getCategory(){
+		return Engine_Api::_()->getItem('classified_category', $this->category_id);
+	}
 }

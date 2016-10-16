@@ -29,17 +29,26 @@ class Classified_Form_Admin_Category extends Engine_Form
     $type->setValue('heading');
     */
 
+	$code = new Zend_Form_Element_Text('code');
+    $code->setLabel('Category Code')
+      ->setAttrib('class', 'text');
+	  
     $label = new Zend_Form_Element_Text('label');
     $label->setLabel('Category Name')
       ->addValidator('NotEmpty')
       ->setRequired(true)
       ->setAttrib('class', 'text');
+	  
+	$photo = new Zend_Form_Element_File('photo');
+    $photo->setLabel('Photo');
 
     $id = new Zend_Form_Element_Hidden('id');
 
     $this->addElements(array(
       //$type,
+	  $code,
       $label,
+	  $photo,
       $id
     ));
 
@@ -71,6 +80,7 @@ class Classified_Form_Admin_Category extends Engine_Form
 
     // Set up elements
     //$this->removeElement('type');
+    $this->code->setValue($category->code);
     $this->label->setValue($category->category_name);
     $this->id->setValue($category->category_id);
     $this->submit->setLabel('Edit Category');

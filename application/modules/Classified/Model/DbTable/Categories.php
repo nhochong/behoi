@@ -18,46 +18,56 @@
  */
 class Classified_Model_DbTable_Categories extends Engine_Db_Table
 {
-  protected $_rowClass = 'Classified_Model_Category';
-  
-  public function getCategoriesAssoc()
-  {
-    $stmt = $this->select()
-        ->from($this, array('category_id', 'category_name'))
-        ->order('category_name ASC')
-        ->query();
+    protected $_rowClass = 'Classified_Model_Category';
     
-    $data = array();
-    foreach( $stmt->fetchAll() as $category ) {
-      $data[$category['category_id']] = $category['category_name'];
+    public function getParentCategories(){
+		$select = $this->select();
+		//parent
+		$select = $select->where('parent_id = 0');
+		return $this->fetchAll($select);
+	}
+	
+    public function getCategoriesAssoc()
+    {
+        $parents = $this->getParentCategories();
+        
+        $data = array();
+        foreach ($parents as $parent) {
+			$data[$parent->getIdentity()] = $parent->getTitle();
+			$childs = $parent->getSubCategory();
+			foreach($childs as $child){
+				$data[$child->getIdentity()] = "== " . $child->getTitle();
+			}
+        }
+        
+        return $data;
     }
     
-    return $data;
-  }
-  
-  public function getUserCategoriesAssoc($user)
-  {
-    if( $user instanceof User_Model_User ) {
-      $user = $user->getIdentity();
-    } else if( !is_numeric($user) ) {
-      return array();
+    public function getUserCategoriesAssoc($user)
+    {
+        if ($user instanceof User_Model_User) {
+            $user = $user->getIdentity();
+        } else if (!is_numeric($user)) {
+            return array();
+        }
+        
+        $stmt = $this->getAdapter()->select()->from('engine4_classified_categories', array(
+            'category_id',
+            'category_name'
+        ))->joinLeft('engine4_classified_classifieds', "engine4_classified_classifieds.category_id = engine4_classified_categories.category_id")->group("engine4_classified_categories.category_id")->where('engine4_classified_classifieds.owner_id = ?', $user)->where('engine4_classified_classifieds.draft = ?', "0")->order('category_name ASC')->query();
+        
+        $data = array();
+        foreach ($stmt->fetchAll() as $category) {
+            $data[$category['category_id']] = $category['category_name'];
+        }
+        
+        return $data;
     }
-    
-    $stmt = $this->getAdapter()
-        ->select()
-        ->from('engine4_classified_categories', array('category_id', 'category_name'))
-        ->joinLeft('engine4_classified_classifieds', "engine4_classified_classifieds.category_id = engine4_classified_categories.category_id")
-        ->group("engine4_classified_categories.category_id")
-        ->where('engine4_classified_classifieds.owner_id = ?', $user)
-        ->where('engine4_classified_classifieds.draft = ?', "0")
-        ->order('category_name ASC')
-        ->query();
-    
-    $data = array();
-    foreach( $stmt->fetchAll() as $category ) {
-      $data[$category['category_id']] = $category['category_name'];
-    }
-    
-    return $data;
-  }
+	
+	public function getHotCategories(){
+		$select = $this->select();
+		//parent
+		$select = $select->where('is_hot = 1');
+		return $this->fetchAll($select);
+	}
 }

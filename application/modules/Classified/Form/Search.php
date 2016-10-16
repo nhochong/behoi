@@ -31,7 +31,8 @@ class Classified_Form_Search extends Fields_Form_Search
         'id' => 'filter_form',
         'class' => 'global_form_box classifieds_browse_filters field_search_criteria',
       ))
-      ->setAction($_SERVER['REQUEST_URI'])
+      ->setAction(Zend_Controller_Front::getInstance()->getRouter()->assemble(array('action' => 'browse'), 'classified_general', true))
+	  ->setMethod('GET')
       ->getDecorator('HtmlTag')
         ->setOption('class', 'browseclassifieds_criteria classifieds_browse_filters');
 

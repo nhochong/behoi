@@ -1,0 +1,3 @@
+#basic{padding:30px;background:#F2EFBD}
+#basic-slideshow{width:100%;margin:auto;overflow:hidden;}
+#basic-slideshow div{width:100%;height:100%;position:absolute;top:0;left:0;font-size:20px;color:#fff;font-family:"Josefin Slab";}

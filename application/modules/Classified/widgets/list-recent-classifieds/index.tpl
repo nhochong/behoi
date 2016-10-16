@@ -11,29 +11,25 @@
  */
 ?>
 
-<ul class="generic_list_widget generic_list_widget_large_photo">
+<ul class="generic_list_widget generic_list_widget_large_photo classifieds_browse">
   <?php foreach( $this->paginator as $item ): ?>
     <li>
-      <div class="photo">
+      <div class="classifieds_browse_photo">
         <?php echo $this->htmlLink($item->getHref(), $this->itemPhoto($item, 'thumb.normal')) ?>
       </div>
-      <div class="info">
-        <div class="title icon">
+      <div class="classifieds_browse_info">
+        <div class="classifieds_browse_info_title icon">
           <?php echo $this->htmlLink($item->getHref(), $item->getTitle()) ?>
           <?php if( $item->closed ): ?>
             <img src='<?php echo $this->layout()->staticBaseUrl ?>application/modules/Classified/externals/images/close.png'/>
           <?php endif ?>
         </div>
-        <div class="stats">
-          <?php echo $this->timestamp(strtotime($item->{$this->recentCol})) ?>
-          - <?php echo $this->translate('posted by %1$s',
-              $this->htmlLink($item->getOwner()->getHref(), $item->getOwner()->getTitle())) ?>
-        </div>
+		<?php echo $this->partial('_category_breadcrumbs.tpl', 'classified', array('category' => $item->getCategory()));?>
       </div>
-      <div class="description">
+      <div class="classifieds_browse_info_blurb">
         <?php $fieldStructure = Engine_Api::_()->fields()->getFieldsStructurePartial($item)?>
         <?php echo $this->fieldValueLoop($item, $fieldStructure) ?>
-        <?php echo $this->string()->truncate($this->string()->stripTags($item->body), 300) ?>
+        <?php echo Engine_Api::_()->classified()->subPhrase($this->string()->stripTags($item->body), 500) ?>
       </div>
     </li>
   <?php endforeach; ?>

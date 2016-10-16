@@ -32,25 +32,8 @@ endif; ?>
   </h2>
   <ul class='classifieds_entrylist'>
     <li>
-      <div class="classified_entrylist_entry_date">
-        <?php echo $this->translate('Posted by');?> <?php echo $this->htmlLink($this->classified->getParent(), $this->classified->getParent()->getTitle()) ?>
-        <?php echo $this->timestamp($this->classified->creation_date) ?>
-        <?php if ($this->category):?>- <?php echo $this->translate('Filed in');?>
-        <?php echo $this->translate($this->category->category_name); ?>
-        <?php endif; ?>
-        <?php if (count($this->classifiedTags )):?>
-        -
-          <?php foreach ($this->classifiedTags as $tag): ?>
-          <?php if (!empty($tag->getTag()->text)):?>
-            #<?php echo $tag->getTag()->text?>&nbsp;
-          <?php endif; ?>
-          <?php endforeach; ?>
-        <?php endif; ?>
-
-        <?php echo $this->fieldValueLoop($this->classified, $this->fieldStructure) ?>
-
-      </div>
-
+	  <?php echo $this->partial('_category_breadcrumbs.tpl', 'classified', array('category' => $this->classified->getCategory()));?>
+	  <?php echo $this->partial('_addthis_buttons.tpl', 'classified');?>
       <?php if ($this->classified->closed == 1):?>
         <div class="tip">
           <span>

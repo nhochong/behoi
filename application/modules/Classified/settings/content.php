@@ -116,4 +116,62 @@ return array(
       'no-subject',
     ),
   ),
+	array(
+        'title' => 'Browse Categories',
+        'description' => 'Displays categories level 1 and child.',
+        'category' => 'Classifieds',
+        'type' => 'widget',
+        'name' => 'classified.browse-category',
+        'defaultParams' => array(
+          'title' => 'Browse Categories',
+        ),
+        'requirements' => array(
+            'no-subject',
+        ),
+    ),
+	array(
+        'title' => 'List Categories',
+        'description' => 'Displays a list of categories.',
+        'category' => 'Classifieds',
+        'type' => 'widget',
+        'name' => 'classified.list-categories',
+        'defaultParams' => array(
+            'title' => 'Categories',
+        ),
+    ),
+	array(
+        'title' => 'Browse Classifieds',
+        'description' => 'Displays a list of Classifieds.',
+        'category' => 'Classifieds',
+        'type' => 'widget',
+        'name' => 'classified.browse-classifieds',
+		'isPaginated' => true,
+        'defaultParams' => array(
+            'title' => 'Browse Classifieds',
+        ),
+        'requirements' => array(
+            'no-subject',
+        ),
+    ),
+	array(
+        'title' => 'Hot Classifieds',
+        'description' => 'Displays a list of Classifieds.',
+        'category' => 'Classifieds',
+        'type' => 'widget',
+        'name' => 'classified.hot-classifieds',
+		'isPaginated' => true,
+        'defaultParams' => array(
+            'title' => 'Hot Classifieds',
+        ),
+        'requirements' => array(
+            'no-subject',
+        ),
+    ),
+	array(
+        'title' => 'Menu Categories',
+        'description' => 'Displays menu categories level 1 and child.',
+        'category' => 'Classifieds',
+        'type' => 'widget',
+        'name' => 'classified.menu-category'
+    ),
 ) ?>

@@ -62,7 +62,8 @@ return array(
   'items' => array(
     'classified',
     'classified_album',
-    'classified_photo'
+    'classified_photo',
+    'classified_category',
   ),
   // Routes --------------------------------------------------------------------
   'routes' => array(
@@ -86,7 +87,7 @@ return array(
         'action' => 'index',
       ),
       'reqs' => array(
-        'action' => '(index|manage|create)',
+        'action' => '(index|manage|create|browse)',
       ),
     ),
     'classified_specific' => array(

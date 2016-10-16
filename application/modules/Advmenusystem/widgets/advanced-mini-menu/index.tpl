@@ -8,22 +8,6 @@
 </style>
 
 <script type='text/javascript'>
-	en4.core.runonce.add(function(){
-		if($('global_search_field')){
-			new OverText($('global_search_field'), {
-				poll: true,
-				pollInterval: 500,
-				positionOptions: {
-					position: ( en4.orientation == 'rtl' ? 'upperRight' : 'upperLeft' ),
-					edge: ( en4.orientation == 'rtl' ? 'upperRight' : 'upperLeft' ),
-					offset: {
-						x: ( en4.orientation == 'rtl' ? -4 : 4 ),
-						y: 2
-					}
-				}
-			});
-		}
-	});
 	var	addNotificationScript = function()
 	{
 		if (typeof jQuery != 'undefined') { 
@@ -375,15 +359,6 @@ $count = count($this->navigation);
 foreach( $this->navigation->getPages() as $item ) $item->setOrder(--$count);
 ?>
 <ul>
-
-	<?php if($this->search_check):?>
-		<li id="global_search_form_container">
-			<form id="global_search_form" action="<?php echo $this->url(array('controller' => 'search'), 'default', true) ?>" method="get">
-				<input type='text' <?php if($this -> width_searchbox) echo "style='width:".$this -> width_searchbox."'"; ?> class='text suggested' name='query' id='global_search_field' size='20' maxlength='100' alt='<?php echo $this->translate('Search') ?>' />
-			</form>
-		</li>
-	<?php endif;?>
-
 	<?php if( $this->viewer->getIdentity()) :?>
 		<li class="ynadvmenu_notification type-<?php echo $this->design_type; ?>" >
 			<?php echo $this -> html_notification?>

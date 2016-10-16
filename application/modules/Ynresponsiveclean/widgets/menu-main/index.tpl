@@ -7,6 +7,24 @@
  * @copyright  Copyright YouNet Company
  */
 ?>
+<script type="text/javascript">
+	en4.core.runonce.add(function(){
+		if($('global_search_field')){
+			new OverText($('global_search_field'), {
+				poll: true,
+				pollInterval: 500,
+				positionOptions: {
+					position: ( en4.orientation == 'rtl' ? 'upperRight' : 'upperLeft' ),
+					edge: ( en4.orientation == 'rtl' ? 'upperRight' : 'upperLeft' ),
+					offset: {
+						x: ( en4.orientation == 'rtl' ? -4 : 4 ),
+						y: 2
+					}
+				}
+			});
+		}
+	});
+</script>
 <nav class="navbar navbar-default" role="navigation">
   <!-- Brand and toggle get grouped for better mobile display -->
   <div class="navbar-header">
@@ -32,54 +50,52 @@
 		?>
 	</div>
   </div>
+  
+  <!-- Global search -->
+  <div id="global_search_form_container">
+	<form id="global_search_form" action="<?php echo $this->url(array('controller' => 'search'), 'default', true) ?>" method="get">
+		<input type='text' <?php if($this -> width_searchbox) echo "style='width:".$this -> width_searchbox."'"; ?> class='text suggested' name='query' id='global_search_field' size='20' maxlength='100' alt='<?php echo $this->translate('Search') ?>' placeholder="<?php echo $this->translate('Tìm kiếm sản phẩm / Khuyến mãi')?>" />
+		<button class="btn-submit" type="submit">Go</button>
+	</form>
+  </div>
+  
+  <!-- Domains -->
+  <div class="main__sub_domain">
+	<ul>
+	  <li class="domain_behoi"><?php echo $this->htmlLink('javascript:void(0);', $this->translate('Bé Hỏi')) ?></li>
+	  <li class="domain_khuyenmai"><?php echo $this->htmlLink('javascript:void(0);', $this->translate('Deal Hot')) ?>
+	  </li>
+	</ul>
+  </div>
 
   <!-- Collect the nav links, forms, and other content for toggling -->
-  <div class="collapse navbar-collapse navbar-ex8-collapse">
-    <ul class="nav navbar-nav navbar-right">
-		<?php $count = 0;
-		$limit = 5;
-		foreach( $this->navigationMain as $item ): ?>
-			<?php
-			$check_active = $item->active;
-			$request = Zend_Controller_Front::getInstance()->getRequest();
-			$module = $request->getModuleName();
-			$module_class = explode("_", $item->class);
-            if(end($module_class) == $module && $module != 'user' && $module != 'core')
-			{
-				$check_active = true;
-			}
-			if($count < $limit):
-				 $attribs = array_diff_key(array_filter($item->toArray()), array_flip(array(
-			        'reset_params', 'route', 'module', 'controller', 'action', 'type',
-			        'visible', 'label', 'href'
-			        )));
-				?>
-		     <li<?php echo($check_active?' class="active"':'')?>>
-          		<?php echo $this->htmlLink($item->getHref(), $this->translate($item->getLabel()), $attribs) ?>
-        	</li>	
-    <?php else:?>
-    	 <?php if($count == $limit):?>
-    	 		<li class="dropdown">
-	        		<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $this -> translate("More");?> 
-	        			<span class="glyphicon glyphicon-chevron-down btn-xs"></span>
-	        		</a>
-        			<ul class="dropdown-menu">
-    	 	<?php endif;?>
-    	 	<?php $attribs = array_diff_key(array_filter($item->toArray()), array_flip(array(
-				        'reset_params', 'route', 'module', 'controller', 'action', 'type',
-				        'visible', 'label', 'href'
-				        )));
-					?>
-			     <li<?php echo($check_active?' class="active"':'')?>>
-	          		<?php echo $this->htmlLink($item->getHref(), $this->translate($item->getLabel()), $attribs) ?>
-	        	</li>	
-    	 	<?php if($count > $limit && $count == count($this->navigationMain)):?>
-    	 	</ul>
-    	 </li>
-    	 	<?php endif;?>
-		<?php endif;
-		$count ++;
-		endforeach;?>
-    </ul>
-  </div><!-- /.navbar-collapse -->
+	<div class="collapse navbar-collapse navbar-ex8-collapse">
+		<ul class="nav navbar-nav navbar-left">
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $this -> translate("Chủ Đề");?> 
+					<span class="glyphicon glyphicon-chevron-down btn-xs"></span>
+				</a>
+				<ul class="dropdown-menu">
+					<?php foreach($this->categories as $category):?>
+					<li>
+						<?php echo $this->htmlLink($category->getHref(),  $category->getTitle(), array('class' => 'dropdown-toggle', 'data-toggle' => 'dropdown')); ?>
+						<?php $childs = $category->getSubCategory();?>
+						<?php if(count($childs)):?>
+							<ul class="dropdown-menu-level-2">
+							<?php foreach($childs as $child):?>
+								<li><?php echo $this->htmlLink($child->getHref(),  $child->getTitle()); ?></li>
+							<?php endforeach;?>
+							</ul>
+						<?php endif;?>
+					</li>
+					<?php endforeach;?>
+				</ul>
+			</li>
+			<li><?php echo $this->htmlLink(array('route' => 'default', 'module' => 'question'), $this->translate('Diễn Đàn'), $attribs) ?></li>
+			<li><?php echo $this->htmlLink('javascript:void(0);', $this->translate('Tư Vấn')) ?></li>
+			<li><?php echo $this->htmlLink('javascript:void(0);', $this->translate('Tags')) ?></li>
+			<li><?php echo $this->htmlLink('javascript:void(0);', $this->translate('Đăng Câu Hỏi')) ?></li>
+		</ul>
+	</div>
+  <!-- /.navbar-collapse -->
 </nav>

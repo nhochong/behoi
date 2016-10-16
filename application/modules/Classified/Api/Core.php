@@ -84,4 +84,17 @@
      $row->save();
      return $row;
    }
+   
+	public function subPhrase($string, $length = 0) {
+		if (strlen ( $string ) <= $length)
+			return $string;
+		$pos = $length;
+		for($i = $length - 1; $i >= 0; $i --) {
+			if ($string [$i] == " ") {
+				$pos = $i + 1;
+				break;
+			}
+		}
+		return substr ( $string, 0, $pos ) . "...";
+	}
  }

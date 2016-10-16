@@ -67,10 +67,6 @@ html[dir="rtl"] #classifieds_create div.form-label
   float: none;
 }
 
-
-
-
-
 /* ITEM TYPE ICONS */
 .item_icon_classified
 {
@@ -444,4 +440,230 @@ ul.classifieds_profile_tab .classifieds_browse_info_blurb
 .activity_icon_comment_classified
 {
   background-image: url(~/application/modules/Core/externals/images/types/post.png);
+}
+
+
+
+/* CUSTOM */
+.classified_category_main {
+	margin-left: -10px;
+	margin-right: -10px;
+
+	&:after {
+		content: " "; /* Older browser do not support empty content */
+		visibility: hidden;
+		display: block;
+		height: 0;
+		clear: both;
+	}
+
+	.browse_category {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+
+		padding: 0 10px;
+		width: 33.3%;
+		float: left;
+		
+	}
+
+	.item-category-browser {
+		margin: 10px 0;
+		height: 200px;
+		padding: 15px;
+		border: 1px solid $theme_border_color;
+		position: relative;
+
+		.category-browser-top {
+			border-bottom: 1px solid $theme_border_color;
+			height: 41px;
+		}
+
+		.category_icon {
+			display: block;
+			vertical-align: middle;
+			float: left;
+
+			img {
+				width: 40px;
+				height: 40px;
+			}
+		}
+
+		.category-title {
+			font-size: 18px;
+			font-weight: bold;
+			color: $theme_link_color;
+			overflow: hidden;
+			line-height: 40px;
+
+			a {
+				display: block;
+				padding: 0 5px 0 10px;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}			
+		}
+
+		.category-stat {
+			float: right;
+			line-height: 40px;
+		}
+
+		.btn-toggle-more-category {
+			background-color: #ccc;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 21px;
+			height: 21px;
+			cursor: pointer;
+
+			background-image: url("~/application/modules/Classified/externals/images/icon-plus.png");
+		}
+
+		ul { 
+			padding: 5px 10px; 
+
+			li {
+				height: 32px;
+				line-height: 32px;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+
+				span.fa {
+					margin-right: 5px;
+				}
+
+				a {
+					color: $theme_font_color;
+				}				
+			}			
+		}
+
+		.category-more-data {
+			background: $theme_border_medium_color;
+			background: -moz-linear-gradient(top, $theme_body_background_color 0%, $theme_border_medium_color 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$theme_body_background_color), color-stop(100%, $theme_border_medium_color)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top, $theme_body_background_color 0%,$theme_border_medium_color 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, $theme_body_background_color 0%,$theme_border_medium_color 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top, $theme_body_background_color 0%,$theme_border_medium_color 100%); /* IE10+ */
+			background: linear-gradient(to bottom, $theme_body_background_color 0%,$theme_border_medium_color 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$theme_body_background_color', endColorstr='$theme_border_medium_color',GradientType=0 ); /* IE6-9 */
+			border: 1px solid $theme_border_medium_color;
+			position: absolute;
+			width: 100%;
+			left: -1px;
+			top: 231px;
+			display: none;
+			z-index: 1;
+
+			ul { padding: 15px 25px; }
+		}
+
+		&.classified-category-expand {
+			border: 1px solid $theme_link_color;
+
+			.btn-toggle-more-category {
+				background-image: url("~/application/modules/Classified/externals/images/icon-minus.png");
+			}
+
+			.category-more-data {
+				display: block;
+			}			
+		}
+	}
+}
+
+ul.classifieds-category {
+	width: 100%;
+	
+	.classifieds-category_row:first-child {
+		border: none;
+	}
+
+	.classifieds-category_row {   
+		border-top: 1px solid $theme_border_medium_color;
+		height: 30px;
+		line-height: 30px;
+		padding-left: 20px;
+		
+		a {
+			font-weight: bold;
+			display: block;
+			white-space: nowrap;
+			overflow: hidden
+			text-overflow: ellipsis;
+		}
+	
+		> div.active a {
+			color: $theme_link_color_hover;
+		}
+	}
+
+	li > div > img {
+		vertical-align: middle;
+		width: 16px;
+		height: 16px;
+	}
+	
+	.classifieds-category-sub-category.level_2 > div {
+		padding-left: 10px;
+	}
+	
+	.classifieds-category-sub-category.level_3 > div {
+		padding-left: 40px;
+	}
+	
+	.classifieds-category-sub-category.level_4 > div {
+		padding-left: 60px;
+	}
+	
+	.classifieds-category-collapse-control, 
+	.classifieds-category-collapse-nocontrol {
+		position: absolute;
+		margin-left: -20px;
+		width: 16px;
+		height: 30px;
+		cursor: pointer;
+	}
+	
+	.classifieds-category-no-collapsed {
+		background: url(~/application/modules/Classified/externals/images/collapse.png) no-repeat;
+		background-position: center;
+	}
+	
+	.classifieds-category-collapsed {
+		background: url(~/application/modules/Classified/externals/images/collapse_collapsed.png) no-repeat;
+		background-position: center
+	}
+
+	img.main, 
+	img.thumb_normal, 
+	img.thumb_profile, 
+	img.thumb_icon {
+		border: 0;
+	}
+}
+.layout_classified_browse_search #filter_form select {
+	max-width: 190px;
+}
+#global_page_classified-index-create form#classifieds_create #title-element input {
+	max-width: 100%;
+    width: 100%;
+}
+.classifieds_browse_info_category.icon a {
+    color: #72C02C;
+}
+.addthis_inline_share_toolbox {
+    padding: 10px 0px;
+}
+#global_page_classified-index-create #auth_view-wrapper,
+#global_page_classified-index-create #auth_comment-wrapper,
+#global_page_classified-index-edit #auth_view-wrapper,
+#global_page_classified-index-edit #auth_comment-wrapper{
+	display: none;
 }

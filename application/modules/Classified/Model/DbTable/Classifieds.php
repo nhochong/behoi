@@ -121,4 +121,22 @@ class Classified_Model_DbTable_Classifieds extends Engine_Db_Table
     
     return $select;
   }
+	
+	public function getClassifieds($params = array()){
+		$select = $this->select();
+		if(!empty($params['category_id'])){
+			$category = Engine_Api::_()->getItem('classified_category', $params['category_id']);
+			$categoryIds = array();
+			if($category){
+				$categoryIds[] = $category->getIdentity();
+				if($category->parent_id == 0){
+					$subCategoryIds = $category->getSubCategoryIds();
+					$categoryIds = array_merge($categoryIds, $subCategoryIds);
+				}
+				$select = $select->where('category_id IN (?)', $categoryIds);
+			}
+		}
+		//parent
+		return $this->fetchAll($select);
+	}
 }

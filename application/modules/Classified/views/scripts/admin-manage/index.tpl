@@ -62,7 +62,7 @@ if( $settings->getSetting('user.support.links', 0) == 1 ) {
       <th class='admin_table_short'><input onclick='selectAll();' type='checkbox' class='checkbox' /></th>
       <th class='admin_table_short'>ID</th>
       <th><?php echo $this->translate("Title") ?></th>
-      <th><?php echo $this->translate("Owner") ?></th>
+      <th><?php echo $this->translate("Category") ?></th>
       <th><?php echo $this->translate("Views") ?></th>
       <th><?php echo $this->translate("Date") ?></th>
       <th><?php echo $this->translate("Options") ?></th>
@@ -74,7 +74,7 @@ if( $settings->getSetting('user.support.links', 0) == 1 ) {
         <td><input type='checkbox' class='checkbox' name='delete_<?php echo $item->classified_id;?>' value="<?php echo $item->classified_id; ?>" /></td>
         <td><?php echo $item->classified_id ?></td>
         <td><?php echo $item->getTitle() ?></td>
-        <td><?php echo $this->user($item->owner_id)->getTitle() ?></td>
+        <td><?php echo Engine_Api::_()->getItem('classified_category', $item->category_id)->getTitle() ?></td>
         <td><?php echo $this->locale()->toNumber($item->view_count) ?></td>
         <td><?php echo $this->locale()->toDateTime($item->creation_date) ?></td>
         <td>
