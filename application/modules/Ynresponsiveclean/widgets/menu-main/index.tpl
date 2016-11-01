@@ -72,7 +72,7 @@
 	<div class="collapse navbar-collapse navbar-ex8-collapse">
 		<ul class="nav navbar-nav navbar-left">
 			<li class="dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $this -> translate("Chủ Đề");?> 
+				<a href="<?php echo $this->url(array(), 'classified_general', true) ?>" class="dropdown-toggle"><?php echo $this -> translate("Chủ Đề");?> 
 					<span class="glyphicon glyphicon-chevron-down btn-xs"></span>
 				</a>
 				<ul class="dropdown-menu">
@@ -91,8 +91,8 @@
 					<?php endforeach;?>
 				</ul>
 			</li>
-			<li><?php echo $this->htmlLink(array('route' => 'default', 'module' => 'question'), $this->translate('Diễn Đàn'), $attribs) ?></li>
-			<li><?php echo $this->htmlLink('javascript:void(0);', $this->translate('Tư Vấn')) ?></li>
+			<li><?php echo $this->htmlLink(array('route' => 'default', 'module' => 'question'), $this->translate('Diễn Đàn')) ?></li>
+			<li><?php echo $this->htmlLink(array('route' => 'blog_general'), $this->translate('Tư Vấn')) ?></li>
 			<li><?php echo $this->htmlLink('javascript:void(0);', $this->translate('Tags')) ?></li>
 			<li><?php echo $this->htmlLink('javascript:void(0);', $this->translate('Đăng Câu Hỏi')) ?></li>
 		</ul>

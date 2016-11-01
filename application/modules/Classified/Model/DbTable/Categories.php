@@ -70,4 +70,11 @@ class Classified_Model_DbTable_Categories extends Engine_Db_Table
 		$select = $select->where('is_hot = 1');
 		return $this->fetchAll($select);
 	}
+	
+	public function getCaterogyByCode($code){
+		$select = $this->select();
+		//parent
+		$select = $select->where('code = ?', $code);
+		return $this->fetchRow($select);
+	}
 }

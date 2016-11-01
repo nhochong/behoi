@@ -54,6 +54,11 @@ if( $settings->getSetting('user.support.links', 0) == 1 ) {
 ?>		
 <br />
 <br />
+<?php echo $this->htmlLink(array('route' => 'admin_default', 'module' => 'classified', 'controller' => 'manage', 'action' => 'import'), $this->translate('Import Classified'), array(
+          'class' => 'buttonlink smoothbox', 'style' => 'background-image: url(' . $this->layout()->staticBaseUrl . 'application/modules/Core/externals/images/admin/new_category.png);')) ?>
+<br />
+<br />
+
 <?php if( count($this->paginator) ): ?>
 <form id='multidelete_form' method="post" action="<?php echo $this->url();?>" onSubmit="return multiDelete()">
 <table class='admin_table'>

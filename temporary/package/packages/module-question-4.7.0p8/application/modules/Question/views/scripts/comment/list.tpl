@@ -1,1 +1,0 @@
-<? echo $this->RenderSimpleWidget('question.answer-comment', $this->render_params) ?>

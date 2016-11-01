@@ -1,3 +1,0 @@
-UPDATE `engine4_activity_actiontypes` SET `body` = "{item:$subject} answered to {item:$owner}'s question:" WHERE `type` = 'answer_new';
-UPDATE `engine4_activity_actiontypes` SET `body` = '{item:$subject} has chosen the best answer to the question:' WHERE `type` = 'choose_best';
-UPDATE `engine4_activity_actiontypes` SET `body` = '{item:$subject} has asked a new question:' WHERE `type` = 'question_new';

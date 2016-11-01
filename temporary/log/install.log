@@ -852,3 +852,353 @@ Stack trace:
 #8 E:\xampp\htdocs\behoi\install\index.php(88): Zend_Application->run()
 #9 {main}
 
+2016-10-24T17:46:34+00:00 WARN (4): [2] stat(): stat failed for E:\xampp\htdocs\behoi\application\languages\en\forum.csv (E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php) [77]
+Error Code: 5737bd
+Stack trace:
+#0 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php(77): stat('E:\xampp\htdocs\behoi\applicatio...')
+#1 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\Abstract.php(224): Engine_Vfs_Adapter_System->stat('E:\xampp\htdocs\behoi\applicatio...')
+#2 E:\xampp\htdocs\behoi\install\controllers\ManageController.php(752): Engine_Vfs_Adapter_Abstract->info('application/languages/en/forum.c...')
+#3 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Action.php(516): ManageController->permsAction()
+#4 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('permsAction')
+#5 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#6 E:\xampp\htdocs\behoi\application\libraries\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#7 E:\xampp\htdocs\behoi\application\libraries\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#8 E:\xampp\htdocs\behoi\install\index.php(88): Zend_Application->run()
+#9 {main}
+
+2016-10-24T17:46:34+00:00 WARN (4): [2] stat(): stat failed for E:\xampp\htdocs\behoi\application\modules\Forum\Api\Core.php (E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php) [77]
+Error Code: 999d36
+Stack trace:
+#0 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php(77): stat('E:\xampp\htdocs\behoi\applicatio...')
+#1 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\Abstract.php(224): Engine_Vfs_Adapter_System->stat('E:\xampp\htdocs\behoi\applicatio...')
+#2 E:\xampp\htdocs\behoi\install\controllers\ManageController.php(752): Engine_Vfs_Adapter_Abstract->info('application/modules/Forum/Api/Co...')
+#3 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Action.php(516): ManageController->permsAction()
+#4 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('permsAction')
+#5 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#6 E:\xampp\htdocs\behoi\application\libraries\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#7 E:\xampp\htdocs\behoi\application\libraries\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#8 E:\xampp\htdocs\behoi\install\index.php(88): Zend_Application->run()
+#9 {main}
+
+2016-10-24T17:46:34+00:00 WARN (4): [2] stat(): stat failed for E:\xampp\htdocs\behoi\application\modules\Forum\Api (E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php) [77]
+Error Code: 08650a
+Stack trace:
+#0 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php(77): stat('E:\xampp\htdocs\behoi\applicatio...')
+#1 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\Abstract.php(224): Engine_Vfs_Adapter_System->stat('E:\xampp\htdocs\behoi\applicatio...')
+#2 E:\xampp\htdocs\behoi\install\controllers\ManageController.php(752): Engine_Vfs_Adapter_Abstract->info('application/modules/Forum/Api')
+#3 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Action.php(516): ManageController->permsAction()
+#4 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('permsAction')
+#5 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#6 E:\xampp\htdocs\behoi\application\libraries\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#7 E:\xampp\htdocs\behoi\application\libraries\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#8 E:\xampp\htdocs\behoi\install\index.php(88): Zend_Application->run()
+#9 {main}
+
+2016-10-24T17:46:34+00:00 WARN (4): [2] stat(): stat failed for E:\xampp\htdocs\behoi\application\modules\Forum (E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php) [77]
+Error Code: a71479
+Stack trace:
+#0 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php(77): stat('E:\xampp\htdocs\behoi\applicatio...')
+#1 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\Abstract.php(224): Engine_Vfs_Adapter_System->stat('E:\xampp\htdocs\behoi\applicatio...')
+#2 E:\xampp\htdocs\behoi\install\controllers\ManageController.php(752): Engine_Vfs_Adapter_Abstract->info('application/modules/Forum')
+#3 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Action.php(516): ManageController->permsAction()
+#4 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('permsAction')
+#5 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#6 E:\xampp\htdocs\behoi\application\libraries\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#7 E:\xampp\htdocs\behoi\application\libraries\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#8 E:\xampp\htdocs\behoi\install\index.php(88): Zend_Application->run()
+#9 {main}
+
+2016-10-24T17:46:34+00:00 WARN (4): [2] stat(): stat failed for E:\xampp\htdocs\behoi\application\packages\module-forum-4.8.11.json (E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php) [77]
+Error Code: ae19ed
+Stack trace:
+#0 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php(77): stat('E:\xampp\htdocs\behoi\applicatio...')
+#1 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\Abstract.php(224): Engine_Vfs_Adapter_System->stat('E:\xampp\htdocs\behoi\applicatio...')
+#2 E:\xampp\htdocs\behoi\install\controllers\ManageController.php(752): Engine_Vfs_Adapter_Abstract->info('application/packages/module-foru...')
+#3 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Action.php(516): ManageController->permsAction()
+#4 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('permsAction')
+#5 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#6 E:\xampp\htdocs\behoi\application\libraries\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#7 E:\xampp\htdocs\behoi\application\libraries\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#8 E:\xampp\htdocs\behoi\install\index.php(88): Zend_Application->run()
+#9 {main}
+
+2016-10-24T17:46:34+00:00 WARN (4): [2] stat(): stat failed for E:\xampp\htdocs\behoi\application\languages\en\ynforum.csv (E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php) [77]
+Error Code: ad318c
+Stack trace:
+#0 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php(77): stat('E:\xampp\htdocs\behoi\applicatio...')
+#1 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\Abstract.php(224): Engine_Vfs_Adapter_System->stat('E:\xampp\htdocs\behoi\applicatio...')
+#2 E:\xampp\htdocs\behoi\install\controllers\ManageController.php(752): Engine_Vfs_Adapter_Abstract->info('application/languages/en/ynforum...')
+#3 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Action.php(516): ManageController->permsAction()
+#4 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('permsAction')
+#5 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#6 E:\xampp\htdocs\behoi\application\libraries\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#7 E:\xampp\htdocs\behoi\application\libraries\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#8 E:\xampp\htdocs\behoi\install\index.php(88): Zend_Application->run()
+#9 {main}
+
+2016-10-24T17:46:34+00:00 WARN (4): [2] stat(): stat failed for E:\xampp\htdocs\behoi\application\modules\Ynforum\Api\Core.php (E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php) [77]
+Error Code: b3fd2a
+Stack trace:
+#0 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php(77): stat('E:\xampp\htdocs\behoi\applicatio...')
+#1 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\Abstract.php(224): Engine_Vfs_Adapter_System->stat('E:\xampp\htdocs\behoi\applicatio...')
+#2 E:\xampp\htdocs\behoi\install\controllers\ManageController.php(752): Engine_Vfs_Adapter_Abstract->info('application/modules/Ynforum/Api/...')
+#3 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Action.php(516): ManageController->permsAction()
+#4 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('permsAction')
+#5 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#6 E:\xampp\htdocs\behoi\application\libraries\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#7 E:\xampp\htdocs\behoi\application\libraries\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#8 E:\xampp\htdocs\behoi\install\index.php(88): Zend_Application->run()
+#9 {main}
+
+2016-10-24T17:46:34+00:00 WARN (4): [2] stat(): stat failed for E:\xampp\htdocs\behoi\application\modules\Ynforum\Api (E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php) [77]
+Error Code: e08e3f
+Stack trace:
+#0 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php(77): stat('E:\xampp\htdocs\behoi\applicatio...')
+#1 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\Abstract.php(224): Engine_Vfs_Adapter_System->stat('E:\xampp\htdocs\behoi\applicatio...')
+#2 E:\xampp\htdocs\behoi\install\controllers\ManageController.php(752): Engine_Vfs_Adapter_Abstract->info('application/modules/Ynforum/Api')
+#3 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Action.php(516): ManageController->permsAction()
+#4 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('permsAction')
+#5 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#6 E:\xampp\htdocs\behoi\application\libraries\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#7 E:\xampp\htdocs\behoi\application\libraries\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#8 E:\xampp\htdocs\behoi\install\index.php(88): Zend_Application->run()
+#9 {main}
+
+2016-10-24T17:46:34+00:00 WARN (4): [2] stat(): stat failed for E:\xampp\htdocs\behoi\application\modules\Ynforum (E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php) [77]
+Error Code: 72db7e
+Stack trace:
+#0 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php(77): stat('E:\xampp\htdocs\behoi\applicatio...')
+#1 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\Abstract.php(224): Engine_Vfs_Adapter_System->stat('E:\xampp\htdocs\behoi\applicatio...')
+#2 E:\xampp\htdocs\behoi\install\controllers\ManageController.php(752): Engine_Vfs_Adapter_Abstract->info('application/modules/Ynforum')
+#3 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Action.php(516): ManageController->permsAction()
+#4 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('permsAction')
+#5 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#6 E:\xampp\htdocs\behoi\application\libraries\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#7 E:\xampp\htdocs\behoi\application\libraries\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#8 E:\xampp\htdocs\behoi\install\index.php(88): Zend_Application->run()
+#9 {main}
+
+2016-10-24T17:46:34+00:00 WARN (4): [2] stat(): stat failed for E:\xampp\htdocs\behoi\application\packages\module-ynforum-4.04p6.json (E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php) [77]
+Error Code: 1f5959
+Stack trace:
+#0 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php(77): stat('E:\xampp\htdocs\behoi\applicatio...')
+#1 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\Abstract.php(224): Engine_Vfs_Adapter_System->stat('E:\xampp\htdocs\behoi\applicatio...')
+#2 E:\xampp\htdocs\behoi\install\controllers\ManageController.php(752): Engine_Vfs_Adapter_Abstract->info('application/packages/module-ynfo...')
+#3 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Action.php(516): ManageController->permsAction()
+#4 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('permsAction')
+#5 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#6 E:\xampp\htdocs\behoi\application\libraries\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#7 E:\xampp\htdocs\behoi\application\libraries\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#8 E:\xampp\htdocs\behoi\install\index.php(88): Zend_Application->run()
+#9 {main}
+
+2016-10-24T17:55:45+00:00 WARN (4): [2] stat(): stat failed for E:\xampp\htdocs\behoi\application\modules\Ynforum\externals\.DS_Store (E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php) [77]
+Error Code: c2f481
+Stack trace:
+#0 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php(77): stat('E:\xampp\htdocs\behoi\applicatio...')
+#1 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\Abstract.php(224): Engine_Vfs_Adapter_System->stat('E:\xampp\htdocs\behoi\applicatio...')
+#2 E:\xampp\htdocs\behoi\install\controllers\ManageController.php(752): Engine_Vfs_Adapter_Abstract->info('application/modules/Ynforum/exte...')
+#3 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Action.php(516): ManageController->permsAction()
+#4 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('permsAction')
+#5 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#6 E:\xampp\htdocs\behoi\application\libraries\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#7 E:\xampp\htdocs\behoi\application\libraries\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#8 E:\xampp\htdocs\behoi\install\index.php(88): Zend_Application->run()
+#9 {main}
+
+2016-10-24T17:55:45+00:00 WARN (4): [2] stat(): stat failed for E:\xampp\htdocs\behoi\application\modules\Ynforum\externals\scripts\jquery-1.10.2.min.js (E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php) [77]
+Error Code: 6363b1
+Stack trace:
+#0 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php(77): stat('E:\xampp\htdocs\behoi\applicatio...')
+#1 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\Abstract.php(224): Engine_Vfs_Adapter_System->stat('E:\xampp\htdocs\behoi\applicatio...')
+#2 E:\xampp\htdocs\behoi\install\controllers\ManageController.php(752): Engine_Vfs_Adapter_Abstract->info('application/modules/Ynforum/exte...')
+#3 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Action.php(516): ManageController->permsAction()
+#4 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('permsAction')
+#5 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#6 E:\xampp\htdocs\behoi\application\libraries\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#7 E:\xampp\htdocs\behoi\application\libraries\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#8 E:\xampp\htdocs\behoi\install\index.php(88): Zend_Application->run()
+#9 {main}
+
+2016-10-24T17:55:45+00:00 WARN (4): [2] stat(): stat failed for E:\xampp\htdocs\behoi\application\modules\Ynforum\externals\scripts\jquery-ui-1.11.4.min.js (E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php) [77]
+Error Code: 58cb6b
+Stack trace:
+#0 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php(77): stat('E:\xampp\htdocs\behoi\applicatio...')
+#1 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\Abstract.php(224): Engine_Vfs_Adapter_System->stat('E:\xampp\htdocs\behoi\applicatio...')
+#2 E:\xampp\htdocs\behoi\install\controllers\ManageController.php(752): Engine_Vfs_Adapter_Abstract->info('application/modules/Ynforum/exte...')
+#3 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Action.php(516): ManageController->permsAction()
+#4 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('permsAction')
+#5 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#6 E:\xampp\htdocs\behoi\application\libraries\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#7 E:\xampp\htdocs\behoi\application\libraries\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#8 E:\xampp\htdocs\behoi\install\index.php(88): Zend_Application->run()
+#9 {main}
+
+2016-10-24T17:55:45+00:00 WARN (4): [2] stat(): stat failed for E:\xampp\htdocs\behoi\application\modules\Ynforum\settings\my-upgrade-4.04p6-4.05.sql (E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php) [77]
+Error Code: 5ad03b
+Stack trace:
+#0 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php(77): stat('E:\xampp\htdocs\behoi\applicatio...')
+#1 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\Abstract.php(224): Engine_Vfs_Adapter_System->stat('E:\xampp\htdocs\behoi\applicatio...')
+#2 E:\xampp\htdocs\behoi\install\controllers\ManageController.php(752): Engine_Vfs_Adapter_Abstract->info('application/modules/Ynforum/sett...')
+#3 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Action.php(516): ManageController->permsAction()
+#4 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('permsAction')
+#5 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#6 E:\xampp\htdocs\behoi\application\libraries\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#7 E:\xampp\htdocs\behoi\application\libraries\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#8 E:\xampp\htdocs\behoi\install\index.php(88): Zend_Application->run()
+#9 {main}
+
+2016-10-24T17:55:45+00:00 WARN (4): [2] stat(): stat failed for E:\xampp\htdocs\behoi\application\packages\module-ynforum-4.05.json (E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php) [77]
+Error Code: 635330
+Stack trace:
+#0 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php(77): stat('E:\xampp\htdocs\behoi\applicatio...')
+#1 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\Abstract.php(224): Engine_Vfs_Adapter_System->stat('E:\xampp\htdocs\behoi\applicatio...')
+#2 E:\xampp\htdocs\behoi\install\controllers\ManageController.php(752): Engine_Vfs_Adapter_Abstract->info('application/packages/module-ynfo...')
+#3 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Action.php(516): ManageController->permsAction()
+#4 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('permsAction')
+#5 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#6 E:\xampp\htdocs\behoi\application\libraries\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#7 E:\xampp\htdocs\behoi\application\libraries\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#8 E:\xampp\htdocs\behoi\install\index.php(88): Zend_Application->run()
+#9 {main}
+
+2016-10-24T18:13:09+00:00 WARN (4): [2] stat(): stat failed for E:\xampp\htdocs\behoi\application\languages\en\blog.csv (E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php) [77]
+Error Code: f39f01
+Stack trace:
+#0 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php(77): stat('E:\xampp\htdocs\behoi\applicatio...')
+#1 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\Abstract.php(224): Engine_Vfs_Adapter_System->stat('E:\xampp\htdocs\behoi\applicatio...')
+#2 E:\xampp\htdocs\behoi\install\controllers\ManageController.php(752): Engine_Vfs_Adapter_Abstract->info('application/languages/en/blog.cs...')
+#3 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Action.php(516): ManageController->permsAction()
+#4 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('permsAction')
+#5 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#6 E:\xampp\htdocs\behoi\application\libraries\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#7 E:\xampp\htdocs\behoi\application\libraries\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#8 E:\xampp\htdocs\behoi\install\index.php(88): Zend_Application->run()
+#9 {main}
+
+2016-10-24T18:13:09+00:00 WARN (4): [2] stat(): stat failed for E:\xampp\htdocs\behoi\application\modules\Blog\Api\Core.php (E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php) [77]
+Error Code: d4009f
+Stack trace:
+#0 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php(77): stat('E:\xampp\htdocs\behoi\applicatio...')
+#1 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\Abstract.php(224): Engine_Vfs_Adapter_System->stat('E:\xampp\htdocs\behoi\applicatio...')
+#2 E:\xampp\htdocs\behoi\install\controllers\ManageController.php(752): Engine_Vfs_Adapter_Abstract->info('application/modules/Blog/Api/Cor...')
+#3 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Action.php(516): ManageController->permsAction()
+#4 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('permsAction')
+#5 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#6 E:\xampp\htdocs\behoi\application\libraries\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#7 E:\xampp\htdocs\behoi\application\libraries\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#8 E:\xampp\htdocs\behoi\install\index.php(88): Zend_Application->run()
+#9 {main}
+
+2016-10-24T18:13:09+00:00 WARN (4): [2] stat(): stat failed for E:\xampp\htdocs\behoi\application\modules\Blog\Api (E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php) [77]
+Error Code: d7d0da
+Stack trace:
+#0 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php(77): stat('E:\xampp\htdocs\behoi\applicatio...')
+#1 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\Abstract.php(224): Engine_Vfs_Adapter_System->stat('E:\xampp\htdocs\behoi\applicatio...')
+#2 E:\xampp\htdocs\behoi\install\controllers\ManageController.php(752): Engine_Vfs_Adapter_Abstract->info('application/modules/Blog/Api')
+#3 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Action.php(516): ManageController->permsAction()
+#4 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('permsAction')
+#5 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#6 E:\xampp\htdocs\behoi\application\libraries\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#7 E:\xampp\htdocs\behoi\application\libraries\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#8 E:\xampp\htdocs\behoi\install\index.php(88): Zend_Application->run()
+#9 {main}
+
+2016-10-24T18:13:09+00:00 WARN (4): [2] stat(): stat failed for E:\xampp\htdocs\behoi\application\modules\Blog (E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php) [77]
+Error Code: bf7feb
+Stack trace:
+#0 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php(77): stat('E:\xampp\htdocs\behoi\applicatio...')
+#1 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\Abstract.php(224): Engine_Vfs_Adapter_System->stat('E:\xampp\htdocs\behoi\applicatio...')
+#2 E:\xampp\htdocs\behoi\install\controllers\ManageController.php(752): Engine_Vfs_Adapter_Abstract->info('application/modules/Blog')
+#3 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Action.php(516): ManageController->permsAction()
+#4 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('permsAction')
+#5 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#6 E:\xampp\htdocs\behoi\application\libraries\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#7 E:\xampp\htdocs\behoi\application\libraries\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#8 E:\xampp\htdocs\behoi\install\index.php(88): Zend_Application->run()
+#9 {main}
+
+2016-10-24T18:13:09+00:00 WARN (4): [2] stat(): stat failed for E:\xampp\htdocs\behoi\application\packages\module-blog-4.8.12.json (E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php) [77]
+Error Code: ba1029
+Stack trace:
+#0 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php(77): stat('E:\xampp\htdocs\behoi\applicatio...')
+#1 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\Abstract.php(224): Engine_Vfs_Adapter_System->stat('E:\xampp\htdocs\behoi\applicatio...')
+#2 E:\xampp\htdocs\behoi\install\controllers\ManageController.php(752): Engine_Vfs_Adapter_Abstract->info('application/packages/module-blog...')
+#3 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Action.php(516): ManageController->permsAction()
+#4 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('permsAction')
+#5 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#6 E:\xampp\htdocs\behoi\application\libraries\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#7 E:\xampp\htdocs\behoi\application\libraries\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#8 E:\xampp\htdocs\behoi\install\index.php(88): Zend_Application->run()
+#9 {main}
+
+2016-10-24T18:15:07+00:00 WARN (4): [2] stat(): stat failed for E:\xampp\htdocs\behoi\application\languages\en\ynblog.csv (E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php) [77]
+Error Code: 3391b7
+Stack trace:
+#0 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php(77): stat('E:\xampp\htdocs\behoi\applicatio...')
+#1 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\Abstract.php(224): Engine_Vfs_Adapter_System->stat('E:\xampp\htdocs\behoi\applicatio...')
+#2 E:\xampp\htdocs\behoi\install\controllers\ManageController.php(752): Engine_Vfs_Adapter_Abstract->info('application/languages/en/ynblog....')
+#3 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Action.php(516): ManageController->permsAction()
+#4 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('permsAction')
+#5 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#6 E:\xampp\htdocs\behoi\application\libraries\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#7 E:\xampp\htdocs\behoi\application\libraries\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#8 E:\xampp\htdocs\behoi\install\index.php(88): Zend_Application->run()
+#9 {main}
+
+2016-10-24T18:15:07+00:00 WARN (4): [2] stat(): stat failed for E:\xampp\htdocs\behoi\application\modules\Ynblog\Api\Addthis.php (E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php) [77]
+Error Code: 3d81ba
+Stack trace:
+#0 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php(77): stat('E:\xampp\htdocs\behoi\applicatio...')
+#1 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\Abstract.php(224): Engine_Vfs_Adapter_System->stat('E:\xampp\htdocs\behoi\applicatio...')
+#2 E:\xampp\htdocs\behoi\install\controllers\ManageController.php(752): Engine_Vfs_Adapter_Abstract->info('application/modules/Ynblog/Api/A...')
+#3 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Action.php(516): ManageController->permsAction()
+#4 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('permsAction')
+#5 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#6 E:\xampp\htdocs\behoi\application\libraries\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#7 E:\xampp\htdocs\behoi\application\libraries\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#8 E:\xampp\htdocs\behoi\install\index.php(88): Zend_Application->run()
+#9 {main}
+
+2016-10-24T18:15:07+00:00 WARN (4): [2] stat(): stat failed for E:\xampp\htdocs\behoi\application\modules\Ynblog\Api (E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php) [77]
+Error Code: 85afc8
+Stack trace:
+#0 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php(77): stat('E:\xampp\htdocs\behoi\applicatio...')
+#1 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\Abstract.php(224): Engine_Vfs_Adapter_System->stat('E:\xampp\htdocs\behoi\applicatio...')
+#2 E:\xampp\htdocs\behoi\install\controllers\ManageController.php(752): Engine_Vfs_Adapter_Abstract->info('application/modules/Ynblog/Api')
+#3 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Action.php(516): ManageController->permsAction()
+#4 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('permsAction')
+#5 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#6 E:\xampp\htdocs\behoi\application\libraries\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#7 E:\xampp\htdocs\behoi\application\libraries\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#8 E:\xampp\htdocs\behoi\install\index.php(88): Zend_Application->run()
+#9 {main}
+
+2016-10-24T18:15:07+00:00 WARN (4): [2] stat(): stat failed for E:\xampp\htdocs\behoi\application\modules\Ynblog (E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php) [77]
+Error Code: 61c96c
+Stack trace:
+#0 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php(77): stat('E:\xampp\htdocs\behoi\applicatio...')
+#1 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\Abstract.php(224): Engine_Vfs_Adapter_System->stat('E:\xampp\htdocs\behoi\applicatio...')
+#2 E:\xampp\htdocs\behoi\install\controllers\ManageController.php(752): Engine_Vfs_Adapter_Abstract->info('application/modules/Ynblog')
+#3 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Action.php(516): ManageController->permsAction()
+#4 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('permsAction')
+#5 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#6 E:\xampp\htdocs\behoi\application\libraries\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#7 E:\xampp\htdocs\behoi\application\libraries\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#8 E:\xampp\htdocs\behoi\install\index.php(88): Zend_Application->run()
+#9 {main}
+
+2016-10-24T18:15:07+00:00 WARN (4): [2] stat(): stat failed for E:\xampp\htdocs\behoi\application\packages\module-ynblog-4.10.json (E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php) [77]
+Error Code: 173aca
+Stack trace:
+#0 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\System.php(77): stat('E:\xampp\htdocs\behoi\applicatio...')
+#1 E:\xampp\htdocs\behoi\application\libraries\Engine\Vfs\Adapter\Abstract.php(224): Engine_Vfs_Adapter_System->stat('E:\xampp\htdocs\behoi\applicatio...')
+#2 E:\xampp\htdocs\behoi\install\controllers\ManageController.php(752): Engine_Vfs_Adapter_Abstract->info('application/packages/module-ynbl...')
+#3 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Action.php(516): ManageController->permsAction()
+#4 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('permsAction')
+#5 E:\xampp\htdocs\behoi\application\libraries\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Zend_Controller_Request_Http, Zend_Controller_Response_Http)
+#6 E:\xampp\htdocs\behoi\application\libraries\Zend\Application\Bootstrap\Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#7 E:\xampp\htdocs\behoi\application\libraries\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#8 E:\xampp\htdocs\behoi\install\index.php(88): Zend_Application->run()
+#9 {main}
+

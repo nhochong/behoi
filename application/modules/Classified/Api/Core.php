@@ -16,6 +16,8 @@
  * @copyright  Copyright 2006-2010 Webligo Developmentsedsafd
  * @license    http://www.socialengine.com/license/
  */
+require_once APPLICATION_PATH . '/application/libraries/Libs/PHPExcel.php';
+require_once APPLICATION_PATH . '/application/libraries/Libs/PHPExcel/IOFactory.php';
  class Classified_Api_Core extends Core_Api_Abstract
  {
 
@@ -96,5 +98,100 @@
 			}
 		}
 		return substr ( $string, 0, $pos ) . "...";
+	}
+	
+	public function uploadImportFile() {
+        // Get the library file
+        include_once 'VcardReader.php';
+        include_once 'vcard.php';
+        $settings = Engine_Api::_()->getApi('settings', 'core');
+        $contacts = array();
+        $friends = array();
+
+        $is_error = 0;
+        $message = '';
+        $ci_contacts = array();
+
+        // list the permitted file type
+        $permit_file_types = array(
+            'text/xls' => 'xls',
+            'text/xlsx' => 'xlsx',
+        );
+
+        for (;;) {
+            $uploaded_file = $_FILES ['FileUpload'] ['tmp_name'];
+            $filetype = $_FILES ['FileUpload'] ["type"];
+            $filename = $_FILES ['FileUpload'] ['name'];
+            // Check file types
+            $v = strpos($filename, '.ldif');
+
+            if (!array_key_exists($filetype, $permit_file_types) && $v < 0) {
+                $is_error = 1;
+                $message = "Invalid file type!";
+                break;
+            }
+            if (is_uploaded_file($uploaded_file)) {
+                $fh = fopen($uploaded_file, "r");
+                if ($this->EndsWith(mb_strtolower($filename), 'xls')) {
+					$data = "";
+					$objReader = PHPExcel_IOFactory::createReader('Excel5');
+					$objReader->setLoadAllSheets();
+					$objPHPExcel = $objReader->load($uploaded_file);
+					$loadedSheetNames = $objPHPExcel->getSheetNames();
+
+					if(count($loadedSheetNames)) {
+						foreach ($loadedSheetNames as $sheetIndex => $loadedSheetName) {
+							$sheetData = $objPHPExcel->getSheet($sheetIndex)->toArray(null, true, true, true);
+							return $sheetData;
+						}
+					}
+                } elseif ($this->EndsWith(mb_strtolower($filename), 'xlsx')) { // thunderbirth
+                    $data = "";
+                    $objReader = PHPExcel_IOFactory::createReader('Excel2007');
+                    $objReader->setLoadAllSheets();
+                    $objPHPExcel = $objReader->load($uploaded_file);
+                    $loadedSheetNames = $objPHPExcel->getSheetNames();
+                    if (count($loadedSheetNames)) {
+                        foreach ($loadedSheetNames as $sheetIndex => $loadedSheetName) {
+                            $sheetData = $objPHPExcel->getSheet($sheetIndex)->toArray(null, true, true, true);
+                            return $sheetData;
+                        }
+                    }
+                    $file_contents = $data;
+                } else{
+                    // not support format
+                    $is_error = 1;
+                    $message = "Unknown file type!";
+                }
+            }
+
+            if (empty($contacts)) {
+                $is_error = 1;
+                $message = "There is no contact in your address book";
+                break;
+            }
+
+            foreach ($contacts as $value) {
+                $ci_contacts ["{$value["email"]}"] = $value ["name"];
+            }
+            break;
+        }
+
+        $returns ['contacts'] = $ci_contacts;
+        $returns ['is_error'] = $is_error;
+        $returns ['error_message'] = $message;
+
+        return $returns;
+    }
+	
+    function endsWith($FullStr, $EndStr) {
+		// Get the length of the end string
+		$StrLen = strlen ( $EndStr );
+
+		// Look at the end of FullStr for the substring the size of EndStr
+
+		$FullStrEnd = substr ( $FullStr, strlen ( $FullStr ) - $StrLen );
+		// If it matches, it does end with EndStr
+		return $FullStrEnd == $EndStr;
 	}
  }

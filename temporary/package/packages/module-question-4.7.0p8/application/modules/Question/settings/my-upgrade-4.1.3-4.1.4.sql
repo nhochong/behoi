@@ -1,2 +1,0 @@
-insert IGNORE into `engine4_core_menuitems`(`name`,`module`,`label`,`plugin`,`params`,`menu`,`submenu`,`custom`,`order`)
-                                    values ('mobi_browse_question','question','Questions & Answers','','{\"route\":\"default\",\"module\":\"question\"}','mobi_browse','',0,999);
