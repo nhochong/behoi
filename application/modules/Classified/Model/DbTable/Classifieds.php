@@ -90,10 +90,25 @@ class Classified_Model_DbTable_Classifieds extends Engine_Db_Table
           ->where($tagMapsTableName . '.resource_type = ?', 'classified')
           ->where($tagMapsTableName . '.tag_id = ?', $params['tag']);
     }
-
-    if( !empty($params['category']) ) {
-      $select->where($tableName . '.category_id = ?', $params['category']);
-    }
+	
+	if(!empty($params['category_id']) || !empty($params['category'])){
+		$category_id = $params['category_id'] ? $params['category_id'] : $params['category'];
+		if(!empty($params['recursive'])){
+			$category = Engine_Api::_()->getItem('classified_category', $category_id);
+			$categoryIds = array();
+			if($category){
+				$categoryIds[] = $category->getIdentity();
+				if($category->parent_id == 0){
+					$subCategoryIds = $category->getSubCategoryIds();
+					$categoryIds = array_merge($categoryIds, $subCategoryIds);
+				}
+				$select = $select->where('category_id IN (?)', $categoryIds);
+			}
+		}else{
+			$select->where($tableName . '.category_id = ?', $category_id);
+		}
+	}
+	//parent
 
     if( isset($params['closed']) && $params['closed'] != "" ) {
       $select->where($tableName . '.closed = ?', $params['closed']);
@@ -118,25 +133,21 @@ class Classified_Model_DbTable_Classifieds extends Engine_Db_Table
     if( !empty($params['has_photo']) ) {
       $select->where($tableName . ".photo_id > ?", 0);
     }
+	
+	if( isset($params['enabled']) ) {
+      $select->where($tableName . ".enabled = ?", $params['enabled']);
+    }
     
     return $select;
   }
 	
 	public function getClassifieds($params = array()){
-		$select = $this->select();
-		if(!empty($params['category_id'])){
-			$category = Engine_Api::_()->getItem('classified_category', $params['category_id']);
-			$categoryIds = array();
-			if($category){
-				$categoryIds[] = $category->getIdentity();
-				if($category->parent_id == 0){
-					$subCategoryIds = $category->getSubCategoryIds();
-					$categoryIds = array_merge($categoryIds, $subCategoryIds);
-				}
-				$select = $select->where('category_id IN (?)', $categoryIds);
-			}
+		$select = $this->getClassifiedsSelect($params);
+		
+		if( !empty($params['limit']) ) {
+		  $select->limit($params['limit']);
 		}
-		//parent
+		
 		return $this->fetchAll($select);
 	}
 }

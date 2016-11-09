@@ -122,22 +122,6 @@ class Classified_Form_Search extends Fields_Form_Search
       ),
     ));
 
-    $this->addElement('Select', 'closed', array(
-      'label' => 'Status',
-      'multiOptions' => array(
-        '' => 'All Listings',
-        '0' => 'Only Open Listings',
-        '1' => 'Only Closed Listings',
-      ),
-      'onchange' => 'searchClassifieds();',
-      'order' => $i--,
-      'decorators' => array(
-        'ViewHelper',
-        array('Label', array('tag' => 'span')),
-        array('HtmlTag', array('tag' => 'li'))
-      ),
-    ));
-
     $this->addElement('Select', 'category', array(
       'label' => 'Category',
       'multiOptions' => array(
@@ -148,19 +132,6 @@ class Classified_Form_Search extends Fields_Form_Search
       'decorators' => array(
         'ViewHelper',
         array('Label', array('tag' => 'span')),
-        array('HtmlTag', array('tag' => 'li'))
-      ),
-    ));
-
-
-
-    
-    $this->addElement('Checkbox', 'has_photo', array(
-      'label' => 'Only Classifieds With Photos',
-      'order' => 10000000,
-      'decorators' => array(
-        'ViewHelper',
-        array('Label', array('placement' => 'APPEND', 'tag' => 'label')),
         array('HtmlTag', array('tag' => 'li'))
       ),
     ));

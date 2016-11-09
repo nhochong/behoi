@@ -15,7 +15,7 @@
   <?php foreach( $this->paginator as $item ): ?>
     <li>
       <div class="classifieds_browse_photo">
-        <?php echo $this->htmlLink($item->getHref(), $this->itemPhoto($item, 'thumb.normal'), array('class' => 'thumb')) ?>
+        <?php echo $this->htmlLink($item->getHref(), $this->itemPhoto($item, 'thumb.icon'), array('class' => 'thumb')) ?>
       </div>
       <div class="classifieds_browse_info">
         <div class="classifieds_browse_info_title">
@@ -24,13 +24,7 @@
             <img src='<?php echo $this->layout()->staticBaseUrl ?>application/modules/Classified/externals/images/close.png' />
           <?php endif ?>
         </div>
-		<?php echo $this->partial('_category_breadcrumbs.tpl', 'classified', array('category' => $item->getCategory()));?>
-      </div>
-      <div class="classifieds_browse_info_blurb">
-        <?php $fieldStructure = Engine_Api::_()->fields()->getFieldsStructurePartial($item)?>
-        <?php echo $this->fieldValueLoop($item, $fieldStructure) ?>
-        <?php echo Engine_Api::_()->classified()->subPhrase($this->string()->stripTags($item->body), 500) ?>
-      </div>
+	  </div>
     </li>
   <?php endforeach; ?>
 </ul>

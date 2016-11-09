@@ -10,7 +10,37 @@
  * @author     Jung
  */
 ?>
-
+<script type="text/javascript">
+	function classified_enable(classified_id){
+            var element = document.getElementById('classified_content_'+classified_id);
+            var checkbox = document.getElementById('classified_'+classified_id);
+            var status = 0;
+            
+            if(checkbox.checked==true) status = 1;
+            else status = 0;
+            var content = element.innerHTML;
+            element.innerHTML= "<img style='margin-top:4px;' src='application/modules/Classified/externals/images/loading.gif'></img>";
+            new Request.JSON({
+              'format': 'json',
+              'url' : '<?php echo $this->url(array('module' => 'classified', 'controller' => 'manage', 'action' => 'enable'), 'admin_default') ?>',
+              'data' : {
+                'format' : 'json',
+                'classified_id' : classified_id,
+                'status' : status
+              },
+              'onRequest' : function(){
+              },
+              'onSuccess' : function(responseJSON, responseText)
+              {
+                element.innerHTML = content;
+                checkbox = document.getElementById('classified_'+classified_id);
+                if( status == 1) checkbox.checked=true;
+                else checkbox.checked=false;
+              }
+            }).send();
+            
+    }
+</script>
 <script type="text/javascript">
 
 function multiDelete()
@@ -68,8 +98,8 @@ if( $settings->getSetting('user.support.links', 0) == 1 ) {
       <th class='admin_table_short'>ID</th>
       <th><?php echo $this->translate("Title") ?></th>
       <th><?php echo $this->translate("Category") ?></th>
+      <th><?php echo $this->translate("Enabled") ?></th>
       <th><?php echo $this->translate("Views") ?></th>
-      <th><?php echo $this->translate("Date") ?></th>
       <th><?php echo $this->translate("Options") ?></th>
     </tr>
   </thead>
@@ -80,12 +110,25 @@ if( $settings->getSetting('user.support.links', 0) == 1 ) {
         <td><?php echo $item->classified_id ?></td>
         <td><?php echo $item->getTitle() ?></td>
         <td><?php echo Engine_Api::_()->getItem('classified_category', $item->category_id)->getTitle() ?></td>
+		<td>
+			<div id='classified_content_<?php echo $item->getIdentity(); ?>' style ="text-align: center;" >
+				<?php if($item->enabled): ?>
+					<input type="checkbox" id='classified_<?php echo $item->getIdentity(); ?>' onclick="classified_enable(<?php echo $item->getIdentity(); ?>,this)" checked />
+				<?php else: ?>
+				   <input type="checkbox" id='classified_<?php echo $item->getIdentity(); ?>' onclick="classified_enable(<?php echo $item->getIdentity(); ?>,this)" />
+				<?php endif; ?>
+			</div>
+		</td>
         <td><?php echo $this->locale()->toNumber($item->view_count) ?></td>
-        <td><?php echo $this->locale()->toDateTime($item->creation_date) ?></td>
         <td>
           <a href="<?php echo $this->url(array('user_id' => $item->owner_id, 'classified_id' => $item->classified_id), 'classified_entry_view') ?>">
             <?php echo $this->translate("view") ?>
           </a>
+		  |
+          <?php echo $this->htmlLink(
+            array('route' => 'classified_specific', 'action' => 'edit', 'classified_id' => $item->classified_id),
+            $this->translate("edit"),
+            array('target' => '_blank')) ?>
           |
           <?php echo $this->htmlLink(
             array('route' => 'default', 'module' => 'classified', 'controller' => 'admin-manage', 'action' => 'delete', 'id' => $item->classified_id),

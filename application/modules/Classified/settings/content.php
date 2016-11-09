@@ -174,4 +174,37 @@ return array(
         'type' => 'widget',
         'name' => 'classified.menu-category'
     ),
+	array(
+        'title' => 'Related Classifieds',
+        'description' => 'Displays a list of other listings that has the same category to the current Classified.',
+        'category' => 'Classifieds',
+        'type' => 'widget',
+        'name' => 'classified.related-classifieds',
+		'isPaginated' => true,
+        'defaultParams' => array(
+            'title' => 'Related Classifieds',
+        ),
+		'requirements' => array(
+            'subject' => 'classified',
+        ),
+        'adminForm' => array(
+            'elements' => array(
+                array(
+                    'Text',
+                    'title',
+                    array(
+                        'label' => 'Title'
+                    )
+                ),
+                array(
+                    'Integer',
+                    'num_of_classifieds',
+                    array(
+                        'label' => 'Number of classifieds will show?',
+                        'value' => 5,
+                    ),
+                ),
+            ),
+        ),
+    ),
 ) ?>

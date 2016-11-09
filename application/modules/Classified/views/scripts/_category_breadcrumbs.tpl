@@ -25,7 +25,7 @@
 <div class="classifieds_browse_info_category icon">
 	<?php echo $this->htmlLink($parent->getHref(), $this -> translate($parent->getTitle()))?>
 	<?php if(!$isParent):?>
-		>>
+		&rarr;
 		<?php echo $this->htmlLink($child->getHref(), $this -> translate($child->getTitle()))?>
 	<?php endif?>
 </div>

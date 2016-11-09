@@ -30,10 +30,9 @@ endif; ?>
       <img src='<?php echo $this->layout()->staticBaseUrl ?>application/modules/Classified/externals/images/close.png' alt="<?php echo $this->translate('Closed') ?>" />
     <?php endif;?>
   </h2>
+  <?php echo $this->partial('_category_breadcrumbs.tpl', 'classified', array('category' => $this->classified->getCategory()));?>
   <ul class='classifieds_entrylist'>
     <li>
-	  <?php echo $this->partial('_category_breadcrumbs.tpl', 'classified', array('category' => $this->classified->getCategory()));?>
-	  <?php echo $this->partial('_addthis_buttons.tpl', 'classified');?>
       <?php if ($this->classified->closed == 1):?>
         <div class="tip">
           <span>
@@ -73,86 +72,41 @@ endif; ?>
             <?php endif; ?>
           <?php endforeach;?>
         </ul>
+		<ul class="qa-further-info">
+			<li>
+				<h2 class="" id="classfied_detail_exploration">Exploration</h2>
+				<div class="text" style="display: none;" id="classfied_detail_exploration_content">
+					<?php echo nl2br($this->classified->more_info)?>
+				</div>
+			</li>
+			<li>
+				<h2 class="" id="classfied_detail_source">Sources &amp; links</h2>
+				<div class="text" style="display: none;" id="classfied_detail_source_content">
+					<ul class="source-and-links">
+						<li>
+							<a class="source-link" href="http://www.madsci.org/posts/archives/2000-09/967827843.Zo.r.html" target="_blank">Onken, Michael. “Re: Do animals have navels?” 1 Sep. 2000. MadSci Network. 24 Oct. 2010</a>
+						</li>
+						<li>
+							<a class="source-link" href="http://www.abc.net.au/science/k2/lint/facts.htm#animals" target="_blank">“Animals and bellybuttons.” Bellybutton Facts ”“ Bellybutton Lint. Australian Broadcasting Corporation: Science. 24 Oct. 2010</a>
+						</li>
+						<li>
+							<a class="source-link" href="http://findarticles.com/p/articles/mi_m0EPG/is_n5_v29/ai_16885936/" target="_blank">"Scarlett, do animals have bellybuttons? - question and answer". Ranger Rick. FindArticles.com. 24 Oct, 2010. </a>
+						</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
     </li>
   </ul>
-
-  <div class="classified_stats">
-    <?php if( $this->canUpload ): ?>
-      <?php echo $this->htmlLink(array(
-        'route' => 'classified_extended',
-        'controller' => 'photo',
-        'action' => 'upload',
-        'classified_id' => $this->classified->getIdentity(),
-        ), $this->translate('Add Photos')) ?>
-      &nbsp;|&nbsp;
-    <?php endif; ?>
-    <?php if( $this->canEdit ): ?>
-      <?php echo $this->htmlLink(array(
-        'route' => 'classified_specific',
-        'action' => 'edit',
-        'classified_id' => $this->classified->getIdentity(),
-        //'format' => 'smoothbox'
-      ), $this->translate("Edit")/*, array('class' => 'smoothbox')*/); ?>
-      &nbsp;|&nbsp;
-    <?php endif; ?>
-    <?php if( $this->canDelete ): ?>
-      <?php echo $this->htmlLink(array(
-        'route' => 'classified_specific',
-        'action' => 'delete',
-        'classified_id' => $this->classified->getIdentity(),
-        'format' => 'smoothbox'
-      ), $this->translate("Delete"), array('class' => 'smoothbox')); ?>
-      &nbsp;|&nbsp;
-    <?php endif; ?>
-    <?php if( $this->canEdit ): ?>
-      <?php if( !$this->classified->closed ): ?>
-        <?php echo $this->htmlLink(array(
-          'route' => 'classified_specific',
-          'action' => 'close',
-          'classified_id' => $this->classified->getIdentity(),
-          'closed' => 1,
-          'QUERY' => array(
-            'return_url' => $this->url(),
-          ),
-        ), $this->translate('Close')) ?>
-      <?php else: ?>
-        <?php echo $this->htmlLink(array(
-          'route' => 'classified_specific',
-          'action' => 'close',
-          'classified_id' => $this->classified->getIdentity(),
-          'closed' => 0,
-          'QUERY' => array(
-            'return_url' => $this->url(),
-          ),
-        ), $this->translate('Open')) ?>
-      <?php endif; ?>
-      &nbsp;|&nbsp;
-    <?php endif; ?>
-    <?php if( $this->viewer()->getIdentity() ): ?>
-      <?php echo $this->htmlLink(array(
-        'module' => 'activity',
-        'controller' => 'index',
-        'action' => 'share',
-        'route' => 'default',
-        'type' => 'classified',
-        'id' => $this->classified->getIdentity(),
-        'format' => 'smoothbox'
-      ), $this->translate("Share"), array('class' => 'smoothbox')); ?>
-      &nbsp;|&nbsp;
-      <?php echo $this->htmlLink(array(
-        'module' => 'core',
-        'controller' => 'report',
-        'action' => 'create',
-        'route' => 'default',
-        'subject' => $this->classified->getGuid(),
-        'format' => 'smoothbox'
-      ), $this->translate("Report"), array('class' => 'smoothbox')); ?>
-      &nbsp;|&nbsp;
-    <?php endif ?>
-    <?php echo $this->translate(array('%s view', '%s views', $this->classified->view_count), $this->locale()->toNumber($this->classified->view_count)) ?>
-  </div>
 </div>
 
 <script type="text/javascript">
   $$('.core_main_classified').getParent().addClass('active');
+  $('classfied_detail_exploration').addEvent('click', function(){
+	  $('classfied_detail_exploration_content').toggle();
+  });
+  $('classfied_detail_source').addEvent('click', function(){
+	  $('classfied_detail_source_content').toggle();
+  });
+  
 </script>

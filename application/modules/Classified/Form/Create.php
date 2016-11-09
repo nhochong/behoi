@@ -61,7 +61,7 @@ class Classified_Form_Create extends Engine_Form
     }
 
     // Element: description
-    $allowed_html = Engine_Api::_()->authorization()->getPermission($user_level, 'blog', 'auth_html');
+	$upload_url = Zend_Controller_Front::getInstance()->getRouter()->assemble(array('action' => 'upload-photo'), 'classified_general', true);
     $this->addElement('TinyMce', 'body', array(
       'label' => 'Description',
       'disableLoadDefaultDecorators' => true,
@@ -71,12 +71,86 @@ class Classified_Form_Create extends Engine_Form
         'ViewHelper'
       ),
       'editorOptions' => array(
-        'html' => (bool) $allowed_html,
+          'bbcode' => 1,
+          'html'   => 1,
+          'theme_advanced_buttons1' => array(
+              'undo', 'redo', 'cleanup', 'removeformat', 'pasteword',  '|',
+              'media', 'image','link', 'unlink', 'fullscreen', 'preview', 'emotions', 'code',
+          ),
+          'theme_advanced_buttons2' => array(
+              'fontselect', 'fontsizeselect', 'bold', 'italic', 'underline',
+              'strikethrough', 'forecolor', 'backcolor', '|', 'justifyleft',
+              'justifycenter', 'justifyright', 'justifyfull', '|', 'outdent', 'indent', 'blockquote',
+          ),
+          'plugins' => array(
+		   		'table', 'fullscreen', 'media', 'preview', 'paste',
+		   		'code', 'image', 'textcolor', 'jbimages','link', 'emoticons'
+		  ),
+   		  
+	      'toolbar1' => array(
+		      'undo', '|', 'redo', '|', 'removeformat', '|', 'pastetext', '|', 'code', '|', 'media', '|', 
+		      'image', '|', 'link', '|', 'jbimages', '|', 'fullscreen', '|', 'preview',  'emoticons'
+		    ),         
+          'upload_url' => $upload_url,
       ),
-      'filters' => array(
-        new Engine_Filter_Censor(),
-        new Engine_Filter_Html(array('AllowedTags'=>$allowed_html))),
-    ));  
+    ));
+
+	// Element: Exploration
+    $allowed_html = Engine_Api::_()->authorization()->getPermission($user_level, 'blog', 'auth_html');
+    $this->addElement('TinyMce', 'more_info', array(
+      'label' => 'Exploration',
+      'editorOptions' => array(
+          'bbcode' => 1,
+          'html'   => 1,
+          'theme_advanced_buttons1' => array(
+              'undo', 'redo', 'cleanup', 'removeformat', 'pasteword',  '|',
+              'media', 'image','link', 'unlink', 'fullscreen', 'preview', 'emotions', 'code',
+          ),
+          'theme_advanced_buttons2' => array(
+              'fontselect', 'fontsizeselect', 'bold', 'italic', 'underline',
+              'strikethrough', 'forecolor', 'backcolor', '|', 'justifyleft',
+              'justifycenter', 'justifyright', 'justifyfull', '|', 'outdent', 'indent', 'blockquote',
+          ),
+          'plugins' => array(
+		   		'table', 'fullscreen', 'media', 'preview', 'paste',
+		   		'code', 'image', 'textcolor', 'jbimages','link', 'emoticons'
+		  ),
+   		  
+	      'toolbar1' => array(
+		      'undo', '|', 'redo', '|', 'removeformat', '|', 'pastetext', '|', 'code', '|', 'media', '|', 
+		      'image', '|', 'link', '|', 'jbimages', '|', 'fullscreen', '|', 'preview',  'emoticons'
+		    ),         
+          'upload_url' => $upload_url,
+      ),
+    ));	
+	
+	// Element: Source
+    $this->addElement('TinyMce', 'sources', array(
+      'label' => 'Sources & Links',
+	  'editorOptions' => array(
+          'bbcode' => 1,
+          'html'   => 1,
+          'theme_advanced_buttons1' => array(
+              'undo', 'redo', 'cleanup', 'removeformat', 'pasteword',  '|',
+              'media', 'image','link', 'unlink', 'fullscreen', 'preview', 'emotions', 'code',
+          ),
+          'theme_advanced_buttons2' => array(
+              'fontselect', 'fontsizeselect', 'bold', 'italic', 'underline',
+              'strikethrough', 'forecolor', 'backcolor', '|', 'justifyleft',
+              'justifycenter', 'justifyright', 'justifyfull', '|', 'outdent', 'indent', 'blockquote',
+          ),
+          'plugins' => array(
+		   		'table', 'fullscreen', 'media', 'preview', 'paste',
+		   		'code', 'image', 'textcolor', 'jbimages','link', 'emoticons'
+		  ),
+   		  
+	      'toolbar1' => array(
+		      'undo', '|', 'redo', '|', 'removeformat', '|', 'pastetext', '|', 'code', '|', 'media', '|', 
+		      'image', '|', 'link', '|', 'jbimages', '|', 'fullscreen', '|', 'preview',  'emoticons'
+		    ),         
+          'upload_url' => $upload_url,
+      ),
+    ));	
     
     // Element: upload photo
     $allowed_upload = Engine_Api::_()->authorization()->getPermission($user_level, 'classified', 'photo');

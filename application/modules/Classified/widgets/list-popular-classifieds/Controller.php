@@ -36,7 +36,7 @@ class Classified_Widget_ListPopularClassifiedsController extends Engine_Content_
     $this->view->paginator = $paginator = Zend_Paginator::factory($select);
 
     // Set item count per page and current page number
-    $paginator->setItemCountPerPage($this->_getParam('itemCountPerPage', 5));
+    $paginator->setItemCountPerPage($this->_getParam('itemCountPerPage', 10));
     $paginator->setCurrentPageNumber($this->_getParam('page', 1));
 
     // Hide if nothing to show

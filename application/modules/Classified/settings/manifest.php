@@ -87,7 +87,7 @@ return array(
         'action' => 'index',
       ),
       'reqs' => array(
-        'action' => '(index|manage|create|browse)',
+        'action' => '(index|manage|create|browse|upload-photo)',
       ),
     ),
     'classified_specific' => array(

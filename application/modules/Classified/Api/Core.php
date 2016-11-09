@@ -16,8 +16,6 @@
  * @copyright  Copyright 2006-2010 Webligo Developmentsedsafd
  * @license    http://www.socialengine.com/license/
  */
-require_once APPLICATION_PATH . '/application/libraries/Libs/PHPExcel.php';
-require_once APPLICATION_PATH . '/application/libraries/Libs/PHPExcel/IOFactory.php';
  class Classified_Api_Core extends Core_Api_Abstract
  {
 
@@ -100,7 +98,9 @@ require_once APPLICATION_PATH . '/application/libraries/Libs/PHPExcel/IOFactory.
 		return substr ( $string, 0, $pos ) . "...";
 	}
 	
-	public function uploadImportFile() {
+	public function uploadImportFile() {		
+		require_once APPLICATION_PATH . '/application/libraries/Libs/PHPExcel.php';
+		require_once APPLICATION_PATH . '/application/libraries/Libs/PHPExcel/IOFactory.php';
         // Get the library file
         include_once 'VcardReader.php';
         include_once 'vcard.php';
@@ -193,5 +193,87 @@ require_once APPLICATION_PATH . '/application/libraries/Libs/PHPExcel/IOFactory.
 		$FullStrEnd = substr ( $FullStr, strlen ( $FullStr ) - $StrLen );
 		// If it matches, it does end with EndStr
 		return $FullStrEnd == $EndStr;
+	}
+	
+	public function setPhoto($parent, $photo) {
+		if ($photo instanceof Zend_Form_Element_File) {
+			$file = $photo -> getFileName();
+			$fileName = $file;
+		} else if ($photo instanceof Storage_Model_File) {
+			$file = $photo -> temporary();
+			$fileName = $photo -> name;
+		} else if ($photo instanceof Core_Model_Item_Abstract && !empty($photo -> file_id)) {
+			$tmpRow = Engine_Api::_() -> getItem('storage_file', $photo -> file_id);
+			$file = $tmpRow -> temporary();
+			$fileName = $tmpRow -> name;
+		} else if (is_array($photo) && !empty($photo['tmp_name'])) {
+			$file = $photo['tmp_name'];
+			$fileName = $photo['name'];
+		} else if (is_string($photo) && file_exists($photo)) {
+			$file = $photo;
+			$fileName = $photo;
+		} else {
+			throw new User_Model_Exception('invalid argument passed to setPhoto');
+		}
+
+		if (!$fileName) {
+			$fileName = $file;
+		}
+
+		$name = basename($file);
+		$extension = ltrim(strrchr($fileName, '.'), '.');
+		$base = rtrim(substr(basename($fileName), 0, strrpos(basename($fileName), '.')), '.');
+		$path = APPLICATION_PATH . DIRECTORY_SEPARATOR . 'temporary';
+		$params = array('parent_type' => $parent -> getType(), 
+						'parent_id' => $parent -> getIdentity(), 
+						'user_id' => $parent -> owner_id, 
+						'name' => $fileName, );
+
+		// Save
+		$filesTable = Engine_Api::_() -> getDbtable('files', 'storage');
+
+		// Resize image (main)
+		$mainPath = $path . DIRECTORY_SEPARATOR . $base . '_m.' . $extension;
+		$image = Engine_Image::factory();
+		$image -> open($file) -> resize(720, 720) -> write($mainPath) -> destroy();
+
+		// Resize image (normal)
+		$normalPath = $path . DIRECTORY_SEPARATOR . $base . '_in.' . $extension;
+		$image = Engine_Image::factory();
+		$image -> open($file) -> resize(140, 160) -> write($normalPath) -> destroy();
+
+		// Store
+		try {
+			$iMain = $filesTable -> createFile($mainPath, $params);
+			$iIconNormal = $filesTable -> createFile($normalPath, $params);
+
+			$iMain -> bridge($iIconNormal, 'thumb.normal');
+		} catch( Exception $e ) {
+			// Remove temp files
+			@unlink($mainPath);
+			@unlink($normalPath);
+			// Throw
+			if ($e -> getCode() == Storage_Model_DbTable_Files::SPACE_LIMIT_REACHED_CODE) {
+				throw new Album_Model_Exception($e -> getMessage(), $e -> getCode());
+			} else {
+				throw $e;
+			}
+		}
+
+		// Remove temp files
+		@unlink($mainPath);
+		@unlink($normalPath);
+
+		// Update row
+		$parent -> modified_date = date('Y-m-d H:i:s');
+		$parent -> file_id = $iMain -> file_id;
+		$parent -> save();
+
+		// Delete the old file?
+		if (!empty($tmpRow)) {
+			$tmpRow -> delete();
+		}
+
+		return $parent;
 	}
  }

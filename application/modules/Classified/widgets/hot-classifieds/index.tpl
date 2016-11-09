@@ -1,7 +1,7 @@
 <div class="classified_entrylist">
 	<?php
 		foreach ($this->hotCategories as $category):
-			$classifieds = Engine_Api::_()->getDbTable('classifieds', 'classified')->getClassifieds(array('category_id' => $category->getIdentity()));
+			$classifieds = Engine_Api::_()->getDbTable('classifieds', 'classified')->getClassifieds(array('category_id' => $category->getIdentity(), 'enabled' => true, 'limit' => 5, 'recursive' => true, 'orderby' => 'view_count'));
 	?>
 		<div class="col-md-6">
 			<div class='classified_category_browse_photo'>
@@ -18,7 +18,7 @@
 				</div>
 				<ul class="classified_list">
 					<?php foreach ($classifieds as $classified):?>
-						<li><?php echo $this->htmlLink($classified->getHref(), Engine_Api::_()->classified()->subPhrase($classified->getTitle(), 30) ) ?></li>
+						<li><?php echo $this->htmlLink($classified->getHref(), Engine_Api::_()->classified()->subPhrase($classified->getTitle(), 40), array('title' => $classified->getTitle()) ) ?></li>
 					<?php endforeach; ?>
 				</ul>
 			</div>

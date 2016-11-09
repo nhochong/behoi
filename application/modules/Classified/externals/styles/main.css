@@ -126,7 +126,7 @@ html[dir="rtl"] ul.classifieds_browse .classifieds_browse_photo
 }
 ul.classifieds_browse .classifieds_browse_photo img
 {
-  width: 100px;
+  /* width: 100px; */
 }
 ul.classifieds_browse .classifieds_browse_options
 {

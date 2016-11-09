@@ -132,11 +132,6 @@ class Classified_IndexController extends Core_Controller_Action_Standard
       Engine_Api::_()->core()->setSubject($classified);
     }
 
-    // Check auth
-    if( !$this->_helper->requireAuth()->setAuthParams($classified, null, 'view')->isValid() ) {
-      return;
-    }
-
     $this->view->canEdit = $canEdit = $classified->authorization()->isAllowed(null, 'edit');
     $this->view->canDelete = $canDelete = $classified->authorization()->isAllowed(null, 'delete');
     $this->view->canUpload = $canUpload = $classified->authorization()->isAllowed(null, 'photo');
@@ -706,5 +701,74 @@ class Classified_IndexController extends Core_Controller_Action_Standard
         // Setting to use landing page.
         $this->_helper->content->setNoRender()->setEnabled();
     }
+	
+	public function uploadPhotoAction() {
+		$viewer = Engine_Api::_() -> user() -> getViewer();
+		$this -> _helper -> layout -> disableLayout();
+
+		if (!Engine_Api::_() -> authorization() -> isAllowed('album', $viewer, 'create')) {
+			return false;
+		}
+
+		if (!$this -> _helper -> requireAuth() -> setAuthParams('album', null, 'create') -> isValid())
+			return;
+
+		if (!$this -> _helper -> requireUser() -> checkRequire()) {
+			$this -> view -> status = false;
+			$this -> view -> error = Zend_Registry::get('Zend_Translate') -> _('Max file size limit exceeded (probably).');
+			return;
+		}
+
+		if (!$this -> getRequest() -> isPost()) {
+			$this -> view -> status = false;
+			$this -> view -> error = Zend_Registry::get('Zend_Translate') -> _('Invalid request method');
+			return;
+		}
+		if (!isset($_FILES['userfile']) || !is_uploaded_file($_FILES['userfile']['tmp_name'])) {
+			$this -> view -> status = false;
+			$this -> view -> error = Zend_Registry::get('Zend_Translate') -> _('Invalid Upload');
+			return;
+		}
+		
+		$albumPhoto_Table = Engine_Api::_() -> getDbtable('photos', 'album');
+		$album_Table = Engine_Api::_() -> getDbtable('albums', 'album');
+
+		$db = $albumPhoto_Table -> getAdapter();
+		$db -> beginTransaction();
+
+		try {
+			$viewer = Engine_Api::_() -> user() -> getViewer();
+
+			$photo = $albumPhoto_Table -> createRow();
+			$photo -> setFromArray(array('owner_type' => 'user', 'owner_id' => $viewer -> getIdentity()));
+			$photo -> save();
+			Engine_Api::_() -> classified() -> setPhoto($photo, $_FILES['userfile']);
+
+			$this -> view -> status = true;
+			$this -> view -> name = $_FILES['userfile']['name'];
+			$this -> view -> photo_id = $photo -> photo_id;
+			$this -> view -> photo_url = $photo -> getPhotoUrl();
+			$photo -> save();
+
+			$auth = Engine_Api::_() -> authorization() -> context;
+			$auth -> setAllowed($photo, 'everyone', 'view', true);
+			$auth -> setAllowed($photo, 'everyone', 'comment', true);
+			$db -> commit();
+
+		} catch( Album_Model_Exception $e ) {
+			$db -> rollBack();
+			$this -> view -> status = false;
+			$this -> view -> error = $this -> view -> translate($e -> getMessage());
+			throw $e;
+			return;
+
+		} catch( Exception $e ) {
+			$db -> rollBack();
+			$this -> view -> status = false;
+			$this -> view -> error = Zend_Registry::get('Zend_Translate') -> _('An error occurred.');
+			throw $e;
+			return;
+		}
+	}
 }
 

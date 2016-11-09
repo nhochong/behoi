@@ -128,4 +128,19 @@ class Classified_AdminManageController extends Core_Controller_Action_Admin
 			));
         }
     }
+	
+	/*----- Set Enable Function -----*/
+	public function enableAction()
+	{
+		//Get params
+		$classified_id = $this->_getParam('classified_id'); 
+		$status = $this->_getParam('status');
+		$classified = Engine_Api::_()->getItem('classified', $classified_id);
+		
+		//Set featured/unfeatured
+		if($classified){
+			$classified->enabled =  $status;
+			$classified->save();
+		}
+	}
 }
