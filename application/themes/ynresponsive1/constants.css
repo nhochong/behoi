@@ -19,6 +19,7 @@ DEFAULT STYLES FOR THIS THEME
   */
   theme_main_color_scheme: #72c02c;
   theme_main_color_scheme_hover: #000;
+  theme_container_background: #fff;
 
   /*
   PAGE WIDTHS & BACKGROUND COLOR
@@ -33,7 +34,8 @@ DEFAULT STYLES FOR THIS THEME
   theme_content_width: 1100px;
   theme_content_columns_left_width: 220px;
   theme_content_columns_right_width: 220px;
-  theme_body_background_color: #eee;
+  theme_body_background_color: #fff;
+  theme_page_background_color: #eee;
 
   /* 
   HEADER AND FOOTER COLORS
@@ -177,6 +179,15 @@ DEFAULT STYLES FOR THIS THEME
   theme_pulldown_contents_background_color: #fff;
   theme_pulldown_contents_list_background_color_hover: #f2f2f2;
   theme_pulldown_contents_list_background_color_active: #eeeeee;
+  
+   /*
+	RESPONSIVECLEAN LAYOUT
+	*/
+	theme_layout_max_width: 1170px;
+	theme_blkcont_border_color: #e8e8e8;
+	theme_blkcont_padding: 15px;
+	theme_danger_color: #f84545;
+	theme_danger_color_hover: #cc0000;
 }
 
 
@@ -288,9 +299,51 @@ classes throughout the stylesheet.
   user-select: none;
 }
 
+/*fontwaesome*/
+=fontawesome {
+	display: inline-block;
+	font-family:FontAwesome;
+	font-size:inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
 
 
+/*bdradius*/
+=bdradius($radius=12px){
+	border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+}
 
-
-
-
+/* Mixins */
+=blkcont{
+	padding:$theme_blkcont_padding;
+	background: $theme_container_background;
+	margin-bottom:15px;
+	border:1px solid $theme_blkcont_border_color;
+	overflow: hidden;
+}
+=blkcont_clear{
+	padding: 0;
+	border:none 0;
+	margin-bottom: 0;
+	background-color: transparent;
+	border-radius:0;
+}
+=buttonlink{
+	background-color:$theme_link_color;
+	background-image:none;
+	color:#fff;
+	font-weight: bold;
+	text-align:center;
+	text-transform:uppercase;
+	padding:6px 8px;
+	display:inline-block;
+	+hovereffect;
+	&:hover{
+		background-color:$theme_link_color_hover;
+		color:#fff;
+	}
+}

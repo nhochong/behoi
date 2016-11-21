@@ -228,5 +228,8 @@ class Ynblog_Model_Blog extends Core_Model_Item_Abstract {
 		return $this;
 	}
 
+	public function getCategory(){
+		return Engine_Api::_()->getItem('blog_category', $this->category_id);
+	}
 }
 ?>

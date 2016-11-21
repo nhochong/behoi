@@ -31,6 +31,7 @@ class Classified_Widget_ListPopularClassifiedsController extends Engine_Content_
     // Get paginator
     $table = Engine_Api::_()->getItemTable('classified');
     $select = $table->select()
+	  ->where('enabled = ?', 1)
       ->where('search = ?', 1)
       ->order($popularCol . ' DESC');
     $this->view->paginator = $paginator = Zend_Paginator::factory($select);

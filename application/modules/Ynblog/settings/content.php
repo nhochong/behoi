@@ -374,6 +374,18 @@ return array(
       'title' => 'Featured Blogs',
     ),
   ),
+  
+  //Featured Blogs Widget - Landing Page
+  array(
+    'title' => 'YN - Advanced Blog - Featured Blogs Landing Page',
+    'description' => 'Displays featured blogs on Landing Page.',
+    'category' => 'Advanced Blogs',
+    'type' => 'widget',
+    'name' => 'ynblog.featured-blogs-landing',
+      'defaultParams' => array(
+      'title' => 'Blogs',
+    ),
+  ),
 
   //Blog Categories Widget
   array(

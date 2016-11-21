@@ -367,7 +367,11 @@ foreach( $this->navigation->getPages() as $item ) $item->setOrder(--$count);
 			addNotificationScript();
 		</script>
 	<?php endif; ?>
-		
+	<?php if(!$this->viewer()->getIdentity()):?>
+		<li class="ynadvmenu_notification" >
+			<a href="javascript:void(0)" class="menu_get_subscribe"><span><?php echo $this->translate('Đăng ký bản tin');?></span></a>
+		</li>
+	<?php endif;?>
 	<?php foreach( $this->navigation as $item ):
 		if($item -> name == 'core_mini_auth' || $item -> name == 'core_mini_signup'):?>
 		<?php if( $item -> name == 'core_mini_auth' ) : ?>
@@ -378,9 +382,9 @@ foreach( $this->navigation->getPages() as $item ) $item->setOrder(--$count);
 		<li class="">
 			<a 
 			<?php if( $item -> name == 'core_mini_auth' && !empty($this->advmenusystemEnableLoginLightbox) && (empty($this->isUserLoginPage) && empty($this->isUserSignupPage)) ) : ?>
-				onclick="advancedMenuUserLoginOrSignUp('<?php echo $tempFunctionName ?>', '<?php echo $this->isUserLoginPage ?>', '<?php echo $this->isUserSignupPage ?>'); return false;"
+				onclick="advancedMenuUserLoginOrSignUp('<?php echo $tempFunctionName ?>', '<?php echo $this->isUserLoginPage ?>', '<?php echo $this->isUserSignupPage ?>'); return false;" class="menu_user_login"
 			<?php elseif( $item -> name == 'core_mini_signup' && !empty($this->advmenusystemEnableSignupLightbox) && (empty($this->isUserSignupPage) && empty($this->isUserLoginPage))): ?>  
-				onclick="advancedMenuUserLoginOrSignUp('<?php echo $tempFunctionName ?>', '<?php echo $this->isUserLoginPage ?>', '<?php echo $this->isUserSignupPage ?>'); return false;" 
+				onclick="advancedMenuUserLoginOrSignUp('<?php echo $tempFunctionName ?>', '<?php echo $this->isUserLoginPage ?>', '<?php echo $this->isUserSignupPage ?>'); return false;" class="menu_user_signup"
 			<?php endif;?>
 			href="<?php echo $item->getHref() ?>">          
 			<span><?php echo $this->translate($item->getLabel()) ?></span>

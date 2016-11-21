@@ -331,6 +331,5 @@ class Ynblog_Api_Core extends Core_Api_Abstract {
 		}
 		return $album;
 	}
-
 }
 ?>

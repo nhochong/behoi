@@ -50,5 +50,9 @@ class Ynblog_Model_Category extends Core_Model_Item_Abstract
 
     return false;
   }
+  
+	public function getTitle(){
+		return $this->category_name;
+	}
 }
 ?>

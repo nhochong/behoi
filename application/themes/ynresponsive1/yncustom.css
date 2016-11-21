@@ -1,3 +1,4 @@
+@include "constants.css";
 /*** update chat ***/
 #im_container {
     z-index: 9;
@@ -1042,6 +1043,101 @@ iframe.wysihtml5-sandbox {
 
 [data-wysihtml5-dialog-action="cancel"] {
   background: #999;
+}
+
+/***** STRUCTURE LAYOUT *****/
+	body[class^="ynresponsive1"] {
+		background-color:$theme_page_background_color;
+		font-family:'Open Sans', sans-serif !important;
+		font-size: $theme_font_size;
+		position: relative;
+		min-height: 100%;
+	}
+	#global_wrapper{
+		padding:15px 0 40px;
+		min-height:400px;
+		&:after{
+			display:block;
+			content:"";
+			clear:both;
+		}
+	}
+
+/***** HEADER *****/
+
+/***** COMMONS *****/
+/* Global container's styles
+=============================== */
+.layout_left{margin-right:1.2em;padding:0;background:none;}
+.layout_right{margin-left:1.2em;padding:0;background:none;}
+.layout_main > .layout_middle > .generic_layout_container,
+.layout_right > .generic_layout_container,
+.layout_left > .generic_layout_container,
+#global_content > .global_form > div,
+.layout_main .layout_middle .generic_layout_container[class*="layout_ynmember"],
+#global_page_ynblog-index-manage .layout_core_content .layout_middle,
+#global_page_ynblog-index-manage .layout_core_content .layout_right,
+.layout_advalbum_photos_listing,
+.layout_activity_feed,
+#global_page_album-album-editphotos .layout_middle,
+.notifications_layout,
+#global_page_advalbum-photo-view #lightbox,
+.layout_ynmember_featured_members,
+.advgroup_list .layout_middle,
+body[id^="global_page_advgroup"] div.settings,
+#global_page_ynblog-export-index .headline + div,
+.contestcreate_midle,
+.yncontest_browse_filters > div,
+.yncontest_form_upload > div,
+.layout_ynmusic_featured_albums,
+#global_page_ynwiki-help-index .layout_middle,
+#global_page_groupbuy-help-detail .layout_middle,
+#global_page_ynidea-help-index .layout_middle,
+ #global_page_ynforum-forum-view ul.forum_boxarea.icon_legend,
+.advgroup_list .layout_right,
+body[id^="global_page_groupbuy-index-manage"] .layout_right,
+body[id^="global_page_groupbuy-index-manage"] .layout_middle,
+#global_page_ynbanmem-index-view-email .admin_table_form{
+	+blkcont;
+}
+.layout_page_video_index_browse .layout_main .layout_middle,
+.layout_page_video_index_manage .layout_main .layout_middle,
+#global_page_user-auth-login #user_form_login > div,
+#global_page_core-error-requireuser #user_form_login > div,
+
+.layout_middle .layout_messages_menu,
+.layout_page_ynauction_index_become .layout_middle .generic_layout_container.layout_core_content,
+.layout_page_user_profile_index .layout_middle,
+.layout_user_profile_info > ul,
+#global_page_ynblog-index-manage .layout_core_content,
+.layout_main > .layout_middle > div[class$="profile_status"],
+.layout_middle,#browsemembers_results,
+.layout_page_user_profile_index .layout_left,
+.layout_user_list_signups > ul,
+.layout_user_list_popular > ul,
+.layout_core_statistics > ul,
+.layout_group_profile_info > ul,
+.layout_user_list_online div.ybo_headline + div,
+.layout_page_blog_index_manage .layout_main .layout_middle,
+.layout_page_classified_index_view,
+.layout_page_classified_index_manage .layout_main .layout_middle,
+.layout_page_classified_index_index .layout_main .layout_middle,
+.layout_page_forum_index_index .layout_middle,
+#global_page_forum-forum-view .layout_middle,
+.layout_page_music_index_browse .layout_main .layout_middle,
+.ideas_frame,
+.layout_left div[class^="layout_ultimatenews"] > ul,
+.layout_right div[class^="layout_ultimatenews"] > ul,
+body[id*="page_poll"] .layout_main .layout_middle
+{+blkcont_clear;}
+
+.layout_left .generic_layout_container,
+.layout_right .generic_layout_container{
+	& > ul{
+		margin-bottom:0 !important;
+		border:0;
+		padding:0;
+	}
 }
 
 /* Custom Work */

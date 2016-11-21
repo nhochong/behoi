@@ -1,43 +1,39 @@
 <div class="photo-footer-menu">
 	<div class="container clearfix">
 	    <div class="cus-footer pull-left">
-	        <span class="custom-copyright">
-	        	&copy; <?php echo $this->translate('%s Clean Template', date('Y')) ?>
-	        </span>
+	        <div class="title"><?php echo $this->translate('Kết nối với behoi.com') ?></div>
+			<div class="content">
+				<ul>
+					<li><a href="javascript:void(0)"><img src="<?php echo $this->baseUrl() . '/application/themes/ynresponsive1/images/social/facebook.png'?>" /></a></li>
+					<li><a href="javascript:void(0)"><img src="<?php echo $this->baseUrl() . '/application/themes/ynresponsive1/images/social/twitter.png'?>" /></a></li>
+					<li><a href="javascript:void(0)"><img src="<?php echo $this->baseUrl() . '/application/themes/ynresponsive1/images/social/google+.png'?>" /></a></li>
+					<li><a href="javascript:void(0)"><img src="<?php echo $this->baseUrl() . '/application/themes/ynresponsive1/images/social/you_tube.png'?>" /></a></li>
+				</ul>
+			</div>
+	    </div>
+		
+		<div class="cus-footer pull-left">
+			<div class="title"><?php echo $this->translate('Giới thiệu') ?></div>
+			<div class="content">
+				<div class="about-us"><a href="<?php echo $this->baseUrl() . '/about-us'?>"><?php echo $this->translate('Về chúng tôi');?></a></div>
+				<div class="contact-us"><a href="<?php echo $this->baseUrl() . '/help/contact'?>"><?php echo $this->translate('Liên hệ');?></a></div>
+			</div>
+	    </div>
+		
+		<div class="cus-footer pull-left">
+	        <div class="title"><?php echo $this->translate('Sản phầm') ?></div>
+			<div class="content">
+				<div class="forum-behoi"><a href="<?php echo $this->baseUrl()?>"><?php echo $this->translate('Diễn đàn');?></a></div>
+				<div class="deal-hot"><a href="javascript:void(0)"><?php echo $this->translate('Deal HOT');?></a></div>
+			</div>
 	    </div>
 
-	    <div class="menu-mini-footer pull-right">
-	      	<ul>
-	      	<?php foreach( $this->navigation as $item ):
-		      $attribs = array_diff_key(array_filter($item->toArray()), array_flip(array(
-		        'reset_params', 'route', 'module', 'controller', 'action', 'type',
-		        'visible', 'label', 'href'
-		      )));
-		      ?>
-		      <li><?php echo $this->htmlLink($item->getHref(), $this->translate($item->getLabel()), $attribs) ?></li>
-		    <?php endforeach; ?>      
-		
-		 	<?php if( 1 !== count($this->languageNameList) ): ?>
-		      <li>
-		        <form method="post" action="<?php echo $this->url(array('controller' => 'utility', 'action' => 'locale'), 'default', true) ?>" style="display:inline-block">
-		          <?php $selectedLanguage = $this->translate()->getLocale() ?>
-		          <?php echo $this->formSelect('language', $selectedLanguage, array('onchange' => '$(this).getParent(\'form\').submit();'), $this->languageNameList) ?>
-		          <?php echo $this->formHidden('return', $this->url()) ?>
-		        </form>
-		      </li>  
-	    	<?php endif; ?>
-	    	
-	    	<?php if( !empty($this->affiliateCode) ): ?>
-		        <li>
-		        <?php 
-		          echo $this->translate('Powered by %1$s', 
-		            $this->htmlLink('http://www.socialengine.com/?source=v4&aff=' . urlencode($this->affiliateCode), 
-		            $this->translate('SocialEngine Community Software'),
-		            array('target' => '_blank')))
-		        ?>
-		        </li>
-		    <?php endif; ?>	
-		 	</ul>
+	    <div class="menu-mini-footer pull-right subscribe_form">
+	      	<div class="title"><?php echo $this->translate('Đăng ký nhận bản tin khuyến mãi') ?></div>
+			<div class="content">
+				<input type="text" id="subscribe_input" placeholder="NHẬP EMAIL CỦA BẠN"/>
+				<button id="subscribe_button"><?php echo $this->translate('Đăng ký');?></button>
+			</div>
 	   	</div>
     </div>
 

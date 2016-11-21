@@ -31,6 +31,7 @@ class Classified_Widget_ListRecentClassifiedsController extends Engine_Content_W
     // Get paginator
     $table = Engine_Api::_()->getItemTable('classified');
     $select = $table->select()
+      ->where('enabled = ?', 1)
       ->where('search = ?', 1);
     if( $recentType == 'creation' ) {
       // using primary should be much faster, so use that for creation
