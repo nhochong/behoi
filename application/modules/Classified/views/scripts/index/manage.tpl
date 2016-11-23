@@ -96,17 +96,6 @@
             ), $this->translate('Edit Listing'), array(
               'class' => 'buttonlink icon_classified_edit'
             )) ?>
-            
-            <?php if( $this->allowed_upload ): ?>
-              <?php echo $this->htmlLink(array(
-                  'route' => 'classified_extended',
-                  'controller' => 'photo',
-                  'action' => 'upload',
-                  'classified_id' => $item->getIdentity(),
-                ), $this->translate('Add Photos'), array(
-                  'class' => 'buttonlink icon_classified_photo_new'
-              )) ?>
-            <?php endif; ?>
 
             <?php if( !$item->closed ): ?>
               <?php echo $this->htmlLink(array(

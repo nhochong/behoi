@@ -39,9 +39,7 @@ class Classified_Form_Edit extends Classified_Form_Create
     
     $this->setTitle('Edit Classified Listing')
          ->setDescription('Edit your listing below, then click \"Save Changes\" to save your listing.');
-    $this->addElement('Radio', 'cover', array(
-      'label' => 'Album Cover',
-    ));
+		 
     $this->execute->setLabel('Save Changes');
   }
 }

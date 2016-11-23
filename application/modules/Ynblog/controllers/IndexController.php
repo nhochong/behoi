@@ -503,9 +503,9 @@ class Ynblog_IndexController extends Core_Controller_Action_Standard {
 		if (!$this -> _helper -> requireSubject() -> isValid()) {
 			return;
 		}
-		if (!$this -> _helper -> requireAuth() -> setAuthParams($blog, $viewer, 'view') -> isValid()) {
-			return;
-		}
+		// if (!$this -> _helper -> requireAuth() -> setAuthParams($blog, $viewer, 'view') -> isValid()) {
+			// return;
+		// }
 		if (!$blog || !$blog -> getIdentity() || ($blog -> draft && !$blog -> isOwner($viewer)) || (!$blog -> is_approved && !$blog -> isOwner($viewer) && !$viewer -> isAdmin())) {
 			return $this -> _helper -> requireSubject -> forward();
 		}

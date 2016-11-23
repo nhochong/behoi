@@ -201,10 +201,23 @@ return array(
                     'num_of_classifieds',
                     array(
                         'label' => 'Number of classifieds will show?',
-                        'value' => 5,
+                        'value' => 3,
                     ),
                 ),
             ),
+        ),
+    ),
+	array(
+        'title' => 'Browse Categories Slide',
+        'description' => 'Displays Slide categories.',
+        'category' => 'Classifieds',
+        'type' => 'widget',
+        'name' => 'classified.browse-category-slide',
+        'defaultParams' => array(
+          'title' => 'Browse Categories',
+        ),
+        'requirements' => array(
+            'no-subject',
         ),
     ),
 ) ?>

@@ -649,7 +649,7 @@ ul.classifieds-category {
 	}
 }
 .layout_classified_browse_search #filter_form select {
-	max-width: 190px;
+	max-width: 160px;
 }
 #global_page_classified-index-create form#classifieds_create #title-element input {
 	max-width: 100%;

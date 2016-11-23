@@ -79,34 +79,18 @@ endif; ?>
 					<?php echo nl2br($this->classified->more_info)?>
 				</div>
 			</li>
-			<li>
-				<h2 class="" id="classfied_detail_source">Sources &amp; links</h2>
-				<div class="text" style="display: none;" id="classfied_detail_source_content">
-					<ul class="source-and-links">
-						<li>
-							<a class="source-link" href="http://www.madsci.org/posts/archives/2000-09/967827843.Zo.r.html" target="_blank">Onken, Michael. “Re: Do animals have navels?” 1 Sep. 2000. MadSci Network. 24 Oct. 2010</a>
-						</li>
-						<li>
-							<a class="source-link" href="http://www.abc.net.au/science/k2/lint/facts.htm#animals" target="_blank">“Animals and bellybuttons.” Bellybutton Facts ”“ Bellybutton Lint. Australian Broadcasting Corporation: Science. 24 Oct. 2010</a>
-						</li>
-						<li>
-							<a class="source-link" href="http://findarticles.com/p/articles/mi_m0EPG/is_n5_v29/ai_16885936/" target="_blank">"Scarlett, do animals have bellybuttons? - question and answer". Ranger Rick. FindArticles.com. 24 Oct, 2010. </a>
-						</li>
-					</ul>
-				</div>
-			</li>
 		</ul>
     </li>
   </ul>
 </div>
 
 <script type="text/javascript">
-  $$('.core_main_classified').getParent().addClass('active');
-  $('classfied_detail_exploration').addEvent('click', function(){
-	  $('classfied_detail_exploration_content').toggle();
-  });
-  $('classfied_detail_source').addEvent('click', function(){
-	  $('classfied_detail_source_content').toggle();
-  });
+  // $$('.core_main_classified').getParent().addClass('active');
+  // $('classfied_detail_exploration').addEvent('click', function(){
+	  // $('classfied_detail_exploration_content').toggle();
+  // });
+  // $('classfied_detail_source').addEvent('click', function(){
+	  // $('classfied_detail_source_content').toggle();
+  // });
   
 </script>

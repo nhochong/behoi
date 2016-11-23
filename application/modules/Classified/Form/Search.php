@@ -107,20 +107,20 @@ class Classified_Form_Search extends Fields_Form_Search
       ),
     ));
 
-    $this->addElement('Select', 'show', array(
-      'label' => 'Show',
-      'multiOptions' => array(
-        '1' => 'Everyone\'s Posts',
-        '2' => 'Only My Friends\' Posts',
-      ),
-      'onchange' => 'searchClassifieds();',
-      'order' => $i--,
-      'decorators' => array(
-        'ViewHelper',
-        array('Label', array('tag' => 'span')),
-        array('HtmlTag', array('tag' => 'li'))
-      ),
-    ));
+    // $this->addElement('Select', 'show', array(
+      // 'label' => 'Show',
+      // 'multiOptions' => array(
+        // '1' => 'Everyone\'s Posts',
+        // '2' => 'Only My Friends\' Posts',
+      // ),
+      // 'onchange' => 'searchClassifieds();',
+      // 'order' => $i--,
+      // 'decorators' => array(
+        // 'ViewHelper',
+        // array('Label', array('tag' => 'span')),
+        // array('HtmlTag', array('tag' => 'li'))
+      // ),
+    // ));
 
     $this->addElement('Select', 'category', array(
       'label' => 'Category',

@@ -541,4 +541,34 @@ return array(
     'type' => 'widget',
     'name' => 'ynblog.user-blog-archives',
    ),
+   
+   array(
+        'title' => 'YN - Advanced Blog - Random Blogs',
+        'description' => 'Displays a random list of blogs.',
+        'category' => 'Advanced Blogs',
+        'type' => 'widget',
+        'name' => 'ynblog.random-blogs',
+        'defaultParams' => array(
+            'title' => 'Blogs',
+        ),
+        'adminForm' => array(
+            'elements' => array(
+                array(
+                    'Text',
+                    'title',
+                    array(
+                        'label' => 'Title'
+                    )
+                ),
+                array(
+                    'Integer',
+                    'num_of_blogs',
+                    array(
+                        'label' => 'Number of blogs will show?',
+                        'value' => 3,
+                    ),
+                ),
+            ),
+        ),
+    ),
 )?>

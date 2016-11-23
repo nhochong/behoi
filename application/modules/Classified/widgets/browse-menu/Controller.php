@@ -27,5 +27,16 @@ class Classified_Widget_BrowseMenuController extends Engine_Content_Widget_Abstr
     if( count($this->view->navigation) == 1 ) {
       $this->view->navigation = null;
     }
+	
+	// Must be logged in
+    $viewer = Engine_Api::_()->user()->getViewer();
+    if( !$viewer || !$viewer->getIdentity() ) {
+      return $this->setNoRender(true);
+    }
+
+    // Must be able to create classifieds
+    if( !Engine_Api::_()->authorization()->isAllowed('classified', $viewer, 'create') ) {
+      return $this->setNoRender(true);
+    }
   }
 }

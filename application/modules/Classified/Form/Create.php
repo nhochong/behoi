@@ -60,6 +60,15 @@ class Classified_Form_Create extends Engine_Form
       ));
     }
 
+    // Element: upload photo
+    $allowed_upload = Engine_Api::_()->authorization()->getPermission($user_level, 'classified', 'photo');
+    if( $allowed_upload ) {
+      $this->addElement('File', 'photo', array(
+        'label' => 'Main Photo'
+      ));
+      $this->photo->addValidator('Extension', false, 'jpg,png,gif,jpeg');
+    }
+	
     // Element: description
 	$upload_url = Zend_Controller_Front::getInstance()->getRouter()->assemble(array('action' => 'upload-photo'), 'classified_general', true);
     $this->addElement('TinyMce', 'body', array(
@@ -125,7 +134,7 @@ class Classified_Form_Create extends Engine_Form
     ));	
 	
 	// Element: Source
-    $this->addElement('TinyMce', 'sources', array(
+    /*$this->addElement('TinyMce', 'sources', array(
       'label' => 'Sources & Links',
 	  'editorOptions' => array(
           'bbcode' => 1,
@@ -150,16 +159,7 @@ class Classified_Form_Create extends Engine_Form
 		    ),         
           'upload_url' => $upload_url,
       ),
-    ));	
-    
-    // Element: upload photo
-    $allowed_upload = Engine_Api::_()->authorization()->getPermission($user_level, 'classified', 'photo');
-    if( $allowed_upload ) {
-      $this->addElement('File', 'photo', array(
-        'label' => 'Main Photo'
-      ));
-      $this->photo->addValidator('Extension', false, 'jpg,png,gif,jpeg');
-    }  
+    ));	*/  
     
     // Add subforms
     if( !$this->_item ) {

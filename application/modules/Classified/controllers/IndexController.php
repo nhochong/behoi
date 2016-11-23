@@ -401,31 +401,6 @@ class Classified_IndexController extends Core_Controller_Action_Standard
       'item' => $classified
     ));
     
-    $form->removeElement('photo');
-    
-    /*
-    if( isset($classified->photo_id) && 
-        $classified->photo_id != 0 &&
-        !$classified->getPhoto($classified->photo_id) ) {
-      $classified->addPhoto($classified->photo_id);
-    }
-    */
-    
-    $this->view->album = $album = $classified->getSingletonAlbum();
-    $this->view->paginator = $paginator = $album->getCollectiblesPaginator();
-    
-    $paginator->setCurrentPageNumber($this->_getParam('page'));
-    $paginator->setItemCountPerPage(100);
-    
-    foreach( $paginator as $photo ) {
-      $subform = new Classified_Form_Photo_Edit(array('elementsBelongTo' => $photo->getGuid()));
-      $subform->removeElement('title');
-
-      $subform->populate($photo->toArray());
-      $form->addSubForm($subform, $photo->getGuid());
-      $form->cover->addMultiOption($photo->getIdentity(), $photo->getIdentity());
-    }
-    
     // Save classified entry
     $saved = $this->_getParam('saved');
     if( !$this->getRequest()->isPost() || $saved ) {
@@ -490,31 +465,10 @@ class Classified_IndexController extends Core_Controller_Action_Standard
 
       $classified->tags()->setTagMaps($viewer, $tags);
       $classified->save();
-
-      $cover = $values['cover'];
-
-      // Process
-      foreach( $paginator as $photo ) {
-        $subform = $form->getSubForm($photo->getGuid());
-        $subValues = $subform->getValues();
-        $subValues = $subValues[$photo->getGuid()];
-        unset($subValues['photo_id']);
-
-        if( isset($cover) && $cover == $photo->photo_id) {
-          $classified->photo_id = $photo->file_id;
-          $classified->save();
-        }
-
-        if( isset($subValues['delete']) && $subValues['delete'] == '1' ) {
-          if( $classified->photo_id == $photo->file_id ) {
-            $classified->photo_id = 0;
-            $classified->save();
-          }
-          $photo->delete();
-        } else {
-          $photo->setFromArray($subValues);
-          $photo->save();
-        }
+	  
+	  // Set photo
+      if( !empty($values['photo']) ) {
+        $classified->setPhoto($form->photo);
       }
 
       // Save custom fields

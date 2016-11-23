@@ -7,7 +7,7 @@ class Classified_Widget_RelatedClassifiedsController extends Engine_Content_Widg
         if (!Engine_Api::_()->core()->hasSubject()) {
             return $this->setNoRender();
         }
-        $num_of_classifieds = $this->_getParam('num_of_classifieds', 5);
+        $num_of_classifieds = $this->_getParam('num_of_classifieds', 3);
         $this->view->viewer = $viewer = Engine_Api::_()->user()->getViewer();
         $subject = Engine_Api::_()->core()->getSubject();
 
