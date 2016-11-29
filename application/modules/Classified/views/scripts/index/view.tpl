@@ -40,38 +40,17 @@ endif; ?>
           </span>
         </div>
       <?php endif; ?>
-      <div class="classified_entrylist_entry_body">
-        <?php echo nl2br($this->classified->body) ?>
-      </div>
-        <ul class='classified_thumbs'>
-          <?php if($this->main_photo):?>
-            <li>
-              <div class="classifieds_thumbs_description">
-                <?php if( '' != $this->main_photo->getDescription() ): ?>
-                  <?php echo $this->string()->chunk($this->main_photo->getDescription(), 100) ?>
-                <?php endif; ?>
-              </div>
-              <?php echo $this->htmlImage($this->main_photo->getPhotoUrl(), $this->main_photo->getTitle(), array(
-                'id' => 'media_photo'
-              )); ?>
-            </li>
-          <?php endif; ?>
-
-          <?php foreach( $this->paginator as $photo ): ?>
-            <?php if($this->classified->photo_id != $photo->file_id):?>
-              <li>
-                <div class="classifieds_thumbs_description">
-                  <?php if( '' != $photo->getDescription() ): ?>
-                    <?php echo $this->string()->chunk($photo->getDescription(), 100) ?>
-                  <?php endif; ?>
-                </div>
-                <?php echo $this->htmlImage($photo->getPhotoUrl(), $photo->getTitle(), array(
-                  'id' => 'media_photo'
-                )); ?>
-              </li>
-            <?php endif; ?>
-          <?php endforeach;?>
-        </ul>
+		<div class="classified_detail_info">
+			<div class='classified_thumbs_wrapper'>
+				<div class='classified_thumbs'>
+					<?php echo $this->htmlImage($this->main_photo->getPhotoUrl(), $this->main_photo->getTitle(), array('id' => 'media_photo')); ?>
+				</div>
+			</div>
+			<div class="classified_entrylist_entry_body">
+				<?php echo nl2br($this->classified->body) ?>
+			</div>
+		</div>
+		<?php if(!empty($this->classified->more_info)):?>
 		<ul class="qa-further-info">
 			<li>
 				<h2 class="" id="classfied_detail_exploration">Exploration</h2>
@@ -80,17 +59,17 @@ endif; ?>
 				</div>
 			</li>
 		</ul>
+		<?php endif; ?>
     </li>
   </ul>
 </div>
 
 <script type="text/javascript">
-  // $$('.core_main_classified').getParent().addClass('active');
-  // $('classfied_detail_exploration').addEvent('click', function(){
-	  // $('classfied_detail_exploration_content').toggle();
-  // });
-  // $('classfied_detail_source').addEvent('click', function(){
-	  // $('classfied_detail_source_content').toggle();
-  // });
-  
+  $$('.core_main_classified').getParent().addClass('active');
+  $('classfied_detail_exploration').addEvent('click', function(){
+	  $('classfied_detail_exploration_content').toggle();
+  });
+  $('classfied_detail_source').addEvent('click', function(){
+	  $('classfied_detail_source_content').toggle();
+  });
 </script>

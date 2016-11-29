@@ -702,3 +702,34 @@ ul.classifieds-category {
 .layout_classified_hot_categories .readmore a {
 	color: #EF5125;
 }
+#global_page_classified-index-view .classifieds_entrylist  {
+	
+	.classified_detail_info {
+		overflow: hidden;
+		
+		.classified_thumbs_wrapper {
+			max-width: 300px;
+			float: left;
+			background-color: #fff;
+			position: relative;
+			float: left;
+			margin: 12px 20px 10px 0;
+			border-radius: 3px;
+			box-shadow: 1px 1px 2px 1px #c2c2c2;
+			
+			.classified_thumbs {
+				border: 7px solid #FFFFFF;
+				border-radius: 3px;
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: contain;
+				
+				img {
+					width: 100%;
+					height: auto;
+					vertical-align: middle;
+				}
+			}
+		}
+	}
+} 
