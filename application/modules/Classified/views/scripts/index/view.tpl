@@ -22,7 +22,6 @@ endif; ?>
     $$('.classified_entrylist_entry_body').enableLinks();
   });
 </script>
-
 <div class='layout_middle'>
   <h2>
     <?php echo $this->classified->getTitle(); ?>
@@ -43,11 +42,11 @@ endif; ?>
 		<div class="classified_detail_info">
 			<div class='classified_thumbs_wrapper'>
 				<div class='classified_thumbs'>
-					<?php echo $this->htmlImage($this->main_photo->getPhotoUrl(), $this->main_photo->getTitle(), array('id' => 'media_photo')); ?>
+					<?php echo $this->htmlImage($this->main_photo->getPhotoUrl(), $this->main_photo->getTitle(), array('id' => 'media_photo', 'alt' => $this->classified->getTitle())); ?>
 				</div>
 			</div>
 			<div class="classified_entrylist_entry_body">
-				<?php echo nl2br($this->classified->body) ?>
+				<?php echo $this->classified->body ?>
 			</div>
 		</div>
 		<?php if(!empty($this->classified->more_info)):?>
@@ -55,7 +54,7 @@ endif; ?>
 			<li>
 				<h2 class="" id="classfied_detail_exploration">Exploration</h2>
 				<div class="text" style="display: none;" id="classfied_detail_exploration_content">
-					<?php echo nl2br($this->classified->more_info)?>
+					<?php echo $this->classified->more_info?>
 				</div>
 			</li>
 		</ul>
@@ -66,10 +65,19 @@ endif; ?>
 
 <script type="text/javascript">
   $$('.core_main_classified').getParent().addClass('active');
-  $('classfied_detail_exploration').addEvent('click', function(){
+  if($('classfied_detail_exploration')){
+	$('classfied_detail_exploration').addEvent('click', function(){
 	  $('classfied_detail_exploration_content').toggle();
-  });
-  $('classfied_detail_source').addEvent('click', function(){
+	  if($('classfied_detail_exploration').hasClass('active')){
+		  $('classfied_detail_exploration').removeClass('active');
+	  }else{
+		  $('classfied_detail_exploration').addClass('active');
+	  }
+	});
+  }
+  if($('classfied_detail_source')){
+	$('classfied_detail_source').addEvent('click', function(){
 	  $('classfied_detail_source_content').toggle();
-  });
+	}); 
+  }
 </script>

@@ -52,7 +52,7 @@
   <?php foreach( $this->paginator as $item ): ?>
     <li>
       <div class='classifieds_profile_tab_photo'>
-        <?php echo $this->htmlLink($item->getHref(), $this->itemPhoto($item, 'thumb.normal')) ?>
+        <?php echo $this->htmlLink($item->getHref(), $this->itemPhoto($item, 'thumb.normal', array('alt' => $item->getTitle()))) ?>
       </div>
       <div class='classifieds_profile_tab_info'>
         <div class='classifieds_profile_tab_title'>

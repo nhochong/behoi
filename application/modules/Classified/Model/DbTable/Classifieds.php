@@ -102,11 +102,18 @@ class Classified_Model_DbTable_Classifieds extends Engine_Db_Table
 					$subCategoryIds = $category->getSubCategoryIds();
 					$categoryIds = array_merge($categoryIds, $subCategoryIds);
 				}
-				$select = $select->where('category_id IN (?)', $categoryIds);
+				$joinSelectStatement = "(";
+				foreach($categoryIds as $categoryId){
+					$joinSelectStatement .= " $tableName.category_id like '%\"$categoryId\"%' OR";
+				}
+				$joinSelectStatement = substr($joinSelectStatement, 0, strlen($joinSelectStatement) - 3);
+				$joinSelectStatement .= ")";
+				$select = $select->where($joinSelectStatement);
 			}
 		}else{
-			$select->where($tableName . '.category_id = ?', $category_id);
+			$select->where("$tableName.category_id like '?'", '%"'. $category_id . '"%');
 		}
+		//echo $select;die;
 	}
 	//parent
 

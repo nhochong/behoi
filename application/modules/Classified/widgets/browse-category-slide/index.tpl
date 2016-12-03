@@ -4,7 +4,7 @@
 		<?php $index = 0;?>
 		<?php foreach ($this->categories as $category) :?>
 			<div class="item <?php if($index++ == 0) echo "active"?>">
-				<img src="<?php echo $category->getPhotoUrl()?>" />
+				<img src="<?php echo $category->getPhotoUrl()?>" alt="<?php echo $category->getTitle()?>"/>
 				<div class="title"><?php echo $category->getTitle()?></div>
 			</div>
 		<?php endforeach;?>

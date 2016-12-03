@@ -8,7 +8,7 @@
             ?>
 
             <div class="category-browser-top">
-                <span class="category_icon"><?php echo $this->itemPhoto($category, 'thumb.icon')?></span>
+                <span class="category_icon"><?php echo $this->itemPhoto($category, 'thumb.icon', array('alt' => $category->getTitle()))?></span>
                 <span class="category-title"><?php echo $this->htmlLink($category->getHref(), $category->getTitle())?></span>                
             </div>
             

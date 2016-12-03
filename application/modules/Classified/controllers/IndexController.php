@@ -302,6 +302,10 @@ class Classified_IndexController extends Core_Controller_Action_Standard
       $classified->setFromArray($values);
       $classified->save();
 
+	  // Set categories
+	  $classified->category_id = implode($values['category_id'], ',');
+	  $classified->save();
+	  
       // Set photo
       if( !empty($values['photo']) ) {
         $classified->setPhoto($form->photo);
@@ -427,6 +431,11 @@ class Classified_IndexController extends Core_Controller_Action_Standard
 
       // etc
       $form->populate($classified->toArray());
+	  
+	  // set category
+	  $categories = json_decode($classified->category_id);
+	  $form->category_id->setValue($categories);
+	  
       $auth = Engine_Api::_()->authorization()->context;
       $roles = array('owner', 'owner_member', 'owner_member_member', 'owner_network', 'registered', 'everyone');
       foreach( $roles as $role )
@@ -465,6 +474,10 @@ class Classified_IndexController extends Core_Controller_Action_Standard
 
       $classified->tags()->setTagMaps($viewer, $tags);
       $classified->save();
+	  
+	  // Set categories
+	  $classified->category_id = json_encode($values['category_id']);
+	  $classified->save();
 	  
 	  // Set photo
       if( !empty($values['photo']) ) {

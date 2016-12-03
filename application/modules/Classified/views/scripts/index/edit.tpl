@@ -14,13 +14,17 @@
 <?php
   if (APPLICATION_ENV == 'production')
     $this->headScript()
-      ->appendFile($this->layout()->staticBaseUrl . 'externals/autocompleter/Autocompleter.min.js');
+      ->appendFile($this->layout()->staticBaseUrl . 'externals/autocompleter/Autocompleter.min.js')
+	  ->appendFile($this->layout()->staticBaseUrl . 'externals/chosen/chosen.jquery.js');
   else
     $this->headScript()
       ->appendFile($this->layout()->staticBaseUrl . 'externals/autocompleter/Observer.js')
       ->appendFile($this->layout()->staticBaseUrl . 'externals/autocompleter/Autocompleter.js')
       ->appendFile($this->layout()->staticBaseUrl . 'externals/autocompleter/Autocompleter.Local.js')
-      ->appendFile($this->layout()->staticBaseUrl . 'externals/autocompleter/Autocompleter.Request.js');
+      ->appendFile($this->layout()->staticBaseUrl . 'externals/autocompleter/Autocompleter.Request.js')
+	  ->appendFile($this->layout()->staticBaseUrl . 'externals/chosen/chosen.jquery.js');
+  $this->headLink()
+    ->appendStylesheet($this->layout()->staticBaseUrl . 'externals/chosen/chosen.css');
 ?>
 
 <script type="text/javascript">
@@ -70,3 +74,9 @@
 </div>
 
 <?php echo $this->form->render($this);?>
+
+<script type="text/javascript">
+  $$('.core_main_classified').getParent().addClass('active');
+  
+  jQuery('.chosen-select').chosen({});
+</script>

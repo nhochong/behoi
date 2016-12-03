@@ -9,3 +9,8 @@ ALTER TABLE `engine4_classified_classifieds` ADD `more_info` longtext DEFAULT NU
 ALTER TABLE `engine4_classified_classifieds` ADD `enabled` tinyint(1) DEFAULT 1 AFTER `photo_id`;
 UPDATE engine4_classified_classifieds
 SET  `enabled` = 0;
+
+ALTER TABLE `engine4_classified_classifieds` MODIFY COLUMN `category_id` varchar(255);
+
+UPDATE `engine4_classified_classifieds`
+SET `category_id` = concat('["', `category_id`, '"]');

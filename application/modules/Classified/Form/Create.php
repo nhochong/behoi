@@ -54,9 +54,15 @@ class Classified_Form_Create extends Engine_Form
     // prepare categories
     $categories = Engine_Api::_()->getDbtable('categories', 'classified')->getCategoriesAssoc();
     if( count($categories) > 0 ) {
-      $this->addElement('Select', 'category_id', array(
+      $this->addElement('Multiselect', 'category_id', array(
         'label' => 'Category',
+		'allowEmpty' => false,
+		'required' => true,
         'multiOptions' => $categories,
+		'attribs' => array(
+			'class' => 'chosen-select',
+			'multiple' => 'chosen',
+		)
       ));
     }
 

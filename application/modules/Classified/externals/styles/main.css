@@ -732,4 +732,33 @@ ul.classifieds-category {
 			}
 		}
 	}
-} 
+}
+ul.qa-further-info {
+	li h2 {
+		font: bold 30px/50px Ubuntu, ArialRoundedMTBold, Arial;
+		color: $theme_main_color_scheme;
+		word-wrap: break-word;
+		border-bottom: 3px dotted $theme_main_color_scheme;
+		background: url(~/application/modules/Classified/externals/images/qa-arrow-non-active.png) left no-repeat;
+		padding-left: 20px;
+		margin-bottom: 20px;
+	}
+	div.text,
+	div.text p {
+		padding: 4px 0px;
+		font: normal 16px/20px HelveticaNeueRegular !important;
+		font-weight: 100;
+		color: #666666;
+	}
+	li div.text {
+		padding-top: 10px;
+		display: none;
+	}
+	li h2.active {
+		background: url(~/application/modules/Classified/externals/images/qa-arrow-active.png) left center no-repeat;
+	}
+}
+#global_page_classified-index-create .global_form div.form-wrapper,
+#global_page_classified-index-edit .global_form div.form-wrapper {
+	overflow: visible;
+}

@@ -109,7 +109,16 @@ if( $settings->getSetting('user.support.links', 0) == 1 ) {
         <td><input type='checkbox' class='checkbox' name='delete_<?php echo $item->classified_id;?>' value="<?php echo $item->classified_id; ?>" /></td>
         <td><?php echo $item->classified_id ?></td>
         <td><?php echo $item->getTitle() ?></td>
-        <td><?php echo Engine_Api::_()->getItem('classified_category', $item->category_id)->getTitle() ?></td>
+        <td><?php //echo Engine_Api::_()->getItem('classified_category', $item->category_id)->getTitle() ?>
+			<?php
+				$categoryTitle = "";
+				$categories = json_decode($item->category_id);
+				foreach($categories as $category){
+					$categoryTitle .= Engine_Api::_()->getItem('classified_category', $category)->getTitle();
+				}
+				echo $categoryTitle;
+			?>
+		</td>
 		<td>
 			<div id='classified_content_<?php echo $item->getIdentity(); ?>' style ="text-align: center;" >
 				<?php if($item->enabled): ?>

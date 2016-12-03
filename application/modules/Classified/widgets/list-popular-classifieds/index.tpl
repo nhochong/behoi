@@ -15,7 +15,7 @@
   <?php foreach( $this->paginator as $item ): ?>
     <li>
       <div class="classifieds_browse_photo">
-        <?php echo $this->htmlLink($item->getHref(), $this->itemPhoto($item, 'thumb.icon'), array('class' => 'thumb')) ?>
+        <?php echo $this->htmlLink($item->getHref(), $this->itemPhoto($item, 'thumb.icon', array('alt' => $item->getTitle())), array('class' => 'thumb')) ?>
       </div>
       <div class="classifieds_browse_info">
         <div class="classifieds_browse_info_title">
