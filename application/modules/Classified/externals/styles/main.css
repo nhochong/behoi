@@ -682,7 +682,7 @@ ul.classifieds-category {
 	text-align: center;
 }
 .classified_entrylist > div .classified_category_browse_photo > a {
-	background-size: cover!important;
+	background-size: cover;
 	display: block;
 	height: 100%;
 }

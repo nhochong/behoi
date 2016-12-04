@@ -18,13 +18,13 @@
 					<div><?php echo date('F j, Y', strtotime($blog->creation_date));?></div>
 				</div>
 				<div class='featured_blogs_browse_info_description'>
-					<?php echo Engine_Api::_()->ynblog()->subPhrase($blog->getDescription(), 100) ?>
+					<?php echo Engine_Api::_()->ynblog()->subPhrase($blog->getDescription(), 200) ?>
 				</div>
 			</div>
 		</div>
 	<?php endforeach; ?>
+	<div class="see_all"><?php echo $this->htmlLink(array('route' => 'blog_general'), $this->translate('>>> Xem tất cả')) ?></div>
 </div>
-<div class="see_all"><?php echo $this->htmlLink(array('route' => 'blog_general'), $this->translate('see all')) ?></div>
 
 <style type="text/css">
 	.featured_blogs_entrylist > div {

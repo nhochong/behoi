@@ -29,7 +29,7 @@ endif; ?>
       <img src='<?php echo $this->layout()->staticBaseUrl ?>application/modules/Classified/externals/images/close.png' alt="<?php echo $this->translate('Closed') ?>" />
     <?php endif;?>
   </h2>
-  <?php echo $this->partial('_category_breadcrumbs.tpl', 'classified', array('category' => $this->classified->getCategory()));?>
+  <?php echo $this->partial('_category_breadcrumbs.tpl', 'classified', array('categories' => $this->classified->getCategories()));?>
   <ul class='classifieds_entrylist'>
     <li>
       <?php if ($this->classified->closed == 1):?>

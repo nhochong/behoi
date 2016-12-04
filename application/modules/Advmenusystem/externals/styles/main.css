@@ -648,12 +648,11 @@ div.ynadvmenuMini_dropdownbox {
 			display: inline-block;
 			position: relative;
 			min-height: 25px;
-			padding: 5px 3px;
+			padding: 10px 3px;
 			text-transform: uppercase;
 
 			&.ynadvmenu_notification {
 				vertical-align: middle;
-				padding-top: 5px !important;
 
 				&.type-title div.ynadvmenu_mini_wrapper {
 					display: inline-block;
@@ -679,15 +678,30 @@ div.ynadvmenuMini_dropdownbox {
 					background-color: #fff;
 					font-weight: bold;
 				}
+				
+				&.ynadvmenu-notification-subscribe {
+					border-right: 2px solid #fff;
+					margin-right: 10px;
+					padding-right: 20px;
+			}
 			}
 			
-			> a.menu_get_subscribe {
-				background-image: url(~/application/themes/ynresponsive1/images/icons/plain.png);
+			> a.menu-icon {
 				background-repeat: no-repeat;
 				background-size: 16px;
 				height: 20px;
 				width: 25px;
 				padding-left: 20px;
+				
+				&.menu_get_subscribe{
+					background-image: url(~/application/themes/ynresponsive1/images/icons/plane.png);
+				}
+				
+				&.menu_user_login{
+					background-image: url(~/application/themes/ynresponsive1/images/icons/profile.png);
+					border-right: 1px solid #999;
+					padding-right: 10px;
+				}
 			}
 		}
 	}
@@ -1681,4 +1695,7 @@ div.ynadvmenuMini_dropdownbox {
 .ynresponsive-metro .layout_advmenusystem_advanced_main_menu
 {
 	position: inherit;
+}
+.layout_ynresponsiveclean_menu_main {
+	background-color: #FFFFFF;
 }

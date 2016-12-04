@@ -26,47 +26,43 @@
 	});
 </script>
 <nav class="navbar navbar-default" role="navigation">
-  <!-- Brand and toggle get grouped for better mobile display -->
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex8-collapse">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-	<div class="ybo_logo">
-		<?php
-		$title = Engine_Api::_()->getApi('settings', 'core')->getSetting('core_general_site_title', $this->translate('_SITE_TITLE'));
+	<div class="navbar-wrapper">
+	  <!-- Brand and toggle get grouped for better mobile display -->
+	  <div class="navbar-header">
+		<div class="ybo_logo">
+			<?php
+			$title = Engine_Api::_()->getApi('settings', 'core')->getSetting('core_general_site_title', $this->translate('_SITE_TITLE'));
+			
+			$logo  = $this->logo ?$this->layout()->staticBaseUrl .'application/themes/'.YNRESPONSIVE_ACTIVE.'/images/logo.png': false;
 		
-		$logo  = $this->logo ?$this->layout()->staticBaseUrl .'application/themes/'.YNRESPONSIVE_ACTIVE.'/images/logo.png': false;
-    
-		$route = $this->viewer()->getIdentity()
-					 ? array('route'=>'user_general', 'action'=>'home')
-					 : array('route'=>'default');
-		
-		echo ($logo)
-			 ? $this->htmlLink($route, $this->htmlImage($logo, array('alt'=>$title, 'class' => 'navbar-brand')))
-			 : $this->htmlLink($route, $title, array('class' => 'navbar-brand'));
-		?>
+			$route = $this->viewer()->getIdentity()
+						 ? array('route'=>'user_general', 'action'=>'home')
+						 : array('route'=>'default');
+			
+			echo ($logo)
+				 ? $this->htmlLink($route, $this->htmlImage($logo, array('alt'=>$title, 'class' => 'navbar-brand')))
+				 : $this->htmlLink($route, $title, array('class' => 'navbar-brand'));
+			?>
+		</div>
+	  </div>
+	  
+	  <!-- Global search -->
+	  <div id="global_search_form_container">
+		<form id="global_search_form" action="<?php echo $this->url(array('controller' => 'search'), 'default', true) ?>" method="get">
+			<input type='text' <?php if($this -> width_searchbox) echo "style='width:".$this -> width_searchbox."'"; ?> class='text suggested' name='query' id='global_search_field' size='20' maxlength='100' alt='<?php echo $this->translate('Search') ?>' placeholder="<?php echo $this->translate('Tìm kiếm sản phẩm / Khuyến mãi')?>" />
+			<button class="btn-submit" type="submit"><img src="<?php echo $this->baseUrl() . '/application/themes/ynresponsive1/images/icons/search.svg'?>" /></button>
+		</form>
+	  </div>
+	  
+	  <!-- Domains -->
+	  <div class="main_sub_domain">
+		<ul>
+		  <li class="domain_behoi"><a href="<?php echo $this->baseUrl()?>"><?php echo $this->translate('Bé Hỏi'); ?></a></li>
+		  <li class="domain_khuyenmai"><?php echo $this->htmlLink('javascript:void(0);', $this->translate('Deal Hot')) ?>
+		  </li>
+		</ul>
+	  </div>
 	</div>
-  </div>
-  
-  <!-- Global search -->
-  <div id="global_search_form_container">
-	<form id="global_search_form" action="<?php echo $this->url(array('controller' => 'search'), 'default', true) ?>" method="get">
-		<input type='text' <?php if($this -> width_searchbox) echo "style='width:".$this -> width_searchbox."'"; ?> class='text suggested' name='query' id='global_search_field' size='20' maxlength='100' alt='<?php echo $this->translate('Search') ?>' placeholder="<?php echo $this->translate('Tìm kiếm sản phẩm / Khuyến mãi')?>" />
-		<button class="btn-submit" type="submit">Go</button>
-	</form>
-  </div>
-  
-  <!-- Domains -->
-  <div class="main__sub_domain">
-	<ul>
-	  <li class="domain_behoi"><?php echo $this->htmlLink('javascript:void(0);', $this->translate('Bé Hỏi')) ?></li>
-	  <li class="domain_khuyenmai"><?php echo $this->htmlLink('javascript:void(0);', $this->translate('Deal Hot')) ?>
-	  </li>
-	</ul>
-  </div>
 
   <!-- Collect the nav links, forms, and other content for toggling -->
 	<div class="collapse navbar-collapse navbar-ex8-collapse">

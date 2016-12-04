@@ -68,7 +68,7 @@ DEFAULT STYLES FOR THIS THEME
   These values affect the size and colors of your text and links throughout your layout.
   */
   theme_font_family: 'Helvetica Neue', Helvetica, tahoma, arial, verdana, sans-serif;
-  theme_font_size: 13px;
+  theme_font_size: 14px;
   theme_font_color: #555;
   theme_font_color_light: #999;
   theme_text_align: left;
@@ -151,7 +151,7 @@ DEFAULT STYLES FOR THIS THEME
   theme_tabs_font_color_active: #FFF;
   theme_tabs_background_color_active: #72C02C;
   theme_tabs_background_color_hover: #72C02C;
-  theme_tabs_font_size: 13px;
+  theme_tabs_font_size: 14px;
 
   /*
   LISTS

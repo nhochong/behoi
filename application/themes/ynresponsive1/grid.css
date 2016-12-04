@@ -15,8 +15,7 @@
 /******** mobile view ********/
 /*****************************/
 #global_content,
-#core_menu_mini_menu > ul,
-.navbar.navbar-default {
+#core_menu_mini_menu > ul {
 	margin: 0 15px;
 	max-width: auto;
 }
@@ -66,8 +65,7 @@
 @media (min-width: 1200px) {
 
 	#global_content,
-	#core_menu_mini_menu > ul,
-	.navbar.navbar-default {
+	#core_menu_mini_menu > ul {
 		padding: 0 15px;
 		margin: 0 auto;
 		max-width: 1170px;

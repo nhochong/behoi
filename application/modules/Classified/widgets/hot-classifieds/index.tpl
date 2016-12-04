@@ -18,7 +18,7 @@
 				</div>
 				<ul class="classified_list">
 					<?php foreach ($classifieds as $classified):?>
-						<li><?php echo $this->htmlLink($classified->getHref(), Engine_Api::_()->classified()->subPhrase($classified->getTitle(), 40), array('title' => $classified->getTitle()) ) ?></li>
+						<li><?php echo $this->htmlLink($classified->getHref(), Engine_Api::_()->classified()->subPhrase($classified->getTitle(), 50), array('title' => $classified->getTitle()) ) ?></li>
 					<?php endforeach; ?>
 				</ul>
 			</div>
