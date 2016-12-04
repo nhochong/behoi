@@ -1235,7 +1235,7 @@ body[id*="page_poll"] .layout_main .layout_middle
 				float: none !important;
 				padding: 0 15px;
 				
-				li a {
+				> li > a {
 					color: #fff;
 					
 					&:hover {
@@ -1246,7 +1246,8 @@ body[id*="page_poll"] .layout_main .layout_middle
 		}
 	}
 }
-#global_page_core-index-index {
+#global_page_core-index-index,
+#global_page_user-index-home {
 	#global_header {
 		border-bottom: none;
 	}
