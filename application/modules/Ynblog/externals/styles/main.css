@@ -453,7 +453,7 @@ div.ynblog_albumfeatured_info > .ynblog_album_info a{
 .ynblog-mdy-day{
     +ynblog-font-size(32);
     font-weight: bold;
-    padding-bottom: 8px;
+    /* padding-bottom: 8px; */
     border-bottom: 3px solid #FFF;
 }
 
@@ -560,7 +560,7 @@ div.ynblog_albumfeatured_info > .ynblog_album_info a{
                 }
 
                 .ynblog-description{
-                    line-height: 1.5em;
+                    line-height: 1.4em;
                     height: 40px;
                     +ynblog-text-shadow;
                     overflow: hidden;
@@ -871,7 +871,7 @@ ul.ynblog-statistic{
             }
 
             .ynblog-description{
-                line-height: 18px;
+                line-height: 19px;
                 overflow: hidden;
                 display: block;
                 max-height: 57px;
@@ -1001,7 +1001,7 @@ ul.ynblog-statistic{
                 }
 
                 .ynblog-description{
-                    line-height: 1.5em;
+                    line-height: 1.4em;
                     max-height: 80px;
                     overflow: hidden;
                 }

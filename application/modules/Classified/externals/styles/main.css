@@ -587,20 +587,22 @@ ul.classifieds-category {
 
 	.classifieds-category_row {   
 		border-top: 1px solid $theme_border_medium_color;
-		height: 30px;
 		line-height: 30px;
-		padding-left: 20px;
+		padding-left: 15px;
 		
 		a {
 			font-weight: bold;
 			display: block;
-			white-space: nowrap;
 			overflow: hidden
 			text-overflow: ellipsis;
 		}
 	
 		> div.active a {
 			color: $theme_link_color_hover;
+		}
+		
+		&.classifieds-category-sub-category  a {
+			font-size: 13px;
 		}
 	}
 
@@ -625,8 +627,8 @@ ul.classifieds-category {
 	.classifieds-category-collapse-control, 
 	.classifieds-category-collapse-nocontrol {
 		position: absolute;
-		margin-left: -20px;
-		width: 16px;
+		margin-left: -15px;
+		width: 10px;
 		height: 30px;
 		cursor: pointer;
 	}

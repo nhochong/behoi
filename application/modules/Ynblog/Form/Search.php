@@ -22,16 +22,6 @@ class Ynblog_Form_Search extends Engine_Form
             'placeholder' => $zend_View->translate('Search blogs...')
         ));
 
-        //Browse By Filter Element
-        $this->addElement('Select', 'orderby', array(
-            'label' => 'Browse By',
-            'multiOptions' => array(
-                'creation_date' => 'Most Recent',
-                'view_count' => 'Most Viewed',
-                'comment_count' => 'Most Commented',
-            ),
-        ));
-
         //Mode Filter Element
         $draft_array = array(
             '' => 'All Entries',
@@ -46,14 +36,14 @@ class Ynblog_Form_Search extends Engine_Form
         ));
 
         //Users Filter Element
-        $this->addElement('Select', 'show', array(
-            'label' => 'Show',
-            'multiOptions' => array(
-                '1' => 'Everyone\'s Blogs',
-                '2' => 'Only My Friends\' Blogs',
-            ),
-            'onchange' => 'this.form.submit();',
-        ));
+        // $this->addElement('Select', 'show', array(
+            // 'label' => 'Show',
+            // 'multiOptions' => array(
+                // '1' => 'Everyone\'s Blogs',
+                // '2' => 'Only My Friends\' Blogs',
+            // ),
+            // 'onchange' => 'this.form.submit();',
+        // ));
 
         $cat_arrays = Engine_Api::_()->getItemTable('blog_category')->getCategoriesAssoc();
         //Category Filter Element
@@ -62,6 +52,16 @@ class Ynblog_Form_Search extends Engine_Form
             'multiOptions' => $cat_arrays,
         ));
 
+        //Browse By Filter Element
+        $this->addElement('Select', 'orderby', array(
+            'label' => 'Browse By',
+            'multiOptions' => array(
+                'creation_date' => 'Most Recent',
+                'view_count' => 'Most Viewed',
+                'comment_count' => 'Most Commented',
+            ),
+        ));
+		
         $this->addElement('Hidden', 'page', array(
             'order' => 100
         ));

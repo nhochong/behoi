@@ -99,6 +99,7 @@
       <th><a href="javascript:void(0);" onclick="javascript:changeOrder('blog_id', 'DESC');">ID</a></th>
       <th><a href="javascript:void(0);" onclick="javascript:changeOrder('title', 'DESC');"><?php echo $this->translate("Title") ?></a></th>
       <th><a href="javascript:void(0);" onclick="javascript:changeOrder('displayname', 'DESC');"><?php echo $this->translate("Owner") ?></a></th>
+	  <th><?php echo $this->translate("Category") ?></th>
       <th><a href="javascript:void(0);" onclick="javascript:changeOrder('is_featured', 'DESC');"><?php echo $this->translate("Featured") ?></a></th>
       <th><a href="javascript:void(0);" onclick="javascript:changeOrder('is_approved', 'DESC');"><?php echo $this->translate("Approved")?></a></th>
       <th><a href="javascript:void(0);" onclick="javascript:changeOrder('view_count', 'DESC');"><?php echo $this->translate("Views") ?></a></th>
@@ -113,6 +114,7 @@
         <td><?php echo $item->getIdentity() ?></td>
         <td><?php echo $item->getTitle() ?></td>
         <td><?php echo $item->getOwner()->getTitle() ?></td>
+        <td><?php echo $item->getCategory()->getTitle() ?></td>
         <td>
           <div id='ynblog_content_<?php echo $item->blog_id; ?>' style ="text-align: center;" >
               <?php if($item->is_featured): ?>
@@ -131,6 +133,11 @@
         <td><?php echo $this->locale()->toDateTime($item->creation_date) ?></td>
         <td>
           <?php echo $this->htmlLink($item->getHref(), $this->translate('view')) ?>
+		  |
+          <?php echo $this->htmlLink(
+                  array('route' => 'blog_specific', 'action' => 'edit', 'blog_id' => $item->blog_id),
+                  $this->translate('edit'),
+                  array('target' => '_blank')) ?>
           |
           <?php echo $this->htmlLink(
                   array('route' => 'default', 'module' => 'ynblog', 'controller' => 'admin-manage', 'action' => 'delete', 'id' => $item->blog_id),

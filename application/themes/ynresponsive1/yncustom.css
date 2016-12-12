@@ -262,7 +262,7 @@ ul.thumbs.thumbs_album>li {
 	border: none;
 	min-width: 220px;
 	border-radius: 0;
-	z-index: 9999 !important;
+	z-index: 99 !important;
 	margin-top: -2px !important;
 	border-top: solid 2px #72c02c;
 	border-bottom: solid 2px #687074;	
@@ -1434,4 +1434,8 @@ body[id*="page_poll"] .layout_main .layout_middle
 			border-radius: 3px;
 		}
 	}
+}
+form#ynblogs_create #auth_view-wrapper,
+form#ynblogs_create #auth_comment-wrapper {
+	display: none;
 }

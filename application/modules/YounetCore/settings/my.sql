@@ -1,5 +1,4 @@
-INSERT IGNORE INTO `engine4_core_modules` (`name`, `title`, `description`, `version`, `enabled`, `type`) VALUES  ('younet-core', 'YouNet Core Module', 'YouNet Core Module', '4.01', 1, 'extra') ;
-
+INSERT IGNORE INTO `engine4_core_modules` (`name`, `title`, `description`, `version`, `enabled`, `type`) VALUES  ('younet-core', 'YouNet Core Module', 'YouNet Core Module', '4.02p10', 1, 'extra') ;
 
 INSERT IGNORE INTO `engine4_core_menuitems` (`name`, `module`, `label`, `plugin`, `params`, `menu`, `submenu`, `order`) VALUES
 ('core_admin_plugins_younet_core', 'younet-core', 'YouNet Core', '', '{"route":"admin_default","module":"younet-core","controller":"settings","action":"yours"}', 'core_admin_main_plugins', '',1 );
@@ -10,6 +9,9 @@ INSERT IGNORE INTO `engine4_core_menuitems` (`name`, `module`, `label`, `plugin`
 ('younet_core_admin_main_younet', 'younet-core', 'YouNet Plugins', '', '{"route":"admin_default","module":"younet-core","controller":"settings","action":"younet"}', 'younet_core_admin_main', '',1 );
 INSERT IGNORE INTO `engine4_core_menuitems` (`name`, `module`, `label`, `plugin`, `params`, `menu`, `submenu`, `order`) VALUES
 ('younet_core_admin_main_info', 'younet-core', 'License Term', '', '{"route":"admin_default","module":"younet-core","controller":"settings","action":"information"}', 'younet_core_admin_main', '',3 );
+
+INSERT IGNORE INTO `engine4_core_menuitems` (`name`, `module`, `label`, `plugin`, `params`, `menu`, `submenu`, `order`) VALUES
+('younet_core_admin_main_settings', 'younet-core', 'Global Settings', '', '{"route":"admin_default","module":"younet-core","controller":"settings"}', 'younet_core_admin_main', '', 4);
 
 CREATE TABLE IF NOT EXISTS `engine4_younetcore_apisettings` (
   `id` int(11) NOT NULL AUTO_INCREMENT,

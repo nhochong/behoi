@@ -3,11 +3,11 @@
   array (
     'type' => 'module',
     'name' => 'younet-core',
-    'version' => '4.02p9',
+    'version' => '4.02p12',
     'path' => 'application/modules/YounetCore',
     'title' => 'YN - Core Module',
     'description' => 'YouNet Core Module',
-    'author' => 'YouNet Company',
+      'author' => '<a href="http://socialengine.younetco.com/" title="YouNet Company" target="_blank">YouNet Company</a>',
     'callback' => 
     array (
       'class' => 'Engine_Package_Installer_Module',

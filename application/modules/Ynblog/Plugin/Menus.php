@@ -32,7 +32,7 @@ class Ynblog_Plugin_Menus
   {
     // Must be logged in
     $viewer = Engine_Api::_()->user()->getViewer();
-    if( !$viewer || !$viewer->getIdentity() ) {
+    if( !$viewer || !$viewer->getIdentity() ||  !$viewer->isAdminOnly()) {
       return false;
     }
 

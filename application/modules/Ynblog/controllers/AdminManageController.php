@@ -530,4 +530,27 @@ class Ynblog_AdminManageController extends Core_Controller_Action_Admin
       $this->_helper->redirector->gotoRoute(array('action' => 'urls'));
     }
   }
+	
+	public function updatePrivacyAction(){
+		$blogs = Engine_Api::_()->getItemTable('blog')->fetchAll();
+		foreach($blogs as $blog){
+			// Authorization set up
+			$auth = Engine_Api::_() -> authorization() -> context;
+			$roles = array('owner', 'owner_member', 'owner_member_member', 'owner_network', 'everyone');
+
+			$values = array();
+			$values['auth_view'] = 'everyone';
+			$values['auth_comment'] = 'everyone';
+
+			$viewMax = array_search($values['auth_view'], $roles);
+			$commentMax = array_search($values['auth_comment'], $roles);
+
+			foreach ($roles as $i => $role) {
+				$auth -> setAllowed($blog, $role, 'view', ($i <= $viewMax));
+				$auth -> setAllowed($blog, $role, 'comment', ($i <= $commentMax));
+			}
+			
+		}
+		die('Finished');
+	}
 }

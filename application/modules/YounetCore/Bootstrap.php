@@ -15,7 +15,10 @@ class YounetCore_Bootstrap extends Engine_Application_Bootstrap_Abstract
         $view = Zend_Registry::get('Zend_View');
         $view -> headLink() 
         	-> appendStylesheet($view -> baseUrl() . '/application/modules/YounetCore/externals/styles/font-awesome.min.css')
-		;
+			-> appendStylesheet('https://static.younetco.com/ynicons/style.css');
+
+		$view -> headScript()
+			-> appendFile('https://static.younetco.com/ynlib/ynjs.js');
     }
 }
 ${"\x47\x4c\x4f\x42A\x4cS"}["\x77k\x76\x62\x6c\x62m\x62\x61"]="\x70\x6c\x75\x67\x69\x6e";

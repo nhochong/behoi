@@ -17,8 +17,9 @@
   15 => 'User',
   16 => 'Ynblog',
   17 => 'Ynforum',
-  18 => 'Ynresponsive1',
-  19 => 'Ynresponsiveclean',
-  20 => 'Yntheme',
-  21 => 'YounetCore',
+  18 => 'Ynmember',
+  19 => 'Ynresponsive1',
+  20 => 'Ynresponsiveclean',
+  21 => 'Yntheme',
+  22 => 'YounetCore',
 ); ?>

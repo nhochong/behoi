@@ -18,7 +18,7 @@
                     <?php 
                         echo $this->htmlLink(
                                 $category->getHref(), 
-                                $this->string()->truncate($category->getTitle(), 25),
+                                $category->getTitle(),
                                 array('title' => $category->getTitle()));
                     ?>                    
                 </div>
@@ -32,7 +32,7 @@
 							<?php 
 								echo $this->htmlLink(
 										$child->getHref(), 
-										$this->string()->truncate($child->getTitle(), 25),
+										$child->getTitle(),
 										array('title' => $child->getTitle()));
 							?>                    
 						</div>
