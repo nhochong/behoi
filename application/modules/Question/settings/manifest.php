@@ -71,6 +71,17 @@
   ),
   // Routes --------------------------------------------------------------------
   'routes' => array(
+	'question_general' => array(
+      'route' => 'question/:action/*',
+      'defaults' => array(
+        'module' => 'question',
+        'controller' => 'index',
+        'action' => 'index',
+      ),
+      'reqs' => array(
+        'action' => '(index|create|edit|view|choose|manage|tag|upload-photo|rating|unanswered|updateur|answers|unsubscribe)',
+      ),
+    ),
     'question_edit' => array(
       'route' => 'question/edit/:question_id',
       'defaults' => array(

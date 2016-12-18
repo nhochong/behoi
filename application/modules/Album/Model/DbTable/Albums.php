@@ -22,7 +22,7 @@ class Album_Model_DbTable_Albums extends Engine_Db_Table
 
   public function getSpecialAlbum(User_Model_User $user, $type)
   {
-    if( !in_array($type, array('wall', 'profile', 'message', 'blog','forum','group','event')) ) {
+    if( !in_array($type, array('wall', 'profile', 'message', 'blog','forum','group','event','question')) ) {
       throw new Album_Model_Exception('Unknown special album type');
     }
 

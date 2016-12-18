@@ -32,25 +32,46 @@ class Question_Form_Create extends Engine_Form {
             );
         else
             $editorOptions = array(
-                'plugins' => array('link', 'media', 'paste', 'code'),
+                'plugins' => array(
+					'table', 'fullscreen', 'media', 'preview', 'paste',
+					'code', 'image', 'textcolor', 'jbimages','link', 'emoticons'
+				),
                 'toolbar1' => $theme_buttons,
             );
 
-        $this->addElement('TinyMce', 'question', array(
-            'label' => Zend_Registry::get('Zend_Translate')->_("Question"),
-            'required' => true,
-            'allowEmpty' => false,
-            'class' => "mceEditor",
-            'editorOptions' => array_merge(array('mode' => "specific_textareas",
-                'editor_selector' => "mceEditor",
-                'extended_valid_elements' => 'a[href|rel=nofollow]',
-                'dialog_type' => "modal",
-                'content_css' => Zend_Registry::get('StaticBaseUrl') . 'application/modules/Question/externals/styles/customTinyMce.css'
-                    ), $editorOptions),
-            'filters' => array(new Engine_Filter_Censor(),
-                new Zend_Filter_StripNewlines(),
-                new Zend_Filter_PregReplace('/(<p>&nbsp;<\/p>)*$/', ''))
-        ));
+		$upload_url = Zend_Controller_Front::getInstance()->getRouter()->assemble(array('action' => 'upload-photo'), 'question_general', true);
+		
+		// Get user and user level
+		$this->addElement('TinyMce', 'question', array(
+		  'disableLoadDefaultDecorators' => true,
+		  'editorOptions' => array(
+			  'bbcode' => 1,
+			  'html'   => 1,
+			  'theme_advanced_buttons1' => array(
+				  'undo', 'redo', 'cleanup', 'removeformat', 'pasteword',  '|',
+				  'image', 'fullscreen', 'preview', 'emotions', 'code',
+			  ),
+			  'theme_advanced_buttons2' => array(
+				  'fontselect', 'fontsizeselect', 'bold', 'italic', 'underline',
+				  'strikethrough', 'forecolor', 'backcolor', '|', 'justifyleft',
+				  'justifycenter', 'justifyright', 'justifyfull', '|', 'outdent', 'indent', 'blockquote',
+			  ),
+			  'plugins' => array(
+					'table', 'fullscreen', 'media', 'preview', 'paste',
+					'code', 'image', 'textcolor', 'jbimages','link', 'emoticons'
+			  ),
+			  
+			  'toolbar1' => array(
+				  'undo', '|', 'redo', '|', 'removeformat', '|', 'pastetext', '|', 'code', '|', 
+				  'image', '|', 'link', '|', 'fullscreen', '|', 'preview',  'emoticons'
+				),         
+		  ),
+		  'required'   => true,
+		  'allowEmpty' => false,
+		  'decorators' => array('ViewHelper'),
+		  'filters' => array(new Engine_Filter_Censor())
+		));
+		
         if ($settings->getSetting('question_category', 1)) {
             $this->addElement('Select', 'category_id', array(
                 'label' => Zend_Registry::get('Zend_Translate')->_("Category"),

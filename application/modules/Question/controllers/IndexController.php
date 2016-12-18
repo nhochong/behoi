@@ -657,4 +657,91 @@ class Question_IndexController extends Core_Controller_Action_Standard {
         }
     }
 
+	public function uploadPhotoAction() {
+		$viewer = Engine_Api::_() -> user() -> getViewer();
+		$this -> _helper -> layout -> disableLayout();
+
+		if (!Engine_Api::_() -> authorization() -> isAllowed('question', $viewer, 'create')) {
+			return false;
+		}
+
+		if (!$this -> _helper -> requireAuth() -> setAuthParams('question', null, 'create') -> isValid())
+			return;
+
+		if (!$this -> _helper -> requireUser() -> checkRequire()) {
+			$this -> view -> status = false;
+			$this -> view -> error = Zend_Registry::get('Zend_Translate') -> _('Max file size limit exceeded (probably).');
+			return;
+		}
+
+		if (!$this -> getRequest() -> isPost()) {
+			$this -> view -> status = false;
+			$this -> view -> error = Zend_Registry::get('Zend_Translate') -> _('Invalid request method');
+			return;
+		}
+		if (!isset($_FILES['userfile']) || !is_uploaded_file($_FILES['userfile']['tmp_name'])) {
+			$this -> view -> status = false;
+			$this -> view -> error = Zend_Registry::get('Zend_Translate') -> _('Invalid Upload');
+			return;
+		}
+		$albumPhoto_Table = NULL;
+		$album_Table = NULL;
+		if(Engine_Api::_() -> hasModuleBootstrap('advalbum'))
+		{
+			$albumPhoto_Table = Engine_Api::_() -> getDbtable('photos', 'advalbum');
+			$album_Table = Engine_Api::_() -> getDbtable('albums', 'advalbum');
+		}
+		else {
+			$albumPhoto_Table = Engine_Api::_() -> getDbtable('photos', 'album');
+			$album_Table = Engine_Api::_() -> getDbtable('albums', 'album');
+		}
+
+		$db = $albumPhoto_Table -> getAdapter();
+		$db -> beginTransaction();
+
+		try {
+			$viewer = Engine_Api::_() -> user() -> getViewer();
+
+			$photo = $albumPhoto_Table -> createRow();
+			$photo -> setFromArray(array('owner_type' => 'user', 'owner_id' => $viewer -> getIdentity()));
+			$photo -> save();
+			Engine_Api::_() -> question() -> setPhoto($photo, $_FILES['userfile']);
+
+			$this -> view -> status = true;
+			$this -> view -> name = $_FILES['userfile']['name'];
+			$this -> view -> photo_id = $photo -> photo_id;
+			$this -> view -> photo_url = $photo -> getPhotoUrl();
+
+			$album = $album_Table -> getSpecialAlbum($viewer, 'question');
+
+			$photo -> album_id = $album -> album_id;
+			$photo -> save();
+
+			if (!$album -> photo_id) {
+				$album -> photo_id = $photo -> getIdentity();
+				$album -> save();
+			}
+
+			$auth = Engine_Api::_() -> authorization() -> context;
+			$auth -> setAllowed($photo, 'everyone', 'view', true);
+			$auth -> setAllowed($photo, 'everyone', 'comment', true);
+			$auth -> setAllowed($album, 'everyone', 'view', true);
+			$auth -> setAllowed($album, 'everyone', 'comment', true);
+			$db -> commit();
+
+		} catch( Album_Model_Exception $e ) {
+			$db -> rollBack();
+			$this -> view -> status = false;
+			$this -> view -> error = $this -> view -> translate($e -> getMessage());
+			throw $e;
+			return;
+
+		} catch( Exception $e ) {
+			$db -> rollBack();
+			$this -> view -> status = false;
+			$this -> view -> error = Zend_Registry::get('Zend_Translate') -> _('An error occurred.');
+			throw $e;
+			return;
+		}
+	}
 }

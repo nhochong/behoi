@@ -132,11 +132,6 @@ function cancelReposition() {
 			<!-- title -->
 			<div class="ynmember-profile-information-title"><?php echo $this -> subject -> getTitle(); ?></div>
 
-			<!-- member type -->
-			<?php if( !empty($this->memberType) ): ?>
-		    <div class="ynmember-profile-information-type"><?php echo $this->translate($this->memberType) ?></div>
-	   		<?php endif; ?>
-
 		   	<div class="ynmember-profile-information-stats clearfix">
 		  		<!-- view -->
 		  		<div>

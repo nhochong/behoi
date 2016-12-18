@@ -105,9 +105,9 @@ body[id^=global_page_core-admin-] .admin_language_editor textarea {
     border: 1px solid transparent !important;   
 }
 
-.mce-container.mce-panel.mce-floatpanel.mce-window.mce-in .mce-window-head button,
-.mce-container.mce-panel.mce-floatpanel.mce-window.mce-in .mce-container.mce-panel.mce-foot button {
-    background: #5fb611;
+.mce-container.mce-panel.mce-floatpanel.mce-window.mce-in .mce-window-head button:hover,
+.mce-container.mce-panel.mce-floatpanel.mce-window.mce-in .mce-container.mce-panel.mce-foot button:hover {
+    background: transparent;
 }
 /*** remove default bootstrap style ***/
 label, .label { color: #555; font-weight: inherit }
@@ -1295,6 +1295,7 @@ body[id*="page_poll"] .layout_main .layout_middle
 	.layout_ynblog_featured_blogs_landing {
 		padding: 0px;
 		background-color: transparent;
+		border: none;
 		
 		.ybo_headline {
 			margin: 0px;
@@ -1313,7 +1314,7 @@ body[id*="page_poll"] .layout_main .layout_middle
 		.featured_blogs_entrylist {
 			overflow: hidden;
 			padding: 20px 20px;
-			border: 1px solid #ccc;
+			border: 1px solid #e8e8e8;
 			background-color: #fff;
 			
 			div.classified_category_browse_photo,
@@ -1350,7 +1351,8 @@ body[id*="page_poll"] .layout_main .layout_middle
 .layout_statistic {
 	> div {
 		float: left;
-		width: 30%;
+		width: 26%;
+		margin-left: 10px;
 		
 		&.statistic_webname .webname {
 			color: #72c02c;
@@ -1363,16 +1365,21 @@ body[id*="page_poll"] .layout_main .layout_middle
 		}
 		
 		&.statistic_overall	{
-			width: 40%;
+			width: 42%;
+			
+			ul.statistic {
+				float: right;
+			}
 			
 			ul.statistic li {
 				float: left;
 				padding: 5px 7px;
+				margin: 0px 3px 6px 3px;
 				margin: 0px 3px;
 				background-color: #72c02c;
 				color: #fff;
 				text-align: center;
-				width: 80px;
+				width: 75px;
 				border-radius: 5px;
 				
 				div {
@@ -1436,6 +1443,10 @@ body[id*="page_poll"] .layout_main .layout_middle
 	}
 }
 form#ynblogs_create #auth_view-wrapper,
-form#ynblogs_create #auth_comment-wrapper {
+form#ynblogs_create #auth_comment-wrapper,
+#global_page_question-index-create div.qa_create_question .global_form #auth_view-wrapper,
+#global_page_question-index-edit div.qa_create_question .global_form #auth_view-wrapper,
+#global_page_question-index-create div.qa_create_question .global_form #auth_answer-wrapper,
+#global_page_question-index-edit div.qa_create_question .global_form #auth_answer-wrapper {
 	display: none;
 }

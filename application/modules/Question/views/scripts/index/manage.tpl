@@ -46,7 +46,6 @@
         <div class="qa_browse_additional_info">
         	<ul>
         		<li><a href="#"><?php echo $this->translate(array("%d <br /> Answer", "%d <br />Answers", $question->count_answers), $question->count_answers)?></a></li>
-                <li><?php echo $this->translate("%s <br /> Score", $question->getVotes('all')) ?></li>
                 <li><?php echo $this->translate('%s <br /> Views', $question->question_views) ?></li>
         	</ul>
         </div>

@@ -15,7 +15,7 @@ class Question_Form_Search extends Engine_Form {
         $settings = Engine_Api::_()->getApi('settings', 'core');
         $this
                 ->setAttribs(array(
-                    'id' => 'filter_form',
+                    'id' => 'question_filter_form',
                     'class' => 'global_form_box',
                 ))
                 ->setAction(Zend_Controller_Front::getInstance()->getRouter()->assemble(array()))
@@ -47,17 +47,6 @@ class Question_Form_Search extends Engine_Form {
             ),
             'onchange' => 'this.form.submit();',
         ));
-        if (Engine_Api::_()->user()->getViewer()->getIdentity()) {
-            $this->addElement('Select', 'show', array(
-                'label' => Zend_Registry::get('Zend_Translate')->_('Show'),
-                'multiOptions' => array(
-                    '1' => Zend_Registry::get('Zend_Translate')->_("Everyone's Questions"),
-                    '2' => Zend_Registry::get('Zend_Translate')->_("Only My Friends' Questions"),
-                    '3' => Zend_Registry::get('Zend_Translate')->_("Anonymous Questions"),
-                ),
-                'onchange' => 'this.form.submit();',
-            ));
-        }
         if ($settings->getSetting('question_category', 1)) {
             $action_url = Zend_Controller_Front::getInstance()->getRouter()->assemble(array('category' => ''));
             $this->addElement('Select', 'category', array(

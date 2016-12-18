@@ -441,5 +441,31 @@ return array(
         'defaultParams' => array(
             'title' => "Social Sharing"
         )
-    )
+    ),
+  array(
+    'title' => 'Q&A Browse Questions',
+    'description' => 'Displays list questions.',
+    'category' => 'Questions',
+    'type' => 'widget',
+    'name' => 'question.browse-questions',
+	'defaultParams' => array(
+      'title' => 'Questions',
+    ),
+    'requirements' => array(
+      'no-subject',
+    ),
+  ),
+  array(
+    'title' => 'Q&A Hot Tags',
+    'description' => 'Displays list Hot Tags.',
+    'category' => 'Questions',
+    'type' => 'widget',
+    'name' => 'question.question-tags',
+	'defaultParams' => array(
+      'title' => 'Hot Tags',
+    ),
+    'requirements' => array(
+      'no-subject',
+    ),
+  ),
 ) ?>

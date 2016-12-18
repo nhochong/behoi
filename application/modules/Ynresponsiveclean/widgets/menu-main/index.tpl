@@ -90,7 +90,7 @@
 			<li><?php echo $this->htmlLink(array('route' => 'default', 'module' => 'question'), $this->translate('Diễn Đàn')) ?></li>
 			<li><?php echo $this->htmlLink(array('route' => 'blog_general'), $this->translate('Tư Vấn')) ?></li>
 			<li><?php echo $this->htmlLink('javascript:void(0);', $this->translate('Tags')) ?></li>
-			<li><?php echo $this->htmlLink('javascript:void(0);', $this->translate('Đăng Câu Hỏi')) ?></li>
+			<li><?php echo $this->htmlLink(array('route' => 'question_general', 'action' => 'create'), $this->translate('Đăng Câu Hỏi')) ?></li>
 		</ul>
 	</div>
   <!-- /.navbar-collapse -->
