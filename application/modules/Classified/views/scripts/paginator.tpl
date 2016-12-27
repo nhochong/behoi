@@ -48,14 +48,14 @@
             'reset' => false,
             'page' => ( $this->pageAsQuery ? null : $this->first ),
             'QUERY' => $query . ( $this->pageAsQuery ? '&page=' . $this->first : '' ),
-          )), $this->translate('&#171; First')) ?>
+          )), $this->translate('&#171;')) ?>
       </li>
         <li>
           <?php echo $this->htmlLink(array_merge($params, array(
             'reset' => false,
             'page' => ( $this->pageAsQuery ? null : $this->previous ),
             'QUERY' => $query . ( $this->pageAsQuery ? '&page=' . $this->previous : '' ),
-          )), $this->translate('&#8249; Previous')) ?>
+          )), $this->translate('&#8249;')) ?>
         </li>
       <?php endif; ?>
       <?php foreach ($this->pagesInRange as $page): ?>
@@ -79,14 +79,14 @@
             'reset' => false,
             'page' => ( $this->pageAsQuery ? null : $this->next ),
             'QUERY' => $query . ( $this->pageAsQuery ? '&page=' . $this->next : '' ),
-          )), $this->translate('Next &#8250;')) ?>
+          )), $this->translate('&#8250;')) ?>
         </li>
         <li>
           <?php echo $this->htmlLink(array_merge($params, array(
             'reset' => false,
             'page' => ( $this->pageAsQuery ? null : $this->last ),
             'QUERY' => $query . ( $this->pageAsQuery ? '&page=' . $this->last : '' ),
-          )), $this->translate('Last &#187;')) ?>
+          )), $this->translate('&#187;')) ?>
         </li>
       <?php endif; ?>
     </ul>

@@ -1,17 +1,17 @@
 # Flash Uploader
-"File Upload";"File Upload"
-"To enable the embedded uploader, unblock it in your browser and refresh (see Adblock).";"To enable the embedded uploader, unblock it in your browser and refresh (see Adblock)."
-"To enable the embedded uploader, enable the blocked Flash movie (see Flashblock).";"To enable the embedded uploader, enable the blocked Flash movie (see Flashblock)."
-"A required file was not found, please be patient and we will fix this.";"A required file was not found, please be patient and we will fix this."
-"To enable the embedded uploader, install the latest Adobe Flash plugin.";"To enable the embedded uploader, install the latest Adobe Flash plugin."
-"Clear List";"Clear List"
+"File Upload";"Đang đăng tải tập tin"
+"To enable the embedded uploader, unblock it in your browser and refresh (see Adblock).";"Để kích hoạt trình tải nhúng, unblock nó trong trình duyệt của bạn và thử lại (xem Adblock)."
+"To enable the embedded uploader, enable the blocked Flash movie (see Flashblock).";"Để kích hoạt trình tải nhúng, kích hoạt Flash movie đã bị khóa (xem Flashblock)."
+"A required file was not found, please be patient and we will fix this.";"Tập tin yêu cầu không được tìm thấy, vui lòng đợi và chúng tôi sẽ cập nhật việc này."
+"To enable the embedded uploader, install the latest Adobe Flash plugin.";"Để kích hoạt trình tải nhúng, cài đặt bản mới nhất Adobe Flash plugin."
+"Clear List";"Clear danh sách"
 
-"Click ""Browse..."" to select the file you would like to upload.";"Click ""Browse..."" to select the file you would like to upload."
-"Upload a Photo:";"Upload a Photo:"
-"Add Photos";"Add Photos"
-"_STORAGE_UPLOAD_DESCRIPTION";"Click ""Add Photos"" to select one or more photos from your computer. After you have selected the photos, they will begin to upload right away. When your upload is finished, click the button below your photo list to save them to your album."
+"Click ""Browse..."" to select the file you would like to upload.";"Click ""Browse..."" để chọn file bạn muốn đăng tải."
+"Upload a Photo:";"Đăng hình:"
+"Add Photos";"Thêm hình ảnh"
+"_STORAGE_UPLOAD_DESCRIPTION";"Click ""Thêm hình"" để chọn một hoặc nhiều hình ảnh từ máy tính của bạn. Sau khi chọn hình, hình sẽ được đăng tải ngay. Khi quá trình đăng tải hoàn tất, click nút bên dưới danh sách hình của bạn để lưu chúng về album của bạn."
 
-"ITEM_TYPE_STORAGE_FILE";"Files"
+"ITEM_TYPE_STORAGE_FILE";"Tập tin"
 
 
 "STORAGE_VIEWS_ADMIN_SERVICES_INDEX_DESCRIPTION";"View and manage storage

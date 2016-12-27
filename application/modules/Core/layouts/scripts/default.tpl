@@ -37,9 +37,9 @@
       $this
         ->headTitle($pageTitle, Zend_View_Helper_Placeholder_Container_Abstract::PREPEND);
     }
-    $this
-      ->headTitle($this->translate($this->layout()->siteinfo['title']), Zend_View_Helper_Placeholder_Container_Abstract::PREPEND)
-      ;
+    // $this
+      // ->headTitle($this->translate($this->layout()->siteinfo['title']), Zend_View_Helper_Placeholder_Container_Abstract::PREPEND)
+      // ;
     $this->headMeta()
       ->appendHttpEquiv('Content-Type', 'text/html; charset=UTF-8')
       ->appendHttpEquiv('Content-Language', $this->locale()->getLocale()->__toString());

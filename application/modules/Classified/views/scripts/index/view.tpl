@@ -42,7 +42,7 @@ endif; ?>
 		<div class="classified_detail_info">
 			<div class='classified_thumbs_wrapper'>
 				<div class='classified_thumbs'>
-					<?php echo $this->htmlImage($this->main_photo->getPhotoUrl(), $this->main_photo->getTitle(), array('id' => 'media_photo', 'alt' => $this->classified->getTitle())); ?>
+					<?php echo $this->htmlImage($this->classified->getPhotoUrl(), $this->classified->getTitle(), array('id' => 'media_photo', 'alt' => $this->classified->getTitle())); ?>
 				</div>
 			</div>
 			<div class="classified_entrylist_entry_body">

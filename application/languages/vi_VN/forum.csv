@@ -1,83 +1,83 @@
-"Search Forum";"Search Forum"
+"Search Forum";"Tìm kiếm diễn đàn"
 "Forums Plugin";"Forums Plugin"
-"Forum";"Forum"
-"Forums";"Forums"
-"Create Forum";"Create Forum"
-"No forums in this category.";"No forums in this category."
+"Forum";"Diễn đàn"
+"Forums";"Diễn đàn"
+"Create Forum";"Tạo diễn đàn"
+"No forums in this category.";"Không có diễn đàn trong danh mục này."
 "Moderators:";"Moderators:"
 "Moderator";"Moderator"
 "Moderators";"Moderators"
-"Last post";"Last post"
+"Last post";"Đăng lần cuối"
 
-"view";"view";"views"
-"%1$s %2$s view";"%1$s %2$s view";"%1$s %2$s views"
-"reply";"reply";"replies"
-"%1$s %2$s reply";"%1$s %2$s reply";"%1$s %2$s replies"
-"post";"post";"posts"
-"topic";"topic";"topics"
+"view";"xem";"lượt xem"
+"%1$s %2$s view";"%1$s %2$s lượt xem";"%1$s %2$s lượt xem"
+"reply";"trả lời";"trả lời"
+"%1$s %2$s reply";"%1$s %2$s trả lời";"%1$s %2$s trả lời"
+"post";"bài đăng";"bài đăng"
+"topic";"chủ đề";"chủ đề"
 
-"By";"By"
-"In";"in"
-"%1$sLast post%2$s by %3$s";"%1$sLast post%2$s by %3$s"
+"By";"Bởi"
+"In";"trong"
+"%1$sLast post%2$s by %3$s";"%1$sĐăng lần cuối%2$s bởi %3$s"
 
-"Post Reply";"Post Reply"
-"Edit Post";"Edit Post"
-"Post Topic";"Post Topic"
+"Post Reply";"Đăng trả lời"
+"Edit Post";"Chỉnh sửa bài đăng"
+"Post Topic";"Đăng chủ đề"
 
-"Back To Topics";"Back To Topics"
+"Back To Topics";"Quay trả lại chủ đề"
 
-"Make Sticky";"Make Sticky"
-"Remove Sticky";"Remove Sticky"
-"Close";"Close"
-"Open";"Open"
-"Rename";"Rename"
-"Delete";"Delete"
+"Make Sticky";"Tạo đánh dấu"
+"Remove Sticky";"Bỏ đánh dấu"
+"Close";"Đóng"
+"Open";"Mở"
+"Rename";"Đổi tên"
+"Delete";"Xóa"
 
-"This topic has been closed.";"This topic has been closed."
-"posts";"posts"
+"This topic has been closed.";"Chủ đề này đã bị đóng."
+"posts";"bài đăng"
 
-"Quote";"Quote"
-"Edit";"Edit"
+"Quote";"Trích dẫn"
+"Edit";"Chỉnh sửa"
 
-"This post was edited by %1$s at %2$s";"This post was edited by %1$s at %2$s"
+"This post was edited by %1$s at %2$s";"Bài đăng được chỉnh sửa bởi %1$s vào lúc %2$s"
 
-"Post deleted.";"Post deleted."
-"Topic deleted.";"Topic deleted."
-"Topic renamed.";"Topic renamed."
+"Post deleted.";"Bài đăng đã xóa."
+"Topic deleted.";"Chủ đề đã xóa."
+"Topic renamed.";"Đổi tên chủ đề."
 
-"Title";"Title"
-"Create";"Create"
-"Description";"Description"
+"Title";"Tiêu đề"
+"Create";"Tạo"
+"Description";"Mô tả"
 
-"<a id=""photo-label"" href=""javascript:showUploader();"">Attach a Photo</a>";"<a id=""photo-label"" href=""javascript:showUploader();"">Attach a Photo</a>"
-"or";"or"
-"cancel";"cancel"
+"<a id=""photo-label"" href=""javascript:showUploader();"">Attach a Photo</a>";"<a id=""photo-label"" href=""javascript:showUploader();"">Đính kèm hình</a>"
+"or";"hoặc"
+"cancel";"hủy"
 
-"Delete Post";"Delete Post"
-"Are you sure you want to delete this post?";"Are you sure you want to delete this post?"
-"Cancel";"Cancel"
+"Delete Post";"Xóa bài đăng"
+"Are you sure you want to delete this post?";"Bạn có chắc muốn xóa bài đăng này?"
+"Cancel";"Hủy"
 
-"This post has a photo attached. Do you want to delete it?";"This post has a photo attached. Do you want to delete it?"
-"Quick Reply";"Quick Reply"
-"Save Changes";"Save Changes"
+"This post has a photo attached. Do you want to delete it?";"Bài đăng này có hình đính kèm. Bạn có muốn xóa nó?"
+"Quick Reply";"Trả lời nhanh"
+"Save Changes";"Lưu thay đổi"
 
-"Topic Title";"Topic Title"
-"Delete Topic";"Delete Topic"
-"Are you sure you want to delete this topic?";"Are you sure you want to delete this topic?"
+"Topic Title";"Tiêu đề chủ đề"
+"Delete Topic";"Xóa chủ đề"
+"Are you sure you want to delete this topic?";"Bạn có chắc muốn xóa chủ đề này?"
 
-"Rename Topic";"Rename Topic"
-"forum topic";"forum topic";"forum topics"
+"Rename Topic";"Đổi tên chủ đề"
+"forum topic";"chủ đề diễn đàn";"chủ đề diễn đàn"
 
-"Category Title";"Category Title"
-"Forum Title";"Forum Title"
-"Forum Description";"Forum Description"
-Category;Category
-"Member Name";"Member Name"
-"Delete Category";"Delete Category"
-"Delete Forum";"Delete Forum"
-"Are you sure you want to delete this category?";"Are you sure you want to delete this category?"
-"These settings affect all members in your community.";"These settings affect all members in your community."
-"How many posts will be shown per topic page? (Enter a number between 1 and 999";"How many posts will be shown per topic page? (Enter a number between 1 and 999"
+"Category Title";"Tiêu đề danh mục"
+"Forum Title";"Tiêu đề diễn đàn"
+"Forum Description";"Mô tả diễn đàn"
+Category;Danh mục
+"Member Name";"Tên thành viên"
+"Delete Category";"Xóa danh mục"
+"Delete Forum";"Xóa diễn đàn"
+"Are you sure you want to delete this category?";"Bạn có chắc muốn xóa danh mục này?"
+"These settings affect all members in your community.";"Những cài đặt này sẽ ảnh hưởng tất cả thành viên trong cộng động của bạn."
+"How many posts will be shown per topic page? (Enter a number between 1 and 999";"Bao nhiêu bài đăng hiển thị trên một trang chủ đề? (Nhập 1 số giữa 1 và 999"
 "Posts per topic page";"Posts per topic page"
 "How topics will be shown per forum page? (Enter a number between 1 and 999";"How topics will be shown per forum page? (Enter a number between 1 and 999"
 "Topics per forum page";"Topics per forum page"
@@ -173,9 +173,9 @@ they will be able to perform that action even if they are not a moderator."
 "add";"add"
 "remove";"remove"
 
-"Last reply by %1$s in %2$s";"Last reply by %1$s in %2$s"
+"Last reply by %1$s in %2$s";"Được trả lời lần cuối bởi %1$s trong %2$s"
 
-"Send me notifications when other members reply to this topic.";"Send me notifications when other members reply to this topic."
+"Send me notifications when other members reply to this topic.";"Gửi thông báo khi thành viên khác trả lời chủ đề này."
 
 
 # action type titles
@@ -183,88 +183,88 @@ they will be able to perform that action even if they are not a moderator."
 "ADMIN_ACTIVITY_TYPE_FORUM_TOPIC_CREATE";"When a user (subject) creates a forum topic (object)."
 "ADMIN_ACTIVITY_TYPE_FORUM_TOPIC_REPLY";"When a user (subject) replies to a forum topic (object)."
 
-"_ACTIVITY_ACTIONTYPE_FORUM_PROMOTE";"Forum promotions"
-"_ACTIVITY_ACTIONTYPE_FORUM_TOPIC_CREATE";"Creating a forum topic"
-"_ACTIVITY_ACTIONTYPE_FORUM_TOPIC_REPLY";"Replying to a forum topic"
+"_ACTIVITY_ACTIONTYPE_FORUM_PROMOTE";"Nâng cấp trên diễn đàn"
+"_ACTIVITY_ACTIONTYPE_FORUM_TOPIC_CREATE";"Tạo chủ đề diễn đàn"
+"_ACTIVITY_ACTIONTYPE_FORUM_TOPIC_REPLY";"Trả lời chủ đề diễn đàn"
 
-"ACTIVITY_TYPE_FORUM_TOPIC_REPLY";"When people reply to forum topics that I've replied to."
-"ACTIVITY_TYPE_FORUM_TOPIC_RESPONSE";"When people reply to forum topics that I create."
-"ACTIVITY_TYPE_FORUM_PROMOTE";"When I'm given moderator status in a forum."
+"ACTIVITY_TYPE_FORUM_TOPIC_REPLY";"Khi có trả lời cho chủ đề diễn đàn mà tôi cũng trả lời."
+"ACTIVITY_TYPE_FORUM_TOPIC_RESPONSE";"Khi có trả lời cho chủ đề diễn đàn mà tôi tạo."
+"ACTIVITY_TYPE_FORUM_PROMOTE";"Khi tôi để trạng thái Mod trong diễn đàn."
 
 
 # item types
-"ITEM_TYPE_FORUM_CATEGORY";"Forum Categories"
-"ITEM_TYPE_FORUM";"Forums"
-"ITEM_TYPE_FORUM_TOPIC";"Forum Topics"
-"ITEM_TYPE_FORUM_POST";"Forum Posts"
+"ITEM_TYPE_FORUM_CATEGORY";"Danh mục diễn đàn"
+"ITEM_TYPE_FORUM";"Diễn đàn"
+"ITEM_TYPE_FORUM_TOPIC";"Chủ đề diễn đàn"
+"ITEM_TYPE_FORUM_POST";"Bài đăng diễn đàn"
 
 
 # action types
-"{item:$subject} has been made a moderator for the forum {item:$object}";"{item:$subject} has been made a moderator for the forum {item:$object}"
-"{item:$subject} posted a {item:$object:topic} in the forum {itemParent:$object:forum}: {body:$body}";"{item:$subject} posted a {item:$object:topic} in the forum {itemParent:$object:forum}: {body:$body}"
-"{item:$subject} replied to a {item:$object:topic} in the forum {itemParent:$object:forum}: {body:$body}";"{item:$subject} replied to a {item:$object:topic} in the forum {itemParent:$object:forum}: {body:$body}"
+"{item:$subject} has been made a moderator for the forum {item:$object}";"{item:$subject} đã trở thanh Mod của diễn đàn {item:$object}"
+"{item:$subject} posted a {item:$object:topic} in the forum {itemParent:$object:forum}: {body:$body}";"{item:$subject} đã đăng một {item:$object:topic} trong diễn đàn {itemParent:$object:forum}: {body:$body}"
+"{item:$subject} replied to a {item:$object:topic} in the forum {itemParent:$object:forum}: {body:$body}";"{item:$subject} đã trả lời một {item:$object:topic} trong diễn đàn {itemParent:$object:forum}: {body:$body}"
 
 
 # notification types
-"{item:$subject} has {item:$postGuid:posted} on a {item:$object:forum topic} you created.";"{item:$subject} has {item:$postGuid:posted} on a {item:$object:forum topic} you created."
-"{item:$subject} has {item:$postGuid:posted} on a {item:$object:forum topic} posted on.";"{item:$subject} has {item:$postGuid:posted} on a {item:$object:forum topic} posted on."
-"You were promoted to moderator in the forum {item:$object}.";"You were promoted to moderator in the forum {item:$object}."
+"{item:$subject} has {item:$postGuid:posted} on a {item:$object:forum topic} you created.";"{item:$subject} đã {item:$postGuid:posted} trên một {item:$object:forum topic} bạn đã tạo."
+"{item:$subject} has {item:$postGuid:posted} on a {item:$object:forum topic} posted on.";"{item:$subject} đã {item:$postGuid:posted} trên {item:$object:forum topic} đã đăng."
+"You were promoted to moderator in the forum {item:$object}.";"Bạn được nâng cấp thành Mod trong diễn đàn {item:$object}."
 
 
 # mail templates
 
 # notify_forum_topic_reply
-"_EMAIL_NOTIFY_FORUM_TOPIC_REPLY_TITLE";"Forum Topic Reply"
-"_EMAIL_NOTIFY_FORUM_TOPIC_REPLY_DESCRIPTION";"This email is sent to the member when people reply to forum topics that the member created."
-"_EMAIL_NOTIFY_FORUM_TOPIC_REPLY_SUBJECT";"A member has posted a reply to your topic ""[object_title]"" in the forum ""[object_parent_title]"""
+"_EMAIL_NOTIFY_FORUM_TOPIC_REPLY_TITLE";"Trả lời chủ đề diễn đàn"
+"_EMAIL_NOTIFY_FORUM_TOPIC_REPLY_DESCRIPTION";"Email này được gửi tới thành viên khi có người trả lời cho chủ đề mà họ đã tạo."
+"_EMAIL_NOTIFY_FORUM_TOPIC_REPLY_SUBJECT";"Một thành viên đã đăng trả lời cho chủ đề của bạn ""[object_title]"" trong diễn đàn ""[object_parent_title]"""
 "_EMAIL_NOTIFY_FORUM_TOPIC_REPLY_BODY";"[header]
 
-[sender_title] has posted a reply to your topic ""[object_title]"" in the forum ""[object_parent_title]"":
+[sender_title] đã đăng trả lời cho chủ đề bạn tạo ""[object_title]"" trong diễn đàn ""[object_parent_title]"":
 
 ""[message]""
 
-Please click the following link to view it:
+Vui lòng click đường link sau để xem:
 
 http://[host][object_link]
 
 [footer]"
 
 # notify_forum_topic_response
-"_EMAIL_NOTIFY_FORUM_TOPIC_RESPONSE_TITLE";"Forum Topic Response"
-"_EMAIL_NOTIFY_FORUM_TOPIC_RESPONSE_DESCRIPTION";"This email is sent to the member when people reply to forum topics that the member replied to."
-"_EMAIL_NOTIFY_FORUM_TOPIC_RESPONSE_SUBJECT";"A member has posted a reply to the topic ""[object_title]"" you replied to in the forum ""[object_parent_title]"""
+"_EMAIL_NOTIFY_FORUM_TOPIC_RESPONSE_TITLE";"Trả lời chủ đề diễn đàn"
+"_EMAIL_NOTIFY_FORUM_TOPIC_RESPONSE_DESCRIPTION";"Email này được gửi tới thành viên khi có người trả lời cho chủ đề mà họ cũng trả lời trên diễn đàn."
+"_EMAIL_NOTIFY_FORUM_TOPIC_RESPONSE_SUBJECT";"Một thành viên đã đăng câu trả lời cho chủ đề ""[object_title]"" bạn cũng trả lời trong diễn đàn ""[object_parent_title]"""
 "_EMAIL_NOTIFY_FORUM_TOPIC_RESPONSE_BODY";"[header]
 
-[sender_title] has posted a reply to the topic ""[object_title]"" you replied to in the forum ""[object_parent_title]"":
+[sender_title] đã đăng trả lời cho chủ đề ""[object_title]"" bạn đã trả lời trong diễn đàn ""[object_parent_title]"":
 
 ""[message]""
 
-Please click the following link to view it:
+Vui lòng click đường link sau để xem:
 
 http://[host][object_link]
 
 [footer]"
 
 # notify_forum_promote
-"_EMAIL_NOTIFY_FORUM_PROMOTE_TITLE";"Forum Promotion"
-"_EMAIL_NOTIFY_FORUM_PROMOTE_DESCRIPTION";"This email is sent when a member is promoted to moderator in a forum."
-"_EMAIL_NOTIFY_FORUM_PROMOTE_SUBJECT";"You have been promoted to moderator in the forum [object_title]"
+"_EMAIL_NOTIFY_FORUM_PROMOTE_TITLE";"Nâng cấp trên diễn đàn"
+"_EMAIL_NOTIFY_FORUM_PROMOTE_DESCRIPTION";"Email này được gửi khi một thành viên được nâng cấp thành Mod trong diễn đàn."
+"_EMAIL_NOTIFY_FORUM_PROMOTE_SUBJECT";"Bạn đã được nâng cấp thành Mod trong diễn đàn [object_title]"
 "_EMAIL_NOTIFY_FORUM_PROMOTE_BODY";"[header]
 
-You have been promoted to moderator in the forum ""[object_title]"". Please click the following link to view it:
+Bạn đã được nâng cấp thành Mod trong diễn đàn ""[object_title]"". Vui lòng click đường link sau để xem:
 
 http://[host][object_link]
 
 [footer]"
 
-"FORUM_FORM_ADMIN_SETTINGS_GLOBAL_FEEDS_DESCRIPTION";"Please note that only forums that are publicly visible will be displayed in the activity feeds"
-"Display activity in feeds";"Display activity in feeds"
+"FORUM_FORM_ADMIN_SETTINGS_GLOBAL_FEEDS_DESCRIPTION";"Vui lòng ghi nhớ chỉ những diễn đàn công khai mới được hiển thị trong các hoạt động "
+"Display activity in feeds";"Hiển thị những hoạt động trong feeds"
 "Main feed";"Main feed"
 "Posting Member's Profile";"Posting Member's Profile"
 
 "%1$s said:";"%1$s said:"
 
-"Recent Forum Posts";"Recent Forum Posts"
-"Recent Forum Topics";"Recent Forum Topics"
-"Profile Forum Posts";"Profile Forum Posts"
-"Profile Forum Topics";"Profile Forum Topics"
+"Recent Forum Posts";"Những bài đăng diễn đàn gần đây"
+"Recent Forum Topics";"Những chủ đề diễn đàn gần đây"
+"Profile Forum Posts";"Hồ sơ bài đăng diễn đàn"
+"Profile Forum Topics";"Hồ sơ chủ đề diễn đàn"

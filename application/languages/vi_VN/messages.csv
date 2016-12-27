@@ -1,61 +1,61 @@
-"Inbox";"Inbox"
-"Sent Messages";"Sent Messages"
-"Compose Message";"Compose Message"
-"My Messages";"My Messages"
-"message";"message"
+"Inbox";"Hộp thư đến"
+"Sent Messages";"Tin nhắn đã gửi"
+"Compose Message";"Soạn tin nhắn"
+"My Messages";"Tin nhắn của tôi"
+"message";"tin nhắn"
 
-"Create your new message with the form below. Your message can be addressed to up to 10 recipients.";"Create your new message with the form below. Your message can be addressed to up to 10 recipients."
-"Subject";"Subject"
-"Message";"Message"
-"Send Message";"Send Message"
-"Send Reply";"Send Reply"
-"Your message has been sent successfully.";"Your message has been sent successfully."
-"The selected messages have been deleted.";"The selected messages have been deleted."
-"Delete Message(s)?";"Delete Message(s)?"
-"Are you sure that you want to delete the selected message(s)? This action cannot be undone.";"Are you sure that you want to delete the selected message(s)? This action cannot be undone."
-"Delete";"Delete"
-"or";"or"
-"cancel";"cancel"
-"Conversation with a deleted member.";"Conversation with a deleted member."
-"You have %1$s new message, %2$s total";"You have %1$s new message, %2$s total";"You have %1$s new messages, %2$s total"
-"Tip: %1$sClick here%2$s to send your first message!";"Tip: %1$sClick here%2$s to compose a new message!"
-"You have 0 sent messages.";"You have 0 sent messages."
-"You have %s sent message total";"You have %s sent message total";"You have %s sent messages total"
+"Create your new message with the form below. Your message can be addressed to up to 10 recipients.";"Tạo tin nhắn theo mẫu dưới đây. Tin nhắn của bạn có thể gửi nhiều nhất tới 10 người nhận"
+"Subject";"Tiêu đề"
+"Message";"Tin nhắn"
+"Send Message";"Gửi tin nhắn"
+"Send Reply";"Gửi trả lời"
+"Your message has been sent successfully.";"Tin nhắn của bạn đã được gửi thành công!"
+"The selected messages have been deleted.";"Tin nhắn được chọn đã bị xóa!"
+"Delete Message(s)?";"Xóa tin nhắn?"
+"Are you sure that you want to delete the selected message(s)? This action cannot be undone.";"Bạn có chắc muốn xóa tin nhắn này? Thao tác này sẽ không được khôi phục lại!"
+"Delete";"Xóa"
+"or";"hoặc"
+"cancel";"Hủy"
+"Conversation with a deleted member.";"Cuộc hội thoại với thành viên bị xóa"
+"You have %1$s new message, %2$s total";"Bạn có %1$s tin nhắn mới, %2$s tổng cộng";"Bạn có %1$s tin nhắn mới, %2$s tổng cộng"
+"Tip: %1$sClick here%2$s to send your first message!";"Mẹo: %1$sClick tại đây%2$s để soạn tin nhắn mới!"
+"You have 0 sent messages.";"Bạn có 0 tin nhắn đã gửi"
+"You have %s sent message total";"Bạn có tổng cộng %s tin nhắn đã gửi";"Bạn có tổng cộng %s tin nhắn đã gửi"
 "<em>(No Subject)</em>";"<em>(No Subject)</em>"
 "(No Subject)";"(No Subject)"
-"Between %1$s and %2$s";"Between %1$s and %2$s"
-"You";"You"
-"Start typing...";"Start typing..."
-"Check All";"Check All"
-"Search";"Search"
-"Message Settings";"Message Settings"
-"Specify what messaging options will be available to members in this level.";"Specify what messaging options will be available to members in this level."
-"Who can users send private messages to?";"Who can users send private messages to?"
-"If you don't want to allow private messaging, de-select all options below.";"If you don't want to allow private messaging, de-select all options below."
-"All Registered Members";"All Registered Members"
-"Users in the same network";"Users in the same network"
-"Friends";"Friends"
-"Edit Level";"Edit Level"
+"Between %1$s and %2$s";"Giữa %1$s và %2$s"
+"You";"Bạn"
+"Start typing...";"Bắt đầu nhập..."
+"Check All";"Chọn tất cả"
+"Search";"Tìm kiếm"
+"Message Settings";"Cài đặt tin nhắn"
+"Specify what messaging options will be available to members in this level.";"Xác định tùy chọn tin nhắn phù hợp cho cấp độ thành viên"
+"Who can users send private messages to?";"Người dùng có thể gửi tin nhắn cá nhân tới ai?"
+"If you don't want to allow private messaging, de-select all options below.";"Nếu bạn không cho phép tin nhắn cá nhân, bỏ chọn tất cả tùy chọn dưới đây!"
+"All Registered Members";"Tất cả thành viên đã đăng ký!"
+"Users in the same network";"Thành viên cùng mạng kết nối"
+"Friends";"Bạn bè"
+"Edit Level";"Chỉnh cấp độ"
 
-"ACTIVITY_TYPE_MESSAGE_NEW";"When I receive a message."
-"Delete Selected";"Delete Selected"
+"ACTIVITY_TYPE_MESSAGE_NEW";"Khi tôi nhận được tin nhắn."
+"Delete Selected";"Xóa tin nhắn đã chọn"
 
 # notification types
-"{item:$subject} has sent you a {item:$object:message}.";"{item:$subject} has sent you a {item:$object:message}."
+"{item:$subject} has sent you a {item:$object:message}.";"{item:$subject} đã gửi cho bạn một {item:$object:message}."
 
 # mail templates
 
 # notify_message_new
-"_EMAIL_NOTIFY_MESSAGE_NEW_TITLE";"New Message"
-"_EMAIL_NOTIFY_MESSAGE_NEW_DESCRIPTION";"This is the email that gets sent to a member when they receive a new message."
-"_EMAIL_NOTIFY_MESSAGE_NEW_SUBJECT";"You have received a new message from [sender_title]."
+"_EMAIL_NOTIFY_MESSAGE_NEW_TITLE";"Tin nhắn mới"
+"_EMAIL_NOTIFY_MESSAGE_NEW_DESCRIPTION";"Email này được gửi khi thành viên nhận được tin nhắn mới."
+"_EMAIL_NOTIFY_MESSAGE_NEW_SUBJECT";"Bạn đã nhận được tin nhắn mới từ [sender_title]."
 "_EMAIL_NOTIFY_MESSAGE_NEW_BODY";"[header]
 
-You have just received a new message from [sender_title]:
+Bạn vừa nhận được tin nhắn từ [sender_title]:
 
 [object_description]
 
-Please click the following link to login and view it:
+Hãy click đường link sau để đăng nhập và xem tin nhắn nhé:
 
 http://[host][object_link]
 

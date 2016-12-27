@@ -296,4 +296,22 @@ class Classified_Model_Classified extends Core_Model_Item_Abstract
 		}
 		return $data;
 	}
+	
+	/**
+	 *
+	 * @see Core_Model_Item_Abstract::getPhotoUrl()
+	 */
+	public function getPhotoUrl($type = null)
+	{
+		if( empty($this->photo_id) ) {
+			return "application/modules/Classified/externals/images/nophoto_classified_thumb_main.png";
+		}
+	
+		$file = Engine_Api::_()->getItemTable('storage_file')->getFile($this->photo_id, $type);
+		if( !$file ) {
+			return "application/modules/Classified/externals/images/nophoto_classified_thumb_main.png";
+		}
+	
+		return $file->map();
+	}
 }

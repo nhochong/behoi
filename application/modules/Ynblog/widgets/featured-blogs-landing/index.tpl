@@ -12,10 +12,10 @@
 				</div>
 				<div class='featured_blogs_browse_info_category'>
 					<div>
-						<?php echo $this->translate('Topic')?>
+						<?php echo $this->translate('Chủ đề')?>
 						<b><?php echo $blog->getCategory()->getTitle();?></b>
 					</div>
-					<div><?php echo date('F j, Y', strtotime($blog->creation_date));?></div>
+					<div><?php echo $this->locale()->toDate(strtotime($blog->creation_date), array('format' => 'd/MM/y'));?></div>
 				</div>
 				<div class='featured_blogs_browse_info_description'>
 					<?php echo Engine_Api::_()->ynblog()->subPhrase($blog->getDescription(), 200) ?>

@@ -1,212 +1,180 @@
 # menu items
 "_SITE_TITLE";"Social Network"
-"Home";"Home"
-"Members";"Members"
-"Layout";"Layout"
-"Stats";"Stats"
-"Ads";"Ads"
-"Plugins";"Plugins"
-"Settings";"Settings"
-"Manage";"Manage"
-"Menu Editor";"Menu Editor"
-"Language Manager";"Language Manager"
-"File & Media Manager";"File & Media Manager"
-"Theme Editor";"Theme Editor"
-"Layout Editor";"Layout Editor"
-"Log Browser";"Log Browser"
-"Server Information";"Server Information"
-"Referring URLs";"Referring URLs"
-"Site-wide Statistics";"Site-wide Statistics"
-"Create New Campaign";"Create New Campaign"
-"Manage Ad Campaigns";"Manage Ad Campaigns"
-"Performance & Caching";"Performance & Caching"
-"System Emails";"System Emails"
-"Friendship Settings";"Friendship Settings"
-"Spam & Banning Tools";"Spam & Banning Tools"
-"Activity Feed Settings";"Activity Feed Settings"
-"Signup Process";"Signup Process"
-"Profile Questions";"Profile Questions"
-"Locale Settings";"Locale Settings"
-"Abuse Reports";"Abuse Reports"
-"Announcements";"Announcements"
-"Networks";"Networks"
-"Member Levels";"Member Levels"
-
-"Save Changes";"Save Changes"
-"Contact Us";"Contact Us"
-"An error occurred:";"An error occurred:"
-"Privacy Statement";"Privacy Statement"
-"Terms of Service";"Terms of Service"
+"Save Changes";"Lưu thay đổi"
+"Contact Us";"Liên hệ"
+"An error occurred:";"Đã có lỗi xảy ra:"
+"Privacy Statement";"Bảo mật"
+"Terms of Service";"Điểu khoản dịch vụ"
 
 # Common browse filters
-"Browse By";"Browse By"
-"Most Recent";"Most Recent"
-"Most Popular";"Most Popular"
+"Browse By";"Tìm kiếm bởi"
+"Most Recent";"Gần đây nhất"
+"Most Popular";"Phổ biến nhất"
 
 # Common words
-"Delete";"Delete"
-"or";"or"
-" or ";" or "
-"cancel";"cancel"
-"Cancel";"Cancel"
-"Search";"Search"
-"Success";"Success"
-"Description";"Description"
-"Name";"Name"
-"member";"member";"members"
-"friendship";"friendship";"friendships"
-"post";"post";"posts"
-"comment";"comment";"comments"
-"Password";"Password"
-"Login";"Login"
-"Remember Me";"Remember Me"
-"Email Address";"Email Address"
-"Message";"Message"
-"Human Verification";"Human Verification"
-"Please type the characters you see in the image.";"Please type the characters you see in the image."
-"Send Message";"Send Message"
-"Posted by %s";"Posted by %s"
-"%s update";"%s update";"%s updates"
-"%s Update";"%s Update";"%s Updates"
-"updates";"updates"
-"0 Updates";"0 Updates"
-"First";"First"
-"Last";"Last"
-"&#171; Previous";"&#171; Previous"
-"Next &#187;";"Next &#187;"
-"More +";"More +"
-"Copyright";"Copyright"
+"Delete";"Xóa"
+"or";"hoặc"
+" or ";" hoặc "
+"cancel";"hủy"
+"Cancel";"Hủy"
+"Search";"Tìm kiếm"
+"Success";"Thành công"
+"Description";"Mô tả"
+"Name";"Tên"
+"member";"thành viên";"thành viên"
+"friendship";"bạn bè";"bạn bè"
+"post";"đăng";"đăng"
+"comment";"bình luận";"bình luận"
+"Password";"Mật khẩu"
+"Login";"Đăng nhập"
+"Remember Me";"Lưu đăng nhập"
+"Email Address";"Địa chỉ email"
+"Message";"Tin nhắn"
+"Human Verification";"Xác nhận là con người"
+"Please type the characters you see in the image.";"Vui lòng nhập những kí tự bạn nhìn thấy trong hình!"
+"Send Message";"Gửi tin nhắn"
+"Posted by %s";"Đăng bởi %s"
+"%s update";"%s cập nhật";"%s cập nhật"
+"%s Update";"%s Cập nhật";"%s Cập nhật"
+"updates";"cập nhật"
+"0 Updates";"0 cập nhật"
+"First";"Đầu tiên"
+"Last";"Cuối cùng"
+"&#171; Previous";"&#171; trước"
+"Next &#187;";"tiếp theo &#187;"
+"More +";"Thêm +"
+"Copyright";"Bản quyền"
 
 
-"Created %s by ";"Created %s by "
-"Post Comment";"Post Comment"
-"%s comment";"%s comment";"%s comments"
-"%d hour ago";"%d hour ago";"%d hours ago"
-"There was an error processing your request.  Please try again later.";"There was an error processing your request.  Please try again later."
-"View all %s comment";"View all %s comment";"View all %s comments"
-"Like This";"Like This"
-"Like";"Like"
-"Unlike";"Unlike"
-"Comment";"Comment"
-"Unlike This";"Unlike This"
-"%s likes this";"%s likes this";"%s like this"
-"%s person likes this";"%s person likes this";"%s people like this"
-"View previous comments";"View previous comments"
-"View more comments";"View more comments"
-"View later comments";"View later comments"
-"View All Updates";"View All Updates"
-"Mark All Read";"Mark All Read"
-"You have no new updates.";"You have no new updates."
-"Are you sure you want to delete this?";"Are you sure you want to delete this?"
+"Created %s by ";"Tạo bởi %s "
+"Post Comment";"Đăng bình luận"
+"%s comment";"%s bình luận";"%s bình luận"
+"%d hour ago";"cách đây %d giờ";"cách đây %d giờ"
+"There was an error processing your request.  Please try again later.";"Có lỗi xảy ra trong quá trình xử lý yêu cầu của bạn. Vui lòng thử lại sau!"
+"View all %s comment";"Xem tất cả %s bình luận";"Xem tất cả %s bình luận"
+"Like This";"Thích"
+"Like";"Thích"
+"Unlike";"Không thích"
+"Comment";"Bình luận"
+"Unlike This";"Bỏ thích"
+"%s likes this";"%s thích";"%s thích"
+"%s person likes this";"%s người thích điều này";"%s người thích điều này"
+"View previous comments";"Xem những bình luận trước"
+"View more comments";"Xem thêm bình luận"
+"View later comments";"Xem bình luận sau"
+"View All Updates";"Xem tất cả cập nhật"
+"Mark All Read";"Đánh dấu đã đọc tất cả"
+"You have no new updates.";"Bạn không có cập nhật mới."
+"Are you sure you want to delete this?";"Bạn có chắc muốn xóa điều này?"
 
 
 # Forms
-"Report";"Report"
-"Submit Report";"Submit Report"
-"Do you want to report this?";"Do you want to report this?"
-"(select)";"(select)"
+"Report";"Báo cáo"
+"Submit Report";"Gửi báo cáo"
+"Do you want to report this?";"Bạn có muốn báo cáo điều này?"
+"(select)";"(chọn)"
 "Spam";"Spam"
-"Abuse";"Abuse"
-"Inappropriate Content";"Inappropriate Content"
-"Licensed Material";"Licensed Material"
-"Other";"Other"
-"Add Link";"Add Link"
-"Edit Thumbnail";"Edit Thumbnail"
-"Apply Changes";"Apply Changes"
-" Loading...";" Loading..."
-"Are you sure you want to delete this link?";"Are you sure you want to delete this link?"
-"Delete Link";"Delete Link"
+"Abuse";"Lợi dụng"
+"Inappropriate Content";"Nội dung không phù hợp"
+"Licensed Material";"Nội dung bản quyền"
+"Other";"Khác"
+"Add Link";"Thêm link"
+"Edit Thumbnail";"Chỉnh sửa Thumbnail"
+"Apply Changes";"Áp dụng thay đổi"
+" Loading...";" Đang tải..."
+"Are you sure you want to delete this link?";"Bạn có chắc muốn xóa link này?"
+"Delete Link";"Xóa Link"
 
 # Search
-"Please enter a search query.";"Please enter a search query."
-"No results were found.";"No results were found."
-"%s result found";"%s result found";"%s results found"
+"Please enter a search query.";"Vui lòng nhập nội dung tìm kiếm."
+"No results were found.";"Không có kết quả được tìm thấy."
+"%s result found";"%s kết quả được tìm thấy";"%s kết quả được tìm thấy"
 
 "Whoops!";"Whoops!"
-"Page Not Found";"Page Not Found"
-"Go Back";"Go Back"
-"The page you have attempted to access could not be found.";"The page you have attempted to access could not be found."
-"Private Page";"Private Page"
-"You do not have permission to view this private page.";"You do not have permission to view this private page."
-"That resource does not exist";"That resource does not exist"
-"Please sign in to continue.";"Please sign in to continue."
+"Page Not Found";"Không tìm thấy trang"
+"Go Back";"Quay lại"
+"The page you have attempted to access could not be found.";"Trang bạn đang tìm không được tìm thấy."
+"Private Page";"Trang riêng tư"
+"You do not have permission to view this private page.";"Bạn không có quyền để xem trang riêng tư này."
+"That resource does not exist";"Nguồn không tồn tại"
+"Please sign in to continue.";"Vui lòng đăng nhập để tiếp tục."
 "Like added";"Like added"
 "Like removed";"Like removed"
-"Invalid request method";"Invalid request method"
-"Comment deleted";"Comment deleted"
-"Invalid data";"Invalid data"
-"The requested resource could not be found.";"The requested resource could not be found."
-"You are not authorized to access this resource.";"You are not authorized to access this resource."
-"Please sign in to continue..";"Please sign in to continue."
-"Whoops! Something went wrong!";"Whoops! Something went wrong!"
-"Thank you for your feedback!";"Thank you for your feedback!"
-"Invalid Method";"Invalid Method"
-"Invalid data";"Invalid data"
-"Link created";"Link created"
-"Link doesn't exists or not authorized to delete";"Link doesn't exists or not authorized to delete"
-"Link has been deleted.";"Link has been deleted."
+"Invalid request method";"Cách thức yêu cầu không đúng"
+"Comment deleted";"Bình luận đã xóa"
+"Invalid data";"Dữ liệu không đúng"
+"The requested resource could not be found.";"Nguồn yêu cầu không được tìm thấy."
+"You are not authorized to access this resource.";"Bạn không có quyền đăng nhập vào nguồn dữ liệu này."
+"Please sign in to continue..";"Vui lòng đăng nhập để tiếp tục."
+"Whoops! Something went wrong!";"Whoops! hình như đã có lỗi xảy ra!"
+"Thank you for your feedback!";"Cảm ơn phản hồi của bạn!"
+"Invalid Method";"Cách thức không đúng"
+"Invalid data";"Dữ liệu không đúng"
+"Link created";"Link đã được tạo"
+"Link doesn't exists or not authorized to delete";"Link không tồn tại hoặc không có quyền để xóa"
+"Link has been deleted.";"Link đã bị xóa."
 
-"Birthdays must include a month and a date.";"Birthdays must include a month and a date."
-"Please select a date from the calendar";"Please select a date from the calendar"
-"Please select a time from the dropdown";"Please select a time from the dropdown"
-"Please select AM or PM";"Please select AM or PM"
-"AM/PM value selected without specifying a time";"AM/PM value selected without specifying a time"
-"End time cannot be before start time";"End time cannot be before start time"
-"By %s";"By %s"
+"Birthdays must include a month and a date.";"Sinh nhật phải bao gồm một tháng và một ngày."
+"Please select a date from the calendar";"Vui lòng chọn một ngày từ lịch!"
+"Please select a time from the dropdown";"Vui lòng chọn thời gian từ danh sách"
+"Please select AM or PM";"Vui lòng chọn AM hay PM"
+"AM/PM value selected without specifying a time";"Giá trị AM/PM  được chọn không  có thời gian xác định"
+"End time cannot be before start time";"Thời gian kết thúc không thể trước thời gian bắt đầu"
+"By %s";"Bởi %s"
 "...";"..."
-"An error has occurred processing the request.  The target may no longer exist.";"An error has occurred processing the request.  The target may no longer exist."
-"Close";"Close"
+"An error has occurred processing the request.  The target may no longer exist.";"Có lỗi trong quá trình xử lý yêu cầu."
+"Close";"Đóng"
 ",";","
-"Sign In or %1$sJoin%2$s";"Sign In or %1$sJoin%2$s"
-"and";"and"
+"Sign In or %1$sJoin%2$s";"Đăng nhập hoặc %1$sĐăng ký%2$s"
+"and";"và"
 
 # timestamps
-"now";"now"
-"in a few seconds";"in a few seconds"
-"a few seconds ago";"a few seconds ago"
-"in %s minute";"in %s minute";"in %s minutes"
-"%s minute ago";"%s minute ago";"%s minutes ago"
-"in %s hour";"in %s hour";"in %s hours"
-"%s hour ago";"%s hour ago";"%s hours ago"
+"now";"hiện tại"
+"in a few seconds";"chỉ vài giây nữa"
+"a few seconds ago";"cách đây vài giây"
+"in %s minute";"trong %s phút";"trong %s phút"
+"%s minute ago";"cách đây %s phút";"cách đây %s phút"
+"in %s hour";"trong %s tiếng";"trong %s tiếng"
+"%s hour ago";"cách đây %s giờ";"cách đây %s giờ"
 
-"_ACTIVITY_ACTIONTYPE_LOGIN";"Signing in"
-"_ACTIVITY_ACTIONTYPE_LOGOUT";"Signing out"
-"_ACTIVITY_ACTIONTYPE_NETWORK_JOIN";"Joining a network"
-"_ACTIVITY_ACTIONTYPE_POST";"Posting to someone's profile"
-"_ACTIVITY_ACTIONTYPE_POST_SELF";"Posting a status update to your own profile"
-"_ACTIVITY_ACTIONTYPE_PROFILE_PHOTO_UPDATE";"Changing your photo"
-"_ACTIVITY_ACTIONTYPE_SIGNUP";"Signing up"
-"_ACTIVITY_ACTIONTYPE_STATUS";"Updating my status"
-"_ACTIVITY_ACTIONTYPE_FIELDS_CHANGE_GENERIC";"Updating my profile"
-"_ACTIVITY_ACTIONTYPE_FRIENDS";"When I become friends with someone"
-"_ACTIVITY_ACTIONTYPE_FRIENDS_FOLLOW";"When I follow someone"
+"_ACTIVITY_ACTIONTYPE_LOGIN";"Đang đăng nhập"
+"_ACTIVITY_ACTIONTYPE_LOGOUT";"Đăng đăng xuất"
+"_ACTIVITY_ACTIONTYPE_NETWORK_JOIN";"Tham gia vào mạng kết nối"
+"_ACTIVITY_ACTIONTYPE_POST";"Đăng trên hồ sơ của ai đó"
+"_ACTIVITY_ACTIONTYPE_POST_SELF";"Đăng cập nhật trang thái trên hồ sơ của bạn"
+"_ACTIVITY_ACTIONTYPE_PROFILE_PHOTO_UPDATE";"Đổi hình đại diện"
+"_ACTIVITY_ACTIONTYPE_SIGNUP";"Đang đăng ký"
+"_ACTIVITY_ACTIONTYPE_STATUS";"Cập nhật trạng thái của tôi"
+"_ACTIVITY_ACTIONTYPE_FIELDS_CHANGE_GENERIC";"Cập nhật hồ sơ  của tôi"
+"_ACTIVITY_ACTIONTYPE_FRIENDS";"Khi tôi trở thành bạn bè với ai đó"
+"_ACTIVITY_ACTIONTYPE_FRIENDS_FOLLOW";"Khi tôi theo dõi ai đó"
 
-"_CORE_CONTACT_DESCRIPTION";"If you want to ask us a question directly, please submit your message with the following form."
-"_CORE_HELP_CONTACT_MESSAGE";"Name: %1$s
+"_CORE_CONTACT_DESCRIPTION";"Nếu bạn muốn đặt câu hỏi với chúng tôi, vui lòng gửi tin nhắn theo mẫu đăng ký sau."
+"_CORE_HELP_CONTACT_MESSAGE";"Tên: %1$s
 Email: %2$s
-Member Info: (%3$s - %4$s)
+Thông tin thành viên: (%3$s - %4$s)
 IP: %5$s
 User-agent: %6$s
 Timestamp: %7$s
-Message:
+Tin nhắn:
     %8$s"
 
-"_CORE_PRIVACY_STATEMENT";"This page will contain the privacy statement of your choice."
-"_CORE_TERMS_OF_SERVICE";"This page will contain the terms of service of your choice."
+"_CORE_PRIVACY_STATEMENT";"Trang này lưu những cài đặt bảo mật mà bạn chọn."
+"_CORE_TERMS_OF_SERVICE";"Trang này lưu những điều khoản dịch vụ mà bạn chọn."
 
 
-"You can no longer respond to this message because %1$s has blocked you.";"You can no longer respond to this message because %1$s has blocked you."
+"You can no longer respond to this message because %1$s has blocked you.";"Bạn không thể trả lời tin nhắn này nữa vì %1$s đã block bạn."
 
 
 # admin
-"Member Level Settings";"Member Level Settings"
-"Select Member Level";"Select Member Level"
+"Member Level Settings";"Cài đặt cấp độ thành viên"
+"Select Member Level";"Chọn cấp độ thành viên"
 "Public";"Public"
-"Default Level";"Default Level"
+"Default Level";"Cấp độ mặc định"
 "Moderators";"Moderators"
 "Admins";"Admins"
 "Superadmins";"Super Admins"
-"Options";"Options"
+"Options";"Tùy chọn"
 "Date";"Date"
 "Views";"Views"
 "Owner";"Owner"
@@ -1047,39 +1015,39 @@ Trigger methods:<br />
 Social Network Administration"
 
 # header_member
-"_EMAIL_HEADER_MEMBER_TITLE";"Header (Members)"
-"_EMAIL_HEADER_MEMBER_DESCRIPTION";"This can be added to other emails using the [header] placeholder."
+"_EMAIL_HEADER_MEMBER_TITLE";"Tiêu đề (members)"
+"_EMAIL_HEADER_MEMBER_DESCRIPTION";"Tiêu đề có thể thêm vào những email khác sử dụng [header] ."
 "_EMAIL_HEADER_MEMBER_SUBJECT";""
-"_EMAIL_HEADER_MEMBER_BODY";"Hello [recipient_title],"
+"_EMAIL_HEADER_MEMBER_BODY";"Xin chào [recipient_title],"
 
 # footer_member
 "_EMAIL_FOOTER_MEMBER_TITLE";"Footer (Members)"
-"_EMAIL_FOOTER_MEMBER_DESCRIPTION";"This can be added to other emails using the [footer] placeholder."
+"_EMAIL_FOOTER_MEMBER_DESCRIPTION";"Footer có thể được thêm vào những email khác sử dụng [footer]."
 "_EMAIL_FOOTER_MEMBER_SUBJECT";""
 "_EMAIL_FOOTER_MEMBER_BODY";"Best Regards,
 Social Network Administration"
 
 # core_contact
-"_EMAIL_CORE_CONTACT_TITLE";"Contact Form Email"
-"_EMAIL_CORE_CONTACT_DESCRIPTION";"This email is sent to the Super Admin when a member sends a message using the contact page."
-"_EMAIL_CORE_CONTACT_SUBJECT";"A member has sent you a message using the contact page."
+"_EMAIL_CORE_CONTACT_TITLE";"Mẫu email liên lạc"
+"_EMAIL_CORE_CONTACT_DESCRIPTION";"Email này được gửi tới Super Admin khi một thanh viên gửi tin nhắn sử dụng trang liên lạc."
+"_EMAIL_CORE_CONTACT_SUBJECT";"Một thành viên đã gửi bạn tin nhắn sử dụng trang liên lạc."
 "_EMAIL_CORE_CONTACT_BODY";"[header]
 
-[sender_title] has sent you a message using the contact page:
+[sender_title] đã gửi bạn tin nhắn sử dụng trang liên lạc:
 
 Email : [sender_email]
-Message:
+Tin nhắn:
 [message][error_report]
 
 [footer]"
 
 # core_verification
-"_EMAIL_CORE_VERIFICATION_TITLE";"Email Address Verification"
-"_EMAIL_CORE_VERIFICATION_DESCRIPTION";"This is the email that gets sent to members to verify their email addresses if random passwords are disabled."
+"_EMAIL_CORE_VERIFICATION_TITLE";"Xác nhận email"
+"_EMAIL_CORE_VERIFICATION_DESCRIPTION";"Email này được gửi tới thành viên để xác nhận địa chỉ mail của họ nếu mật khẩu ngẫu nhiên bị vô hiệu."
 "_EMAIL_CORE_VERIFICATION_SUBJECT";"Social Network - Email Verification"
 "_EMAIL_CORE_VERIFICATION_BODY";"[header]
 
-Thank you for joining our social network. To verify your email address and continue, please click the following link:
+Cám ơn đã tham gia vào mạng kết nối của chúng tôi. Để xác nhận email và tiếp tục, vui lòng click đường link sau:
 http://[host][object_link]
 
 Email: [email]
@@ -1087,16 +1055,16 @@ Email: [email]
 [footer]"
 
 # core_verification_password
-"_EMAIL_CORE_VERIFICATION_PASSWORD_TITLE";"Email Address Verification With Password"
-"_EMAIL_CORE_VERIFICATION_PASSWORD_DESCRIPTION";"This is the email that gets sent to members to verify their email addresses if you have enabled random passwords."
+"_EMAIL_CORE_VERIFICATION_PASSWORD_TITLE";"Xác nhận địa chỉ email với mật khẩu"
+"_EMAIL_CORE_VERIFICATION_PASSWORD_DESCRIPTION";"Email này được gửi tới thành viên để xác nhận địa chỉ email của họ nếu bạn đã kích hoạt mật khẩu ngẫu nhiên."
 "_EMAIL_CORE_VERIFICATION_PASSWORD_SUBJECT";"Social Network - Email Verification"
 "_EMAIL_CORE_VERIFICATION_PASSWORD_BODY";"[header]
 
-Thank you for joining our social network. To verify your email address and continue, please click the following link:
+Cám ơn đã tham gia vào mạng kết nối của chúng tôi. Để xác nhận email và tiếp tục, vui lòng click đường link sau:
 http://[host][object_link]
 
 Email: [email]
-Password: [password]
+Mật khẩu: [password]
 
 [footer]"
 
@@ -1115,11 +1083,11 @@ Signup Date: [date]
 
 # core_welcome
 "_EMAIL_CORE_WELCOME_TITLE";"Welcome"
-"_EMAIL_CORE_WELCOME_DESCRIPTION";"This is the email that gets sent when a member signs up if random passwords are disabled."
-"_EMAIL_CORE_WELCOME_SUBJECT";"Welcome to the social network!"
+"_EMAIL_CORE_WELCOME_DESCRIPTION";"Email này được gửi tới khi một thành viên đăng ký nếu mật khẩu ngẫu nhiên bị vô hiệu."
+"_EMAIL_CORE_WELCOME_SUBJECT";"Chào mừng tham gia vào mạng kết nối!"
 "_EMAIL_CORE_WELCOME_BODY";"[header]
 
-Thank you for joining our social network. Click the following link and enter your information below to login:
+Cám ơn đã tham gia vào mạng kết nối của chúng tôi. Click đường link sau và nhập thông tin bên dưới để đăng nhập:
 
 http://[host][object_link]
 
@@ -1148,17 +1116,17 @@ Password: [password]
 "_EMAIL_CORE_LOSTPASSWORD_SUBJECT";"Social Network - Lost Password"
 "_EMAIL_CORE_LOSTPASSWORD_BODY";"[header]
 
-You have requested to reset your password because you have forgotten your password. If you did not request this, please ignore it. It will expire in 24 hours. To reset your password, please click the following link:
+Bạn được yêu cầu đặt lại mật khẩu vì bạn đã quên mật khẩu của mình. Nếu bạn không yêu cầu việc này, vui lòng bỏ qua. Yêu cầu sẽ bị hủy sau 24h. Để đặt lại mật khẩu, vui lòng click đường link sau:
 
 http://[host][object_link]
 
 [footer]"
 
 #error messages
-"We're sorry!";"We're sorry!"
-"We are currently experiencing some technical issues. Please try again or report this to your site administrator using the %1$scontact%2$s form.";"We are currently experiencing some technical issues. Please try again or report this to your site administrator using the %1$scontact%2$s form."
-"Administrator: Please check the error log in your admin panel for more information regarding this error.";"Administrator: Please check the error log in your admin panel for more information regarding this error."
-"Some information is available below:";"Some information is available below:"
-"Error Code: %s";"Error Code: %s"
+"We're sorry!";"Xin lỗi bạn!"
+"We are currently experiencing some technical issues. Please try again or report this to your site administrator using the %1$scontact%2$s form.";"Chúng tôi hiện đang gặp vài sự cố kỹ thuật. Vui lòng thử lại sau hoặc báo cáo việc này tới admin sử dụng %1$s mẫu %2$s liên lạc."
+"Administrator: Please check the error log in your admin panel for more information regarding this error.";"Admin: Vui lòng kiểm tra lỗi đăng nhập trong bảng điều khiển admin để tìm hiểu thông tin liên quan đến lỗi xảy ra."
+"Some information is available below:";"Một vài thông tin sẵn có dưới đây:"
+"Error Code: %s";"Lỗi Code: %s"
 "Maintenance Mode Code";"Maintenance Mode Code"
 "CORE_FORM_ADMIN_SETTINGS_MAINTENANCE_MODE_CODE";"If empty, a password will be randomly generated."

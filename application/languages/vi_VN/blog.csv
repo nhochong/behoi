@@ -1,35 +1,35 @@
-dare y"Blog";"Blog"
+"Blog";"Blog"
 "Blogs";"Blogs"
-"Blog Entries";"Blog Entries"
+"Blog Entries";"Danh mục bài viết"
 "blog";"blog";"blogs"
 
-"Nobody has written a blog entry with that criteria.";"Nobody has written a blog entry with that criteria."
-"Nobody has written a blog entry yet.";"Nobody has written a blog entry yet."
+"Nobody has written a blog entry with that criteria.";"Chưa có bài viết nào được tạo theo yêu cầu này!"
+"Nobody has written a blog entry yet.";"Chưa có bài viết nào được tạo"
 
 "Get started by %1$swriting%2$s a new entry.";"Get started by %1$swriting%2$s a new entry."
 
-"You do not have any blog entries that match your search criteria.";"You do not have any blog entries that match your search criteria."
-"You do not have any blog entries.";"You do not have any blog entries."
+"You do not have any blog entries that match your search criteria.";"Không có bài viết phù hợp với yêu cầu tìm kiếm của bạn!"
+"You do not have any blog entries.";"Bạn chưa tạo bài viết nào!"
 
-"Posted by";"Posted by"
+"Posted by";"Đăng bởi"
 "Posted by %1$s";"Posted by %1$s"
 "about";"about"
 "Posted";"Posted"
 "by";"by"
 
-"Subscribe";"Subscribe"
-"Edit Entry";"Edit Entry"
-"Delete Entry";"Delete Entry"
+"Subscribe";"Đăng ký"
+"Edit Entry";"Chỉnh sửa"
+"Delete Entry";"Xóa"
 
-"Write New Entry";"Write New Entry"
-"Edit Blog Style";"Edit Blog Style"
+"Write New Entry";"Tạo bài viết mới"
+"Edit Blog Style";"Chỉnh sửa blog"
 
-"Delete Blog Entry?";"Delete Blog Entry?"
-"Delete";"Delete"
-"cancel";"cancel"
-"or";"or"
+"Delete Blog Entry?";"Xóa bài viết?"
+"Delete";"Xóa"
+"cancel";"Hủy"
+"or";"hoặc"
 
-"The blog you are looking for does not exist or has not been published yet.";"The blog you are looking for does not exist or has not been published yet."
+"The blog you are looking for does not exist or has not been published yet.";"Oh! Blog bạn đang tìm không tồn tại!"
 
 "Be the first to %1$swrite%2$s one!";"Be the first to %1$swrite%2$s one!"
 "%1$s has not written a blog entry yet.";"%1$s has not written a blog entry yet."
@@ -38,16 +38,16 @@ dare y"Blog";"Blog"
 "%1$s's Blog";"%1$s's Blog"
 "%1$s's Blogs";"%1$s's Blogs"
 
-"Archives";"Archives"
-"Categories";"Categories"
-"View All Entries";"View All Entries"
-"Search Blogs";"Search Entries"
-"All Categories";"All Categories"
+"Archives";"Lưu trữ"
+"Categories";"Danh mục"
+"View All Entries";"Xem tất cả bài viết"
+"Search Blogs";"Tìm kiếm"
+"All Categories";"Tất cả danh mục"
 
 "Next &#187;";"Next &#187;"
-"&#171; Previous";"&#171; Previous"
+"&#171; Previous";"&#171; Back"
 
-"Your changes were saved. Click <a href='%1$s'>here</a> to view your blog.";"Your changes were saved. Click <a href='%1$s'>here</a> to view your blog."
+"Your changes were saved. Click <a href='%1$s'>here</a> to view your blog.";"Thay đổi được lưu. Click <a href='%1$s'>tại đây</a> để xem blog."
 
 "ADMIN_ACTIVITY_TYPE_BLOG_NEW";"When a user (subject) posts a new blog entry (object)."
 "ADMIN_ACTIVITY_TYPE_COMMENT_BLOG";"When a user (subject) comments on another user's (object) blog entries."
@@ -161,69 +161,69 @@ dare y"Blog";"Blog"
 "_BLOG_FORM_STYLE_DESCRIPTION";"You can change the colors, fonts, and styles of your blog by adding CSS code below. The contents of the text area below will be output between <style> tags on your blog."
 
 "Blogs Plugin";"Blogs Plugin"
-"Allow Commenting on Blogs?";"Allow Commenting on Blogs?"
+"Allow Commenting on Blogs?";"Cho phép bình luận trên Blog?"
 "Do you want to let members of this level comment on blogs?";"Do you want to let members of this level comment on blogs?"
-"Yes, allow members to comment on blogs.";"Yes, allow members to comment on blogs."
-"No, do not allow members to comment on blogs.";"No, do not allow members to comment on blogs."
-"Maximum Allowed Blog Entries?";"Maximum Allowed Blog Entries?"
-"Enter the maximum number of allowed blog entries. The field must contain an integer between 1 and 999, or 0 for unlimited.";"Enter the maximum number of allowed blog entries. The field must contain an integer between 1 and 999, or 0 for unlimited."
-"If you would like to upload a new entry, please <a href=""%1$s"">delete</a> an old one first.";"If you would like to upload a new entry, please <a href=""%1$s"">delete</a> an old one first."
-"You have already uploaded the maximum number of entries allowed.";"You have already uploaded the maximum number of entries allowed."
+"Yes, allow members to comment on blogs.";"Cho phép bình luận trên blogs"
+"No, do not allow members to comment on blogs.";"Không cho phép bình luận trên blogs."
+"Maximum Allowed Blog Entries?";"Số lượng bài viết tối đa cho phép?"
+"Enter the maximum number of allowed blog entries. The field must contain an integer between 1 and 999, or 0 for unlimited.";"Nhập số lượng bài viết tối đa trên blog. Mục này phải nhập số nguyên từ 1 đến 999, hoặc 0 nếu không giới hạn số lượng!"
+"If you would like to upload a new entry, please <a href=""%1$s"">delete</a> an old one first.";"Nếu bạn muốn đăng một bài viết mới, vui lòng <a href=""%1$s"">xóa</a> bài viết cũ!"
+"You have already uploaded the maximum number of entries allowed.";"Bạn đã đăng một loạt bài viết mới!"
 
 
-"Popular Blog Entries";"Popular Blog Entries"
+"Popular Blog Entries";"Bài viết nổi bật"
 "Profile Blogs";"Profile Blogs"
-"Recent Blog Entries";"Recent Blog Entries"
+"Recent Blog Entries";"Bài viết gần đây"
 
-"Blog Main Navigation Menu";"Blog Main Navigation Menu"
-"Blog Quick Navigation Menu";"Blog Quick Navigation Menu"
-"Blog Gutter Navigation Menu";"Blog Gutter Navigation Menu"
+"Blog Main Navigation Menu";"Danh mục chính"
+"Blog Quick Navigation Menu";"Danh mục liên kết nhanh"
+"Blog Gutter Navigation Menu";"Danh mục liên kết"
 
 
 # categories
-"Arts & Culture";"Arts & Culture"
-"Business";"Business"
-"Entertainment";"Entertainment"
-"Family & Home";"Family & Home"
-"Health";"Health"
+"Arts & Culture";"Văn hóa"
+"Business";"Kinh doanh"
+"Entertainment";"Giải trí"
+"Family & Home";"Gia đình"
+"Health";"Sức khỏe"
 "Recreation";"Recreation"
-"Personal";"Personal"
-"Shopping";"Shopping"
-"Society";"Society"
-"Sports";"Sports"
-"Technology";"Technology"
+"Personal";"Tâm sự"
+"Shopping";"Mua sắm"
+"Society";"Xã hội"
+"Sports";"Thể thao"
+"Technology";"Kỹ thuật"
 
 
 # action types
-"{item:$subject} wrote a new blog entry:";"{item:$subject} wrote a new blog entry:"
-"{item:$subject} commented on {item:$owner}'s {item:$object:blog entry}: {body:$body}";"{item:$subject} commented on {item:$owner}'s {item:$object:blog entry}: {body:$body}"
+"{item:$subject} wrote a new blog entry:";"{item:$subject} đã tạo một bài viết mới:"
+"{item:$subject} commented on {item:$owner}'s {item:$object:blog entry}: {body:$body}";"{item:$subject} đã bình luận trên {item:$owner}'s {item:$object:blog entry}: {body:$body}"
 
 
 # item types
-"ITEM_TYPE_BLOG";"Blog Entries"
+"ITEM_TYPE_BLOG";"Bài viết"
 
 # notification types
-"{item:$subject} has posted a new blog entry: {item:$object}.";"{item:$subject} has posted a new blog entry: {item:$object}."
+"{item:$subject} has posted a new blog entry: {item:$object}.";"{item:$subject} đã đăng một bài viết mới: {item:$object}."
 
 # mail templates
 
 # notify_commented
 "_EMAIL_NOTIFY_BLOG_SUBSCRIBED_NEW_TITLE";"Blog Subscription"
-"_EMAIL_NOTIFY_BLOG_SUBSCRIBED_NEW_DESCRIPTION";"This email is sent to someone when a blog entry is posted by a member to whom they have subscribed."
-"_EMAIL_NOTIFY_BLOG_SUBSCRIBED_NEW_SUBJECT";"[sender_title] posted a new blog entry: [object_title]"
+"_EMAIL_NOTIFY_BLOG_SUBSCRIBED_NEW_DESCRIPTION";"Hi! Email được gửi tới thành viên đã đăng ký khi có một thành viên đăng bài trên Blog!"
+"_EMAIL_NOTIFY_BLOG_SUBSCRIBED_NEW_SUBJECT";"[sender_title] đã đăng một bài viết mới: [object_title]"
 "_EMAIL_NOTIFY_BLOG_SUBSCRIBED_NEW_BODY";"[header]
 
-[sender_title] has posted a new blog entry: [object_title].
-Please click the following link to view it:
+[sender_title] đã đăng một bài viết mới: [object_title].
+Click link dưới đây để xem:
 
 http://[host][object_link]
 
 [footer]"
 
 
-"Are you sure you want to delete this blog entry?";"Are you sure you want to delete this blog entry?"
-"Blog entry doesn't exist or not authorized to delete";"Blog entry doesn't exist or not authorized to delete"
-"Your blog entry has been deleted.";"Your blog entry has been deleted."
+"Are you sure you want to delete this blog entry?";"Oh! Bạn có chắc xóa bài viết này?"
+"Blog entry doesn't exist or not authorized to delete";"Bài viết không tồn tại!"
+"Your blog entry has been deleted.";"Bài viết đã bị xóa!"
 
-"Recent Entries";"Recent Entries"
+"Recent Entries";"Bài viết gần đây"
 "Tags";"Tags"

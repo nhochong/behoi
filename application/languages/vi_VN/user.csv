@@ -1,231 +1,231 @@
-"User";"User"
-"profile";"profile"
+"User";"Người dùng"
+"profile";"Hồ sơ cá nhân"
 
-"Post";"Post"
+"Post";"Bài đăng"
 
-"If you already have an account, please enter your details below. If you don't have one yet, please <a href='%s'>sign up</a> first.";"If you already have an account, please enter your details below. If you don't have one yet, please <a href='%s'>sign up</a> first."
-"<span><a href='%s'>Forgot Password?</a></span>";"<span><a href='%s'>Forgot Password?</a></span>"
+"If you already have an account, please enter your details below. If you don't have one yet, please <a href='%s'>sign up</a> first.";"Nếu bạn đã có tài khoản, hãy nhập thông tin bên dưới. Nếu chưa tạo tài khoản, hãy <a href='%s'>đăng ký</a> trước nhé!"
+"<span><a href='%s'>Forgot Password?</a></span>";"<span><a href='%s'>Quên mật khẩu?</a></span>"
 
-"Block Member";"Block Member"
-"Do you want to block this member?";"Do you want to block this member?"
-"Cancel";"Cancel"
+"Block Member";"Block thành viên"
+"Do you want to block this member?";"Bạn có muốn block thành viên này?"
+"Cancel";"Hủy"
 
-"Unblock Member";"Unblock Member"
-"Do you want to unblock this member?";"Do you want to unblock this member?"
+"Unblock Member";"Unblock thành viên"
+"Do you want to unblock this member?";"Bạn muốn unblock thành viên này?"
 
-"Make Profile Photo";"Make Profile Photo"
-"Do you want to make this photo your profile photo?";"Do you want to make this photo your profile photo?"
-"Save";"Save"
+"Make Profile Photo";"Làm hình đại diện"
+"Do you want to make this photo your profile photo?";"Bạn muốn chọn hình này làm hình đại diện?"
+"Save";"Lưu"
 
-"Edit Member Profile";"Edit Member Profile"
-"%1$s's Profile";"%1$s's Profile"
-"Current Photo";"Current Photo"
-"Choose New Photo";"Choose New Photo"
-"Save Photo";"Save Photo"
-"Profile Photos";"Profile Photos"
-"Remove Photo";"Remove Photo"
-"remove photo";"remove photo"
-"Do you want to remove your profile photo?  Doing so will set your photo back to the default photo.";"Do you want to remove your profile photo?  Doing so will set your photo back to the default photo."
+"Edit Member Profile";"Chỉnh sửa hồ sơ cá nhân"
+"%1$s's Profile";"Hồ sơ của %1$s "
+"Current Photo";"Hình ảnh hiện tại"
+"Choose New Photo";"Chọn hình mới"
+"Save Photo";"Lưu"
+"Profile Photos";"Hình đại diện"
+"Remove Photo";"Xóa hình"
+"remove photo";"xóa hình"
+"Do you want to remove your profile photo?  Doing so will set your photo back to the default photo.";"Bạn muốn xóa hình đại diện? Hình đại diện sẽ chuyển thành hình ảnh mặc định sau đó!"
 
-"Profile Style";"Profile Style"
-"Add your own CSS code above to give your profile a more personalized look.";"Add your own CSS code above to give your profile a more personalized look."
-"Save Styles";"Save Styles"
+"Profile Style";"Kiểu hồ sơ"
+"Add your own CSS code above to give your profile a more personalized look.";"Thêm đoạn code CSS trên để giúp hồ sơ cá nhân của bạn thêm đặc biệt hơn!"
+"Save Styles";"Lưu"
 
-"Add Friend";"Add Friend"
-"Would you like to add this member as a friend?";"Would you like to add this member as a friend?"
+"Add Friend";"Kết bạn"
+"Would you like to add this member as a friend?";"Bạn có muốn kết bạn với thành viên này?"
 
-"Cancel Friend Request";"Cancel Friend Request"
-"Do you want to cancel your friend request?";"Do you want to cancel your friend request?"
-"Cancel Request";"Cancel Request"
+"Cancel Friend Request";"Hủy yêu cầu kết bạn"
+"Do you want to cancel your friend request?";"Bạn có muốn hủy yêu cầu kết bạn?"
+"Cancel Request";"Hủy bỏ"
 
-"Confirm Friend";"Confirm Friend"
-"Would you like to confirm this member as a friend?";"Would you like to confirm this member as a friend?"
+"Confirm Friend";"Xác nhận kết bạn"
+"Would you like to confirm this member as a friend?";"Bạn có vui lòng xác nhận kết bạn với thành viên này?"
 
-"Reject Friend";"Reject Friend"
-"Would you like to reject this member as a friend?";"Would you like to reject this member as a friend?"
+"Reject Friend";"Từ chối kết bạn"
+"Would you like to reject this member as a friend?";"Bạn có muốn từ chối kết bạn với thành viên này?"
 
-"Remove Friend";"Remove Friend"
-"Are you sure you want to remove this member as a friend?";"Are you sure you want to remove this member as a friend?"
+"Remove Friend";"Xóa bạn"
+"Are you sure you want to remove this member as a friend?";"Bạn có chắc muốn xóa người bạn này?"
 
-"Delete Account";"Delete Account"
-"Are you sure you want to delete your account? Any content you've uploaded in the past will be permanently deleted. You will be immediately signed out and will no longer be able to sign in with this account.";"Are you sure you want to delete your account? Any content you've uploaded in the past will be permanently deleted. You will be immediately signed out and will no longer be able to sign in with this account."
-"Yes, Delete My Account";"Yes, Delete My Account"
-"This is the last super admin account. Please reconsider before deleting this account.";"This is the last super admin account. Please reconsider before deleting this account."
+"Delete Account";"Xóa tài khoản"
+"Are you sure you want to delete your account? Any content you've uploaded in the past will be permanently deleted. You will be immediately signed out and will no longer be able to sign in with this account.";"Bạn có chắc xóa tài khoản này? Tất cả nội dung bạn đã đăng tải sẽ bị xóa vĩnh viễn. Bạn sẽ đăng xuất ngay lập tức và không thể đăng nhập bằng tài khoản này nữa!"
+"Yes, Delete My Account";"Đồng ý, xóa tài khoản!"
+"This is the last super admin account. Please reconsider before deleting this account.";"Đây là lần xác nhận cuối. Bạn hãy cân nhắc khi xóa tài khoản này!"
 
-"My Settings";"My Settings"
-"General";"General"
-"Notifications";"Notifications"
-"General Settings";"General Settings"
-"Notification Settings";"Notification Settings"
-"Email Address";"Email Address"
-"Please enter a valid email address.";"Please enter a valid email address."
-"Someone has already registered this email address, please use another one.";"Someone has already registered this email address, please use another one."
-"Profile Address";"Profile Address"
-"Please enter a valid profile address.";"Please enter a valid profile address."
-"Someone has already picked this profile address, please use another one.";"Someone has already picked this profile address, please use another one."
-"Profile addresses must start with a letter.";"Profile addresses must start with a letter."
-"Profile addresses must be alphanumeric.";"Profile addresses must be alphanumeric."
+"My Settings";"Cài đặt"
+"General";"Tổng quát"
+"Notifications";"Thông báo"
+"Notification Settings";"Cài đặt thông báo"
+"Email Address";"Email"
+"Please enter a valid email address.";"Vui lòng nhập email có thật!"
+"Someone has already registered this email address, please use another one.";"Email này đã được đăng ký, vui lòng sử dụng một email khác!"
+"Profile Address";"Địa chỉ hồ sơ cá nhân"
+"Please enter a valid profile address.";"Vui lòng nhập địa chỉ xác thực!"
+"Someone has already picked this profile address, please use another one.";"Ai đó đã sử dụng địa chỉ hồ sơ này, vui lòng sử dụng một địa chỉ khác!"
+"Profile addresses must start with a letter.";"Địa chỉ hồ sơ phải bắt đầu bằng một chữ cái!"
+"Profile addresses must be alphanumeric.";"Địa chỉ hồ sơ phải là chữ cái"
 
-"Account Type";"Account Type"
+"Account Type";"Loại tài khoản"
 "Timezone";"Timezone"
 "Select the city closest to you that shares your same timezone."
-"Locale";"Locale"
-"Dates, times, and other settings will be displayed using this locale setting.";"Dates, times, and other settings will be displayed using this locale setting."
-"Email Alerts";"Email Alerts"
-"Which of the these do you want to receive email alerts about?";"Which of the these do you want to receive email alerts about?"
+"Locale";"Vị trí"
+"Dates, times, and other settings will be displayed using this locale setting.";"Ngày, giờ và những cài đặt khác sẽ hiển thị dựa theo cài đặt vị trí!"
+"Email Alerts";"Thông báo email"
+"Which of the these do you want to receive email alerts about?";"Bạn muốn nhận email thông báo cho những nội dung nào?"
 
 "Join Network";"Join Network"
-"Change Password";"Change Password"
-"Old Password";"Old Password"
-"New Password";"New Password"
-"Passwords must be at least 6 characters in length.";"Passwords must be at least 6 characters in length."
-"New Password (again)";"New Password (again)"
-"Enter your password again for confirmation.";"Enter your password again for confirmation."
-"Change Password";"Change Password"
+"Change Password";"Đổi mật khẩu"
+"Old Password";"Mật khẩu cũ"
+"New Password";"Mật khẩu mới"
+"Passwords must be at least 6 characters in length.";"Mật khẩu phải dài ít nhất 6 kí tự!"
+"New Password (again)";"Mật khẩu mới(xác nhận)"
+"Enter your password again for confirmation.";"Nhập lại mật khẩu để xác nhận!"
+"Change Password";"Đổi mật khẩu"
 
-"Privacy Settings";"Privacy Settings"
-"Blocked Members";"Blocked Members"
-"Adding a person to your block list makes your profile (and all of your other content) unviewable to them. Any connections you have to the blocked person will be canceled. To add someone to your block list, visit that person's profile page.";"Adding a person to your block list makes your profile (and all of your other content) unviewable to them. Any connections you have to the blocked person will be canceled. To add someone to your block list, visit that person's profile page."
-"Do not display me in searches, browsing members, or the ""Online Members"" list.";"Do not display me in searches, browsing members, or the ""Online Members"" list."
+"Privacy Settings";"Cài đặt cá nhân"
+"Blocked Members";"Blocked thành viên"
+"Adding a person to your block list makes your profile (and all of your other content) unviewable to them. Any connections you have to the blocked person will be canceled. To add someone to your block list, visit that person's profile page.";"Thêm một người vào danh sách block của bạn sẽ khiến người đó không nhìn thấy hồ sơ của bạn (và tất cả nội dung khác) nữa! Tất cả kết nối sẽ bị hủy bỏ. Để thêm ai đó vào danh sách block của bạn, hãy xem trang hồ sơ của người đó!"
+"Do not display me in searches, browsing members, or the ""Online Members"" list.";"Đừng hiển thị tôi trong phần tìm kiếm thành viên cũng như trong danh sách thành viên trực tuyến!"
 
-"Profile Privacy";"Profile Privacy"
-"Who can view your profile?";"Who can view your profile?"
-"Profile Posting Privacy";"Profile Posting Privacy"
-"Who can post on your profile?";"Who can post on your profile?"
-"Only Me";"Only Me"
-"Only My Friends";"Only My Friends"
-"Only My Networks";"Only My Networks"
-"Friends & Networks";"Friends & Networks"
-"All Members";"All Members"
+"Profile Privacy";"Bảo mật hồ sơ"
+"Who can view your profile?";"Ai có thể thấy hồ sơ cá nhân của bạn?"
+"Profile Posting Privacy";"Bảo mật hồ sơ bài viết"
+"Who can post on your profile?";"Ai có thể viết trên hồ sơ của bạn?"
+"Only Me";"Chỉ bạn"
+"Only My Friends";"Chỉ bạn bè của bạn"
+"Only My Networks";"Chỉ trong kết nối của bạn"
+"Friends & Networks";"Bạn bè & kết nối"
+"All Members";"Tất cả thành viên"
 
-"Recent Activity Privacy";"Recent Activity Privacy"
+"Recent Activity Privacy";"Hoạt động bảo mật gần đây"
 "Which of the following things do you want to have published about you in the recent activity feed? Note that changing this setting will only affect future news feed items.";"Which of the following things do you want to have published about you in the recent activity feed? Note that changing this setting will only affect future news feed items."
 
-"Create Account";"Create Account"
-"You will use your email address to login.";"You will use your email address to login."
-"Password";"Password"
-"Please enter a valid password.";"Please enter a valid password."
-"Password Again";"Password Again"
-"Please make sure the ""password"" and ""password again"" fields match.";"Please make sure the ""password"" and ""password again"" fields match."
-"Password did not match";"Password did not match"
+"Create Account";"Tạo tài khoản"
+"You will use your email address to login.";"Bạn sẽ dùng địa chỉ mail để đăng nhập."
+"Password";"Mật khẩu"
+"Please enter a valid password.";"Vui lòng nhập một mật khẩu xác thực."
+"Password Again";"Xác nhận mật khẩu"
+"Please make sure the ""password"" and ""password again"" fields match.";"Hãy chắc chắn "mật khẩu" và phần "xác nhận mật khẩu" là giống nhau!"
+"Password did not match";"Mật khẩu không giống nhau"
 
-"Language";"Language"
+"Language";"Ngôn ngữ"
 
-"Continue";"Continue"
+"Continue";"Tiếp tục"
 
-"Current Photo";"Current Photo"
-"Choose New Photo";"Choose New Photo"
+"Current Photo";"Hình hiện tại"
+"Choose New Photo";"Chọn hình mới"
 
-"Member Sign In";"Member Sign In"
-"Remember Me";"Remember Me"
+"Member Sign In";"Thành viên đăng nhập"
+"Remember Me";"Lưu đăng nhập"
 
-"Human Verification";"Human Verification"
-"Please validate that you are not a robot by typing in the letters and numbers in this image:";"Please validate that you are not a robot by typing in the letters and numbers in this image:"
+"Human Verification";"Kiểm tra"
+"Please validate that you are not a robot by typing in the letters and numbers in this image:";"Vui lòng xác nhận bạn không phải là robot bằng cách nhập chữ và số trong hình"
 
-"Login";"Login"
-"Edit My Profile";"Edit My Profile"
-"Personal Info";"Personal Info"
-"Edit My Photo";"Edit My Photo"
+"Login";"Đăng nhập"
+"Edit My Profile";"Chỉnh sửa hồ sơ của tôi"
+"Personal Info";"Thông tin cá nhân"
+"Edit My Photo";"Thay đổi hình ảnh"
 
 "clear";"clear"
 
-"add to list";"add to list"
-"Choose Friend List";"Choose Friend List"
-"New list...";"New list..."
+"add to list";"Thêm vào danh sách"
+"Choose Friend List";"Chọn từ danh sách bạn bè"
+"New list...";"Danh sách mới..."
 
-"%s friend request";"%s friend request";"%s friend requests"
-"%1$s has sent you a friend request.";"%1$s has sent you a friend request."
-"or";"or"
-"ignore request";"ignore request"
+"%s friend request";"%s yêu cầu kết bạn";"%s yêu cầu kết bạn"
+"%1$s has sent you a friend request.";"%1$s đã gửi bạn 1 yêu cầu kết bạn mới."
+"or";"hoặc"
+"ignore request";"bỏ qua"
 
-"Browse Members";"Browse Members"
-"%s member found.";"%s member found.";"%s members found."
+"Browse Members";"Tìm kiếm thành viên"
+"%s member found.";"%s member found.";"%s thành viên được tìm thấy."
 
 "Loading...";"Loading..."
-"View More";"View More"
-"Post something...";"Post something..."
-"Post Something...";"Post Something..."
-"Missing heading";"Missing heading"
+"View More";"Xem thêm"
+"Post something...";"Đăng tải..."
+"Post Something...";"Đăng tải..."
+"Missing heading";"Thiếu tiêu đề"
 
-"Member Info";"Member Info"
-"Member Type:";"Member Type:"
+"Member Info";"Thông tin thành viên"
+"Member Type:";"Loại thành viên:"
 
-"This profile is private.";"This profile is private."
-"Settings were successfully saved.";"Settings were successfully saved."
+"This profile is private.";"Hồ sơ này là riêng tư."
+"Settings were successfully saved.";"Cài đặt lưu thành công."
 
 "My Networks";"My Networks"
 "You belong to %s network.";"You belong to %s network.";"You belong to %s networks."
-"%s member.";"%s member.";"%s members."
+"%s member.";"%s thành viên.";"%s thành viên."
 
 "Leave Network";"Leave Network"
 "To add a new network, begin typing its name below.";"To add a new network, begin typing its name below."
 
 "We now";"We now"
-"yourname";"yourname"
-"Signup complete!";"Signup complete!"
-"Yes, Delete My Account";"Yes, Delete My Account"
-"skip";"skip"
+"yourname";"Tên của bạn"
+"Signup complete!";"Đăng ký thành công!"
+"Yes, Delete My Account";"Xóa tài khoản của tôi"
+"skip";"bỏ qua"
 
 "Edit Thumbnail";"Edit Thumbnail"
-"Apply Changes";"Apply Changes"
+"Apply Changes";"Áp dụng thay đổi"
 
 "Hi %1$s!";"Hi %1$s!"
 
-"Missing heading";"Missing heading"
-"Lists:";"Lists"
+"Missing heading";"Thiếu tiêu đề"
+"Lists:";"Danh sách"
 
-"Mutual Friends";"Mutual Friends"
-"Member Type:";"Member Type:"
-"Profile Views:";"Profile Views:"
-"Friends:";"Friends:"
-"Last Update:";"Last Update:"
-"Joined:";"Joined:"
+"Mutual Friends";"Bạn bè chung"
+"Member Type:";"Loại thành viên:"
+"Profile Views:";"Lượt xem hồ sơ:"
+"Friends:";"Bạn bè:"
+"Last Update:";"Cập nhật lần cuối:"
+"Joined:";"Đã tham gia:"
 
-"%s view";"%s view";"%s views"
-"%1$s view";"%1$s view";"%1$s views"
-"%s friend";"%s friend";"%s friends"
+"%s view";"%s xem";"%s lượt xem"
+"%1$s view";"%1$s xem";"%1$s lượt xem"
+"%s friend";"%s bạn";"%s bạn"
 
-"You are already signed in.";"You are already signed in."
-"No record of a member with that email was found.";"No record of a member with that email was found."
-"Invalid credentials";"Invalid credentials"
-"Invalid credentials supplied";"The credentials you have supplied are invalid. Please check your email and password, and try again."
-"You are already logged out.";"You are already logged out."
-"Another member has already associated with that facebook account";"Another member has already associated with that facebook account"
-"Login successful";"Login successful"
-"You are now logged out.";"You are now logged out."
+"You are already signed in.";"Bạn đã đăng nhập."
+"No record of a member with that email was found.";"Không tồn tại thành viên đăng ký với email này!"
+"Invalid credentials";"Thông tin không có thật"
+"Invalid credentials supplied";"Thông tin cung cấp không có thật"
+"The credentials you have supplied are invalid. Please check your email and password, and try again.";"Thông tin bạn cung cấp không có thật, vui lòng kiếm tra lại email, mật khẩu và thử lại"
+"You are already logged out.";"Bạn đã đăng xuất."
+"Another member has already associated with that facebook account";"Thành viên khác đã liên kết với tài khoản facebook đó"
+"Login successful";"Đăng nhập thành công"
+"You are now logged out.";"Bạn đã đăng xuất."
 
-"No member specified";"No member specified"
-"No action taken";"No action taken"
-"Invalid data";"Invalid data"
-"An error has occurred.";"An error has occurred."
-"Member unblocked";"Member unblocked"
-"Member blocked";"Member blocked"
-"The uploaded file is not supported or is corrupt.";"The uploaded file is not supported or is corrupt."
-"Set as profile photo";"Your profile photo has been successfully changed."
-"Your changes have been saved.";"Your changes have been saved."
+"No member specified";"Không có thành viên được xác định"
+"No action taken";"Chưa có hoạt động nào"
+"Invalid data";"Dữ liệu không có thật"
+"An error has occurred.";"Đã có lỗi xảy ra."
+"Member unblocked";"Mở khóa thành viên"
+"Member blocked";"Mở khóa"
+"The uploaded file is not supported or is corrupt.";"Tập tin đăng tải không được hỗ trợ hoặc bị lỗi!"
+"Set as profile photo";"Hình đại diện đã được thay đổi thành công!"
+"Your changes have been saved.";"Thay đổi đã được lưu."
 
-"Missing list/not authorized";"Missing list/not authorized"
-"Already in list";"Already in list"
-"Member added to list.";"Member added to list."
-"Already not in list";"Already not in list"
-"Member removed from list.";"Member removed from list."
-"List deleted";"List deleted"
-"You cannot befriend yourself.";"You cannot befriend yourself."
-"You are already friends with this member.";"You are already friends with this member."
-"Friendship request was not sent because you blocked this member.";"Friendship request was not sent because you blocked this member."
+"Missing list/not authorized";"Danh sách bị thiếu/không được cấp quyền"
+"Already in list";"Đã ở trong danh sách"
+"Member added to list.";"Thành viên đã thêm vào danh sách."
+"Already not in list";"Chưa ở trong danh sách"
+"Member removed from list.";"Xóa thành viên khỏi danh sách."
+"List deleted";"Xóa danh sách"
+"You cannot befriend yourself.";"Bạn không thể kết bạn với chính bạn."
+"You are already friends with this member.";"Bạn đã kết bạn với thành viên này."
+"Friendship request was not sent because you blocked this member.";"Yêu cầu kết bạn không được gửi vì bạn đã khóa thành viên này!"
 
-"No action taken";"No action taken"
-"Your friend request has been sent.";"Your friend request has been sent."
-"Your friend request has been cancelled.";"Your friend request has been cancelled."
+"No action taken";"Chưa có hoạt động nào"
+"Your friend request has been sent.";"Yêu cầu kết bạn đã được gửi."
+"Your friend request has been cancelled.";"Yêu cầu kết bạn đã bị hủy."
 
-"You are now friends with %1$s";"You are now friends with %1$s"
-"You ignored a friend request from %1$s";"You ignored a friend request from %1$s"
-"This person has been removed from your friends.";"This person has been removed from your friends."
+"You are now friends with %1$s";"Bạn đã thành bạn bè với %1$s"
+"You ignored a friend request from %1$s";"Bạn bỏ qua yêu cầu kết bạn từ %1$s"
+"This person has been removed from your friends.";"Người này đã bị xóa khỏi danh sách bạn bè của bạn"
 
-"Settings saved.";"Settings saved."
-"Settings were successfully saved.";"Settings were successfully saved."
-"Passwords did not match";"Passwords did not match"
-"Old password did not match";"Old password did not match"
+"Settings saved.";"Cài đặt đã lưu."
+"Settings were successfully saved.";"Cài đặt được lưu thành công."
+"Passwords did not match";"Mật khẩu không đúng"
+"Old password did not match";"Mật khẩu cũ không đúng"
 "Network not found";"Network not found"
 
 "Invalid param count";"Invalid param count"
@@ -250,18 +250,18 @@ and sharing with sites such as Facebook, Twitter, Google, and LinkedIn using
 the Facebook and Twitter integration <a href=""%2$s"">here</a>.
 <a class=""admin help"" href=""%3$s"" target=""_blank""> </a>"
 
-"Please make sure the ""password"" and ""password again"" fields match.";"Please make sure the ""password"" and ""password again"" fields match."
+"Please make sure the ""password"" and ""password again"" fields match.";"Hãy chắc chắn "mật khẩu" trùng với "xác nhận mật khẩu""!
 
-"I have read and agree to the <a target=""_blank"" href=""%s/help/terms"">terms of service</a>.";"I have read and agree to the <a target=""_blank"" href=""%s/help/terms"">terms of service</a>."
-"Terms of Service";"Terms of Service"
-"You must agree to the terms of service to continue.";"You must agree to the terms of service to continue."
+"I have read and agree to the <a target=""_blank"" href=""%s/help/terms"">terms of service</a>.";"Tôi đã đọc và đồng ý với <a target=""_blank"" href=""%s/help/terms"">điều khoản của website</a>."
+"Terms of Service";"Điều khoản dịch vụ"
+"You must agree to the terms of service to continue.";"Bạn phải đồng ý với điều khoản website để tiếp tục!"
 "This will be the end of your profile link, for example: <br /> <span id=""profile_address"">http://%s</span>";"This will be the end of your profile link, for example: <br /> <span id=""profile_address"">http://%s</span>"
 
-"You are now friends with %s";"You are now friends with %s"
-"You ignored %s's request to follow you";"You ignored %s's request to follow you"
-"You ignored a friend request from %s";"You ignored a friend request from %s"
-"You are now following this member.";"You are now following this member."
-"You are now friends with this member.";"You are now friends with this member."
+"You are now friends with %s";"Bạn đã thành bạn bè với %s"
+"You ignored %s's request to follow you";"Bạn bỏ qua yêu cầu theo dõi của %s"
+"You ignored a friend request from %s";"Bạn bỏ qua yêu cầu kết ban từ %s"
+"You are now following this member.";"Bạn đang theo dõi thành viên này."
+"You are now friends with this member.";"Bạn là bạn bè với thành viên này."
 
 "Delete User";"Delete User"
 "Are you sure you want to delete this user?";"Are you sure you want to delete this user?"
@@ -369,36 +369,36 @@ the Facebook and Twitter integration <a href=""%2$s"">here</a>.
 "No, anyone with an invite code can signup.";"No, anyone with an invite code can signup."
 "Terms of Service";"Terms of Service"
 
-"Step %d: Create Profile";"Step %d: Create Profile"
-"USER_FORM_ADMIN_SIGNUP_FIELDS_DESCRIPTION";"In the next step of the signup process the member will fill out their profile field information.  Click <a href='%s'>here</a> to edit field settings."
+"Step %d: Create Profile";"Bước %d: Tạo hồ sơ"
+"USER_FORM_ADMIN_SIGNUP_FIELDS_DESCRIPTION";"Trong bước đăng ký tiếp theo bạn phải điền thông tin vào chỗ trống.  Click <a href='%s'>tại đây</a> để chỉnh sửa cài đặt."
 
-"Step %d: Invite Your Friends";"Step %d: Invite Your Friends"
-"Invite Friends";"Invite Friends"
-"USER_FORM_ADMIN_SIGNUP_FIELDS_ENABLE_DESCRIPTION";"Do you want members to invite their friends during the signup process?  Note that this setting will be ignored if you've chosen to limit invitation privileges to admins only."
-"Yes, include the ""Invite Friends"" step during signup.";"Yes, include the ""Invite Friends"" step during signup."
-"No, do not include this step.";"No, do not include this step."
+"Step %d: Invite Your Friends";"Bước %d: Mời bạn bè của bạn"
+"Invite Friends";"Mời bạn bè"
+"USER_FORM_ADMIN_SIGNUP_FIELDS_ENABLE_DESCRIPTION";"Bạn có muốn những thành viên mời bạn của họ trong quá trình đăng ký?  Lưu ý cài đặt này sẽ bị bỏ qua nếu bạn chọn giới hạn quyền mời kết bạn đối với admin."
+"Yes, include the ""Invite Friends"" step during signup.";"Đồng ý, thêm phần "Mời kết bạn" trong các bước đăng ký"
+"No, do not include this step.";"Không thêm bước này!"
 
-"User Photo Upload";"User Photo Upload"
+"User Photo Upload";"Đăng ảnh người dùng"
 "Do you want your users to be able to upload a photo of themselves upon signup?";"Do you want your users to be able to upload a photo of themselves upon signup?"
 "Do you want your users to be able to upload a photo of themselves upon signup?";"Do you want your users to be able to upload a photo of themselves upon signup?"
 "Yes, give users the option to upload a photo upon signup.";"Yes, give users the option to upload a photo upon signup."
 "No, do not allow users to upload a photo upon signup.";"No, do not allow users to upload a photo upon signup."
 
-"Lost Password";"Lost Password"
-"USER_FORM_AUTH_FORGOT_DESCRIPTION";"If you cannot login because you have forgotten your password, please enter your email address in the field below."
-"USER_FORM_AUTH_FACEBOOK_NOACCOUNT";"Your Facebook login was accepted, but no linked account was found. Would you like to <a href=""%s"">create an account</a>?<br>You may also log in to an existing account below, then link your Facebook account in the <a href=""%2$s"">Settings</a> page."
-"Send Email";"Send Email"
-"Reset password?";"Reset password?"
-"Confirm New Password";"Confirm New Password"
-"Reset Password";"Reset Password"
-"Facebook Integration";"Facebook Integration"
-"Integrate with my Facebook";"Integrate with my Facebook"
+"Lost Password";"Quên mật khẩu"
+"USER_FORM_AUTH_FORGOT_DESCRIPTION";"Nếu bạn không thể đăng nhập vì quên mật khẩu, vui long nhập địa chỉ mail của bạn bên dưới."
+"USER_FORM_AUTH_FACEBOOK_NOACCOUNT";"Đăng nhập bằng Facebook thành công, nhưng không có tài khoản liên kết được tìm thấy. Bạn có muốn <a href=""%s"">tạo một tài khoản</a>?<br>Bạn có thể đăng nhập vào tài khoản đã tồn tại bên dưới, sau đó liên kết với tài khoản Facebook của bạn trong phần <a href=""%2$s"">Cài đặt</a>"
+"Send Email";"Gửi Email"
+"Reset password?";"Thay đổi mật khẩu?"
+"Confirm New Password";"Xác nhận mật khẩu mới"
+"Reset Password";"Thay đổi mật khẩu"
+"Facebook Integration";"Liên kết tài khoản Facebook"
+"Integrate with my Facebook";"Liên kết với tài khoản Facebook của tôi"
 
-"Twitter Intragration";"Twitter Intragration"
-"Integrate with my Twitter";"Integrate with my Twitter"
+"Twitter Intragration";"Liên kết Twitter"
+"Integrate with my Twitter";"Liên kết với tài khoản Twitter của tôi"
 
-"USER_VIEWS_SCRIPTS_ADMINMANAGE_INDEX_DESCRIPTION";"The members of your social network are listed here. If you need to search for a specific member, enter your search criteria in the fields below."
-"Are you sure you want to delete the selected user accounts?";"Are you sure you want to delete the selected user accounts?"
+"USER_VIEWS_SCRIPTS_ADMINMANAGE_INDEX_DESCRIPTION";"Những thành viên trong mạng xã hội của bạn đã được liệt kê tại đây. Nếu bạn cần tìm kiếm một thành viên xác định, nhập tiêu chuẩn tìm kiếm ở phần dưới."
+"Are you sure you want to delete the selected user accounts?";"Bạn có chắc muốn xóa tài khoản người dùng đã chọn?"
 
 "Manage Members";"Manage Members"
 "%s member found";"%s member found";"%s members found"
@@ -407,117 +407,117 @@ the Facebook and Twitter integration <a href=""%2$s"">here</a>.
 
 "Member Settings";"Member Settings"
 "Member Signup Process";"Member Signup Process"
-"USER_VIEWS_SCRIPTS_ADMINSIGNUP_INDEX_DESCRIPTION";"When new members sign up, they are led through a step-by-step process that helps them create an account and fill out their profile. You can customize most aspects of this sign-up process here. On the left, there is a list of steps that make up the sign-up process. You can change the order of these steps by clicking on the arrows and dragging up or down."
+"USER_VIEWS_SCRIPTS_ADMINSIGNUP_INDEX_DESCRIPTION";"Khi những thành viên mới đăng ký, họ sẽ được hướng dẫn các bước để giúp để tạo tài khoản và hoàn chỉnh hồ sơ. Bạn có thể tùy chỉnh tất cả thông tin trong quá trình đăng ký. Ở bên trái có danh sách những bước của quá trình đăng ký. Bạn có thể thay đổi thứ tự các bước bằng cách click chọn mũi tên và kéo lên hoặc kéo xuống."
 
-"USER_VIEWS_SCRIPTS_AUTH_FORGOT_DESCRIPTION";"You have been sent an email with instructions how to reset your password. If the email does not arrive within several minutes, be sure to check your spam or junk mail folders."
-"Your password has been reset. Click %s to sign-in.";"Your password has been reset. Click %s to sign-in."
-"OK, thanks!";"OK, thanks!"
-"Your account has been verified.  Please click %s to login, or wait to be redirected.";"Your account has been verified.  Please click %s to login, or wait to be redirected."
-"Linking your Facebook account will give you access to use your Facebook account to log in.";"Linking your Facebook account will give you access to use your Facebook account to log in."
-"Linking your Facebook account will give you access to use your Facebook account to log in and publish to your Facebook account.";"Linking your Facebook account will give you access to use your Facebook account to log in and publish to your Facebook account."
+"USER_VIEWS_SCRIPTS_AUTH_FORGOT_DESCRIPTION";"Email hướng dẫn thay đổi mật khẩu đã được gửi tới địa chỉ mail của bạn. Nếu bạn không nhận được email sau vài phút, hãy kiểm tra hộp thoại spam nhé!"
+"Your password has been reset. Click %s to sign-in.";"Mật khẩu của bạn đã được thay đổi. Click %s để đăng nhập."
+"OK, thanks!";"OK, cảm ơn!"
+"Your account has been verified. Please click %s to login, or wait to be redirected";"Tài khoản của bạn đã được xác thực. Vui lòng click %s để đăng nhập, hoặc đợi để được chuyển hướng!"
+"Linking your Facebook account will give you access to use your Facebook account to log in.";"Liên kết tài khoản Facebook của bạn cho phép bạn sử dụng tài khoản Facebook để đăng nhập."
+"Linking your Facebook account will give you access to use your Facebook account to log in and publish to your Facebook account.";"Liên kết tài khoản Facebook của bạn cho phép bạn sử dụng tài khoản Facebook để đăng nhập và đăng tải trên Facebook của bạn."
 # widget: core.menu-mini
-"Updates";"Updates"
+"Updates";"Cập nhật"
 "Admin";"Admin"
-"My Profile";"My Profile"
-"Messages";"Messages"
-"Settings";"Settings"
-"Sign Out";"Sign Out"
-"Sign In";"Sign In"
-"Sign Up";"Sign Up"
+"My Profile";"Hồ sơ của tôi"
+"Messages";"Tin nhắn"
+"Settings";"Cài đặt"
+"Sign Out";"Đăng xuất"
+"Sign In";"Đăng nhập"
+"Sign Up";"Đăng ký"
 
-"USER_VIEWS_SCRIPTS_ADMINLOGINS_INDEX_DESCRIPTION";"This page contains a list of recent login attempts. Use this page to observe suspicious login attempts to your social network."
+"USER_VIEWS_SCRIPTS_ADMINLOGINS_INDEX_DESCRIPTION";"Trang này chưa danh sách những lần đăng nhập gần đây của bạn. Sử dụng trang này để theo dõi những đăng nhập bất thường vào tài khoản mạng xã hội của bạn!"
 
 # widget: core.menu-footer
-"Copyright &copy;%s";"Copyright &copy;%s"
-"Privacy";"Privacy"
-"Terms of Service";"Terms of Service"
-"Contact";"Contact"
+"Copyright &copy;%s";"Bản quyền &sao chép;%s"
+"Privacy";"Bảo mật"
+"Terms of Service";"Điều khoản dịch vụ"
+"Contact";"Liên lạc"
 
 # widget: core.statstics
 "Network Stats";"Network Stats"
 
 # widget: user.list-online
-"%s Members Online";"%s Member Online";"%s Members Online"
+"%s Members Online";"%s Thành viên online";"%s Thành viên online"
 
 # widget: user.list-popular
-"Popular Members";"Popular Members"
+"Popular Members";"Thành viên nổi bật"
 
 # widget: user.list-signups
-"Newest Members";"Newest Members"
+"Newest Members";"Thành viên mới nhất"
 
 # widget: user.home-links
-"View Recent Updates";"View Recent Updates"
-"View My Profile";"View My Profile"
-"Edit My Profile";"Edit My Profile"
-"Browse Members";"Browse Members"
+"View Recent Updates";"Xem cập nhật gần đây"
+"View My Profile";"Xem hồ sơ của tôi"
+"Edit My Profile";"Chỉnh sửa hồ sơ của tôi"
+"Browse Members";"Tìm kiếm thành viên"
 
 # widget: activity.feed
 "What's New";"What's New"
 
 # widgets: (various user profile)
-"Info";"Info"
+"Info";"Thông tin"
 
 # fields (default)
-"Profile Type";"Profile Type"
-"Regular Member";"Regular Member"
-"Personal Information";"Personal Information"
-"First Name";"First Name"
-"Last Name";"Last Name"
-"Gender";"Gender"
-"Male";"Male"
-"Female";"Female"
-"Birthday";"Birthday"
-"Birthdate";"Birthdate"
-"Contact Information";"Contact Information"
+"Profile Type";"Kiểu hồ sơ"
+"Regular Member";"Thành viên thường xuyên"
+"Personal Information";"Thông tin cá nhân"
+"First Name";"Tên"
+"Last Name";"Họ & tên đệm"
+"Gender";"Giới tính"
+"Male";"Nam"
+"Female";"Nữ"
+"Birthday";"Sinh nhật"
+"Birthdate";"Ngày sinh"
+"Contact Information";"Thông tin liên lạc"
 "Website";"Website"
 "Facebook";"Facebook"
 "Twitter";"Twitter"
-"Personal Details";"Personal Details"
+"Personal Details";"Chi tiết cá nhân"
 "AIM";"AIM"
-"About Me";"About Me"
-"Interests";"Interests"
-"Age";"Age"
+"About Me";"Về tôi"
+"Interests";"Sở thích"
+"Age";"Tuổi"
 
 # admin (misc)
-"Username";"Username"
+"Username";"Tên đăng nhập"
 "Email";"Email"
-"Level";"Level"
+"Level";"Cấp độ"
 "Superadmins";"Super Admins"
-"Signup Date";"Signup Date"
+"Signup Date";"Ngày đăng ký"
 
-"Step %d:  Add Your Photo";"Step %d:  Add Your Photo"
-"Step %d: Create Profile";"Step %d: Create Profile"
+"Step %d:  Add Your Photo";"Bước %d:  Thêm hình ảnh"
+"Step %d: Create Profile";"Bước %d: Tạo hồ sơ"
 
-"Yes, include the ""Invite Friends"" step during signup.";"Yes, include the ""Invite Friends"" step during signup."
+"Yes, include the ""Invite Friends"" step during signup.";"Đồng ý, thêm phần ""Mời kết bạn"" trong bước đăng ký."
 "_ACTIVITY_ACTIONTYPE_TAGGED";"Tagged"
 
-"You are now friends with this member.";"You are now friends with this member."
-"You are now following this member.";"You are now following this member."
+"You are now friends with this member.";"Bạn giờ là bạn bè với thành viên này."
+"You are now following this member.";"Bạn hiện đang theo dõi thành viên này."
 
-"Welcome! A verification message has been sent to your email address with instructions on how to activate your account. Once you have clicked the link provided in the email and we have approved your account, you will be able to sign in.";"Welcome! A verification message has been sent to your email address with instructions on how to activate your account. Once you have clicked the link provided in the email and we have approved your account, you will be able to sign in."
-"Welcome! A verification message has been sent to your email address with instructions for activating your account. Once you have activated your account, you will be able to sign in.";"Welcome! A verification message has been sent to your email address with instructions for activating your account. Once you have activated your account, you will be able to sign in."
-"Welcome! Once we have approved your account, you will be able to sign in.";"Welcome! Once we have approved your account, you will be able to sign in."
+"Welcome! A verification message has been sent to your email address with instructions on how to activate your account. Once you have clicked the link provided in the email and we have approved your account, you will be able to sign in.";"Chào mừng bạn! Một tin nhắn xác nhận đã được gửi tới địa chỉ mail của bạn để hướng dẫn cách kích hoạt tài khoản. Sau khi kích hoạt bạn có thể bắt đầu đăng nhập!"
+"Welcome! A verification message has been sent to your email address with instructions for activating your account. Once you have activated your account, you will be able to sign in.";"Chào mừng bạn! Một tin nhắn xác nhận đã được gửi tới địa chỉ mail của bạn để hướng dẫn cách kích hoạt tài khoản. Sau khi kích hoạt bạn có thể bắt đầu đăng nhập!"
+"Welcome! Once we have approved your account, you will be able to sign in.";"Chào mừng bạn! Sau khi chúng tôi xác nhận tài khoản của bạn, bạn có thể bắt đầu đăng nhập."
 
-"ITEM_TYPE_USER";"Members"
+"ITEM_TYPE_USER";"Thành viên"
 
-"Select the city closest to you that shares your same timezone.";"Select the city closest to you that shares your same timezone."
-"Display Name";"Display Name"
-"login";"login"
+"Select the city closest to you that shares your same timezone.";"Chọn thành phố gần chỗ bạn nhất để chia sẻ múi giờ."
+"Display Name";"Tên hiển thị"
+"login";"Đăng nhập"
 
-"Login or Signup";"Login or Signup"
-"Online Users";"Online Users"
-"Profile Fields";"Profile Fields"
-"Profile Friends";"Profile Friends"
-"Profile Info";"Profile Info"
-"Profile Mutual Friends";"Profile Mutual Friends"
-"Profile Options";"Profile Options"
-"Profile Status";"Profile Status"
+"Login or Signup";"Đăng nhập hoặc đăng ký"
+"Online Users";"Người dùng Online"
+"Profile Fields";"Những mục hồ sơ"
+"Profile Friends";"Hồ sơ bạn bè"
+"Profile Info";"Thông tin hồ sơ"
+"Profile Mutual Friends";"Hồ sơ bạn bè chung"
+"Profile Options";"Tùy chọn hồ sơ"
+"Profile Status";"Trạng thái hồ sơ"
 "Profile Tags";"Profile Tags"
 "Quick Links";"Quick Links"
-"Recent Signups";"Recent Signups"
-"User Photo";"User Photo"
+"Recent Signups";"Đăng ký gần đây"
+"User Photo";"Hình ảnh người dùng"
 
-"Remove from Friends";"Remove from Friends"
+"Remove from Friends";"Xóa khỏi danh sách bạn bè"
 "Approve Selected";"Approve Selected"
 
 "Member Home Quick Links Menu";"Member Home Quick Links Menu"
@@ -525,101 +525,101 @@ the Facebook and Twitter integration <a href=""%2$s"">here</a>.
 "Member Edit Profile Navigation Menu";"Member Edit Profile Navigation Menu"
 "Member Settings Navigation Menu";"Member Settings Navigation Menu"
 
-"This account still requires either email verification or admin approval.";"This account still requires either email verification or admin approval."
-"Click <a href=""%s"">here</a> to resend the email.";"Click <a href=""%s"">here</a> to resend the email."
+"This account still requires either email verification or admin approval.";"Tài khoản này cần xác nhận email hoặc sự đồng ý của admin."
+"Click <a href=""%s"">here</a> to resend the email.";"Click <a href=""%s"">tại đây</a> để gửi lại email."
 
 
 # notification types
-"{item:$subject} has posted on your {item:$object:profile}.";"{item:$subject} has posted on your {item:$object:profile}."
-"You and {item:$subject} are now friends.";"You and {item:$subject} are now friends."
-"{item:$subject} has requested to be your friend.";"{item:$subject} has requested to be your friend."
-"{item:$subject} has requested to follow you.";"{item:$subject} has requested to follow you."
-"You are now following {item:$subject}.";"You are now following {item:$subject}."
-"{item:$subject} is now following you.";"{item:$subject} is now following you."
-"{item:$subject} tagged you in a {item:$object:$label}.";"{item:$subject} tagged you in a {item:$object:$label}."
+"{item:$subject} has posted on your {item:$object:profile}.";"{item:$subject} đã đăng trên {item:$object:profile} của bạn."
+"You and {item:$subject} are now friends.";"Bạn và {item:$subject} đã thành bạn bè."
+"{item:$subject} has requested to be your friend.";"{item:$subject} đã gửi yêu cầu trở thành bạn bè với bạn."
+"{item:$subject} has requested to follow you.";"{item:$subject} đã yêu cầu để theo dõi bạn."
+"You are now following {item:$subject}.";"Bạn đang được theo dõi {item:$subject}."
+"{item:$subject} is now following you.";"{item:$subject} đang theo dõi bạn."
+"{item:$subject} tagged you in a {item:$object:$label}.";"{item:$subject} tagged bạn trong một {item:$object:$label}."
 
 
 # mail templates
 
 # user_account_approved
-"_EMAIL_USER_ACCOUNT_APPROVED_TITLE";"Member Account Approved"
-"_EMAIL_USER_ACCOUNT_APPROVED_DESCRIPTION";"This is the email that gets sent to a member when their account is approved by an admin."
-"_EMAIL_USER_ACCOUNT_APPROVED_SUBJECT";"Your account has been approved."
+"_EMAIL_USER_ACCOUNT_APPROVED_TITLE";"Tài khoản người dùng được chấp thuận"
+"_EMAIL_USER_ACCOUNT_APPROVED_DESCRIPTION";"Email này được gửi tới thành viên khi tài khoản của họ được chấp thuận bởi admin."
+"_EMAIL_USER_ACCOUNT_APPROVED_SUBJECT";"Tài khoản của bạn được chấp thuận."
 "_EMAIL_USER_ACCOUNT_APPROVED_BODY";"[header]
 
-Your account has been approved by an administrator. Please click the following link to sign in:
+Tài khoản của bạn được chấp thuận bởi một admin. Vui lòng click đường link sau để đăng nhập:
 
 http://[host][object_link]
 
 [footer]"
 
 # notify_friend_accepted
-"_EMAIL_NOTIFY_FRIEND_ACCEPTED_TITLE";"Friend Approved"
-"_EMAIL_NOTIFY_FRIEND_ACCEPTED_DESCRIPTION";"This is the email that gets sent to a member when their friendship request have been approved."
-"_EMAIL_NOTIFY_FRIEND_ACCEPTED_SUBJECT";"[sender_title] has approved you as a friend."
+"_EMAIL_NOTIFY_FRIEND_ACCEPTED_TITLE";"Bạn bè được chấp thuận"
+"_EMAIL_NOTIFY_FRIEND_ACCEPTED_DESCRIPTION";"Email này được gửi tới thành viên khi yêu cầu kết bạn của họ được chấp thuận."
+"_EMAIL_NOTIFY_FRIEND_ACCEPTED_SUBJECT";"[sender_title] đã chấp nhận kết bạn với bạn."
 "_EMAIL_NOTIFY_FRIEND_ACCEPTED_BODY";"[header]
 
-[sender_title] has approved you as a friend. Please click the following link to sign in:
+[sender_title] đã chấp nhận yêu cầu kết bạn với bạn. Vui lòng click đường link sau để đăng nhập:
 
 http://[host][object_link]
 
 [footer]"
 
 # notify_friend_follow
-"_EMAIL_NOTIFY_FRIEND_FOLLOW_TITLE";"Friend Follow"
-"_EMAIL_NOTIFY_FRIEND_FOLLOW_DESCRIPTION";"This is the email that gets sent to a member when another member starts following them."
-"_EMAIL_NOTIFY_FRIEND_FOLLOW_SUBJECT";"[sender_title] has started following you."
+"_EMAIL_NOTIFY_FRIEND_FOLLOW_TITLE";"Theo dõi bạn bè"
+"_EMAIL_NOTIFY_FRIEND_FOLLOW_DESCRIPTION";"Email này được gửi tới thành viên khi thành viên khác bắt đầu theo dõi họ."
+"_EMAIL_NOTIFY_FRIEND_FOLLOW_SUBJECT";"[sender_title] đã bắt đầu theo dõi bạn."
 "_EMAIL_NOTIFY_FRIEND_FOLLOW_BODY";"[header]
 
-[sender_title] has started following you. Please click the following link to view the member:
+[sender_title] đã bắt đầu theo dõi bạn. Vui lòng click đường link sau để xem thành viên:
 
 http://[host][object_link]
 
 [footer]"
 
 # notify_friend_follow_accepted
-"_EMAIL_NOTIFY_FRIEND_FOLLOW_ACCEPTED_TITLE";"Follow Approved"
-"_EMAIL_NOTIFY_FRIEND_FOLLOW_ACCEPTED_DESCRIPTION";"This is the email that gets sent to a member when their follow request have been approved."
-"_EMAIL_NOTIFY_FRIEND_FOLLOW_ACCEPTED_SUBJECT";"[sender_title] has approved your request to follow them."
+"_EMAIL_NOTIFY_FRIEND_FOLLOW_ACCEPTED_TITLE";"Chấp nhận theo dõi"
+"_EMAIL_NOTIFY_FRIEND_FOLLOW_ACCEPTED_DESCRIPTION";"Email này được gửi tới thành viên khi yêu cầu theo dõi thành viên khác được chấp nhận."
+"_EMAIL_NOTIFY_FRIEND_FOLLOW_ACCEPTED_SUBJECT";"[sender_title] đã chấp thuận yêu cầu theo dõi họ của bạn."
 "_EMAIL_NOTIFY_FRIEND_FOLLOW_ACCEPTED_BODY";"[header]
 
-[sender_title] has approved you to follow them. Please click the following link to sign in:
+[sender_title] đã chấp thuận cho bạn theo dõi họ. Vui lòng click đường link sau để đăng nhập:
 
 http://[host][object_link]
 
 [footer]"
 
 # notify_friend_follow_request
-"_EMAIL_NOTIFY_FRIEND_FOLLOW_REQUEST_TITLE";"Follow Request"
-"_EMAIL_NOTIFY_FRIEND_FOLLOW_REQUEST_DESCRIPTION";"This is the email that gets sent to a member when they are requested to be followed by another member."
-"_EMAIL_NOTIFY_FRIEND_FOLLOW_REQUEST_SUBJECT";"[sender_title] has requested to follow you."
+"_EMAIL_NOTIFY_FRIEND_FOLLOW_REQUEST_TITLE";"Yêu cầu theo dõi"
+"_EMAIL_NOTIFY_FRIEND_FOLLOW_REQUEST_DESCRIPTION";"Email này được gửi tới thành viên khi một thành viên khác yêu cầu theo dõi họ."
+"_EMAIL_NOTIFY_FRIEND_FOLLOW_REQUEST_SUBJECT";"[sender_title] đã yêu cầu theo dõi bạn."
 "_EMAIL_NOTIFY_FRIEND_FOLLOW_REQUEST_BODY";"[header]
 
-[sender_title] has requested to follow you. Please click the following link to sign in and confirm this request:
+[sender_title] đã yêu cầu theo dõi bạn. Vui lòng click đường link sau để đăng nhập và xác nhận yêu cầu này:
 
 http://[host][object_link]
 
 [footer]"
 
 # notify_friend_request
-"_EMAIL_NOTIFY_FRIEND_REQUEST_TITLE";"Friend Request"
-"_EMAIL_NOTIFY_FRIEND_REQUEST_DESCRIPTION";"This is the email that gets sent to a member when they are requested to be a friend by another member."
-"_EMAIL_NOTIFY_FRIEND_REQUEST_SUBJECT";"[sender_title] has added you as a friend."
+"_EMAIL_NOTIFY_FRIEND_REQUEST_TITLE";"Yêu cầu kết bạn"
+"_EMAIL_NOTIFY_FRIEND_REQUEST_DESCRIPTION";"Email này được gửi tới thành viên khi một thành viên khác yêu cầu kết bạn với họ."
+"_EMAIL_NOTIFY_FRIEND_REQUEST_SUBJECT";"[sender_title] đã thêm bạn vào danh sách bạn bè."
 "_EMAIL_NOTIFY_FRIEND_REQUEST_BODY";"[header]
 
-[sender_title] has added you as a friend. Please click the following link to sign in and confirm this friendship request:
+[sender_title] đã thêm bạn vào danh sách bạn bè. Vui lòng click đường link sau để đăng nhập và xác nhận yêu cầu kết bạn này:
 
 http://[host][object_link]
 
 [footer]"
 
 # notify_post_user
-"_EMAIL_NOTIFY_POST_USER_TITLE";"Post on Profile"
-"_EMAIL_NOTIFY_POST_USER_DESCRIPTION";"This email is sent to the member when someone has posted something on the member's profile."
-"_EMAIL_NOTIFY_POST_USER_SUBJECT";"[sender_title] has posted on your profile"
+"_EMAIL_NOTIFY_POST_USER_TITLE";"Đăng trên hồ sơ"
+"_EMAIL_NOTIFY_POST_USER_DESCRIPTION";"Email này được gửi tới thành viên khi có người đăng tải trên hồ sơ của họ."
+"_EMAIL_NOTIFY_POST_USER_SUBJECT";"[sender_title] đã đăng tải trên hồ sơ của bạn"
 "_EMAIL_NOTIFY_POST_USER_BODY";"[header]
 
-[sender_title] has posted something on your profile. Please click the following link to view it.
+[sender_title] đã đăng tải trên hồ sơ của bạn. Vui lòng click đường link sau để xem:
 
 http://[host][object_link]
 
@@ -627,27 +627,27 @@ http://[host][object_link]
 
 # notify_tagged
 "_EMAIL_NOTIFY_TAGGED_TITLE";"Tagged"
-"_EMAIL_NOTIFY_TAGGED_DESCRIPTION";"This email is sent to the member when someone tags them."
-"_EMAIL_NOTIFY_TAGGED_SUBJECT";"You have Been Tagged"
+"_EMAIL_NOTIFY_TAGGED_DESCRIPTION";"Email này được gửi tới thành viên khi có người tag bạn."
+"_EMAIL_NOTIFY_TAGGED_SUBJECT";"Bạn đã được Tagged"
 "_EMAIL_NOTIFY_TAGGED_BODY";"[header]
 
-You have been tagged in a [object_type_name]. Please click the following link to view it:
+Bạn được tag trong [object_type_name]. Vui lòng click đường link sau để xem:
 
 http://[host][object_link]
 
 [footer]"
 
-"Send Invites";"Send Invites"
-"Send a friend request if the user(s) join(s) the network";"Send friend a request if the user(s) join(s) the network"
-"Thanks for joining!";"Thanks for joining!"
+"Send Invites";"Gửi thư mời"
+"Send a friend request if the user(s) join(s) the network";"Gửi yêu cầu kết bạn nếu người dùng tham gia vào mạng kết nối"
+"Thanks for joining!";"Cảm ơn đã đăng ký!"
 
-"Linking your Facebook account will let you login with Facebook";"Linking your Facebook account will let you login with Facebook"
-"Linking your Facebook account will let you login with Facebook and publish content to your Facebook wall.";"Linking your Facebook account will let you login with Facebook and publish content to your Facebook wall."
+"Linking your Facebook account will let you login with Facebook";"Liên kết tài khoản Facebook sẽ cho phép bạn đăng nhập bằng Facebook"
+"Linking your Facebook account will let you login with Facebook and publish content to your Facebook wall.";"Liên kết tài khoản Facebook sẽ cho phép bạn đăng nhập bằng Facebook và đăng nội dung trên tường Facebook của bạn."
 
-"Profile Information";"Profile Information"
-"Add Your Photo";"Add Your Photo"
+"Profile Information";"Thông tin hồ sơ"
+"Add Your Photo";"Thêm hình của bạn"
 
-"Approve Friend Request";"Approve Friend Request"
+"Approve Friend Request";"Chấp nhận yêu cầu kết bạn"
 "Available Networks";"Available Networks"
 "There are currently no avaliable networks to join.";"There are currently no avaliable networks to join."
 "There are no networks containing that keyword.";"There are no networks containing that keyword."
@@ -664,9 +664,9 @@ Please login to the admin panel to aprovie this user.
 
 [footer]"
 
-"This account still requires admin approval.";"This account still requires admin approval."
-"Your account has been verified. Please wait to be redirected or click %s to login.";"Your account has been verified. Please wait to be redirected or click %s to login."
-"Browser cookies are required to login.";"Browser cookies are required to login."
+"This account still requires admin approval.";"Tài khoản này yêu cầu sự chấp thuận của Admin."
+"Your account has been verified. Please wait to be redirected or click %s to login.";"Tài khoản của bạn đã được xác nhận. Vui lòng đợi để chuyển hướng hoặc click %s để đăng nhập."
+"Browser cookies are required to login.";"Browser cookies được yêu cầu để đăng nhập."
 
 "Single";"Single"
 "In a Relationship";"In a Relationship"
@@ -675,4 +675,4 @@ Please login to the admin panel to aprovie this user.
 "It's Complicated";"It's Complicated"
 "In an Open Relationship";"In an Open Relationship"
 "Widowed";"Widowed"
-"Facebook account you're trying to connect is already connected to another account.";"Facebook account you're trying to connect is already connected to another account."
+"Facebook account you're trying to connect is already connected to another account.";"Tài khoản Facebook bạn đang kết nối đã kết nối với một tài khoản khác."

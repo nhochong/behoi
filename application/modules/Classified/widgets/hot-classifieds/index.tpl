@@ -14,7 +14,7 @@
 					<b><?php echo $this->htmlLink($category->getHref(), $category->getTitle()) ?></b>
 					<span class="count">(<?php echo count($classifieds) ?>)</span>
 					|
-					<span class="see_all"><?php echo $this->htmlLink($category->getHref(), $this->translate('see all')) ?></span>
+					<span class="see_all"><?php echo $this->htmlLink($category->getHref(), $this->translate('Xem tất cả')) ?></span>
 				</div>
 				<ul class="classified_list">
 					<?php foreach ($classifieds as $classified):?>

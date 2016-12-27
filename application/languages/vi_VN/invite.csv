@@ -1,26 +1,26 @@
-"Invite";"Invite"
-"Invitation Sent";"Invitation Sent";"Invitations Sent"
-"If the person you invited decide to join, he/she will automatically receive a friend request from you.";"If the person you invited decide to join, he/she will automatically receive a friend request from you.";"If the persons you invited decide to join, they will automatically receive a friend request from you."
-"Invites were not sent to these email addresses because they do not appear to be valid:";"Invites were not sent to these email addresses because they do not appear to be valid:"
-"Some of the email addresses you provided belong to existing members:";"Some of the email addresses you provided belong to existing members:"
-"OK, thanks!";"OK, thanks!"
+"Invite";"Mời"
+"Invitation Sent";"Lời mới đã được gửi";"Iời mời đã được gửi"
+"If the person you invited decide to join, he/she will automatically receive a friend request from you.";"Nếu người mà bạn mời quyết định tham gia, anh ấy/cô ấy sẽ tự động nhận được yêu cầu kết bạn từ bạn.";"Nếu người mà bạn mời quyết định tham gia, anh ấy/cô ấy sẽ tự động nhận được yêu cầu kết bạn từ bạn."
+"Invites were not sent to these email addresses because they do not appear to be valid:";"Lời mời không được gửi tới địa chỉ email vì chúng không đáp ứng yêu cầu:"
+"Some of the email addresses you provided belong to existing members:";"Địa chỉ email bạn cung cấp thuộc về một thành viên khác:"
+"OK, thanks!";"OK, cảm ơn!"
 
-"Invite Your Friends";"Invite Your Friends"
-"_INVITE_FORM_DESCRIPTION";"Invite your friends to join! Enter up to 10 email addresses separated by commas in the recipients box below. If your friends decide to sign up, a friend request from you will be waiting for them when they first sign in."
-"Recipients";"Recipients"
-"Comma-separated list, or one-email-per-line.";"Comma-separated list, or one-email-per-line."
-"Custom Message";"Custom Message"
-"Use %invite_url% to add a link to our sign up page.";"Use %invite_url% to add a link to our sign up page."
-"Send Invites";"Send Invites"
+"Invite Your Friends";"Mời bạn của bạn"
+"_INVITE_FORM_DESCRIPTION";"Mời bạn của bạn tham gia! có thể nhập tới 10 địa chỉ mail bằng dấu phẩy ngăn cách trong phần người nhận bên dưới. Nếu bạn của bạn quyết định đăng ký, một yêu cầu kết bạn từ bạn sẽ gửi cho họ khi họ đăng nhập lần đầu tiên."
+"Recipients";"Người nhận"
+"Comma-separated list, or one-email-per-line.";"dấu phẩy- phân cách danh sách, hoặc một-email-trên-một dòng."
+"Custom Message";"Định dạng tin nhắn"
+"Use %invite_url% to add a link to our sign up page.";"Sử dụng %invite_url% để thêm link tới trang đăng ký của behoi.com"
+"Send Invites";"Gửi lời mời"
 
 "_INVITE_EMAIL_CONTENT_CAN_BE_FOUND_IN_THE_FILE";"custom.csv"
 
-"Modify your invite settings for your members.";"Modify your invite settings for your members."
-"Subject";"Subject"
-"This is the subject line of emails sent to invited people.  Use %siteName% to include your site's name.";"This is the subject line of emails sent to invited people.  Use %siteName% to include your site's name."
-"From (name)";"From (name)"
+"Modify your invite settings for your members.";"Chỉnh sửa cài đặt lời mời cho thành viên của bạn."
+"Subject";"Tiêu đề"
+"This is the subject line of emails sent to invited people.  Use %siteName% to include your site's name.";"Đây là dòng tiêu đề của email gửi tới người được mời.  Sử dụng %siteName% để đính kèm tên trang của bạn."
+"From (name)";"Từ (name)"
 "Whom the invite email is shown as being from (usually your website name)";"Whom the invite email is shown as being from (usually your website name)"
-"From (email)";"From (email)"
+"From (email)";"Từ (email)"
 "The ""Reply-To"" address for emails";"The ""Reply-To"" address for emails"
 "Allow custom invite message?";"Allow custom invite message?"
 "If disabled, the invite email will use the message below.";"If disabled, the invite email will use the message below."
@@ -30,13 +30,13 @@
 "Invite Settings";"Invite Settings"
 "Settings were saved successfully.";"Settings were saved successfully."
 
-"Inviters";"Inviters"
+"Inviters";"Người mời"
 "Movers and Shakers";"Movers and Shakers"
-"Top 10 Inviters";"Top 10 Inviters"
+"Top 10 Inviters";"Top 10 người mời"
 "Most invites sent out";"Most invites sent out"
 
-"Username";"Username"
-"Invites";"Invites"
+"Username";"Tên đăng nhập"
+"Invites";"Thư mời"
 "Recruits";"Recruits"
 "Conversion Ratio";"Conversion Ratio"
 
@@ -47,12 +47,12 @@
 # mail templates
 
 # invite
-"_EMAIL_INVITE_TITLE";"Invitation"
-"_EMAIL_INVITE_DESCRIPTION";"This is the email that gets sent when members invite their friends to join during the signup process."
-"_EMAIL_INVITE_SUBJECT";"You have received an invitation to join our social network."
-"_EMAIL_INVITE_BODY";"[header]
+"_EMAIL_INVITE_TITLE";"Thư mời"
+"_EMAIL_INVITE_DESCRIPTION";"Bạn nhận email này khi mà thành viên mời bạn của họ tham gia trong quá trình đăng ký."
+"_EMAIL_INVITE_SUBJECT";"Bạn nhận được thư mời để tham gia vào mạng kết nối của chúng tôi."
+"_EMAIL_INVITE_BODY";"[Tiêu đề]
 
-You have been invited by [sender_title] to join our social network. To join, please follow the link below:
+Bạn được mời bởi [sender_title] để tham gia vào mạng kết nối của chúng tôi. Để tham gia, vui lòng click đường link dưới đây:
 
 http://[host][object_link]
 
@@ -63,12 +63,12 @@ http://[host][object_link]
 [footer]"
 
 # invite_code
-"_EMAIL_INVITE_CODE_TITLE";"Invite Code"
-"_EMAIL_INVITE_CODE_DESCRIPTION";"This email is sent to someone when they are invited by a member and an invite code is required."
-"_EMAIL_INVITE_CODE_SUBJECT";"You have received an invitation to join our social network!"
+"_EMAIL_INVITE_CODE_TITLE";"Mã thư mời"
+"_EMAIL_INVITE_CODE_DESCRIPTION";"Email này được gửi tới những người mà khi họ được mời bởi một thành viên và mã thư mời được yêu cầu."
+"_EMAIL_INVITE_CODE_SUBJECT";"Bạn đã nhận được thư mời để tham gia vào mạng kết nối của chúng tôi!"
 "_EMAIL_INVITE_CODE_BODY";"[header]
 
-You have been invited by [sender_title] to join our social network. To join, please follow the link below:
+Bạn được mời bởi [sender_title] để tham gia vào mạng kết nối của chúng tôi. Để tham gia, vui lòng click đường link dưới đây:
 
 http://[host][object_link]
 
@@ -78,5 +78,5 @@ http://[host][object_link]
 
 [footer]"
 
-"You are being invited to join our social network.";"You are being invited to join our social network."
+"You are being invited to join our social network.";"Bạn đang được mời để tham gia vào mạng xã hội của chúng tôi."
 
