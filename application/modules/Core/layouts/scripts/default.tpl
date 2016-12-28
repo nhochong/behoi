@@ -54,7 +54,11 @@
     if( $this->subject() && $this->subject()->getIdentity() ) {
       $this->headTitle($this->subject()->getTitle());
       
-      $description .= ' ' .$this->subject()->getDescription();
+	  if(isset($this->subject()->meta_description) && !empty($this->subject()->meta_description)){
+		$description .= ' ' .$this->subject()->meta_description;
+	  }else{
+		$description .= ' ' . html_entity_decode($this->subject()->getDescription());
+	  }
       // Remove the white space from left and right side
       $keywords = trim($keywords);
       if ( !empty($keywords) && (strrpos($keywords, ',') !== (strlen($keywords) - 1)) ) {

@@ -60,6 +60,12 @@ class Ynblog_Form_Create extends Engine_Form
     ));
     $this->draft->getDecorator('Description')->setOption('placement', 'append');
 
+	$this->addElement('Textarea', 'meta_description', array(
+      'label' => 'Meta Description',
+      'allowEmpty' => true,
+      'required' => false
+    ));
+	
     //Content field
     $allowed_html = Engine_Api::_()->authorization()->getPermission($user_level, 'blog', 'auth_html');
     $upload_url = Zend_Controller_Front::getInstance()->getRouter()->assemble(array('action' => 'upload-photo'), 'blog_general', true);
@@ -69,6 +75,8 @@ class Ynblog_Form_Create extends Engine_Form
       'editorOptions' => array(
           'bbcode' => 1,
           'html'   => 1,
+		  'mode' => "exact",
+          'elements' => 'body',
           'theme_advanced_buttons1' => array(
               'undo', 'redo', 'cleanup', 'removeformat', 'pasteword',  '|',
               'media', 'image','link', 'unlink', 'fullscreen', 'preview', 'emotions', 'code',

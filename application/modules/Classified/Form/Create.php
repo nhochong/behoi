@@ -75,6 +75,12 @@ class Classified_Form_Create extends Engine_Form
       $this->photo->addValidator('Extension', false, 'jpg,png,gif,jpeg');
     }
 	
+	$this->addElement('Textarea', 'meta_description', array(
+      'label' => 'Meta Description',
+      'allowEmpty' => true,
+      'required' => false
+    ));
+	
     // Element: description
 	$upload_url = Zend_Controller_Front::getInstance()->getRouter()->assemble(array('action' => 'upload-photo'), 'classified_general', true);
     $this->addElement('TinyMce', 'body', array(
@@ -88,6 +94,8 @@ class Classified_Form_Create extends Engine_Form
       'editorOptions' => array(
           'bbcode' => 1,
           'html'   => 1,
+		  'mode' => "exact",
+          'elements' => 'body, more_info',
           'theme_advanced_buttons1' => array(
               'undo', 'redo', 'cleanup', 'removeformat', 'pasteword',  '|',
               'media', 'image','link', 'unlink', 'fullscreen', 'preview', 'emotions', 'code',

@@ -48,3 +48,6 @@ WHERE `name` = 'question_main_unanswered';
 UPDATE `engine4_core_menuitems`
 SET `order` = 3
 WHERE `name` = 'question_main_manage';
+
+ALTER TABLE `engine4_classified_classifieds` ADD `meta_description` longtext DEFAULT NULL AFTER `more_info`;
+ALTER TABLE `engine4_blog_blogs` ADD `meta_description` longtext DEFAULT NULL AFTER `body`;
