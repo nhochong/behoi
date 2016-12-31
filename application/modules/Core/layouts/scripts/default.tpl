@@ -47,9 +47,8 @@
     // Make description and keywords
     $description = '';
     $keywords = '';
-    
     $description .= ' ' .$this->layout()->siteinfo['description'];
-    $keywords = $this->layout()->siteinfo['keywords'];
+    
 
     if( $this->subject() && $this->subject()->getIdentity() ) {
       $this->headTitle($this->subject()->getTitle());
@@ -66,6 +65,10 @@
       }
       $keywords .= $this->subject()->getKeywords(',');
     }
+	
+	if(empty($keywords)){
+	  $keywords = $this->layout()->siteinfo['keywords'];
+	}
     
     $keywords = trim($keywords, ',');
     
