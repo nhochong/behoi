@@ -32,7 +32,7 @@
 	      	<div class="title"><?php echo $this->translate('Đăng ký nhận bản tin khuyến mãi') ?></div>
 			<div class="content">
 				<input type="text" id="subscribe_input" placeholder="NHẬP EMAIL CỦA BẠN"/>
-				<button id="subscribe_button" onclick="save_email()"><?php echo $this->translate('Đăng ký');?></button>
+				<button id="subscribe_button" onclick="save_email('subscribe_input')"><?php echo $this->translate('Đăng ký');?></button>
 			</div>
 			<div id="message_response" style="display:none">
 				<div class="tip">
@@ -61,8 +61,8 @@
 	})(jQuery);
 </script>
 <script type="text/javascript">
-    function save_email(){
-            var email = $('subscribe_input').value;
+    function save_email(ele_name){
+            var email = $(ele_name).value;
 			if(email){
 				new Request.JSON({
 				  'format': 'json',
@@ -75,7 +75,7 @@
 				  },
 				  'onSuccess' : function(responseJSON, responseText){
 					displayMessage(responseJSON.message);
-					$('subscribe_input').value='';
+					$(ele_name).value='';
 				  }
 				}).send();
 			} else {
@@ -86,6 +86,7 @@
 	var displayMessage = function(message)
 	{
         if ($('message_response').innerHTML != '') {
+			$$('.menu-mini-header.subscribe_form').hide();
 			$$('#message_response #message')[0].innerHTML = message;
             var content = $('message_response').innerHTML;
 			Smoothbox.open(content);

@@ -370,6 +370,12 @@ foreach( $this->navigation->getPages() as $item ) $item->setOrder(--$count);
 	<?php if(!$this->viewer()->getIdentity()):?>
 		<li class="ynadvmenu_notification ynadvmenu-notification-subscribe" >
 			<a href="javascript:void(0)" class="menu_get_subscribe menu-icon"><span><?php echo $this->translate('Đăng ký bản tin');?></span></a>
+			<div class="menu-mini-header pull-right subscribe_form" id="subscribe_form_header" style="display:none">
+				<div class="content">
+					<input type="text" id="subscribe_input_header" placeholder="NHẬP EMAIL CỦA BẠN"/>
+					<button id="subscribe_button_header" onclick="save_email('subscribe_input_header')"><?php echo $this->translate('Đăng ký');?></button>
+				</div>
+			</div>
 		</li>
 	<?php endif;?>
 	<?php foreach( $this->navigation as $item ):
@@ -449,8 +455,13 @@ foreach( $this->navigation->getPages() as $item ) $item->setOrder(--$count);
 	</div>
 <?php endif; ?>
 
+<?php if(!$this->viewer()->getIdentity()):?>
+	
+<?php endif; ?>
 <script type="text/javascript">
-
+	$$('.menu_get_subscribe').addEvent('click', function(){
+		$('subscribe_form_header').toggle();
+	});
 	var check_return_url = false;
 	var ynAdvMenu = {	
 		updateAllElement: function()

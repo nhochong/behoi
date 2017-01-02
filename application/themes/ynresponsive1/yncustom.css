@@ -1456,3 +1456,11 @@ form#ynblogs_create #auth_comment-wrapper,
     background: transparent;
     border: none;
 }
+div#subscribe_form_header {
+    position: absolute;
+    width: 285px;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #eee;
+    border: 1px solid #e8e8e8;
+}
