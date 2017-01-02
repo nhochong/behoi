@@ -32,7 +32,15 @@
 	      	<div class="title"><?php echo $this->translate('Đăng ký nhận bản tin khuyến mãi') ?></div>
 			<div class="content">
 				<input type="text" id="subscribe_input" placeholder="NHẬP EMAIL CỦA BẠN"/>
-				<button id="subscribe_button"><?php echo $this->translate('Đăng ký');?></button>
+				<button id="subscribe_button" onclick="save_email()"><?php echo $this->translate('Đăng ký');?></button>
+			</div>
+			<div id="message_response" style="display:none">
+				<div class="tip">
+					<span id="message"></span>
+				</div>
+				<div style="margin-top: 20px; text-align: center;">
+					<button id="close_message" type="button" onclick="parent.Smoothbox.close();"><?php echo $this->translate('Close'); ?></button>
+				</div>
 			</div>
 	   	</div>
     </div>
@@ -52,5 +60,36 @@
 	  });
 	})(jQuery);
 </script>
-
+<script type="text/javascript">
+    function save_email(){
+            var email = $('subscribe_input').value;
+			if(email){
+				new Request.JSON({
+				  'format': 'json',
+				  'url' : '<?php echo $this->url(array('module' => 'custom','controller' => 'index', 'action' => 'subscribe-email'), 'default');?>',
+				  'data' : {
+					'format' : 'json',
+					'email' : email,
+				  },
+				  'onRequest' : function(){
+				  },
+				  'onSuccess' : function(responseJSON, responseText){
+					displayMessage(responseJSON.message);
+					$('subscribe_input').value='';
+				  }
+				}).send();
+			} else {
+				displayMessage('<?php echo $this->translate("Please enter an email address so we can keep you up to date on the release of the site."); ?>');
+			}
+    }
+	
+	var displayMessage = function(message)
+	{
+        if ($('message_response').innerHTML != '') {
+			$$('#message_response #message')[0].innerHTML = message;
+            var content = $('message_response').innerHTML;
+			Smoothbox.open(content);
+        }
+	}
+</script>
 
