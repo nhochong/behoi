@@ -930,14 +930,10 @@ class Core_Bootstrap extends Engine_Application_Bootstrap_Abstract
     } else if( !empty($_COOKIE['en4_language']) && !empty($_COOKIE['en4_locale']) ) {
       $locale = $_COOKIE['en4_locale'];
       $language = $_COOKIE['en4_language'];
-    } else if( !empty($_SERVER["HTTP_ACCEPT_LANGUAGE"]) ) {
-      $l = new Zend_Locale(Zend_Locale::BROWSER);
-      $locale = $l->toString();
-      $language = $l->getLanguage();
     } else {
       $locale = Engine_Api::_()->getApi('settings', 'core')->getSetting('core.locale.locale', 'auto');
       $language = Engine_Api::_()->getApi('settings', 'core')->getSetting('core.locale.locale', 'auto');
-     }
+    }
     Zend_Registry::set('timezone', $timezone);
 
     // Make sure it's valid
