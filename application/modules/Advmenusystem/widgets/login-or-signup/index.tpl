@@ -18,7 +18,7 @@ function advancedMenuUserLoginFormAction()
   // INJECT FORGOT PASSWORD LINK
   var wrapperDiv = document.createElement("div");
   wrapperDiv.id = "forgot_password";
-  wrapperDiv.innerHTML = "<span class='fright'><a href='"+en4.core.baseUrl+"user/auth/forgot'>"+en4.core.language.translate('Forgot Password?')+"</a></span>";
+  wrapperDiv.innerHTML = "<span class='fright'><a href='"+en4.core.baseUrl+"user/auth/forgot'>"+"<?php echo $this->translate('Forgot Password?')?>"+"</a></span>";
   wrapperDiv.inject($('password-wrapper'), 'after');
   $("remember-wrapper").inject($("forgot_password"), 'before');
   

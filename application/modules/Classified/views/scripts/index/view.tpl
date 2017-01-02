@@ -52,7 +52,7 @@ endif; ?>
 		<?php if(!empty($this->classified->more_info)):?>
 		<ul class="qa-further-info">
 			<li>
-				<h2 class="" id="classfied_detail_exploration">Exploration</h2>
+				<h2 class="" id="classfied_detail_exploration"><?php echo $this->translate('Exploration')?></h2>
 				<div class="text" style="display: none;" id="classfied_detail_exploration_content">
 					<?php echo $this->classified->more_info?>
 				</div>

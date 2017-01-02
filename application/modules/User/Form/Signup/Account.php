@@ -29,7 +29,7 @@ class User_Form_Signup_Account extends Engine_Form_Email
       empty($_SESSION['janrain_signup']);
     
     $inviteSession = new Zend_Session_Namespace('invite');
-    $tabIndex = 1;
+    $tabIndex = 10;
     
     // Init form
     $this->setTitle('Create Account');

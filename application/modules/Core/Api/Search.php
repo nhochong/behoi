@@ -105,10 +105,17 @@ class Core_Api_Search extends Core_Api_Abstract
   public function getAvailableTypes()
   {
     if( null === $this->_types ) {
-      $this->_types = Engine_Api::_()->getDbtable('search', 'core')->getAdapter()
-        ->query('SELECT DISTINCT `type` FROM `engine4_core_search`')
-        ->fetchAll(Zend_Db::FETCH_COLUMN);
-      $this->_types = array_intersect($this->_types, Engine_Api::_()->getItemTypes());
+      // $this->_types = Engine_Api::_()->getDbtable('search', 'core')->getAdapter()
+        // ->query('SELECT DISTINCT `type` FROM `engine4_core_search`')
+        // ->fetchAll(Zend_Db::FETCH_COLUMN);
+      // $this->_types = array_intersect($this->_types, Engine_Api::_()->getItemTypes());
+	  $this->_types = array(
+		'ALBUM',
+		'BLOG',
+		'CLASSIFIED',
+		'QUESTION',
+		'USER',
+	  );
     }
 
     return $this->_types;

@@ -37,6 +37,7 @@ class Core_SearchController extends Core_Controller_Action_Standard
       $options = array();
       foreach( $availableTypes as $index => $type ) {
         $options[$type] = strtoupper('ITEM_TYPE_' . $type);
+		var_dump(strtoupper('ITEM_TYPE_' . $type));
       }
       $form->type->addMultiOptions($options);
     } else {

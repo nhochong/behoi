@@ -686,7 +686,8 @@ div.ynadvmenuMini_dropdownbox {
 			}
 			}
 			
-			> a.menu-icon {
+			> a.menu-icon,
+			> a.menu_core_mini.core_mini_settings {
 				background-repeat: no-repeat;
 				background-size: 16px;
 				height: 20px;
@@ -702,6 +703,14 @@ div.ynadvmenuMini_dropdownbox {
 					border-right: 1px solid #999;
 					padding-right: 10px;
 				}
+				
+				&.menu_user_logout{
+					background-image: url(~/application/themes/ynresponsive1/images/icons/exit.png);
+				}
+			}
+			
+			> a.menu_core_mini.core_mini_settings {
+				background-image: url(~/application/themes/ynresponsive1/images/icons/setting.png);
 			}
 		}
 	}

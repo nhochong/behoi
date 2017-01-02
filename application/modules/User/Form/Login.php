@@ -35,7 +35,7 @@ class User_Form_Login extends Engine_Form_Email
   
   public function init()
   {
-    $tabindex = 1;
+    $tabindex = 10;
     $this->_emailAntispamEnabled = (Engine_Api::_()->getApi('settings', 'core')
           ->getSetting('core.spam.email.antispam.login', 1) == 1);
     

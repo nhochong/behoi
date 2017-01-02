@@ -160,7 +160,7 @@
 "To add a new network, begin typing its name below.";"To add a new network, begin typing its name below."
 
 "We now";"We now"
-"yourname";"Tên của bạn"
+"yourname";"dia_chi_ca_nhan"
 "Signup complete!";"Đăng ký thành công!"
 "Yes, Delete My Account";"Xóa tài khoản của tôi"
 "skip";"bỏ qua"
@@ -385,7 +385,7 @@ the Facebook and Twitter integration <a href=""%2$s"">here</a>.
 "No, do not allow users to upload a photo upon signup.";"No, do not allow users to upload a photo upon signup."
 
 "Lost Password";"Quên mật khẩu"
-"USER_FORM_AUTH_FORGOT_DESCRIPTION";"Nếu bạn không thể đăng nhập vì quên mật khẩu, vui long nhập địa chỉ mail của bạn bên dưới."
+"USER_FORM_AUTH_FORGOT_DESCRIPTION";"Nếu bạn không thể đăng nhập vì quên mật khẩu, vui lòng nhập địa chỉ mail của bạn bên dưới."
 "USER_FORM_AUTH_FACEBOOK_NOACCOUNT";"Đăng nhập bằng Facebook thành công, nhưng không có tài khoản liên kết được tìm thấy. Bạn có muốn <a href=""%s"">tạo một tài khoản</a>?<br>Bạn có thể đăng nhập vào tài khoản đã tồn tại bên dưới, sau đó liên kết với tài khoản Facebook của bạn trong phần <a href=""%2$s"">Cài đặt</a>"
 "Send Email";"Gửi Email"
 "Reset password?";"Thay đổi mật khẩu?"

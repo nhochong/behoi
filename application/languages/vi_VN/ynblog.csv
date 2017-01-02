@@ -256,7 +256,7 @@
 "_ACTIVITY_ACTIONTYPE_YNBLOG_NEW";"When I create a blog."
 "_ACTIVITY_ACTIONTYPE_YNBLOG_IMPORT";"When I import blogs"
 
-"ITEM_TYPE_BLOG";"Blog Entry"
+"ITEM_TYPE_BLOG";"Tư vấn"
 "View all";"View all"
 "Sorry! Maximum number of allowed blogs is: %s blog(s)";"Sorry! Maximum number of allowed blogs is: %s blog(s)"
 "ADMIN_ACTIVITY_TYPE_COMMENT_YNBLOG";"When a user (subject) comments on another user's (object) blog entries."

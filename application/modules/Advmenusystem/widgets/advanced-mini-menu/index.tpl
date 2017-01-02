@@ -385,6 +385,12 @@ foreach( $this->navigation->getPages() as $item ) $item->setOrder(--$count);
 				onclick="advancedMenuUserLoginOrSignUp('<?php echo $tempFunctionName ?>', '<?php echo $this->isUserLoginPage ?>', '<?php echo $this->isUserSignupPage ?>'); return false;" class="menu_user_login menu-icon"
 			<?php elseif( $item -> name == 'core_mini_signup' && !empty($this->advmenusystemEnableSignupLightbox) && (empty($this->isUserSignupPage) && empty($this->isUserLoginPage))): ?>  
 				onclick="advancedMenuUserLoginOrSignUp('<?php echo $tempFunctionName ?>', '<?php echo $this->isUserLoginPage ?>', '<?php echo $this->isUserSignupPage ?>'); return false;" class="menu_user_signup"
+			<?php elseif(!$this->viewer()->getIdentity() && $item -> name == 'core_mini_auth'): ?>  
+				class="menu_user_login menu-icon"
+			<?php elseif(!$this->viewer()->getIdentity() && $item -> name == 'core_mini_signup'): ?>  
+				class="menu_user_signup"
+			<?php elseif($this->viewer()->getIdentity() && $item -> name == 'core_mini_auth'): ?>  
+				class="menu_user_logout menu-icon"
 			<?php endif;?>
 			href="<?php echo $item->getHref() ?>">          
 			<span><?php echo $this->translate($item->getLabel()) ?></span>

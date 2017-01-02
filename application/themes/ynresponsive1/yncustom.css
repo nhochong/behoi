@@ -1450,3 +1450,9 @@ form#ynblogs_create #auth_comment-wrapper,
 #global_page_question-index-edit div.qa_create_question .global_form #auth_answer-wrapper {
 	display: none;
 }
+#global_content .layout_core_ad_campaign {
+	padding: 15px 0px 0px 0px;
+    clear: both;
+    background: transparent;
+    border: none;
+}
