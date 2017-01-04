@@ -429,7 +429,7 @@ as an alternative to regular input select boxes in some places.
 .pulldown_options a
 {
   color: $theme_pulldown_font_color_active;
-  font-size: 11px;
+  font-size: $theme_font_size;
   padding: 3px;
   margin-right: 3px;
 }
@@ -440,7 +440,7 @@ as an alternative to regular input select boxes in some places.
 }
 ul.notifications_menu > li.notifications_unread > span
 {
-	font-size: 11px;
+	font-size: $theme_font_size;
 }
 
 
@@ -848,7 +848,7 @@ div[class$="_index_manage"] .layout_middle ul li a img.thumb_normal:hover
 div[class$="_index_manage"] .layout_middle div[class$="_manage_options"] > a,
 div.layout_middle p[class$="_browse_info_date"]
 {
-	font-size: 11px;
+	font-size: $theme_font_size;
 }
 
 

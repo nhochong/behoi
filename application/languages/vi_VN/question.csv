@@ -1,4 +1,4 @@
-"Questions and Answers";"Câu hỏi và Câu trả lời"
+"Questions and Answers";"Hỏi & Đáp"
 "Questions & Answers";"Hỏi & Đáp"
 "Save Changes";"Lưu"
 "Settings saved";"Lưu cài đặt"
@@ -32,7 +32,7 @@
 "%1$s Create %2$s a new one!";"%1$s Tạo %2$s câu hỏi mới!"
 "Refresh Ratings";"Refresh Ratings"
 "No ratings are available yet.";"No ratings are available yet."
-"Browse All";"Browse All"
+"Browse All";"Câu hỏi"
 "My Questions";"Câu hỏi của tôi"
 "Ratings";"Ratings"
 "Ask a Question";"Đặt câu hỏi"
@@ -326,7 +326,7 @@
 "%s <br /> Score";"%s <br /> Điểm"
 "%s <br /> View";"%s <br /> View";"%d <br />Lượt xem"
 "%d <br /> Answer";"%d <br /> Answer";"%d <br />Trả lời"
-
+"Unanswered";"Chưa trả lời"
 
 # Activty Feed types
 

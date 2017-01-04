@@ -51,3 +51,9 @@ WHERE `name` = 'question_main_manage';
 
 ALTER TABLE `engine4_classified_classifieds` ADD `meta_description` longtext DEFAULT NULL AFTER `more_info`;
 ALTER TABLE `engine4_blog_blogs` ADD `meta_description` longtext DEFAULT NULL AFTER `body`;
+
+CREATE TABLE IF NOT EXISTS `engine4_custom_subscribers` (
+  `subscriber_id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `email` varchar(128) NOT NULL,
+  `creation_date` datetime NOT NULL
+) ENGINE='InnoDB' COLLATE 'utf8_unicode_ci';

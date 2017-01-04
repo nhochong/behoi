@@ -297,9 +297,10 @@ ul.feed .feed_attachment_photo a > img
 
 ul.feed .feed_item_link_title
 {
-  font-size: .8em;
+  font-size: $theme_font_size !important;
   font-weight: bold;
   margin-bottom: 2px;
+  margin-top: 5px;
 }
 ul.feed .feed_item_link_desc
 {
@@ -311,12 +312,13 @@ ul.feed .comments
 }
 ul.feed .comments textarea
 {
-  font-size: 8pt;
+  font-size: $theme_font_size;
+  min-height: 30px;
 }
 ul.feed .comments textarea + button
 {
   display: none;
-  font-size: .8em;
+  font-size: $theme_font_size;
 }
 ul.feed .comments textarea:focus + button
 {

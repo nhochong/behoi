@@ -47,6 +47,6 @@ class Custom_IndexController extends Core_Controller_Action_Standard
 			}
 		}    
 		$this->view->status = true;
-		$this->view->message = Zend_Registry::get('Zend_Translate')->_('Thanks for submitting your email. We\'ll keep you up to date on our progress!');
+		$this->view->message = Zend_Registry::get('Zend_Translate')->_("Thanks for submitting your email. We'll keep you up to date on our progress!");
 	}
 }
