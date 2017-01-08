@@ -386,7 +386,7 @@ as an alternative to regular input select boxes in some places.
   +rounded(5px, true, false, false, false);
   overflow: hidden;
   position: absolute;
-  min-width: 100px;
+  min-width: 120px;
   max-width: 300px;
   padding: 4px;
   background-color: $theme_pulldown_border_color;

@@ -11,7 +11,7 @@ class Question_Form_Create extends Engine_Form {
                 ->setAttrib('id', 'form-upload');
         $user = Engine_Api::_()->user()->getViewer();
         $this->addElement('Text', 'title', array(
-            'label' => Zend_Registry::get('Zend_Translate')->_("Title"),
+            'label' => Zend_Registry::get('Zend_Translate')->_("Câu hỏi"),
             'maxlength' => 100,
             'allowEmpty' => true,
             'required' => false,

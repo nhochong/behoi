@@ -38,7 +38,7 @@
         <td><?php echo $item->getTitle() ?></td>
         <td><?php echo substr($item->getDescription(),0,50); ?></td>
         <td><img src="<?php echo $item->getPhotoUrl('thumb.icon') ?>" alt="photo" width= 40px; height = 40px;/></td>
-        <td><?php echo substr($item->getLinkUrl(),0,25); ?></td>
+        <td><?php echo $item->getLinkUrl(); ?></td>
         <td>
              <?php echo $this->htmlLink(array('route' => 'admin_default', 'module' => 'custom', 'controller' => 'manage', 'action' => 'edit', 'id' =>$item->getIdentity()), $this->translate('edit'), array(
                 'class' => 'smoothbox',

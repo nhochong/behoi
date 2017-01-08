@@ -21,7 +21,7 @@ $this->headScript()
 <div class="bxSlider" >
 	<ul class="slides" id="landing-sliders">
 		<?php foreach ($this->slides as $slide):?>
-			<li><div class="overflow-hidden" style="height:300px"><span style="background-image: url('<?php echo $slide->getPhotoUrl()?>')"></span></div></li>
+			<li><div class="overflow-hidden" style="height:350px"><a href="<?php echo $slide->getLinkUrl();?>"><span style="background-image: url('<?php echo $slide->getPhotoUrl()?>')"></span></a></div></li>
 		<?php endforeach;?>
 	</ul>
 </div>

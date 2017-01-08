@@ -353,67 +353,72 @@ else
 </script>
 
 <div id='core_menu_mini_menu' class="ynadvanced-menu-mini">
-<?php
-// Reverse the navigation order (they're floating right)
-$count = count($this->navigation);
-foreach( $this->navigation->getPages() as $item ) $item->setOrder(--$count);
-?>
-<ul>
-	<?php if( $this->viewer->getIdentity()) :?>
-		<li class="ynadvmenu_notification type-<?php echo $this->design_type; ?>" >
-			<?php echo $this -> html_notification?>
-		</li>
-		<script type="text/javascript">
-			addNotificationScript();
-		</script>
-	<?php endif; ?>
-	<?php if(!$this->viewer()->getIdentity()):?>
-		<li class="ynadvmenu_notification ynadvmenu-notification-subscribe" >
-			<a href="javascript:void(0)" class="menu_get_subscribe menu-icon"><span><?php echo $this->translate('Đăng ký bản tin');?></span></a>
-			<div class="menu-mini-header pull-right subscribe_form" id="subscribe_form_header" style="display:none">
-				<div class="content">
-					<input type="text" id="subscribe_input_header" placeholder="NHẬP EMAIL CỦA BẠN"/>
-					<button id="subscribe_button_header" onclick="save_email('subscribe_input_header')"><?php echo $this->translate('Đăng ký');?></button>
-				</div>
-			</div>
-		</li>
-	<?php endif;?>
-	<?php foreach( $this->navigation as $item ):
-		if($item -> name == 'core_mini_auth' || $item -> name == 'core_mini_signup'):?>
-		<?php if( $item -> name == 'core_mini_auth' ) : ?>
-			<?php $tempFunctionName = 'login'; ?>
-		<?php elseif( $item -> name == 'core_mini_signup' ): ?>
-			<?php $tempFunctionName = 'signup'; ?>
-		<?php endif; ?>
-		<li class="">
-			<a 
-			<?php if( $item -> name == 'core_mini_auth' && !empty($this->advmenusystemEnableLoginLightbox) && (empty($this->isUserLoginPage) && empty($this->isUserSignupPage)) ) : ?>
-				onclick="advancedMenuUserLoginOrSignUp('<?php echo $tempFunctionName ?>', '<?php echo $this->isUserLoginPage ?>', '<?php echo $this->isUserSignupPage ?>'); return false;" class="menu_user_login menu-icon"
-			<?php elseif( $item -> name == 'core_mini_signup' && !empty($this->advmenusystemEnableSignupLightbox) && (empty($this->isUserSignupPage) && empty($this->isUserLoginPage))): ?>  
-				onclick="advancedMenuUserLoginOrSignUp('<?php echo $tempFunctionName ?>', '<?php echo $this->isUserLoginPage ?>', '<?php echo $this->isUserSignupPage ?>'); return false;" class="menu_user_signup"
-			<?php elseif(!$this->viewer()->getIdentity() && $item -> name == 'core_mini_auth'): ?>  
-				class="menu_user_login menu-icon"
-			<?php elseif(!$this->viewer()->getIdentity() && $item -> name == 'core_mini_signup'): ?>  
-				class="menu_user_signup"
-			<?php elseif($this->viewer()->getIdentity() && $item -> name == 'core_mini_auth'): ?>  
-				class="menu_user_logout menu-icon"
-			<?php endif;?>
-			href="<?php echo $item->getHref() ?>">          
-			<span><?php echo $this->translate($item->getLabel()) ?></span>
-		</a>
-	</li>
+	<div class="ynadvmenu_info_menu">
+		<div class="info_menu">
+			<a class="menu_email_contact menu-icon" href="mailto:hotro@behoi.com">hotro@behoi.com</a>
+		</div>
+	</div>
 	<?php
-	elseif(in_array($item -> name, $this->arr_sub_mini) || $item -> name == 'core_mini_messages'):?>
-	<?php else:?>
-		<li><?php echo $this->htmlLink($item->getHref(), $this->translate($item->getLabel()), array_filter(array(
-			'class' => ( !empty($item->class) ? $item->class : null ),
-			'alt' => ( !empty($item->alt) ? $item->alt : null ),
-			'target' => ( !empty($item->target) ? $item->target : null ),
-			))) ?></li>
+	// Reverse the navigation order (they're floating right)
+	$count = count($this->navigation);
+	foreach( $this->navigation->getPages() as $item ) $item->setOrder(--$count);
+	?>
+	<ul>
+		<?php if( $this->viewer->getIdentity()) :?>
+			<li class="ynadvmenu_notification type-<?php echo $this->design_type; ?>" >
+				<?php echo $this -> html_notification?>
+			</li>
+			<script type="text/javascript">
+				addNotificationScript();
+			</script>
+		<?php endif; ?>
+		<?php if(!$this->viewer()->getIdentity()):?>
+			<li class="ynadvmenu_notification ynadvmenu-notification-subscribe" >
+				<a href="javascript:void(0)" class="menu_get_subscribe menu-icon"><span><?php echo $this->translate('Đăng ký bản tin');?></span></a>
+				<div class="menu-mini-header pull-right subscribe_form" id="subscribe_form_header" style="display:none">
+					<div class="content">
+						<input type="text" id="subscribe_input_header" placeholder="NHẬP EMAIL CỦA BẠN"/>
+						<button id="subscribe_button_header" onclick="save_email('subscribe_input_header')"><?php echo $this->translate('Đăng ký');?></button>
+					</div>
+				</div>
+			</li>
 		<?php endif;?>
-	<?php endforeach; ?>
+		<?php foreach( $this->navigation as $item ):
+			if($item -> name == 'core_mini_auth' || $item -> name == 'core_mini_signup'):?>
+			<?php if( $item -> name == 'core_mini_auth' ) : ?>
+				<?php $tempFunctionName = 'login'; ?>
+			<?php elseif( $item -> name == 'core_mini_signup' ): ?>
+				<?php $tempFunctionName = 'signup'; ?>
+			<?php endif; ?>
+			<li class="">
+				<a 
+				<?php if( $item -> name == 'core_mini_auth' && !empty($this->advmenusystemEnableLoginLightbox) && (empty($this->isUserLoginPage) && empty($this->isUserSignupPage)) ) : ?>
+					onclick="advancedMenuUserLoginOrSignUp('<?php echo $tempFunctionName ?>', '<?php echo $this->isUserLoginPage ?>', '<?php echo $this->isUserSignupPage ?>'); return false;" class="menu_user_login menu-icon"
+				<?php elseif( $item -> name == 'core_mini_signup' && !empty($this->advmenusystemEnableSignupLightbox) && (empty($this->isUserSignupPage) && empty($this->isUserLoginPage))): ?>  
+					onclick="advancedMenuUserLoginOrSignUp('<?php echo $tempFunctionName ?>', '<?php echo $this->isUserLoginPage ?>', '<?php echo $this->isUserSignupPage ?>'); return false;" class="menu_user_signup"
+				<?php elseif(!$this->viewer()->getIdentity() && $item -> name == 'core_mini_auth'): ?>  
+					class="menu_user_login menu-icon"
+				<?php elseif(!$this->viewer()->getIdentity() && $item -> name == 'core_mini_signup'): ?>  
+					class="menu_user_signup"
+				<?php elseif($this->viewer()->getIdentity() && $item -> name == 'core_mini_auth'): ?>  
+					class="menu_user_logout menu-icon"
+				<?php endif;?>
+				href="<?php echo $item->getHref() ?>">          
+				<span><?php echo $this->translate($item->getLabel()) ?></span>
+			</a>
+		</li>
+		<?php
+		elseif(in_array($item -> name, $this->arr_sub_mini) || $item -> name == 'core_mini_messages'):?>
+		<?php else:?>
+			<li><?php echo $this->htmlLink($item->getHref(), $this->translate($item->getLabel()), array_filter(array(
+				'class' => ( !empty($item->class) ? $item->class : null ),
+				'alt' => ( !empty($item->alt) ? $item->alt : null ),
+				'target' => ( !empty($item->target) ? $item->target : null ),
+				))) ?></li>
+			<?php endif;?>
+		<?php endforeach; ?>
 
-</ul>
+	</ul>
 </div>
 
 <!--Sign in/ Sign up smooth box work-->

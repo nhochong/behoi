@@ -14,7 +14,11 @@ class Custom_Model_Slider extends Core_Model_Item_Abstract{
 	}
 	
 	public function getLinkUrl(){
-        return $this->links_url;
+		$links_url = $this->links_url;
+		if($links_url && strpos($links_url, 'http') === FALSE && strpos($links_url, 'https') === FALSE){
+			$links_url = 'http://' . $links_url;
+		}
+        return $links_url;
 	}
      
 	public function setPhoto($photo)

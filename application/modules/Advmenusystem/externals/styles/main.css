@@ -684,7 +684,7 @@ div.ynadvmenuMini_dropdownbox {
 					margin-right: 10px;
 					padding-right: 20px;
 					position: relative;
-			}
+				}
 			}
 			
 			> a.menu-icon,
@@ -778,6 +778,24 @@ div.ynadvmenuMini_dropdownbox {
 	.updates_pulldown > a,
 	.updates_pulldown_active > a {
 		padding: 0;
+	}
+	
+	& > div.ynadvmenu_info_menu {
+		position: absolute;
+		padding: 12px;
+		
+		.info_menu {
+			.menu-icon {
+				background-repeat: no-repeat;
+				background-size: 20px;
+				height: 20px;
+				width: 25px;
+				padding-left: 25px;
+			}
+			.menu_email_contact {
+				background-image: url(~/application/themes/ynresponsive1/images/icons/mail.png);
+			}
+		}
 	}
 }
 

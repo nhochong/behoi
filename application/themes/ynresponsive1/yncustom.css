@@ -1288,6 +1288,12 @@ body[id*="page_poll"] .layout_main .layout_middle
 		
 		.bx-wrapper {
 			margin-bottom: 0px;
+			
+			ul.slides {
+				> li {
+					margin-right: 1px;
+				}
+			}
 		}
 	}
 	
