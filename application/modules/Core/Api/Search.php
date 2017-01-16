@@ -79,7 +79,18 @@ class Core_Api_Search extends Core_Api_Abstract
 
   public function getPaginator($text, $type = null)
   {
-    return Zend_Paginator::factory($this->getSelect($text, $type));
+	  $table = Engine_Api::_()->getDbtable('search', 'core');
+	  $select = $this->getSelect($text, $type); 
+	  $items = $table->fetchAll($select);
+	  $result = array();
+	  foreach($items as $item){
+		$object = Engine_Api::_()->getItem($item->type, $item->id);
+		if( !$object ) continue;
+		if($item->type == 'classified' && $object->enabled == false) continue;
+		if($item->type == 'blog' && $object->is_approved == false) continue;
+		$result[] = $item;
+	  }
+    return Zend_Paginator::factory($result);
   }
 
   public function getSelect($text, $type = null)
@@ -88,17 +99,26 @@ class Core_Api_Search extends Core_Api_Abstract
     $table = Engine_Api::_()->getDbtable('search', 'core');
     $db = $table->getAdapter();
     $select = $table->select()
-      ->where(new Zend_Db_Expr($db->quoteInto('MATCH(`title`, `description`, `keywords`, `hidden`) AGAINST (? IN BOOLEAN MODE)', $text)))
-      ->order(new Zend_Db_Expr($db->quoteInto('MATCH(`title`, `description`, `keywords`, `hidden`) AGAINST (?) DESC', $text)));
+	  ->where("`title` Like ? or `description` Like ? or `keywords` Like ? or `hidden` Like ?", "%" . $text . "%");
+      //->where(new Zend_Db_Expr($db->quoteInto('MATCH(`title`, `description`, `keywords`, `hidden`) AGAINST (? IN BOOLEAN MODE)', $text)))
+      //->order(new Zend_Db_Expr($db->quoteInto('MATCH(`title`, `description`, `keywords`, `hidden`) AGAINST (?) DESC', $text)));
 
     // Filter by item types
-    $availableTypes = Engine_Api::_()->getItemTypes();
+    //$availableTypes = Engine_Api::_()->getItemTypes();
+    $availableTypes = array(
+		'album',
+		'classified',
+		'blog',
+		'question',
+		'answer',
+		'user',
+	);
     if( $type && in_array($type, $availableTypes) ) {
       $select->where('type = ?', $type);
     } else {
       $select->where('type IN(?)', $availableTypes);
     }
-    
+	echo $select;
     return $select;
   }
 

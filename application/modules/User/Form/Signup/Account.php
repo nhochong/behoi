@@ -47,7 +47,6 @@ class User_Form_Signup_Account extends Engine_Form_Email
     // Element: email
     $emailElement = $this->addEmailElement(array(
       'label' => 'Email Address',
-      'description' => 'You will use your email address to login.',
       'required' => true,
       'allowEmpty' => false,
       'validators' => array(
@@ -81,6 +80,34 @@ class User_Form_Signup_Account extends Engine_Form_Email
     //  $this->email->getValidator('Identical')->setMessage('Your email address must match the address that was invited.', 'notSame');
     //}
     
+	// Element: username
+    if( $settings->getSetting('user.signup.username', 1) > 0 ) {
+      $this->addElement('Text', 'username', array(
+        'label' => 'Profile Address',
+        'required' => true,
+        'allowEmpty' => false,
+        'validators' => array(
+          array('NotEmpty', true),
+          array('Alnum', true),
+          array('StringLength', true, array(4, 64)),
+          array('Regex', true, array('/^[a-z][a-z0-9]*$/i')),
+          array('Db_NoRecordExists', true, array(Engine_Db_Table::getTablePrefix() . 'users', 'username'))
+        ),
+        'tabindex' => $tabIndex++,
+          //'onblur' => 'var el = this; en4.user.checkUsernameTaken(this.value, function(taken){ el.style.marginBottom = taken * 100 + "px" });'
+      ));
+      $this->username->getDecorator('Description')->setOptions(array('placement' => 'APPEND', 'escape' => false));
+      $this->username->getValidator('NotEmpty')->setMessage('Please enter a valid profile address.', 'isEmpty');
+      $this->username->getValidator('Db_NoRecordExists')->setMessage('Someone has already picked this profile address, please use another one.', 'recordFound');
+      $this->username->getValidator('Regex')->setMessage('Profile addresses must start with a letter.', 'regexNotMatch');
+      $this->username->getValidator('Alnum')->setMessage('Profile addresses must be alphanumeric.', 'notAlnum');
+
+      // Add banned username validator
+      $bannedUsernameValidator = new Engine_Validate_Callback(array($this, 'checkBannedUsername'), $this->username);
+      $bannedUsernameValidator->setMessage("This profile address is not available, please use another one.");
+      $this->username->addValidator($bannedUsernameValidator);
+    }
+	
     // Element: code
     if( $settings->getSetting('user.signup.inviteonly') > 0 ) {
       $codeValidator = new Engine_Validate_Callback(array($this, 'checkInviteCode'), $emailElement);
@@ -132,42 +159,6 @@ class User_Form_Signup_Account extends Engine_Form_Email
       $specialValidator = new Engine_Validate_Callback(array($this, 'checkPasswordConfirm'), $this->password);
       $specialValidator->setMessage('Password did not match', 'invalid');
       $this->passconf->addValidator($specialValidator);
-    }
-
-    // Element: username
-    if( $settings->getSetting('user.signup.username', 1) > 0 ) {
-      $description = Zend_Registry::get('Zend_Translate')
-          ->_('This will be the end of your profile link, for example: <br /> ' .
-              '<span id="profile_address">http://%s</span>');
-      $description = sprintf($description, $_SERVER['HTTP_HOST']
-          . Zend_Controller_Front::getInstance()->getRouter()
-          ->assemble(array('id' => 'yourname'), 'user_profile'));
-
-      $this->addElement('Text', 'username', array(
-        'label' => 'Profile Address',
-        'description' => $description,
-        'required' => true,
-        'allowEmpty' => false,
-        'validators' => array(
-          array('NotEmpty', true),
-          array('Alnum', true),
-          array('StringLength', true, array(4, 64)),
-          array('Regex', true, array('/^[a-z][a-z0-9]*$/i')),
-          array('Db_NoRecordExists', true, array(Engine_Db_Table::getTablePrefix() . 'users', 'username'))
-        ),
-        'tabindex' => $tabIndex++,
-          //'onblur' => 'var el = this; en4.user.checkUsernameTaken(this.value, function(taken){ el.style.marginBottom = taken * 100 + "px" });'
-      ));
-      $this->username->getDecorator('Description')->setOptions(array('placement' => 'APPEND', 'escape' => false));
-      $this->username->getValidator('NotEmpty')->setMessage('Please enter a valid profile address.', 'isEmpty');
-      $this->username->getValidator('Db_NoRecordExists')->setMessage('Someone has already picked this profile address, please use another one.', 'recordFound');
-      $this->username->getValidator('Regex')->setMessage('Profile addresses must start with a letter.', 'regexNotMatch');
-      $this->username->getValidator('Alnum')->setMessage('Profile addresses must be alphanumeric.', 'notAlnum');
-
-      // Add banned username validator
-      $bannedUsernameValidator = new Engine_Validate_Callback(array($this, 'checkBannedUsername'), $this->username);
-      $bannedUsernameValidator->setMessage("This profile address is not available, please use another one.");
-      $this->username->addValidator($bannedUsernameValidator);
     }
     
     // Element: profile_type

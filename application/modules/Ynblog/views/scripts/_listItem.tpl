@@ -20,12 +20,7 @@
           $year = date("Y", $creation_date);
           date_default_timezone_set($oldTz);
        ?>
-       <div class="ynblog-mdy-listview">
-          <span class="ynblog-mdy-day"><?php echo $day?></span>
-          <span class="ynblog-mdy-month"><?php echo $month?></span>
-          <span class="ynblog-mdy-year"><?php echo $year?></span>
-       </div>
-      <a href="<?php echo $this-> item ->getHref(); ?>" style="width: calc(100% - 70px); background-image: url(<?php echo $photoUrl; ?>)">
+      <a href="<?php echo $this-> item ->getHref(); ?>" style="background-image: url(<?php echo $photoUrl; ?>)">
       
       </a>
    </div>

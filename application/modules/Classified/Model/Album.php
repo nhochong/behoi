@@ -28,7 +28,11 @@ class Classified_Model_Album extends Core_Model_Item_Collection
 
   public function getHref($params = array())
   {
-    return $this->getClassified()->getHref($params);
+	$classified = $this->getClassified();
+	if($classified)
+		return $classified->getHref($params);
+	else
+		return 'javascript:void(0)';
   }
 
   public function getClassified()

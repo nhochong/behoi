@@ -810,7 +810,7 @@ ul.ynblog-statistic{
         .ynblog-thumb{
             float: left;
             margin-right: 10px;
-            width: 235px;
+            width: 165px;
 
             a{
                 +ynblog-background-image;

@@ -33,10 +33,10 @@ class User_Model_User extends Core_Model_Item_Abstract
     //  $translate = Zend_Registry::get('Zend_Translate');
     //  return $translate->translate('You');
     //}
-    if( isset($this->displayname) && '' !== trim($this->displayname) ) {
-      return $this->displayname;
-    } else if( isset($this->username) && '' !== trim($this->username) ) {
+	if( isset($this->username) && '' !== trim($this->username) ) {
       return $this->username;
+    } else if( isset($this->displayname) && '' !== trim($this->displayname) ) {
+      return $this->displayname;
     } else if( isset($this->email) && '' !== trim($this->email) ) {
       $tmp = explode('@', $this->email);
       return $tmp[0];

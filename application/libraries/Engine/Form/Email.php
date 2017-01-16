@@ -31,10 +31,10 @@ class Engine_Form_Email extends Engine_Form
             'StringTrim',
         ),
         'validators' => array(
-            'EmailAddress'
+            // 'EmailAddress'
         ),
         // Fancy stuff
-        'inputType' => 'email',
+        // 'inputType' => 'email',
         'class' => 'text',
       ), $attributes);
 

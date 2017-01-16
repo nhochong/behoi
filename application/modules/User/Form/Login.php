@@ -52,7 +52,7 @@ class User_Form_Login extends Engine_Form_Email
     $this->loadDefaultDecorators();
     $this->getDecorator('Description')->setOption('escape', false);
 
-    $email = Zend_Registry::get('Zend_Translate')->_('Email Address');
+    $email = Zend_Registry::get('Zend_Translate')->_('Email/Tên đăng nhập');
     // Init email
     $emailElement = $this->addEmailElement(array(
       'label' => $email,
@@ -62,17 +62,17 @@ class User_Form_Login extends Engine_Form_Email
         'StringTrim',
       ),
       'validators' => array(
-        'EmailAddress'
+        // 'EmailAddress'
       ),
 
       // Fancy stuff
       'tabindex' => $tabindex++,
       'autofocus' => 'autofocus',
-      'inputType' => 'email',
+      // 'inputType' => 'email',
       'class' => 'text',
     ));
 
-    $emailElement->getValidator('EmailAddress')->getHostnameValidator()->setValidateTld(false);
+    //$emailElement->getValidator('EmailAddress')->getHostnameValidator()->setValidateTld(false);
 
     $password = Zend_Registry::get('Zend_Translate')->_('Password');
     // Init password
