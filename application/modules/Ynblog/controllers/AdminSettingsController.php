@@ -55,6 +55,7 @@ class Ynblog_AdminSettingsController extends Core_Controller_Action_Admin
         $row = $table->createRow();
         $row->user_id   =  1;
         $row->category_name = $values["label"];
+        $row->meta_description = $values["meta_description"];
         $row->save();
 
         // change the category of all the blogs using that category
@@ -153,6 +154,7 @@ class Ynblog_AdminSettingsController extends Core_Controller_Action_Admin
         $row = Engine_Api::_()->getItemTable('blog_category')->getCategory($values["id"]);
 
         $row->category_name = $values["label"];
+        $row->meta_description = $values["meta_description"];
         $row->save();
         $db->commit();
       }

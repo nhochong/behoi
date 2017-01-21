@@ -84,6 +84,7 @@ class Classified_AdminSettingsController extends Core_Controller_Action_Admin
         $row->user_id   =  $user->getIdentity();
         $row->category_name = $values["label"];
         $row->code = $values["code"];
+        $row->meta_description = $values["meta_description"];
         $row->parent_id = $parent_id;
         $row->save();
 		
@@ -191,6 +192,7 @@ class Classified_AdminSettingsController extends Core_Controller_Action_Admin
       {
         $category->category_name = $values["label"];
         $category->code = $values["code"];
+        $category->meta_description = $values["meta_description"];
         $category->save();
         
 		if(!empty($values['photo'])){

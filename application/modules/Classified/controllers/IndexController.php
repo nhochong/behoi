@@ -665,6 +665,10 @@ class Classified_IndexController extends Core_Controller_Action_Standard
 
 	public function browseAction()
     {
+		$category = Engine_Api::_()->getItem('classified_category', $this->_getParam('category'));
+		if( $category ){
+			Engine_Api::_()->core()->setSubject($category);
+		}
         // Setting to use landing page.
         $this->_helper->content->setNoRender()->setEnabled();
     }

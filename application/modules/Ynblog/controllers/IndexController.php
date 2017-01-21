@@ -15,7 +15,10 @@ class Ynblog_IndexController extends Core_Controller_Action_Standard {
 
 	/* ----- General Blog Listing Function ----- */
 	public function listingAction() {
-
+		$category = Engine_Api::_()->getItem('blog_category', $this->_getParam('category'));
+		if( $category ){
+			Engine_Api::_()->core()->setSubject($category);
+		}
 		// Search Params
 
 		// Do the show thingy
@@ -32,7 +35,10 @@ class Ynblog_IndexController extends Core_Controller_Action_Standard {
 	/* ------ A User Blogs List Function ----- */
 	public function listAction() {
 		// Preload info
-
+		$category = Engine_Api::_()->getItem('blog_category', $this->_getParam('category'));
+		if( $category ){
+			Engine_Api::_()->core()->setSubject($category);
+		}
 
 		// Search Params
 

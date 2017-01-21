@@ -38,6 +38,9 @@ class Classified_Form_Admin_Category extends Engine_Form
       ->addValidator('NotEmpty')
       ->setRequired(true)
       ->setAttrib('class', 'text');
+	 
+	$meta_description = new Zend_Form_Element_Textarea('meta_description');
+    $meta_description->setLabel('Meta description');
 	  
 	$photo = new Zend_Form_Element_File('photo');
     $photo->setLabel('Photo');
@@ -48,6 +51,7 @@ class Classified_Form_Admin_Category extends Engine_Form
       //$type,
 	  $code,
       $label,
+	  $meta_description,
 	  $photo,
       $id
     ));
@@ -82,6 +86,7 @@ class Classified_Form_Admin_Category extends Engine_Form
     //$this->removeElement('type');
     $this->code->setValue($category->code);
     $this->label->setValue($category->category_name);
+    $this->meta_description->setValue($category->meta_description);
     $this->id->setValue($category->category_id);
     $this->submit->setLabel('Edit Category');
 

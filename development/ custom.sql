@@ -57,3 +57,6 @@ CREATE TABLE IF NOT EXISTS `engine4_custom_subscribers` (
   `email` varchar(128) NOT NULL,
   `creation_date` datetime NOT NULL
 ) ENGINE='InnoDB' COLLATE 'utf8_unicode_ci';
+
+ALTER TABLE `engine4_classified_categories` ADD `meta_description` longtext DEFAULT NULL AFTER `category_name`;
+ALTER TABLE `engine4_blog_categories` ADD `meta_description` longtext DEFAULT NULL AFTER `category_name`;
