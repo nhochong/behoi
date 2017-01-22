@@ -112,7 +112,7 @@
       <tr>
         <td class="ynblog_check"><input type='checkbox' class='checkbox' value="<?php echo $item->blog_id ?>"/></td>
         <td><?php echo $item->getIdentity() ?></td>
-        <td><?php echo $item->getTitle() ?></td>
+        <td><?php echo $this->htmlLink($item->getHref(), $item->getTitle()) ?></td>
         <td><?php echo $item->getOwner()->getTitle() ?></td>
         <td><?php echo $item->getCategory()->getTitle() ?></td>
         <td>
@@ -132,8 +132,6 @@
         <td><?php echo $this->locale()->toNumber($item->view_count) ?></td>
         <td><?php echo $this->locale()->toDateTime($item->creation_date) ?></td>
         <td>
-          <?php echo $this->htmlLink($item->getHref(), $this->translate('view')) ?>
-		  |
           <?php echo $this->htmlLink(
                   array('route' => 'blog_specific', 'action' => 'edit', 'blog_id' => $item->blog_id),
                   $this->translate('edit'),

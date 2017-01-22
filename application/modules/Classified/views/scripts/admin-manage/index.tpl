@@ -112,7 +112,9 @@ if( $settings->getSetting('user.support.links', 0) == 1 ) {
       <tr>
         <td><input type='checkbox' class='checkbox' name='delete_<?php echo $item->classified_id;?>' value="<?php echo $item->classified_id; ?>" /></td>
         <td><?php echo $item->classified_id ?></td>
-        <td><?php echo $item->getTitle() ?></td>
+        <td><a href="<?php echo $this->url(array('user_id' => $item->owner_id, 'classified_id' => $item->classified_id), 'classified_entry_view') ?>">
+            <?php echo $item->getTitle() ?>
+          </a></td>
         <td><?php //echo Engine_Api::_()->getItem('classified_category', $item->category_id)->getTitle() ?>
 			<?php
 				$categoryTitle = "";
@@ -134,10 +136,6 @@ if( $settings->getSetting('user.support.links', 0) == 1 ) {
 		</td>
         <td><?php echo $this->locale()->toNumber($item->view_count) ?></td>
         <td>
-          <a href="<?php echo $this->url(array('user_id' => $item->owner_id, 'classified_id' => $item->classified_id), 'classified_entry_view') ?>">
-            <?php echo $this->translate("view") ?>
-          </a>
-		  |
           <?php echo $this->htmlLink(
             array('route' => 'classified_specific', 'action' => 'edit', 'classified_id' => $item->classified_id),
             $this->translate("edit"),
