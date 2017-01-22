@@ -62,4 +62,44 @@ class Core_SearchController extends Core_Controller_Action_Standard
       // ->setNoRender()
       ->setEnabled();
   }
+  
+	public function reindexAction(){
+		$type = $this->_getParam('type', null);
+		$arrTables = array();
+		
+		if(!empty($type)){
+			if( !Engine_Api::_()->hasItemType($type) ) {
+				die('Not Found.');
+			}
+			$arrTables[] = $type;
+		}else{
+			$arrTables = array(
+				'blog',
+				'classified',
+				'question',
+				'user'
+			);
+		}
+		
+		$searchTables = Engine_Api::_()->getDbtable('search', 'core');
+		foreach($arrTables as $table){
+			// Remove relate data
+			$searchTables->delete(array(
+				'type = ?' => $type
+			));
+			
+			// Reindex
+			$table = Engine_Api::_()->getItemTable($table);
+			$rows = $table->fetchAll();
+			foreach($rows as $row){
+				// Search indexer
+				if( $row->isSearchable()) {
+					// Index
+					Engine_Api::_()->getApi('search', 'core')->index($row);
+				}
+			}
+		}
+		
+		die('Finished.');
+	}
 }

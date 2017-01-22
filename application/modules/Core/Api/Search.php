@@ -118,7 +118,7 @@ class Core_Api_Search extends Core_Api_Abstract
     } else {
       $select->where('type IN(?)', $availableTypes);
     }
-	echo $select;
+	
     return $select;
   }
 

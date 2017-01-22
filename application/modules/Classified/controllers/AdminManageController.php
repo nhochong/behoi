@@ -23,6 +23,10 @@ class Classified_AdminManageController extends Core_Controller_Action_Admin
     $this->view->navigation = $navigation = Engine_Api::_()->getApi('menus', 'core')
       ->getNavigation('classified_admin_main', array(), 'classified_admin_main_manage');
 
+	$this->view->form = $form = new Classified_Form_Admin_Search;
+    $form->isValid($this->_getAllParams());
+    $params = $form->getValues();
+	
     if ($this->getRequest()->isPost()) {
       $values = $this->getRequest()->getPost();
       foreach ($values as $key => $value) {
@@ -32,11 +36,9 @@ class Classified_AdminManageController extends Core_Controller_Action_Admin
         }
       }
     }
-
-    $page=$this->_getParam('page',1);
-    $this->view->paginator = Engine_Api::_()->getItemTable('classified')->getClassifiedsPaginator(array(
-      'orderby' => 'classified_id',
-    ));
+	$params['orderby'] = 'classified_id';
+    $page = $this->_getParam('page',1);
+    $this->view->paginator = Engine_Api::_()->getItemTable('classified')->getClassifiedsPaginator($params);
     $this->view->paginator->setItemCountPerPage(25);
     $this->view->paginator->setCurrentPageNumber($page);
   }

@@ -89,6 +89,10 @@ if( $settings->getSetting('user.support.links', 0) == 1 ) {
 <br />
 <br />
 
+<div class="admin_search">
+    <?php echo $this->form->render($this);?>
+</div>
+
 <?php if( count($this->paginator) ): ?>
 <form id='multidelete_form' method="post" action="<?php echo $this->url();?>" onSubmit="return multiDelete()">
 <table class='admin_table'>

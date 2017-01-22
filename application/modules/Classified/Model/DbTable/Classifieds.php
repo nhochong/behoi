@@ -70,6 +70,10 @@ class Classified_Model_DbTable_Classifieds extends Engine_Db_Table
       }
     }
 
+	if( !empty($params['title']) ) {
+      $select->where($tableName . ".title LIKE ?", '%' . $params['title'] . '%');
+    }
+	
     if( !empty($params['user_id']) && is_numeric($params['user_id']) ) {
       $select->where($tableName . '.owner_id = ?', $params['user_id']);
     }
@@ -111,9 +115,9 @@ class Classified_Model_DbTable_Classifieds extends Engine_Db_Table
 				$select = $select->where($joinSelectStatement);
 			}
 		}else{
-			$select->where("$tableName.category_id like '?'", '%"'. $category_id . '"%');
+			$select->where("$tableName.category_id like '%\"$category_id\"%'");
 		}
-		//echo $select;die;
+		//echo $select;
 	}
 	//parent
 
