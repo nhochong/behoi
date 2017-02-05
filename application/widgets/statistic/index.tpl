@@ -16,10 +16,10 @@
 </div>
 <div class="statistic_online">
 	<div class="statistic_online_user">
-		<strong>166,938</strong>
+		<strong><?php echo ($this->onlineUserCount + $this->guestCount)?></strong>
 		<?php echo $this->translate('người đang truy cập');?>
 	</div>
-	<div class="description"><?php echo $this->translate('(989 thành viên và 165,949 khách)');?></div>
+	<div class="description"><?php echo $this->translate('(' . $this->onlineUserCount . ' thành viên và ' . $this->guestCount . ' khách)');?></div>
 </div>
 <div class="statistic_overall">
 	<ul class="statistic">
