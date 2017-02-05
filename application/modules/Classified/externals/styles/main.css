@@ -736,14 +736,14 @@ ul.classifieds-category {
 	}
 }
 ul.qa-further-info {
+	
 	li h2 {
 		font: bold 30px/50px Ubuntu, ArialRoundedMTBold, Arial;
 		color: $theme_main_color_scheme;
 		word-wrap: break-word;
-		border-bottom: 3px dotted $theme_main_color_scheme;
 		background: url(~/application/modules/Classified/externals/images/qa-arrow-non-active.png) left no-repeat;
 		padding-left: 20px;
-		margin-bottom: 20px;
+		cursor: pointer;
 	}
 	div.text,
 	div.text p {
@@ -763,4 +763,35 @@ ul.qa-further-info {
 #global_page_classified-index-create .global_form div.form-wrapper,
 #global_page_classified-index-edit .global_form div.form-wrapper {
 	overflow: visible;
+}
+#global_page_classified-index-view .layout_page_classified_index_view  {
+	.layout_middle > h2 {
+		color: #72c02c;
+		font: bold 30px/50px Ubuntu, ArialRoundedMTBold, Arial;
+		margin-top: 0px;
+		line-height: 40px;
+	}
+	.classifieds_browse_info_category.icon a {
+		color: #999;
+	}
+	.classifieds_entrylist {
+		.search-results-para {
+			padding-top: 20px;
+			margin-top: 20px;
+			border-top: 3px dotted $theme_main_color_scheme;
+			clear: both;
+			
+			.result-show {
+				color: #72c02c;
+				
+				a.yellow-btn.start_discussion {
+					display: block;
+					margin-top: 10px;
+				}
+			}
+		}
+		.addthis_inline_share_toolbox {
+			float: right;
+		}
+	}
 }

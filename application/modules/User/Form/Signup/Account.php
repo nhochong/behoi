@@ -88,9 +88,9 @@ class User_Form_Signup_Account extends Engine_Form_Email
         'allowEmpty' => false,
         'validators' => array(
           array('NotEmpty', true),
-          array('Alnum', true),
+          // array('Alnum', true),
           array('StringLength', true, array(4, 64)),
-          array('Regex', true, array('/^[a-z][a-z0-9]*$/i')),
+          array('Regex', true, array('/^[a-z][a-z0-9_.]*$/i')),
           array('Db_NoRecordExists', true, array(Engine_Db_Table::getTablePrefix() . 'users', 'username'))
         ),
         'tabindex' => $tabIndex++,
@@ -98,9 +98,9 @@ class User_Form_Signup_Account extends Engine_Form_Email
       ));
       $this->username->getDecorator('Description')->setOptions(array('placement' => 'APPEND', 'escape' => false));
       $this->username->getValidator('NotEmpty')->setMessage('Please enter a valid profile address.', 'isEmpty');
-      $this->username->getValidator('Db_NoRecordExists')->setMessage('Someone has already picked this profile address, please use another one.', 'recordFound');
-      $this->username->getValidator('Regex')->setMessage('Profile addresses must start with a letter.', 'regexNotMatch');
-      $this->username->getValidator('Alnum')->setMessage('Profile addresses must be alphanumeric.', 'notAlnum');
+      $this->username->getValidator('Db_NoRecordExists')->setMessage('Someone has already picked this profile address, please use another one.', 'recordFound');;
+      $this->username->getValidator('Regex')->setMessage('Profile addresses must be alphanumeric.', 'regexNotMatch');
+      // $this->username->getValidator('Alnum')->setMessage('Profile addresses must be alphanumeric.', 'notAlnum');
 
       // Add banned username validator
       $bannedUsernameValidator = new Engine_Validate_Callback(array($this, 'checkBannedUsername'), $this->username);

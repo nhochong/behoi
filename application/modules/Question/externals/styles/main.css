@@ -460,3 +460,11 @@ html[dir="rtl"] #reset_selected{right: auto; left: 0;}
 #global_page_question-index-view .qa_browse_photo {
 	width: auto;
 }
+#global_page_question-index-create,
+#global_page_question-index-edit {
+	.qa_create_question .global_form {
+		#question-element {
+			max-width: 100%;
+		}
+	}
+}

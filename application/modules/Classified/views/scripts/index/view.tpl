@@ -49,6 +49,7 @@ endif; ?>
 				<?php echo $this->classified->body ?>
 			</div>
 		</div>
+		<!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_inline_share_toolbox"></div>
 		<?php if(!empty($this->classified->more_info)):?>
 		<ul class="qa-further-info">
 			<li>
@@ -59,6 +60,16 @@ endif; ?>
 			</li>
 		</ul>
 		<?php endif; ?>
+		<div class="search-results-para">
+			<span class="result-show">
+				<?php echo $this->translate("Didn't find what you were looking for?");?>
+				<span class="search-result-btns">
+					<a class="yellow-btn start_discussion" href="<?php echo $this->url(array('action' => 'create'), 'question_general', true)?>">
+						<button><?php echo $this->translate("Ask the Community");?></button>
+					</a>
+				</span>
+			</span>
+		</div>
     </li>
   </ul>
 </div>

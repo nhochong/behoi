@@ -218,6 +218,6 @@
 "{item:$subject} commented on {item:$owner}'s {item:$object:photo}: {body:$body}";"{item:$subject} commented on {item:$owner}'s {item:$object:photo}: {body:$body}"
 
 # item types
-"ITEM_TYPE_ALBUM";"Albums"
+"ITEM_TYPE_ALBUM";"Hình ảnh"
 "ITEM_TYPE_ALBUM_PHOTO";"Album Photos"
 "Browse Albums";"Browse Albums"

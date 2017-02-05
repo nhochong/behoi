@@ -43,7 +43,8 @@ class Question_Form_Create extends Engine_Form {
 		
 		// Get user and user level
 		$this->addElement('TinyMce', 'question', array(
-		  'disableLoadDefaultDecorators' => true,
+		  'label' => Zend_Registry::get('Zend_Translate')->_("Nội dung"),
+		  // 'disableLoadDefaultDecorators' => true,
 		  'editorOptions' => array(
 			  'bbcode' => 1,
 			  'html'   => 1,
@@ -66,9 +67,9 @@ class Question_Form_Create extends Engine_Form {
 				  'image', '|', 'link', '|', 'fullscreen', '|', 'preview',  'emoticons'
 				),         
 		  ),
-		  'required'   => true,
-		  'allowEmpty' => false,
-		  'decorators' => array('ViewHelper'),
+		  // 'required'   => true,
+		  // 'allowEmpty' => false,
+		  // 'decorators' => array('ViewHelper'),
 		  'filters' => array(new Engine_Filter_Censor())
 		));
 		

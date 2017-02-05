@@ -1470,3 +1470,6 @@ div#subscribe_form_header {
     background-color: #eee;
     border: 1px solid #e8e8e8;
 }
+.layout_page_core_error_requireuser .layout_page_core_error_requireuser {
+	display: none;
+}

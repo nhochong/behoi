@@ -68,16 +68,16 @@ class User_Form_Settings_General extends Engine_Form
         'allowEmpty' => false,
         'validators' => array(
           array('NotEmpty', true),
-          array('Alnum', true),
+          // array('Alnum', true),
           array('StringLength', true, array(4, 64)),
-          array('Regex', true, array('/^[a-z][a-z0-9]*$/i')),
+          array('Regex', true, array('/^[a-z][a-z0-9_.]*$/i')),
           array('Db_NoRecordExists', true, array(Engine_Db_Table::getTablePrefix().'users', 'username', array('field' => 'user_id', 'value' => $this->getItem()->getIdentity())))
         ),
       ));
       $this->username->getValidator('NotEmpty')->setMessage('Please enter a valid profile address.', 'isEmpty');
       $this->username->getValidator('Db_NoRecordExists')->setMessage('Someone has already picked this profile address, please use another one.', 'recordFound');
-      $this->username->getValidator('Regex')->setMessage('Profile addresses must start with a letter.', 'regexNotMatch');
-      $this->username->getValidator('Alnum')->setMessage('Profile addresses must be alphanumeric.', 'notAlnum');
+      $this->username->getValidator('Regex')->setMessage('Profile addresses must be alphanumeric.', 'regexNotMatch');
+      // $this->username->getValidator('Alnum')->setMessage('Profile addresses must be alphanumeric.', 'notAlnum');
     }
     
     // Init type
