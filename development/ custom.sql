@@ -60,3 +60,10 @@ CREATE TABLE IF NOT EXISTS `engine4_custom_subscribers` (
 
 ALTER TABLE `engine4_classified_categories` ADD `meta_description` longtext DEFAULT NULL AFTER `category_name`;
 ALTER TABLE `engine4_blog_categories` ADD `meta_description` longtext DEFAULT NULL AFTER `category_name`;
+
+INSERT INTO `engine4_core_menuitems` (`name`, `module`, `label`, `plugin`, `params`, `menu`, `submenu`, `enabled`, `custom`, `order`, `flag_unique`) VALUES
+('custom_admin_main_settings', 'custom', 'Settings', '', '{"route":"admin_default","module":"custom","controller":"manage","action":"settings"}', 'custom_admin_main', '', 1, 0, 1, 0);
+
+ALTER TABLE `engine4_question_questions` ADD `modified_date` datetime DEFAULT NULL;
+UPDATE `engine4_question_questions`
+SET `modified_date` = `creation_date`;

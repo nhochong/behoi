@@ -87,7 +87,7 @@ $this->headScript()
 							$str_studyplace = "";
 							if($studyplaces -> isViewable())
 							{
-								$str_studyplace = "<a target='_blank' href='https://www.google.com/maps?q={$studyplaces->latitude},{$studyplaces->longitude}'>{$studyplaces->name}</a>";
+								$str_studyplace = "<a ref='nofollow' target='_blank' href='https://www.google.com/maps?q={$studyplaces->latitude},{$studyplaces->longitude}'>{$studyplaces->name}</a>";
 							}
 						?>
 							 <?php echo $str_studyplace;?> 
@@ -103,7 +103,7 @@ $this->headScript()
 							$str_workplace = "";
 							if($workplaces -> isViewable())
 							{
-								$str_workplace = "<a target='_blank' href='https://www.google.com/maps?q={$workplaces->latitude},{$workplaces->longitude}'>{$workplaces->company}</a>";
+								$str_workplace = "<a rel='nofollow' target='_blank' href='https://www.google.com/maps?q={$workplaces->latitude},{$workplaces->longitude}'>{$workplaces->company}</a>";
 							}
 						?>
 							 <?php echo $str_workplace;?> 
@@ -119,7 +119,7 @@ $this->headScript()
 						{
 							if($live -> isViewable())
 							{
-								$lives[] = "<a target='_blank' href='https://www.google.com/maps?q={$live->latitude},{$live->longitude}'>{$live->location}</a>";
+								$lives[] = "<a rel='nofollow' target='_blank' href='https://www.google.com/maps?q={$live->latitude},{$live->longitude}'>{$live->location}</a>";
 							}
 						}
 						$lives = implode(", ", $lives);

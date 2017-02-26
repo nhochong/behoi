@@ -33,4 +33,15 @@
   'items' => array(
     'slider',
   ),
+  // Routes --------------------------------------------------------------------
+  'routes' => array(
+    'aboutus_general' => array(
+      'route' => 'about-us/*',
+      'defaults' => array(
+        'module' => 'custom',
+        'controller' => 'about-us',
+        'action' => 'index'
+      )
+    ),
+  )
 ); ?>

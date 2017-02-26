@@ -4,9 +4,8 @@
 	        <div class="title"><?php echo $this->translate('Kết nối với behoi.com') ?></div>
 			<div class="content social-connect">
 				<ul>
-					<li><a href="javascript:void(0)"><img src="<?php echo $this->baseUrl() . '/application/themes/ynresponsive1/images/social/facebook.png'?>" /></a></li>
-					<li><a href="javascript:void(0)"><img src="<?php echo $this->baseUrl() . '/application/themes/ynresponsive1/images/social/twitter.png'?>" /></a></li>
-					<li><a href="javascript:void(0)"><img src="<?php echo $this->baseUrl() . '/application/themes/ynresponsive1/images/social/google+.png'?>" /></a></li>
+					<li><a rel="nofollow" href="https://www.facebook.com/B%C3%A9H%E1%BB%8Ficom-174409253048696"><img src="<?php echo $this->baseUrl() . '/application/themes/ynresponsive1/images/social/facebook.png'?>" /></a></li>
+					<li><a href="javascript:void(0)" target="_blank"><img src="<?php echo $this->baseUrl() . '/application/themes/ynresponsive1/images/social/google+.png'?>" /></a></li>
 					<li><a href="javascript:void(0)"><img src="<?php echo $this->baseUrl() . '/application/themes/ynresponsive1/images/social/you_tube.png'?>" /></a></li>
 				</ul>
 			</div>

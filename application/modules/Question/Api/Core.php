@@ -113,7 +113,7 @@ class Question_Api_Core extends Core_Api_Abstract {
 
 
         $select = $table->select()
-                ->order(!empty($params['orderby']) ? $params['orderby'] . ' DESC' : 'creation_date DESC' );
+                ->order(!empty($params['orderby']) ? $params['orderby'] . ' DESC' : 'modified_date DESC' );
 
         if (!empty($params['user_id']) && is_numeric($params['user_id'])) {
             $select->where($rName . '.user_id = ?', $params['user_id']);

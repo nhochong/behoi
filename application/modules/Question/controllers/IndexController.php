@@ -350,6 +350,11 @@ class Question_IndexController extends Core_Controller_Action_Standard {
                 if ($action != null) {
                     Engine_Api::_()->getDbtable('actions', 'activity')->attachActivity($action, $question);
                 }
+				
+				// Update question
+				$question->modified_date = date('Y-m-d H:i:s');
+				$question->save();
+				
                 $db->commit();
 
                 if (!$question->isSubscriber($viewer)) {

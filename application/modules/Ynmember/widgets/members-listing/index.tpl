@@ -108,7 +108,7 @@
 									$str_studyplace = "";
 									if ($studyplaces && $studyplaces -> isViewable())
 									{
-										$str_studyplace = "<a target='_blank' href='https://www.google.com/maps?q={$studyplaces->latitude},{$studyplaces->longitude}'>{$studyplaces->name}</a>";
+										$str_studyplace = "<a rel='nofollow' target='_blank' href='https://www.google.com/maps?q={$studyplaces->latitude},{$studyplaces->longitude}'>{$studyplaces->name}</a>";
 									}
 								?>
 								<div class="ynmember-item-info-studyplaces <?php if ($str_studyplace=='') echo 'ynmember-nodata'; ?>">
@@ -123,7 +123,7 @@
 									$workplaces = $workPlacesTbl -> getCurrentWorkPlacesByUserId($user -> getIdentity());
 									$str_workplace = "";
 									if ($workplaces && $workplaces -> isViewable()) {
-										$str_workplace = "<a target='_blank' href='https://www.google.com/maps?q={$workplaces->latitude},{$workplaces->longitude}'>{$workplaces->company}</a>";
+										$str_workplace = "<a rel='nofollow' target='_blank' href='https://www.google.com/maps?q={$workplaces->latitude},{$workplaces->longitude}'>{$workplaces->company}</a>";
 									}
 								?>
 								<div class="ynmember-item-info-workplaces <?php if ($str_workplace=='') echo 'ynmember-nodata'; ?>">
@@ -141,7 +141,7 @@
 									{
 										if($live -> isViewable())
 										{
-											$lives[] = "<a target='_blank' href='https://www.google.com/maps?q={$live->latitude},{$live->longitude}'>{$live->location}</a>";
+											$lives[] = "<a rel='nofollow' target='_blank' href='https://www.google.com/maps?q={$live->latitude},{$live->longitude}'>{$live->location}</a>";
 										}
 									}
 									$lives = implode(", ", $lives);

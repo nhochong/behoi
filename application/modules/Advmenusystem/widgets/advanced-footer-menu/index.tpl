@@ -45,7 +45,7 @@
 	?>
 	<?php endif; ?>	
       <?php if($this->youtube['icon']) :?>
-        <?php echo $this->htmlLink($this->youtube['uri'], $this->htmlImage($this->youtube['icon'], array('alt'=>$this->youtube['title'])))?>
+        <?php echo $this->htmlLink($this->youtube['uri'], $this->htmlImage($this->youtube['icon'], array('alt'=>$this->youtube['title'], 'rel' => 'nofollow')))?>
 	<?php else:?>
 		<span>-</span> <?php echo $this->htmlLink($this->youtube['uri'], $this->youtube['title']);?>
 	<?php endif; ?> 
@@ -79,7 +79,7 @@
       echo $this->translate('Powered by %1$s', 
         $this->htmlLink('http://www.socialengine.com/?source=v4&aff=' . urlencode($this->affiliateCode), 
         $this->translate('SocialEngine Community Software'),
-        array('target' => '_blank')))
+        array('target' => '_blank', 'rel' => 'nofollow')))
     ?>
   </div>
 <?php endif; ?>

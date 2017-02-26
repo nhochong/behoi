@@ -76,6 +76,11 @@ a,a:hover{
 		margin-bottom: 35px;
 	}
 }
+#global_page_custom-about-us-index #global_content {
+	background-color: white;
+    padding: 0px 20px 20px 20px;
+    overflow: hidden;
+}
 
 @media (max-width:1366px){
 	#global_page_core-index-index .main{

@@ -147,4 +147,28 @@ class Custom_AdminManageController extends Core_Controller_Action_Admin{
       'messages' => array('')
     ));
   }
+  
+	public function settingsAction(){
+		$this->view->form = $form = new Custom_Form_Admin_Settings();
+
+		$form->populate(array(
+			'about_us' => Engine_Api::_()->getApi('settings', 'core')->getSetting('custom.about_us')
+		));
+		
+		// Check post/valid
+		if( !$this->getRequest()->isPost() ) {
+		  return;
+		}
+		if( !$form->isValid($this->getRequest()->getPost()) ) {
+		  return;
+		}
+
+		// Process form
+		$values = $form->getValues();
+
+		// Save settings
+		Engine_Api::_()->getApi('settings', 'core')->setSetting('custom.about_us', $values['about_us']);
+		
+		$form->addNotice('Your changes have been saved.');
+	}
 }

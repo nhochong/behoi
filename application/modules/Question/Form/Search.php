@@ -30,7 +30,7 @@ class Question_Form_Search extends Engine_Form {
         $this->addElement('Select', 'orderby', array(
             'label' => Zend_Registry::get('Zend_Translate')->_('Browse By'),
             'multiOptions' => array(
-                'creation_date' => Zend_Registry::get('Zend_Translate')->_('Most Recent'),
+                'modified_date' => Zend_Registry::get('Zend_Translate')->_('Most Recent'),
                 'question_views' => Zend_Registry::get('Zend_Translate')->_('Most Viewed'),
                 'count_answers' => Zend_Registry::get('Zend_Translate')->_('Most Answered')
             ),

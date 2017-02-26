@@ -36,7 +36,7 @@
       echo $this->translate('Powered by %1$s', 
         $this->htmlLink('http://www.socialengine.com/?source=v4&aff=' . urlencode($this->affiliateCode), 
         $this->translate('SocialEngine Community Software'),
-        array('target' => '_blank')))
+        array('target' => '_blank', 'rel' => 'nofollow')))
     ?>
   </div>
 <?php endif; ?>

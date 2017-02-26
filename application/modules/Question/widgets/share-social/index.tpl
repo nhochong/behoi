@@ -9,7 +9,7 @@
 <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
 <a class="addthis_button_tweet"></a>
 <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
-<a href="http://pinterest.com/pin/create/button/?url=<?php echo urlencode($fullURL . $this->question->getHref())?>&description=<?php echo urlencode($this->question->getTitle())?>" class="pin-it-button" count-layout="horizontal"><img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" /></a>
+<a rel="nofollow" href="http://pinterest.com/pin/create/button/?url=<?php echo urlencode($fullURL . $this->question->getHref())?>&description=<?php echo urlencode($this->question->getTitle())?>" class="pin-it-button" count-layout="horizontal"><img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" /></a>
 </div>
 <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4f33a4c907e62718"></script>
 <!-- AddThis Button END -->

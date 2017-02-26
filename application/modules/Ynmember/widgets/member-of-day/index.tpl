@@ -38,7 +38,7 @@ foreach( $fieldStructure as $map ) {
 			$str_workplace = "";
 			if($workplaces -> isViewable())
 			{
-				$str_workplace = "<a target='_blank' href='https://www.google.com/maps?q={$workplaces->latitude},{$workplaces->longitude}'>{$workplaces->company}</a>";
+				$str_workplace = "<a rel='nofollow' target='_blank' href='https://www.google.com/maps?q={$workplaces->latitude},{$workplaces->longitude}'>{$workplaces->company}</a>";
 			}
 		?>
 		<div class="ynmember-of-item-work">
@@ -58,7 +58,7 @@ foreach( $fieldStructure as $map ) {
 			{
 				if($live -> isViewable())
 				{
-					$lives[] = "<a target='_blank' href='https://www.google.com/maps?q={$live->latitude},{$live->longitude}'>{$live->location}</a>";
+					$lives[] = "<a rel='nofollow' target='_blank' href='https://www.google.com/maps?q={$live->latitude},{$live->longitude}'>{$live->location}</a>";
 				}
 			}
 		}

@@ -25,7 +25,5 @@
 	<ul class="statistic">
 		<li><div class="number"><?php echo $this->number_of_users?></div><div><?php echo $this->translate('thành viên');?></div></li>
 		<li><div class="number"><?php echo $this->number_of_classified?></div><div><?php echo $this->translate('chủ đề');?></div></li>
-		<li><div class="number"><?php echo $this->number_of_topic?></div><div><?php echo $this->translate('câu hỏi');?></div></li>
-		<li><div class="number"><?php echo $this->number_of_reply?></div><div><?php echo $this->translate('câu trả lời');?></div></li>
 	</ul>
 </div>
