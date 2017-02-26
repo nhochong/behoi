@@ -1449,7 +1449,9 @@ body[id*="page_poll"] .layout_main .layout_middle
 	}
 }
 form#ynblogs_create #auth_view-wrapper,
+form#experiences_create #auth_view-wrapper,
 form#ynblogs_create #auth_comment-wrapper,
+form#experiences_create #auth_comment-wrapper,
 #global_page_question-index-create div.qa_create_question .global_form #auth_view-wrapper,
 #global_page_question-index-edit div.qa_create_question .global_form #auth_view-wrapper,
 #global_page_question-index-create div.qa_create_question .global_form #auth_answer-wrapper,

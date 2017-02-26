@@ -45,9 +45,11 @@ class Ynblog_Form_Create extends Engine_Form
     // Category field
     $cat_array = Engine_Api::_()->getItemTable('blog_category')->getCategoriesAssoc();
     $this->addElement('Select', 'category_id', array(
-            'label' => 'Category',
-            'multiOptions' => $cat_array
-          ));
+		'label' => 'Category',
+		'allowEmpty' => false,
+		'required' => true,
+		'multiOptions' => $cat_array
+	));
 
     //Mode field
     $this->addElement('Select', 'draft', array(
