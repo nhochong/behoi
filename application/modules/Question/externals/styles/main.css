@@ -50,7 +50,7 @@ span.qa_unlike_btn{opacity: 0.75;}
 .subscr-btn button 	{font-size: 12px;padding: 0.25em 0.4em;}
 
 .qa_browse_info_date, .qtt_kudos{font-size:0.8em; color:$theme_font_color_light;}
-.qa_browse_info_date.qa_browse_info_date_top,
+.qa_browse_info_date.qa_browse_info_date_top {margin-bottom: 0px; padding: 8px 0px;}
 .qa_question_body .qa_browse_info_date.qa_browse_info_date_top {margin-bottom: 3px;position:absolute;bottom:0;right:0;}
 #global_page_question-index-view {
 	.qa_browse_info_date.qa_browse_info_date_top,
@@ -337,7 +337,7 @@ ul.qa_browse li .comments .comments_options span{font-weight: normal;}
 .comments_post{margin-top: 5px;}
 
 .question-tags{padding-top: 5px;}
-.question-tags a{border-radius: 3px; display: inline-block; background: #ece8e8; color: $theme_link_color_hover; line-height: 1.8em; padding: 3px 10px; font-size: 12px;}
+.question-tags a{border-radius: 3px; display: inline-block; background: #ece8e8; color: $theme_link_color_hover; line-height: 1.8em; padding: 3px 10px; font-size: 12px; margin-bottom: 5px;}
 .question-tags a:hover{background: $theme_button_background_color; color: $theme_button_font_color;  text-decoration: none;}
 .question-tags.single-question{margin-bottom: 8px;}
 

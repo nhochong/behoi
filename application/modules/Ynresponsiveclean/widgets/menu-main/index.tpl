@@ -7,6 +7,16 @@
  * @copyright  Copyright YouNet Company
  */
 ?>
+<style type="text/css">
+	@media all and (max-width: 767px) {
+		#global_header .layout_ynresponsiveclean_menu_main #global_search_form_container #global_search_form input {
+			width: -moz-calc(100% - 37px);
+			width: -webkit-calc(100% - 37px);
+			width: calc(100% - 37px);
+			max-width: none;
+		}
+	}
+</style>
 <script type="text/javascript">
 	en4.core.runonce.add(function(){
 		if($('global_search_field')){
@@ -29,6 +39,12 @@
 	<div class="navbar-wrapper">
 	  <!-- Brand and toggle get grouped for better mobile display -->
 	  <div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex8-collapse">
+		  <span class="sr-only">Toggle navigation</span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		</button>
 		<div class="ybo_logo">
 			<?php
 			$title = Engine_Api::_()->getApi('settings', 'core')->getSetting('core_general_site_title', $this->translate('_SITE_TITLE'));
@@ -90,7 +106,7 @@
 			<li><?php echo $this->htmlLink(array('route' => 'default', 'module' => 'question'), $this->translate('Diễn Đàn')) ?></li>
 			<li><?php echo $this->htmlLink(array('route' => 'blog_general'), $this->translate('Tư Vấn')) ?></li>
 			<li><?php echo $this->htmlLink(array('route' => 'experience_general'), $this->translate('Kinh Nghiệm')) ?></li>
-			<li><?php echo $this->htmlLink('javascript:void(0);', $this->translate('Tags')) ?></li>
+			<!--<li><?php echo $this->htmlLink('javascript:void(0);', $this->translate('Tags')) ?></li>-->
 			<li><?php echo $this->htmlLink(array('route' => 'question_general', 'action' => 'create'), $this->translate('Đăng Câu Hỏi')) ?></li>
 		</ul>
 	</div>

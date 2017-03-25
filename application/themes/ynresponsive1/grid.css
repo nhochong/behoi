@@ -33,8 +33,7 @@
 @media (min-width: 768px) and (max-width: 991px) {
 	
 	#global_content,
-	#core_menu_mini_menu > ul,
-	.navbar.navbar-default {
+	#core_menu_mini_menu > ul{
 		padding: 0 15px;
 		margin: 0 auto;
 		max-width: 750px;

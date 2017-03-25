@@ -1,0 +1,24 @@
+/* Tablet */
+@media all and (max-width: 991px) {
+	.layout_ynresponsiveclean_menu_main .navbar.navbar-default .navbar-wrapper,
+	.layout_ynresponsiveclean_menu_main .navbar.navbar-default .collapse.navbar-collapse.navbar-ex8-collapse .nav.navbar-nav {
+		max-width: 750px !important;
+	}
+	.layout_ynresponsiveclean_menu_main .navbar.navbar-default .navbar-wrapper .main_sub_domain > ul li {
+		margin: 0px 10px 0px 0px;
+	}
+	.layout_statistic > div.statistic_overall {
+		width: 40%;
+	}
+	.layout_ynresponsiveclean_menu_footer div.subscribe_form input#subscribe_input {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.layout_ynresponsiveclean_menu_footer,
+	.layout_ynresponsiveclean_menu_footer .photo-footer-menu	{
+		padding: 0px;
+	}
+	.layout_right .generic_layout_container {
+		padding: 0px;
+	}
+}

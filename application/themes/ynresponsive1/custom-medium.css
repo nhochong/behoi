@@ -1,0 +1,21 @@
+/* Medium device - Desktop */
+@media all and (max-width: 1199px) {
+	.layout_ynresponsiveclean_menu_main .main_sub_domain {
+		margin-left: 0px !important;
+	}
+	.layout_ynresponsiveclean_menu_main .navbar.navbar-default {
+		max-width: 100%;
+		padding: 20px 0px 0px 0px;
+		width: 100%;
+	}
+	.layout_ynresponsiveclean_menu_main .navbar.navbar-default .navbar-wrapper,
+	.layout_ynresponsiveclean_menu_main .navbar.navbar-default .collapse.navbar-collapse.navbar-ex8-collapse .nav.navbar-nav {
+		max-width: 970px !important;
+	}
+	.layout_ynresponsiveclean_menu_footer div.subscribe_form input#subscribe_input {
+		width: 70%;
+	}
+	.navbar-collapse {
+		padding: 0px;
+	}
+}

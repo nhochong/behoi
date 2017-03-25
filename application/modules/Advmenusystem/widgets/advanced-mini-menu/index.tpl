@@ -352,7 +352,7 @@ else
 	}
 </script>
 
-<div id='core_menu_mini_menu' class="ynadvanced-menu-mini">
+<div id='core_menu_mini_menu' class="ynadvanced-menu-mini slidedown collapse">
 	<div class="ynadvmenu_info_menu">
 		<div class="info_menu">
 			<a class="menu_email_contact menu-icon" href="mailto:hotro@behoi.com">hotro@behoi.com</a>
@@ -363,7 +363,7 @@ else
 	$count = count($this->navigation);
 	foreach( $this->navigation->getPages() as $item ) $item->setOrder(--$count);
 	?>
-	<ul>
+	<ul class="menu_mini_advanced">
 		<?php if( $this->viewer->getIdentity()) :?>
 			<li class="ynadvmenu_notification type-<?php echo $this->design_type; ?>" >
 				<?php echo $this -> html_notification?>
@@ -420,7 +420,12 @@ else
 
 	</ul>
 </div>
-
+<div class="topnav">
+	<div style="background-color: #72c02c; height: 8px"></div>
+	<a class="btn-show-menu-mini" data-toggle="collapse" data-target=".slidedown">
+		<i class="glyphicon glyphicon-chevron-down"></i>
+	</a> 
+</div>
 <!--Sign in/ Sign up smooth box work-->
 <?php if (empty($this->viewer_id) && empty($this->isUserLoginPage) && empty($this->isUserSignupPage) && (!empty($this->advmenusystemEnableLoginLightbox) || !empty($this->advmenusystemEnableSignupLightbox))) : ?>
 	<div class="ynadvmenu-popup">		

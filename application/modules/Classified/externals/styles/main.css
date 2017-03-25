@@ -673,6 +673,7 @@ ul.classifieds-category {
 	height: 160px;
 	margin-bottom: 40px;
 	padding-left: 0px;
+	overflow: hidden;
 }
 .classified_entrylist > div .classified_category_browse_photo {
 	float: left;
@@ -793,5 +794,13 @@ ul.qa-further-info {
 		.addthis_inline_share_toolbox {
 			float: right;
 		}
+	}
+}
+.layout_classified_hot_classifieds {
+	.classified_entrylist > div ul.classified_list li {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		line-height: 28px;
 	}
 }

@@ -195,7 +195,7 @@ ul.thumbs.thumbs_album>li {
 	color: #687074;
 	font-size: 15px;
 	font-weight: 400;
-	padding: 9px 20px;
+	padding: 9px 15px;
 	text-transform: uppercase;
 	background: none;
 }
@@ -1159,6 +1159,7 @@ body[id*="page_poll"] .layout_main .layout_middle
 			overflow: hidden;
 			max-width: 1170px;
 			margin: auto;
+			padding: 0 15px;
 			
 			.navbar-header {
 				width: 235px;
@@ -1167,6 +1168,7 @@ body[id*="page_poll"] .layout_main .layout_middle
 			
 			#global_search_form_container {
 				float: left;
+				padding-right: 5px;
 				
 				#global_search_form {
 					input {
@@ -1225,7 +1227,7 @@ body[id*="page_poll"] .layout_main .layout_middle
 			}
 		}
 		
-		.collapse.navbar-collapse.navbar-ex8-collapse {
+		.navbar-collapse.navbar-ex8-collapse {
 			margin-top: 15px;
 			background-color: $theme_main_color_scheme;
 			
@@ -1387,6 +1389,7 @@ body[id*="page_poll"] .layout_main .layout_middle
 				text-align: center;
 				width: 75px;
 				border-radius: 5px;
+				margin-bottom: 10px;
 				
 				div {
 					text-align: center;
@@ -1469,8 +1472,10 @@ div#subscribe_form_header {
     width: 285px;
     margin-top: 10px;
     padding: 10px;
-    background-color: #eee;
+    background-color: #dcdcdc;
     border: 1px solid #e8e8e8;
+	z-index: 99;
+	right: 0;
 }
 .layout_page_core_error_requireuser .layout_page_core_error_requireuser {
 	display: none;

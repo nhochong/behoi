@@ -175,6 +175,9 @@ class Ynresponsive1_BootHelper extends Zend_Controller_Action_Helper_Abstract
 		$view -> headLink() -> appendStylesheet($staticUrl . 'application/css.php?request=application/themes/'.YNRESPONSIVE_ACTIVE.'/yncustom.css');
 		$view -> headLink() -> appendStylesheet($staticUrl . 'application/css.php?request=application/themes/'.YNRESPONSIVE_ACTIVE.'/yncustom-tablet.css');
 		$view -> headLink() -> appendStylesheet($staticUrl . 'application/css.php?request=application/themes/'.YNRESPONSIVE_ACTIVE.'/yncustom-mobile.css');
+		$view -> headLink() -> appendStylesheet($staticUrl . 'application/css.php?request=application/themes/'.YNRESPONSIVE_ACTIVE.'/custom-medium.css');
+		$view -> headLink() -> appendStylesheet($staticUrl . 'application/css.php?request=application/themes/'.YNRESPONSIVE_ACTIVE.'/custom-tablet.css');
+		$view -> headLink() -> appendStylesheet($staticUrl . 'application/css.php?request=application/themes/'.YNRESPONSIVE_ACTIVE.'/custom-mobile.css');
 		
 		// check homepage setup
 		$db = Engine_Db_Table::getDefaultAdapter();

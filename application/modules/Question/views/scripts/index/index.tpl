@@ -57,18 +57,6 @@
            
         <div class='qa_browse_info'>
             <span class="qa_title"><strong><?php echo $this->htmlLink($question->getHref(), $question->getTitle()); ?></strong></span>
-            <?php
-				if (Engine_Api::_()->getApi('settings', 'core')->getSetting('question_tags', 0)) :
-					$tags = $question->gettags();
-					if ($tags !== null and count($tags)):
-			?>
-					<div class='question-tags'>
-                        <?php foreach ($tags as $tag): ?>
-                              <a href='javascript:void(0);' onclick='javascript:searchTagAction("<?php echo $tag->getTag()->text; ?>");'><?php echo $tag->getTag()->text?></a>
-                        <?php endforeach; ?>
-					</div>        
-					<?php endif; ?>
-			<?php endif; ?>
             <p class='qa_browse_info_date qa_browse_info_date_top'>
 				<?php echo $this->translate('by %s', $question->getOwnerUser()->toString()) ?>
 				<?php
@@ -81,6 +69,18 @@
 				<?php echo $this->translate('about %s', $this->timestamp($question->creation_date)) ?>
 				<span class="qa_question_status <?php if($question->status != 'open') {echo 'closed-quest';}?>"><?php echo $this->translate('%s', $this->translate($question->status))?></span>
             </p>
+            <?php
+				if (Engine_Api::_()->getApi('settings', 'core')->getSetting('question_tags', 0)) :
+					$tags = $question->gettags();
+					if ($tags !== null and count($tags)):
+			?>
+					<div class='question-tags'>
+                        <?php foreach ($tags as $tag): ?>
+                              <a href='javascript:void(0);' onclick='javascript:searchTagAction("<?php echo $tag->getTag()->text; ?>");'><?php echo $tag->getTag()->text?></a>
+                        <?php endforeach; ?>
+					</div>        
+					<?php endif; ?>
+			<?php endif; ?>
         </div>
 
         <div class="qa-clearfix"></div>
