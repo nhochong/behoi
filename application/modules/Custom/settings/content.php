@@ -91,4 +91,29 @@ return array(
 			'title' => '',
 		),
 	),
+	array(
+		'title' => 'Hidden Header',
+		'description' => 'Displays a Hidden Header.',
+		'category' => 'Customs',
+		'type' => 'widget',
+		'name' => 'custom.hidden-header',
+		'adminForm' => array(
+            'elements' => array(
+				array(
+                    'Text',
+                    'tagname',
+                    array(
+                        'label' => 'Tag Name'
+                    )
+                ),
+                array(
+                    'Text',
+                    'content',
+                    array(
+                        'label' => 'Content'
+                    )
+                ),
+            ),
+        ),
+	),
 )?>

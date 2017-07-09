@@ -712,6 +712,7 @@ Used at the top of most browse pages. Often contains button-style tabs.
   overflow: hidden;
   margin-bottom: 15px;
 }
+.headline h1,
 .headline h2
 {
   float: left;
@@ -767,6 +768,7 @@ Used at the top of most browse pages. Often contains button-style tabs.
   padding: 0px;
   margin: 0px 0px 10px 0px;
 }
+.headline > h1,
 .headline > h2
 {
   display: none;

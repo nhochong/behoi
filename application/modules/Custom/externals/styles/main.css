@@ -1,5 +1,6 @@
-
-
+.layout_custom_hidden_header {
+	display: none;
+}
 a,a:hover{
 	text-decoration: none !important;
 }

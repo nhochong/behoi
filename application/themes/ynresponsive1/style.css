@@ -130,6 +130,7 @@ Used at the top of most browse pages. Often contains button-style tabs.
   /*overflow: hidden;*/
   margin-bottom: 1.5em;
 }
+.headline h1,
 .headline h2
 {
   display: inline-block;
@@ -142,6 +143,7 @@ Used at the top of most browse pages. Often contains button-style tabs.
   margin-top: 0;
   color: #686868;
 }
+html[dir="rtl"] .headline h1,
 html[dir="rtl"] .headline h2
 {
   float: right;

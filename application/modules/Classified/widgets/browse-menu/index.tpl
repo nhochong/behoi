@@ -1,8 +1,8 @@
 
 <div class="headline">
-  <h2>
+  <h1>
     <?php echo $this->translate('Classified Listings') ?>
-  </h2>
+  </h1>
   <div class="tabs">
     <?php
       // Render the menu
