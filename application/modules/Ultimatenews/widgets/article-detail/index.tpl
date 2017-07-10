@@ -69,7 +69,7 @@ if($category['logo'] != "" && $category['mini_logo']):?>
 		if($category['category_parent_id'] > 0):
 		$cat = Engine_Api::_()->getItem('ultimatenews_categoryparent',$category['category_parent_id']);
 		if($cat):?>
-			<a href="<?php echo $this->url(array('controller' => 'index', 'action'=>'contents', 'categoryparent'=>$cat->category_id ),'ultimatenews_categoryparent')?>">
+			<a href="<?php echo $cat->getHref()?>">
 	            <?php echo $this->translate($cat->category_name); ?> &#187;
 	         </a>
 	    <?php endif; else:?>
@@ -259,7 +259,7 @@ if($category['logo'] != "" && $category['mini_logo']):?>
 			<p class='blogs_browse_info_date'>
 	        <?php echo $this->translate('Posted');?>	               
 	        <?php
-	            echo($new->pubDate_parse);
+	            echo date('Y-m-d', strtotime($new->pubDate_parse));
 			?>
 			</p>
 	    </div>

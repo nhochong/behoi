@@ -84,7 +84,7 @@
       ),
       'ultimatenews_categoryparent' => 
 	    array (
-	      'route' => 'news/category/:categoryparent',
+	      'route' => 'news/category/:categoryparent/:slug',
 	      'defaults' => 
 	      array (
 	        'module' => 'ultimatenews',

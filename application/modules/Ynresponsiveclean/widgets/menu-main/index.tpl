@@ -108,6 +108,7 @@
 			<li><?php echo $this->htmlLink(array('route' => 'experience_general'), $this->translate('Kinh Nghiệm')) ?></li>
 			<!--<li><?php echo $this->htmlLink('javascript:void(0);', $this->translate('Tags')) ?></li>-->
 			<li><?php echo $this->htmlLink(array('route' => 'question_general', 'action' => 'create'), $this->translate('Đăng Câu Hỏi')) ?></li>
+			<li><?php echo $this->htmlLink(array('route' => 'ultimatenews_extended'), $this->translate('Hot News')) ?></li>
 		</ul>
 	</div>
   <!-- /.navbar-collapse -->

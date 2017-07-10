@@ -67,3 +67,7 @@ INSERT INTO `engine4_core_menuitems` (`name`, `module`, `label`, `plugin`, `para
 ALTER TABLE `engine4_question_questions` ADD `modified_date` datetime DEFAULT NULL;
 UPDATE `engine4_question_questions`
 SET `modified_date` = `creation_date`;
+
+UPDATE `engine4_core_menuitems`
+SET `enabled` = 0
+WHERE `name` IN ('ultimatenews_main_addnews', 'ultimatenews_main_mynews', 'ultimatenews_main_newsmanagement', 'ultimatenews_main_addfeed', 'ultimatenews_main_myfeeds', 'ultimatenews_main_feedmanagement', 'ultimatenews_main_favoritenews' );

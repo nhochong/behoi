@@ -9,7 +9,7 @@
                 <?php endif;?>
                 <h4 class="ynnew-tt3"><?php echo $this->htmlLink($item->getHref(), $item->title, array('target' => '_parent'))?></h4>               
                 <p class="ynultimatenews-info3">
-                    <?php echo $this->translate('Posted') . " " . $item->pubDate_parse;// . " " . $this->translate('by') . ": " . Engine_Api::_()->getItem('user',$item->owner_id);?>
+                    <?php echo $this->translate('Posted') . " " . date('Y-m-d', strtotime($item->pubDate_parse));// . " " . $this->translate('by') . ": " . Engine_Api::_()->getItem('user',$item->owner_id);?>
                 </p>
                 <p class="ynultimatenews-bd3">
 

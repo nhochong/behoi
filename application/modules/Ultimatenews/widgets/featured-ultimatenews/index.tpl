@@ -47,7 +47,7 @@ $this->headScript()
                             <div class = "description" style=""> <?php echo $this->feedDescription($content);?></div>
                         </div>
 						<div style="padding-bottom: 10px">
-                            <div  class="datetime" ><?php echo $this->translate('Posted') . " " . $item->pubDate_parse;?></div>
+                            <div  class="datetime" ><?php echo $this->translate('Posted') . " " . date('Y-m-d', strtotime($item->pubDate_parse));?></div>
                         </div>
                     </div>
                 </div>

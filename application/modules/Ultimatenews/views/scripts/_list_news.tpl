@@ -7,19 +7,17 @@
 		$tmName = $tm_table->info('name');
 	}
     foreach ($this->paginator as $item):?>      	
-        <li style="clear: both;">          
+        <li style="clear: both; overflow: hidden;">          
             <div class='ultimatenews_feed_browse_info'>
             	<?php if($item->logo_icon != "" && $item->mini_logo):?>
-                <p style="float: left;  padding-right: 5px">
+                <p style="float: left;  padding-right: 10px; padding-top: 5px;">
                 	<img src="<?php echo $item->logo_icon?>" /></p> 	
                 <?php endif;?>
-                <p class='blogs_browse_info_title'>
-                <h4><?php echo $this->htmlLink($item->getHref(), $item->title, array('target' => '_parent'))?></h4>
-                </p>
+                <div class='blogs_browse_info_title'><h4><?php echo $this->htmlLink($item->getHref(), $item->title, array('target' => '_parent'));?></h4></div>
                 <p class='blogs_browse_info_date'>
                     <?php echo $this->translate('Posted');?>	               
                     <?php
-                        echo($item->pubDate_parse. " " . $this->translate('by') . ": " . Engine_Api::_()->getItem('user',$item->owner_id));
+                        echo date('Y-m-d', strtotime($item->pubDate_parse));
                     ?>               
                 </p>
                 <?php if($this -> favorite):?>
@@ -87,12 +85,6 @@
 					</p>
                 <?php endif;?>
                 <div style="clear:both"></div>
-                <a  style="float:left; padding-top: 5px" href="<?php echo($item->link_detail);?>" >
-                	<?php if ($item->logo != "" && $item->display_logo == 1) :?> 
-                		<?php echo "<img src='" . $item->logo . "'  alt=''/>"?> 
-                	<?php endif;?>  
-                </a>
-
                 <p class="view_more">
                     <?php
                     $total_coment = $item->total_comment;

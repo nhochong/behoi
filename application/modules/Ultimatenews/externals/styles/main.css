@@ -377,6 +377,7 @@ div.widget_innerholder_ultimatenews >h4
     border:none;
     margin:0;
     padding:0;
+	margin-bottom: 5px;
 }
 p.ynultimatenews-bd3{
     margin-top: 5px;
@@ -611,6 +612,7 @@ ul.blogs_browse > li {
 .layout_ultimatenews_list_ultimatenews .link_subscribe
 {
 	left: 50%;
+	margin-top: 2px;
 }
 
 ul.news_browse > li .news_browse_info_date,

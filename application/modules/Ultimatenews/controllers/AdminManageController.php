@@ -749,22 +749,26 @@ class Ultimatenews_AdminManageController extends Core_Controller_Action_Admin {
 						if (is_array($feed['rows']) && !empty($feed['rows'])) {
 							foreach ($feed['rows'] as $entry) {
 								$pubdate = time();
-								if ($entry['item_pubDate'])
+								if ($entry['item_pubDate'] && $entry['item_pubDate'] !== '1970-01-01 00:00:00'){
 									$pubdate = strtotime($entry['item_pubDate']);
-								else
+								} else {
 									$entry['item_pubDate'] = date('Y-m-d H:i:s');
+								}
 
 								$edata = array('category_id' => $category['category_id'], 'owner_type' => "user", 'owner_id' => $category['owner_id'], 'title' => $entry['item_title'], 'description' => $entry['item_description'], 'content' =>  $entry['item_content'], 'image' => $entry['item_image'], 'link_detail' => $entry['item_url_detail'], 'author' => '', 'pubDate' => $pubdate, 'pubDate_parse' => $entry['item_pubDate'], 'posted_date' => date('Y-m-d H:i:s'), 'is_active' => "1");
+								
 								if ($edata['image'] == "") {
 									preg_match('/src="([^"]*)"/i', $edata['description'], $matches);
 									if ($matches[1]) {
-										$edata['image'] = $this -> saveImg($matches[1], md5($matches[1]));
+										// $edata['image'] = $this -> saveImg($matches[1], md5($matches[1]));
+										$edata['image'] = $matches[1];
 									}
-								} else {
+								} /*else {
 									$storage_file = $this -> saveImg($this -> getImageURL($edata['image']), md5($edata['image']));
 									$edata['image'] = $storage_file -> storage_path;
 									$edata['photo_id'] = $storage_file -> file_id;
-								}
+								}*/
+								$edata['image'] = strtok($edata['image'], '?');
 								//insert data to database
 								$db = Engine_Api::_() -> getDbtable('contents', 'ultimatenews') -> getAdapter();
 								$db -> beginTransaction();

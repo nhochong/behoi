@@ -51,7 +51,7 @@
 		                            <?php endif;?>	
 		                            
 		                            <?php if ($cateItem->category_logo != "" || $cateItem->category_logo == 1) :?>
-		                              	 <a  style="float:right" href="<?php echo($cateItem->url_resource);?>" > 
+		                              	 <a class="category_logo" style="float:right" href="<?php echo($cateItem->url_resource);?>" > 
 		                                		<?php echo "<img style = 'max-height: 23px' src='" . $cateItem->category_logo . "'  alt=''/>"?> 
 		                                </a>
 		                            <?php endif;?> 
@@ -109,7 +109,7 @@
 				                                   	<p class='blogs_browse_info_date'>
 				                                    <?php echo $this->translate('Posted');?>	               
 				                                    <?php
-				                                        echo($item_news->pubDate_parse);//. " " . $this->translate('by') . ": " . Engine_Api::_()->getItem('user',$item->owner_id));
+				                                        echo date('Y-m-d', strtotime($item_news->pubDate_parse));//. " " . $this->translate('by') . ": " . Engine_Api::_()->getItem('user',$item->owner_id));
 				                                    ?>               
 				                               		</p>
 				                                    <?php
@@ -181,7 +181,7 @@
 													<p class='blogs_browse_info_date'>
 				                                    <?php echo $this->translate('Posted');?>	               
 				                                    <?php
-				                                        echo($item_news->pubDate_parse);
+														echo date('Y-m-d', strtotime($item_news->pubDate_parse));
 													?>
 													</p>
 						                        </div>

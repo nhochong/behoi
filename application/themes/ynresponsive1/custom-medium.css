@@ -18,4 +18,14 @@
 	.navbar-collapse {
 		padding: 0px;
 	}
+	.layout_ultimatenews_list_ultimatenews {
+		.link_subscribe {
+			left: inherit;
+			right: 0px;
+		}
+		.category_logo {
+			display: none;
+		}
+	}
+	
 }

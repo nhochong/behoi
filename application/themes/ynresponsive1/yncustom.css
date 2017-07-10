@@ -1101,7 +1101,9 @@ body[id^="global_page_advgroup"] div.settings,
 .advgroup_list .layout_right,
 body[id^="global_page_groupbuy-index-manage"] .layout_right,
 body[id^="global_page_groupbuy-index-manage"] .layout_middle,
-#global_page_ynbanmem-index-view-email .admin_table_form{
+#global_page_ynbanmem-index-view-email .admin_table_form,
+#global_page_ultimatenews-index-contents .layout_middle,
+#global_page_ultimatenews-index-contents .layout_left{
 	+blkcont;
 }
 .layout_page_video_index_browse .layout_main .layout_middle,

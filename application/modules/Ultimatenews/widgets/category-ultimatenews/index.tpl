@@ -133,7 +133,7 @@
 										<p class='blogs_browse_info_date'>
 		                                    <?php echo $this->translate('Posted');?>	               
 		                                    <?php
-		                                        echo($item_news->pubDate_parse);
+												echo date('Y-m-d', strtotime($item_news->pubDate_parse));
 											?>
 										</p>
 			                        </div>
