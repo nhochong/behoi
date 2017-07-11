@@ -760,14 +760,16 @@ class Ultimatenews_AdminManageController extends Core_Controller_Action_Admin {
 								if ($edata['image'] == "") {
 									preg_match('/src="([^"]*)"/i', $edata['description'], $matches);
 									if ($matches[1]) {
-										// $edata['image'] = $this -> saveImg($matches[1], md5($matches[1]));
 										$edata['image'] = $matches[1];
 									}
-								} /*else {
-									$storage_file = $this -> saveImg($this -> getImageURL($edata['image']), md5($edata['image']));
-									$edata['image'] = $storage_file -> storage_path;
-									$edata['photo_id'] = $storage_file -> file_id;
-								}*/
+									
+									if ($edata['image'] == "") {
+										preg_match('/src="([^"]*)"/i', $edata['content'], $matches);
+										if ($matches[1]) {
+											$edata['image'] = $matches[1];
+										}
+									}
+								}
 								$edata['image'] = strtok($edata['image'], '?');
 								//insert data to database
 								$db = Engine_Api::_() -> getDbtable('contents', 'ultimatenews') -> getAdapter();

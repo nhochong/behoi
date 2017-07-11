@@ -96,12 +96,20 @@ if (count($categories_arr) > 0)
                         'is_active' => "1"
                     );
                     
-                    if ($entry['item_image'] != '')
-                    {
-                        $storage_file = Engine_Api::_() -> ultimatenews() -> saveImg(Engine_Api::_() -> ultimatenews() -> getImageURL($edata['image']), md5($edata['image']), $category -> owner_id);
-                        $edata['image'] = $storage_file -> storage_path;
-                        $edata['photo_id'] = $storage_file -> file_id;
-                    }
+					if ($edata['image'] == "") {
+						preg_match('/src="([^"]*)"/i', $edata['description'], $matches);
+						if ($matches[1]) {
+							$edata['image'] = $matches[1];
+						}
+						
+						if ($edata['image'] == "") {
+							preg_match('/src="([^"]*)"/i', $edata['content'], $matches);
+							if ($matches[1]) {
+								$edata['image'] = $matches[1];
+							}
+						}
+					}
+						
                     //insert news to database
                     $db = Engine_Api::_()->getDbtable('contents', 'ultimatenews')->getAdapter();
                     $db->beginTransaction();
